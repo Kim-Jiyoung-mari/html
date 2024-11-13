@@ -29,7 +29,7 @@
 * `q` 짧은 인용문 ; 단락 내 부분적으로 사용할 때 <p>안에 부분적으로 인용을 줄 때 사용한다.(inline)
 * `blockquote,q의 cite속성` <code>&lt;blockquote cite="사이트주소"&gt;</code> / <code>&lt;q cite="사이트주소"&gt;</code>
 * `sup`,`sub` 위첨자, 아래첨자 / o모양으로 구분
-* `code` 컴퓨터가 지원하는 다양한 명령어 화면 표시할때 / <code>&lt;___&gt;</code> 형태로 쓴다.
+* `code` 컴퓨터가 지원하는 다양한 명령어 화면 표시할때 / <code>`&lt;___&gt;`</code> 형태로 쓴다.
 * `mark` 형광펜 표시 하고 싶을 때 
 * `&lt;` , `&gt;` , `&copy;` : 특수문자 표기, 주로 꺽새<>표기하고 싶을 때 사용 / copyright 표기
 * `hr`수평선 ; 사이트 각 영역 구분할 때, 주석으로 사용, 개발 이해 목적으로 사용
