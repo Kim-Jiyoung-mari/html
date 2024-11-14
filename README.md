@@ -56,3 +56,7 @@
 1. 클릭대상, 이동대상 먼저 제작 
 2. 각 이동 대상의 먼저 시작되는 첫번째 요소에 id 설정하기
 3. 위 2번으로 이동 시 클릭해야하는 대상에 href속성으로 #아이디명(#포함)을 입력하기
+## 파비콘 복붙용
+* `<link rel="shortcut icon" href="./image_video/images/detail_icon_wish.png" type="iamge/x-icon">
+<link rel="icon" href="./image_video/images/detail_icon_wish.png" type="image/x-icon">`
+
