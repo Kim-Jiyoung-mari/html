@@ -1,0 +1,6 @@
+body { background-color: lightyellow;}
+h1 {color: blue;}
+h2 {color: green;}
+div {color: purple;}
+div.group1 {color: brown;}
+div#group2 {color: darkblue;}
