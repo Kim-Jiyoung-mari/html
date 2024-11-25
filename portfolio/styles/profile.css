@@ -1,0 +1,42 @@
+.profile {background-color: beige;}
+.profile h1 {
+    font-size: 3.06rem;
+    font-weight: 700;
+}/* 49px */
+.profile .ambition {
+    font-size: 2.44rem;
+    line-height: 1.5;
+}
+.profile .ambition .text_effect {
+    font-weight: 700;
+}
+.profile .basic {}
+.profile .basic li {
+    font-size: 1.94rem;
+    line-height: 3.13rem;
+} /* 31px */
+.profile .basic li .my_name {
+    font-size: 3.06rem;
+    font-weight: 700;
+}/* 49px */
+.profile .basic li .my_name .name_image {}
+.profile .basic li img {}
+.profile h2 {
+    font-size: 1.94rem;
+    font-weight: 700;
+}
+.profile .experience {}
+.profile .experience li {
+    font-size: 1.56rem;
+    line-height: 1.5;
+} /* 25px */
+.profile .experience li .date {}
+.profile .experience li .name {}
+.profile .license {}
+.profile .license li {
+    font-size: 1.56rem;
+    line-height: 1.7;
+}
+.profile .license .date {}
+.profile .license .name {}
+
