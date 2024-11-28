@@ -1,65 +1,202 @@
-#wrap {}
+#wrap {
+    background-color: gray;
+}
 /* ------------헤더------------- */
-#wrap header {}
+#wrap header {background-color:lime;}
 #wrap header h1 {}
 #wrap header h1 nav {}
-#wrap header h1 nav ul {}
-#wrap header h1 nav ul li {}
-#wrap header h1 nav ul li a {}
+#wrap header h1 nav .path_bg {}
+#wrap header h1 nav .path_bg li {}
+#wrap header h1 nav .path_bg li a {}
 #wrap header .right {}
 #wrap header .right > a {}
 #wrap header .right ul {}
 #wrap header .right ul li {}
 #wrap header .right ul li a {}
-/* ------------메인------------- */
-#wrap main {}
-#wrap main .path {}
-#wrap main .path a {}
-#wrap main .path em {}
-#wrap main h1 {}
-#wrap main p {}
-#wrap main .bg {}
-/* ------------01번------------- */
-#wrap main .bg .number_01 {}
-#wrap main .bg .number_01 > p {}
-#wrap main .bg .number_01 > p img {}
-#wrap main .bg .number_01 .content {}
-#wrap main .bg .number_01 .content p {}
-#wrap main .bg .number_01 .content p span {}
-#wrap main .bg .number_01 .content h2 {}
-#wrap main .bg .number_01 .content h2 em {}
-/* ------------02번------------- */
-#wrap main .bg .number_02 {}
-#wrap main .bg .number_02 .content {}
-#wrap main .bg .number_02 .content p {}
-#wrap main .bg .number_02 .content p span {}
-#wrap main .bg .number_02 .content h2 {}
-#wrap main .bg .number_02 .content h2 em {}
-#wrap main .bg .number_02 .content > p {}
-#wrap main .bg .number_02 .content > p img {}
-/* ------------03번------------- */
-#wrap main .bg .number_03 {}
-#wrap main .bg .number_03 > p {}
-#wrap main .bg .number_03 > p img {}
-#wrap main .bg .number_03 .content {}
-#wrap main .bg .number_03 .content p {}
-#wrap main .bg .number_03 .content p span {}
-#wrap main .bg .number_03 .content h2 {}
-#wrap main .bg .number_03 .content h2 em {}
-/* ------------04번------------- */
-#wrap main .bg .number_04 {}
-#wrap main .bg .number_04 .content {}
-#wrap main .bg .number_04 .content p {}
-#wrap main .bg .number_04 .content p span {}
-#wrap main .bg .number_04 .content h2 {}
-#wrap main .bg .number_04 .content h2 em {}
-#wrap main .bg .number_04 .content > p {}
-#wrap main .bg .number_04 .content > p img {}
-/* ------------05번------------- */
-#wrap main .bg .number_05 {}
-#wrap main .bg .number_05 > p {}
-#wrap main .bg .number_05 > p img {}
-#wrap main .bg .number_05 .content p {}
-#wrap main .bg .number_05 .content p span {}
-#wrap main .bg .number_05 .content h2 {}
-#wrap main .bg .number_05 .content h2 em {}
+/* ------------------------------------------메인------------- */
+#wrap main {background-color:yellow;}
+#wrap main .path {
+    background-color: #F9F9F9;
+    text-align: right;
+    padding: 11.5px 80px 11.5px 0;
+}
+#wrap main .path a {
+    font-size: 0.88rem;
+}
+#wrap main .path img {margin:0 12px;}
+#wrap main .path em {
+    font-weight: 600;
+}
+#wrap main h1 {
+    font-size: 3.13rem; font-weight: 700;
+    text-align: center;
+    padding-top: 80px;
+}
+#wrap main > p {
+    font-size: 1.19rem; font-weight: 500;
+    text-align: center;
+    margin: 25px 0 43px 0;
+    text-transform: uppercase;
+}
+#wrap main .bg {
+    background-color: #F9F9F9;
+    padding: 65px 0;
+}
+/* ------------------------------------------01번------------- */
+#wrap main .bg .number_01 {
+    background-color:aqua;
+    width:1140px; margin:0 auto;
+    margin-bottom:50px
+}
+#wrap main .bg .number_01 p {
+    display: inline-block;
+    padding-right: 20px;
+}
+#wrap main .bg .number_01 p img {}
+#wrap main .bg .number_01 .content {
+    display: inline-block;
+}
+#wrap main .bg .number_01 .content > p {
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+#wrap main .bg .number_01 .content > p span {
+    font-size: 6.25rem; font-weight:700;
+    color: rgba(0,0,0,0.2);
+    letter-spacing:-0.05em;
+}
+#wrap main .bg .number_01 .content h2 {
+    padding-bottom: 21px;
+}
+#wrap main .bg .number_01 .content h2 em {
+    font-size: 1.88rem; font-weight: 600;
+}
+/* ------------------------------------------02번------------- */
+#wrap main .bg .number_02 {
+    background-color:skyblue;
+    width:1140px; margin:0 auto;
+    margin-bottom:50px
+}
+#wrap main .bg .number_02 .content {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 96px;
+}
+#wrap main .bg .number_02 .content > p {
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+#wrap main .bg .number_02 .content > p span {
+    font-size: 6.25rem; font-weight:700;
+    color: rgba(0,0,0,0.2);
+    letter-spacing:-0.05em;
+}
+#wrap main .bg .number_02 .content h2 {
+    padding-bottom: 21px;
+}
+#wrap main .bg .number_02 .content h2 em {
+    font-size: 1.88rem; font-weight: 600;
+}
+#wrap main .bg .number_02 p {
+    display: inline-block;
+}
+#wrap main .bg .number_02 .content p img {}
+/* ------------------------------------------03번------------- */
+#wrap main .bg .number_03 {
+    background-color:beige;
+    width:1140px; margin:0 auto;
+    margin-bottom:50px
+}
+#wrap main .bg .number_03 p {
+    display: inline-block;
+    padding-right: 20px;
+}
+#wrap main .bg .number_03 p img {}
+#wrap main .bg .number_03 .content {
+    display: inline-block;
+}
+#wrap main .bg .number_03 .content > p {
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+#wrap main .bg .number_03 .content > p span {
+    font-size: 6.25rem; font-weight:700;
+    color: rgba(0,0,0,0.2);
+    letter-spacing:-0.05em;
+}
+#wrap main .bg .number_03 .content h2 {
+    padding-bottom: 21px;
+}
+#wrap main .bg .number_03 .content h2 em {
+    font-size: 1.88rem; font-weight: 600;
+}
+/* ------------------------------------------04번------------- */
+#wrap main .bg .number_04 {
+    background-color: coral;
+    width:1140px; margin:0 auto;
+    margin-bottom:50px
+}
+#wrap main .bg .number_04 .content {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 96px;
+}
+#wrap main .bg .number_04 .content > p {
+    line-height: 1.7;
+}
+#wrap main .bg .number_04 .content > p span {
+    font-size: 6.25rem; font-weight:700;
+    color: rgba(0,0,0,0.2);
+    letter-spacing:-0.05em;
+}
+#wrap main .bg .number_04 .content h2 {
+    padding-bottom: 21px;
+}
+#wrap main .bg .number_04 .content h2 em {
+    font-size: 1.88rem; font-weight: 600;
+}
+#wrap main .bg .number_04 p {
+    display: inline-block;
+}
+#wrap main .bg .number_04 p img {}
+/* ------------------------------------------05번------------- */
+#wrap main .bg .number_05 {
+    background-color:lightgreen;
+    width:1140px; margin:0 auto;
+}
+#wrap main .bg .number_05 p {
+    display: inline-block;
+    padding-right: 20px;
+}
+#wrap main .bg .number_05 p img {}
+#wrap main .bg .number_05 .content {
+    display: inline-block;
+}
+#wrap main .bg .number_05 .content > p {
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+#wrap main .bg .number_05 .content > p span {
+    font-size: 6.25rem; font-weight:700;
+    color: rgba(0,0,0,0.2);
+    letter-spacing:-0.05em;
+}
+#wrap main .bg .number_05 .content h2 {
+    padding-bottom: 21px;
+}
+#wrap main .bg .number_05 .content h2 em {
+    font-size: 1.88rem; font-weight: 600;
+}
+/* ------------------------------------------푸터------------- */
+#wrap footer {background-color:lightsalmon;}
+#wrap footer .ft_left {}
+#wrap footer .ft_left .left_menu {}
+#wrap footer .ft_left .left_menu a {}
+#wrap footer .ft_left .left_menu a em {}
+#wrap footer .ft_left .left_menu a img {}
+#wrap footer .ft_left address {}
+#wrap footer .ft_left address em {}
+#wrap footer .ft_left p {}
+#wrap footer .ft_right {}
+#wrap footer .ft_right a {}
+#wrap footer .ft_right a img {}
