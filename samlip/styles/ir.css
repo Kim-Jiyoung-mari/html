@@ -12,7 +12,7 @@
     font-size: 0.88 rem;
 }
 #wrap main .path img {
-    margin: 0 12px;
+    margin: 0 12px; position:relative; top:2px;
 }
 #wrap main .path em {
     font-size: 0.88; font-weight: 600;
@@ -33,6 +33,7 @@
 #wrap main .bg .corporate {
     background-color:pink;
     width:1140px; margin:0 auto;
+    overflow:hidden;
 }
 #wrap main .bg .corporate li {
     background-color:lightgreen;
@@ -43,9 +44,8 @@
     background-size:100px auto;
     background-image: url(../images/ir/cr01.png); /* 공통이미지 적용 */
     padding: 30px; /* 1개 값 : 상하좌우 공통 */
-    display:inline-block;
+    float:left;
     margin-right: 42.5px;/* 인라인 블록은 기본 여백이 3~4px 있기 때문에 실제 값보다 훨씬 적게 작성하기 */
-    margin-top : 40px
 }
 #wrap main .bg .corporate li:nth-child(1) {}
 #wrap main .bg .corporate li:nth-child(2) {background-image: url(../images/ir/cr02.png);} /* 개별이미지 적용 */

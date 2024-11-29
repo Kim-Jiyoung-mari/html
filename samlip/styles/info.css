@@ -22,7 +22,7 @@
 #wrap header .right_menu ul {}
 #wrap header .right_menu ul li {}
 #wrap header .right_menu ul li a {}
-#wrap header .right_menu ul li a img{ }
+#wrap header .right_menu ul li a img{}
 /* =============== main 시작점 ============== */
 #wrap main {
     background-color:#fff;
@@ -38,7 +38,7 @@
     font-size: 0.88rem; 
     font-weight: 600;
 }
-#wrap main .path img {margin:0 12px;}
+#wrap main .path img {margin:0 12px; position:relative; top:2px;}
 #wrap main h1 {
     margin:44px 0 49px 0;
     text-align: center;
@@ -109,12 +109,19 @@
     margin-top:10px;
     color:#FFF;
 }
-
-#wrap main .bg .strategy_content {}
+#wrap main .bg .strategy_content {
+    /* background:aqua; */
+    /* overflow:hidden; 바깥쪽을 가려버리는 성질 바깥쪽까지 나가는 디자인을 할 때 쓰면 안된다. */
+    /* display:inline-block; */
+    width:max-content; margin:0 auto; /* `max-content`: 내용의 최대 크기에 맞춘다 */
+}
+#wrap main .bg .strategy_content::after {
+    clear: both; display: block; content:'';
+}
 #wrap main .bg .strategy_content dl {
     background-color: #eee;
     width:180px; height:180px;
-    display: inline-block;
+    float:left;
     border-radius: 50%;
     margin-left:-10px;
     padding: 47.5px 15px 0 15px;

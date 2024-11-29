@@ -1,0 +1,77 @@
+#wrap {
+    background-color: plum;
+
+}
+#wrap header {
+    background-color: rgba(0,0,0,0.1);
+    height: 80px;
+    padding: 21px 80px ;
+    /* header는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다. */
+}
+#wrap header h1 {
+    background-color: blue;
+    float: left; padding-top: 3px;
+}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {
+    background-color:green;
+    float: right;
+}
+#wrap header nav ul {
+    overflow: hidden; /* 부모에 써야함 */
+}
+#wrap header nav ul li {
+    /* display: inline-block; 인라인 블록은 자체 여백을 가지고 있음*/
+    float: left; /* 추천! */ padding: 10px 0;
+    margin-right: 80px;
+}
+#wrap header nav ul li:nth-child(4) {margin-right: 0; padding: 0;} 
+#wrap header nav ul li a {
+    color: #fff;
+    font-size: 1.13 rem; font-weight: 600;
+}
+#wrap header nav ul li:nth-child(4) a {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    display: block; /* a는 블록 이기도 하고 인라인이기도 하기 때문에, 모양이 망가지면 인라인이 문제인 것. */
+    border-radius: 25px;
+} /* 4번째 li의 a */
+#wrap main {background-color: lightpink;}
+/* ----------------------------------------------------메인 1~4행 공통선택자 */
+#wrap main .container {background-color: beige;}
+#wrap main .container .content  {
+    background-color: hotpink;
+}
+#wrap main .container .content .txt {
+    background-color: aqua;
+}
+#wrap main .container .content .txt h1 {}
+#wrap main .container .content .txt h1 > span {}
+#wrap main .container .content .txt p {}
+/* ----------------------------------------------------메인 1행 결제편리함 */
+#wrap main .pay {
+    background-image: url(../images/row1.jpg);
+}
+#wrap main .pay .content {}
+#wrap main .pay .txt {}
+#wrap main .pay .content .txt h1 {}
+#wrap main .pay .content .txt h1 span {}
+#wrap main .pay .content .txt p {}
+#wrap main .pay .content .txt .bnr_btn_wrap {
+    background-color: purple;
+}
+#wrap main .pay .content .txt .bnr_btn_wrap .prev {}
+#wrap main .pay .content .txt .bnr_btn_wrap .prev img {}
+#wrap main .pay .content .txt .bnr_btn_wrap .progress {}
+#wrap main .pay .content .txt .bnr_btn_wrap .pause {}
+#wrap main .pay .content .txt .bnr_btn_wrap .pause img {}
+#wrap main .pay .content .txt .bnr_btn_wrap .next {}
+#wrap main .pay .content .txt .bnr_btn_wrap .next img {}
+#wrap main .pay .content .txt .scroll {
+    background-color: brown;
+}
+#wrap main .pay .content .txt .scroll span:nth-child(1) {}
+#wrap main .pay .content .txt .scroll .scroll_bg {}
+#wrap main .pay .content .txt .scroll .scroll_bg .bar {}
+
