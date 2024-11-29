@@ -91,9 +91,9 @@
 * left, center, right 값만 적용 가능하다.
 * `<h1><em>text</em></h1>`
 * 위 태그에서 ` h1 {text-align:center;} ` 를 적용한다면? 
-* 해석) h1의 자식, 자손 중 인라인에 해당하는 대상(=text)을 가운데 정렬해라.
+* (해석) h1의 자식, 자손 중 인라인에 해당하는 대상(=text)을 가운데 정렬해라.
 * 위 태그에서 ` em {text-align:right;} ` 를 적용한다면? 
-* 해석) em의 자식, 자손 중 인라인에 해당하는 대상(=text)을 오른쪽 정렬해라
+* (해석) em의 자식, 자손 중 인라인에 해당하는 대상(=text)을 오른쪽 정렬해라
 ----------
 ## 블록과 인라인 정렬
 ### 인라인 요소 정렬할 경우
@@ -106,3 +106,17 @@
 * `가운데정렬요소선택자 {width:1000~1400px; margin:0 auto;}`
 * -> 사용자가 크게 보면 크게보는대로 작게보면 작게 보는 대로 정해진 너비를 자동으로 처리하라
 * ★ 컨텐츠 너비를 가지고 있는 큰 레이아웃에 주로 사용하는 방법이다 ★
+----------
+## img태그와 background-image CSS속성 차이
+* img태그는 이미지만으로 구성된 인라인태그로 크기를 입력하지 않아도 자동으로 원본크기를 유지하며 추가적으로 모든 CSS입력이 가능하다. (예) width, height, padding, margin, border 등등..
+* background-image속성은 태그가 아닌 꾸미기 속성(=css속성)이기 때문에 img태그와 다르게 자동으로 원본크기가 나타나지 않으며 배경이미지가 들어간 요소의 크기 안에서만 나타난다. 또한 추가적인 css속성을 주려면 background-로 시작하는 속성만 가능하고 그 외 속성은 모두 불가능하다.
+----------
+## background 통합 속성은 background적용 선택자가 1개일 때 사용한다.
+* `background : color url() repeat position ;`
+## background 개별 속성은 적용선택자가 2개 이상일 때 (nth등 포함) 사용한다.
+* `background-color`
+* `background-image`
+* `background-repeat`
+* `background-position`
+* -> 선택자 2개 이상일 때 통합 속성을 쓰면 덮어씌우면서 지워버린다.
+* -> 통합이 어려우면 개별로만 연습하면서 사용하기.

@@ -1,0 +1,85 @@
+#wrap {}
+/* 헤더영역 */
+#wrap header {}
+/* 메인영역 */
+#wrap main {}
+#wrap main .path {
+    text-align: right;
+    background-color:#f9f9f9;
+    padding: 10px 80px 10px 0;
+}
+#wrap main .path a {
+    font-size: 0.88 rem;
+}
+#wrap main .path img {
+    margin: 0 12px;
+}
+#wrap main .path em {
+    font-size: 0.88; font-weight: 600;
+}
+#wrap main h1 {
+    font-size: 3.13rem; font-weight: 700;
+    text-align:center;
+    margin: 158px 0 25px;
+}
+#wrap main > p {
+    font-size: 1.19rem; 
+    text-align: center;
+    margin-bottom : 40px
+}
+#wrap main .bg {
+    background-color:#f9f9f9;
+}
+#wrap main .bg .corporate {
+    background-color:pink;
+    width:1140px; margin:0 auto;
+}
+#wrap main .bg .corporate li {
+    background-color:lightgreen;
+    width: 250px; height: 250px;
+    border: 1px solid #888;
+    background-repeat:no-repeat;
+    background-position:80% 85%;
+    background-size:100px auto;
+    background-image: url(../images/ir/cr01.png); /* 공통이미지 적용 */
+    padding: 30px; /* 1개 값 : 상하좌우 공통 */
+    display:inline-block;
+    margin-right: 42.5px;/* 인라인 블록은 기본 여백이 3~4px 있기 때문에 실제 값보다 훨씬 적게 작성하기 */
+    margin-top : 40px
+}
+#wrap main .bg .corporate li:nth-child(1) {}
+#wrap main .bg .corporate li:nth-child(2) {background-image: url(../images/ir/cr02.png);} /* 개별이미지 적용 */
+#wrap main .bg .corporate li:nth-child(3) {background-image: url(../images/ir/cr03.png);} /* 개별이미지 적용 */
+#wrap main .bg .corporate li:nth-child(4) {margin:0;} /* 수치 오버되지 않게 마지막 혹은 첫번 째 수열에 여백은 9처리 */
+
+/* background- 속성 연습 
+#wrap main .bg .corporate li:nth-child(1) {
+    background-image:url(../images/ir/cr01.png);
+    background-repeat:no-repeat;
+    background-position: 80% 80%;
+}
+#wrap main .bg .corporate li:nth-child(2) {
+    background-image:url(../images/ir/cr02.png);
+    background-repeat:no-repeat;
+    background-position: 80% 80%;
+}
+#wrap main .bg .corporate li:nth-child(3) {
+    background-image:url(../images/ir/cr03.png);
+    background-repeat:no-repeat;
+    background-position:80% 80%;
+}
+#wrap main .bg .corporate li:nth-child(4) {
+    background:lime url(../images/ir/cr01.png) no-repeat 80% 80%;
+} */
+
+#wrap main .bg .corporate li h2 {
+    font-size: 1.38 rem; font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#wrap main .bg .corporate li p {
+    font-size: 1.13 rem;
+    line-height: 1.5rem;
+}
+/* 푸터영역 */
+#wrap footer {}
