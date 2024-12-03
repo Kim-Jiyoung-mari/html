@@ -43,7 +43,7 @@
     background-color: rgba(225,225,225,0.3); /* 제거용 */
 }
 #wrap main .container .content .txt {
-    background-color: orange;
+/*     background-color: orange; */
 }
 #wrap main .container .content .txt h1 {
     font-size: 4.38rem; font-weight: 700;
@@ -114,61 +114,73 @@
 }
 /* ----------------------------------------------------메인 2행 서비스 */
 #wrap main .service {
-    /* background-color: violet; */
     background-image: url(../images/row2.jpg);
     background-size: cover;
 }
-#wrap main .service .content {background-color: yellow;}
+#wrap main .service .content {
+    background-color: rgbg(255,255,255,.5);
+    overflow:hidden;
+}
 #wrap main .service .content .txt {float: left;}
 #wrap main .service .content .txt .sub_title {
     padding-top: 331px;
     color: #FFF; font-size: 1.56rem; font-weight: 600;
     letter-spacing: -0.02rem;
 }
-#wrap main .service .content .ourservice {
-    background-color: aquamarine;
-    float: right;
-}
+#wrap main .service .content .ourservice {float: right;}
 #wrap main .service .content .ourservice .card {
-    background-color: lightblue; border-radius: 25px;
-    background-image: url(../images/card_bg1.jpg); background-size: 331px 200px;
-    background-repeat: repeat-x;
+    border-radius: 25px;
+    background-image: url(../images/card_bg1.jpg); background-size: contain;
     display: inline-block;
-    margin-top: 157px;
+    margin: 210px 20px 0 0;
 }
 #wrap main .service .content .ourservice .card .card_box {
     width: 331px; margin-top: 200px; padding: 30px 20px 20px 20px;
+    background-color: #FFF; border-radius: 0 0 25px 25px;
 }
 #wrap main .service .content .ourservice .card .card_box h2 {
-    margin-bottom: 35px;
+    margin-bottom: 35px; 
+    font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02em;
 }
 #wrap main .service .content .ourservice .card .card_box .card_txt {
-    margin-bottom: 35px;
+    margin-bottom: 35px; 
+    line-height:1.5; letter-spacing: -0.02em
 }
-#wrap main .service .content .ourservice .card .card_box .detail {}
-#wrap main .service .content .ourservice .card .card_box .detail p {}
+#wrap main .service .content .ourservice .card .card_box .detail {
+    display: block; overflow:hidden;
+    border-top: 1px solid #000;
+}
+#wrap main .service .content .ourservice .card .card_box .detail p {
+    margin: 10px; 
+}
 #wrap main .service .content .ourservice .card .card_box .detail p:nth-child(1) {float: left;}
 #wrap main .service .content .ourservice .card .card_box .detail p:nth-child(2) {float: right;}
 #wrap main .service .content .ourservice .card .card_box .detail p span {}
 #wrap main .service .content .ourservice .card .card_box .detail p img {}
 #wrap main .service .content .ourservice .account {
-    background-color:lightpink; border-radius: 25px;
-    background-image: url(../images/card_bg2.jpg); background-size: 331px 200px;
-    background-repeat: repeat-x;
-    display: inline-block;
-
+    background-color:#FFF; border-radius: 25px;
+    background-image: url(../images/card_bg2.jpg); background-size: 331px auto; opacity: 0.7;
+    display: inline-block; position:relative; top: 140px;
 }
 #wrap main .service .content .ourservice .account .card_box {
     width: 331px; margin-top: 200px; padding: 30px 20px 20px 20px;
+    background-color: #FFF; border-radius: 0 0 25px 25px;
 }
 #wrap main .service .content .ourservice .account .card_box h2 {
-    margin-bottom: 35px;
+    margin-bottom: 35px; 
+    font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02em;
 }
 #wrap main .service .content .ourservice .account .card_box .card_txt {
     margin-bottom: 35px;
+    line-height:1.5; letter-spacing: -0.02em
 }
-#wrap main .service .content .ourservice .account .card_box .detail {}
-#wrap main .service .content .ourservice .account .card_box .detail p {}
+#wrap main .service .content .ourservice .account .card_box .detail {
+    display: block; overflow:hidden;
+    border-top: 1px solid #000;
+}
+#wrap main .service .content .ourservice .account .card_box .detail p {
+    margin: 10px; 
+}
 #wrap main .service .content .ourservice .account .card_box .detail p:nth-child(1) {float: left;}
 #wrap main .service .content .ourservice .account .card_box .detail p:nth-child(2) {float: right;}
 #wrap main .service .content .ourservice .account .card_box .detail p span{}
