@@ -186,15 +186,52 @@
 #wrap main .service .content .ourservice .account .card_box .detail p span{}
 #wrap main .service .content .ourservice .account .card_box .detail p img {}
 /* ---------------------------------------------------------------------------------------개별 3행 차별화 */
-#wrap main .diffent {}
-#wrap main .diffent .content {}
-#wrap main .diffent .content .txt {}
-#wrap main .diffent .content .txt .sub_title {}
-#wrap main .diffent .content .txt .sub_title h1 {}
-#wrap main .diffent .content .txt .sub_title h1 span {}
-#wrap main .diffent .content .txt .sub_title h1 span h1+p {}
-#wrap main .diffent .content ol {}
-#wrap main .diffent .content ol li {}
-#wrap main .diffent .content ol li:nth-child(4) {}
-#wrap main .diffent .content ol li .num {}
-#wrap main .diffent .content ol li h2 {}
+#wrap main .different {
+    background-image: url(../images/row3.jpg);
+    background-size: cover;
+}
+#wrap main .different .content {}
+#wrap main .different .content .txt {
+    text-align: center; 
+    padding-top: 162px;
+}
+#wrap main .different .content .txt .sub_title {}
+#wrap main .different .content .txt .sub_title h1 {}
+#wrap main .different .content .txt .sub_title h1 span {}
+#wrap main .different .content .txt .sub_title h1 span h1+p {}
+#wrap main .different .content ol {
+    overflow: hidden; margin-top: 109px;
+}
+#wrap main .different .content ol li {
+    width: 290px; height: 290px;
+    border: 20px solid rgba(255,255,255,0.3);  border-radius: 50%;
+    position: relative;  /* after 가상요소의 부모설정 */
+    float: left; 
+    margin-right: 93.33px;
+    text-align: center; padding-top: 67px;
+}
+#wrap main .different .content ol li::after {
+    content:''; 
+    display:block; 
+    background-color: #FFF;
+    width: 250px; height: 250px; border-radius: 50%;
+    position: absolute; left: 0; top: 0; z-index: 50;
+     /* 겹칠 때는 포지션 absolute / 부모에 포지션 ralative 주기 / 부모의 왼쪽(left)상단(top)에 붙어라 */
+}
+#wrap main .different .content ol li:nth-child(4) {
+    margin: 0;
+}
+#wrap main .different .content ol li > * {
+    position: relative; 
+    z-index: 60;
+}
+#wrap main .different .content ol li .num {
+    background-color:#5E91FF; display: inline-block;
+    padding: 8.5px 20px; border-radius: 20px;
+    font-size: 1.56rem; font-weight: 600; color: #FFFFFF;
+    margin-bottom: 10px;
+}
+#wrap main .different .content ol li h2 {
+    font-size: 1.56rem; font-weight: 600;
+    line-height: 1.3; letter-spacing: 0.02rem;
+}
