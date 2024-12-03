@@ -43,7 +43,11 @@
     background-color: rgba(225,225,225,0.3); /* 제거용 */
 }
 #wrap main .container .content .txt {
-/*     background-color: orange; */
+    background-color: orange;
+}
+#wrap main .container .content .txt .sub_title { 
+    color: #FFF; font-size: 1.56rem; font-weight: 600;
+    letter-spacing: -0.02rem;
 }
 #wrap main .container .content .txt h1 {
     font-size: 4.38rem; font-weight: 700;
@@ -58,7 +62,7 @@
     letter-spacing: -0.02em; line-height: 1.5; 
     color: #fff; margin: 20px 0;
 }
-/* ----------------------------------------------------메인 1행 결제편리함 */
+/* ----------------------------------------------------개별 1행 결제편리함 */
 #wrap main .pay {
     background-image: url(../images/row1.jpg);
     background-size: cover;
@@ -112,7 +116,7 @@
     width: 8px; height: 8px; border-radius: 50%;
     position: relative; left:2px; top:-5px;
 }
-/* ----------------------------------------------------메인 2행 서비스 */
+/* ----------------------------------------------------개별 2행 서비스 */
 #wrap main .service {
     background-image: url(../images/row2.jpg);
     background-size: cover;
@@ -121,12 +125,8 @@
     background-color: rgbg(255,255,255,.5);
     overflow:hidden;
 }
-#wrap main .service .content .txt {float: left;}
-#wrap main .service .content .txt .sub_title {
-    padding-top: 331px;
-    color: #FFF; font-size: 1.56rem; font-weight: 600;
-    letter-spacing: -0.02rem;
-}
+#wrap main .service .content .txt {float: left; padding-top: 331px;}
+
 #wrap main .service .content .ourservice {float: right;}
 #wrap main .service .content .ourservice .card {
     border-radius: 25px;
@@ -158,7 +158,7 @@
 #wrap main .service .content .ourservice .card .card_box .detail p span {}
 #wrap main .service .content .ourservice .card .card_box .detail p img {}
 #wrap main .service .content .ourservice .account {
-    background-color:#FFF; border-radius: 25px;
+    border-radius: 25px;
     background-image: url(../images/card_bg2.jpg); background-size: 331px auto; opacity: 0.7;
     display: inline-block; position:relative; top: 140px;
 }
@@ -185,3 +185,16 @@
 #wrap main .service .content .ourservice .account .card_box .detail p:nth-child(2) {float: right;}
 #wrap main .service .content .ourservice .account .card_box .detail p span{}
 #wrap main .service .content .ourservice .account .card_box .detail p img {}
+/* ---------------------------------------------------------------------------------------개별 3행 차별화 */
+#wrap main .diffent {}
+#wrap main .diffent .content {}
+#wrap main .diffent .content .txt {}
+#wrap main .diffent .content .txt .sub_title {}
+#wrap main .diffent .content .txt .sub_title h1 {}
+#wrap main .diffent .content .txt .sub_title h1 span {}
+#wrap main .diffent .content .txt .sub_title h1 span h1+p {}
+#wrap main .diffent .content ol {}
+#wrap main .diffent .content ol li {}
+#wrap main .diffent .content ol li:nth-child(4) {}
+#wrap main .diffent .content ol li .num {}
+#wrap main .diffent .content ol li h2 {}
