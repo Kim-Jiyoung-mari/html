@@ -235,3 +235,49 @@
     font-size: 1.56rem; font-weight: 600;
     line-height: 1.3; letter-spacing: 0.02rem;
 }
+/* ---------------------------------------------------------------------------------------개별 4행 QNA */
+#wrap main .question {}
+#wrap main .question .content {
+    background-color: yellow;
+    padding-top: 241px;
+}
+#wrap main .question .content .txt {
+    margin-bottom:54px;
+}
+#wrap main .question .content .txt .sub_title {
+    margin-bottom: 40px;
+    color: #0046FF;
+
+}
+#wrap main .question .content .txt h1 {
+    color: #000;
+}
+#wrap main .question .content .q_contents {
+    background-color: lightgreen;
+}
+#wrap main .question .content .q_contents a {
+    background-color: #f1f1f1;
+    overflow:hidden; 
+    display: block;
+    padding: 20px; 
+    margin-bottom: 10px;
+}
+#wrap main .question .content .q_contents a:nth-child(3) {margin: 0;}
+#wrap main .question .content .q_contents a .q_left {
+    float: left;
+}
+#wrap main .question .content .q_contents a .q_left .category {
+    font-size: 1.25 rem; line-height: 1.0; letter-spacing: -0.02rem;
+}
+#wrap main .question .content .q_contents a .q_left img {
+    position: relative; top:5px;
+}
+#wrap main .question .content .q_contents a .q_left em {
+    font-size: 1.56 rem; font-weight: 500;
+    line-height: 1.0; letter-spacing: -0.02rem;
+}
+#wrap main .question .content .q_contents a .q_down {
+    /* background-color: lightpink; */
+    float: right;
+}
+#wrap main .question .content .q_contents a .q_down img {}
