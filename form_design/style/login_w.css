@@ -1,0 +1,86 @@
+#wrap {
+    width: 500px; margin:0 auto;
+    margin-top: 84px;
+}
+#wrap .title {}
+#wrap .title h1 {
+    font-weight:700; font-size: 4.38rem;
+    margin-bottom: 25px;
+}
+#wrap .title > p {
+    font-size: 1.25rem;
+    margin-bottom: 57px;
+}
+#wrap #form {}
+#wrap #form fieldset {}
+#wrap #form fieldset legend {}
+/* ----------------------------------------------------공통 */
+#wrap #form fieldset .login {
+    margin-bottom: 38px;
+}
+#wrap #form fieldset .login:nth-child(4) {
+    margin: 0;
+}
+
+#wrap #form fieldset .login h2 {
+    margin-bottom: 18px;
+    font-weight:700; font-size:1.88rem;
+    letter-spacing: -0.02em;
+}
+#wrap #form fieldset .login p {
+    background-color: #FFF;
+    border-radius: 10px;
+    border:1px solid #AAA;
+    padding: 15px;
+}
+#wrap #form fieldset .login p .user_email {
+    width: 100%;
+    letter-spacing: -0.02rem; color: #AAA;
+}
+#wrap #form fieldset .login p .user_pw {
+    width: 100%;
+    letter-spacing: -0.02rem; color: #AAA;
+}
+#wrap #form fieldset .login .btn_group {}
+#wrap #form fieldset .login .btn_group .login_btn {
+    width: 100%; padding: 15px;
+    font-weight: 700; letter-spacing: -0.02;
+    border-radius: 10px;
+}
+#wrap #form fieldset .login .btn_group .sign_btn {
+    width: 100%; padding: 15px;
+    font-weight: 700; letter-spacing: -0.02;
+    border-radius: 10px;
+}
+/* ----------------------------------------------------이메일 */
+#wrap #form fieldset .email {}
+#wrap #form fieldset .email h2 {}
+#wrap #form fieldset .email p {}
+#wrap #form fieldset .email p .user_email {}
+/* ----------------------------------------------------비밀번호 */
+#wrap #form fieldset .pwd {}
+#wrap #form fieldset .pwd h2 {}
+#wrap #form fieldset .pwd p {}
+#wrap #form fieldset .pwd p .user_pw {}
+/* ----------------------------------------------------forgot */
+#wrap #form fieldset .forgot {}
+#wrap #form fieldset .forgot h2 {}
+#wrap #form fieldset .forgot .btn_group {}
+#wrap #form fieldset .forgot .btn_group .login_btn {
+    background-color: #222;
+    color:#FFF; 
+    margin-bottom: 18px;
+}
+#wrap #form fieldset .forgot .btn_group .sign_btn {
+    background-color: #FFF;
+    color:#222;
+    border:1px solid #AAA;
+}
+/* ----------------------------------------------------회원가입 */
+#wrap #form .sign {
+    padding-top: 62px;
+    text-align: center;
+    letter-spacing: -0.02rem;
+}
+#wrap #form .sign span {color: #555;}
+#wrap #form .sign a {font-weight: 700;}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./style/reset.css" rel="stylesheet">
+    <link href="./style/login_w.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div class="title">
+            <h1>Welcome back</h1>
+            <p>Welcome back! Please enter your details.</p>
+        </div>
+        <form action="#" method="post" id="form">
+            <fieldset>
+                <legend>로그인 양식</legend>
+                <div class="login email"> <!-- 필수입력양식 -->
+                    <h2>Email</h2>
+                    <p><input type="email" name="user_email" class="user_email" placeholder="Enter your email or id" required></p>
+                </div>
+                <div class="login pwd"> <!-- 필수입력양식 -->
+                    <h2>Password</h2>
+                    <p><input type="password" name="user_pw" class="user_pw" placeholder="Enter your Password" required></p> <!-- 인풋 인라인이니까 블록에 넣어 -->
+                </div>
+                <div class="login forgot">
+                    <h2>Forgot password</h2>
+                    <div class="btn_group">
+                        <button type="submit" class="login_btn">Login</button>
+                        <button type="button" class="sign_btn">Sign in with Google</button> 
+                        <!-- 버튼 인라인이니까 묶어놔 -->
+                    </div>
+                </div>
+            </fieldset>
+            <p class="sign">
+                <span>Don’t have on account?</span>
+                <a href="#">Sign up for free</a> <!-- 이거만 선택된다 / span이랑 a는 인라인이니까 얘네만 두면 안돼!! -->
+            </p>
+        </form>
+    </div>
+</body>
+</html>
