@@ -2,7 +2,7 @@ body {background-color: #222;}
 main {
     width:500px; 
     /* 부모의 너비값 고정이 되어있을 경우 그 자식, 자손 중 블록에 해당하는 모든 요소는 부모의 너비만큼 자동으로 크기를 인식하기 때문에 필요한 경우가 아니라면 너비를 입력하지 않아도 된다. */
-    margin: 97px auto 0; /* 상 좌우 하 여백 */
+    margin: 97px auto 100px; /* 상 좌우 하 여백 */
 }
 main h1 {text-align: center; margin:0 0 86.95px}
 main h1 a {}
@@ -21,7 +21,8 @@ main .tab_menu a {
 }
 /* first-child, last-child */
 main .tab_menu a:nth-child(1) {margin-right: 136px;}
-main .tab_menu .active {border-bottom: 3px solid #1ED760;}
+main .tab_menu a:nth-child(2) {border-bottom: 3px solid #1ED760;}
+main .tab_menu .active {/* border-bottom: 3px solid #1ED760; */}
 main .tab_wrap {}
 main .tab_wrap #inFrm {display: none;}
 main .tab_wrap #inFrm ul {
@@ -69,7 +70,7 @@ main .tab_wrap #inFrm .forget_pw {
     display: block; margin: 14px;
 }
 /* sign up 클릭 시 나오는 내용 스타일 */
-main .tab_wrap #upFrm {background-color: blue;}
+main .tab_wrap #upFrm {}
 main .tab_wrap #upFrm h2 {
     font-weight: 600; font-size: 1.25rem;
     color: #FFF; 
@@ -82,77 +83,91 @@ main .tab_wrap #upFrm .guide {
     line-height:1.2rem; letter-spacing: -0.02rem;
 }
 /* --------------------------------------------------아이디 */
-main .tab_wrap #upFrm .id_check {background-color: aqua;}
+main .tab_wrap #upFrm .id_check {}
 main .tab_wrap #upFrm .id_check p {
-    background-color: #FFF;
-    display: inline-block;}
-main .tab_wrap #upFrm .id_check p input[name$=name] {
-    background-color: lightpink;
-    padding: 20px 25px;
-    border-radius: 36.5px;
-    margin-right: 10px;
+    overflow: hidden;
+    display: inline-block;
 }
+main .tab_wrap #upFrm .id_check p input[name$=name] {
+    background-color: #FFF;
+    border-radius: 36.5px; padding: 25px 20px;
+    width: 300px; height: 73px; float: left; 
+    letter-spacing: -0.02rem; 
+    
+}
+main .tab_wrap #upFrm .id_check p input::placeholder {color: #AAA;}
 main .tab_wrap #upFrm .id_check p .id_check_btn {
     background-color: #1ED760;
-    padding: 20px 25px;
-    border-radius: 36.5px;
-    text-align: center;
-    width: 175px;
+    border-radius: 36.5px; padding: 25px 20px;
+    margin-left: 20px;
+    width: 175px; height: 73px; float: right; 
+    letter-spacing: -0.02rem; color: #FFF;
 }
 /* --------------------------------------------------비밀번호 */
-main .tab_wrap #upFrm .pw_check {background-color: lightgreen ;}
+main .tab_wrap #upFrm .pw_check {}
 main .tab_wrap #upFrm .pw_check p {
     margin-bottom: 10px;
 }
 main .tab_wrap #upFrm .pw_check p input[name*=pw] {
-    background-color: #FFF;
-    width: 100%;
-    padding: 25px 40px;
+    background-color: #FFF; letter-spacing: -0.02rem;
+    width: 500px; height: 73px;
+    padding: 20px 40px;
     border-radius:36.5px;
 } /* 포함하는 */
+main .tab_wrap #upFrm .pw_check p input::placeholder {color: #AAA;}
 /* --------------------------------------------------이메일 */
-main .tab_wrap #upFrm .email_check {background-color:lightsalmon;}
+main .tab_wrap #upFrm .email_check {}
+main .tab_wrap #upFrm .email_check::after{clear: both; display: block; content:'';}
 main .tab_wrap #upFrm .email_check p {
-    margin-right: 3px;
-    display: inline-block;
+    float: left;
 }
+main .tab_wrap #upFrm .email_check p+p {padding: 30px 6px 30px 7px; color: #fff;}
 main .tab_wrap #upFrm .email_check p input[name$=email] {
-    background-color: #FFF;
-    padding: 20px 25px;
+    background-color: #FFF; 
+    width: 235px; padding: 26px 40px ;
     border-radius: 36.5px;
 }
+main .tab_wrap #upFrm .email_check p input::placeholder{color: #AAA;}
 main .tab_wrap #upFrm .email_check .email_list {
-    background-color: #1ED760;
-    padding: 20px 25px;
+    background-color: #1ED760; float: right;
+    width: 235px; height: 73px; padding: 25px 40px;
     border-radius: 36.5px;
-    display: inline-block;
 }
 main .tab_wrap #upFrm .email_check .email_list dt {display: none;}
 main .tab_wrap #upFrm .email_check .email_list .user_list {}
-main .tab_wrap #upFrm .email_check .email_list .user_list select {}
+main .tab_wrap #upFrm .email_check .email_list .user_list select {
+    background-color: #1ED760; color:#FFF;
+    background-image: url(../image/arrow_back_ios.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 29px;
+}
 main .tab_wrap #upFrm .email_check .email_list .user_list select option {}
 /* -------------------------------------------------------------전화번호 */
-main .tab_wrap #upFrm .phone_check {background-color:lightcoral;}
+main .tab_wrap #upFrm .phone_check {}
 main .tab_wrap #upFrm .phone_check p {
+    overflow: hidden;
     display: inline-block;
 }
 main .tab_wrap #upFrm .phone_check p input[name$=phone] {
     background-color: #FFF;
-    padding: 20px 25px;
-    border-radius: 36.5px;
+    border-radius: 36.5px; padding: 25px 20px;
+    width: 300px; height: 73px;float: left; 
+    letter-spacing: -0.02rem;  
 }
+main .tab_wrap #upFrm .phone_check p input::placeholder {color: #AAA;}
 main .tab_wrap #upFrm .phone_check p .phone_btn {
     background-color: #1ED760;
-    padding: 20px 25px;
-    border-radius: 36.5px;
+    border-radius: 36.5px; padding: 25px 20px;
+    margin-left: 20px;
+    width: 175px; height: 73px; float: right; 
+    letter-spacing: -0.02rem; color: #FFF;
 }
 /* -------------------------------------------------------------버튼 */
-main .tab_wrap #upFrm .btn {
-    background-color:greenyellow;
-}
+main .tab_wrap #upFrm .btn {}
 main .tab_wrap #upFrm .btn .sign_up_btn {
     background-color: #1ED760; color: #FFF;
     border-radius: 36.5px;
     margin-top: 70px;
-    padding: 15px 15px; width: 100%;
+    padding: 20px 0px; width: 100%;
 }

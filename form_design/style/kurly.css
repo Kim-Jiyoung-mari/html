@@ -1,0 +1,122 @@
+body {background-color: #F5F5F5;}
+main {
+    width: 612px; margin: 41px auto 0; /* 상 좌우 하 */
+    padding: 0 0 100px;
+}
+main h1 {text-align: center; margin-bottom: 41px;}
+main h1 a {}
+main h1 a img {}
+/* ------------------------------------------------------------------------------가입약관 */
+main .join_law {
+    background-color: #FFFFFF;
+    height: 200px; 
+    overflow:auto;
+    padding: 10px; border-radius: 10px; margin-bottom: 54px;
+}
+main .join_law * {font-size: 0.75rem;} /* 부모 안에 있는 모든 자식 선택자 */
+main .join_law h2 {margin-bottom: 40px;}
+main .join_law h3 {margin-bottom: 7px;}
+main .join_law p {margin-bottom: 20px; line-height: 1.4;}
+/* ------------------------------------------------------------------------------가입양식시작 */
+main #joinFrm {}
+/* ------------------------------------------------------------------------------공통디자인 */
+main #joinFrm dl {
+    overflow: hidden;
+}
+main #joinFrm dl dt {
+    width: 156px; float: left; clear:both;/* 기존 플로트를 인식하지 않고 새롭게 인식하겠다 */
+    letter-spacing: -0.02rem;
+    padding-top:11px;
+}
+main #joinFrm dl dt .essential {
+    color:#f00;
+}
+main #joinFrm dl dd {
+    width: calc(100% - 156px);
+    float: right;
+    margin-bottom: 10px; 
+}
+main #joinFrm dl dd input[name^=user] {
+    background-color: #FFF;
+    border: 1px solid #aaa; border-radius: 5px;
+    width:300px; padding: 10px;
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+
+}
+main #joinFrm dl dd input[name^=user]::placeholder{color: #AAA;}
+main #joinFrm dl dd .common_btn {
+    background-color: #9E00B7;color:#FFF;
+    border-radius: 5px; width: 120px; height: 40px; 
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+    float: right;
+}
+/* ------------------------------------------------------------------------------개별디자인 */
+main #joinFrm dl dd input[name$=id] {}
+main #joinFrm dl dd .redundancy_btn {}
+main #joinFrm dl dd input[name$=pw] {}
+main #joinFrm dl dd input[name$=pw_re] {}
+main #joinFrm dl dd input[name$=name] {}
+main #joinFrm dl dd input[name$=email] {}
+main #joinFrm dl dd .mail_redundancy_btn {}
+main #joinFrm dl dd select[name=agency] {
+    width: 50px; height: 40px; padding: 10px;
+    font-size: 0.75rem; 
+    background: #FFF url(../image/kurly/arrow_drop_down.png) no-repeat 90% center;
+    /* background-image: url(../image/kurly/arrow_drop_down.png);
+    background-repeat: no-repeat;
+    background-position:90% center; */
+    border: 1px solid #aaa; border-radius: 5px; 
+}
+main #joinFrm dl dd select[name=agency] option {
+    font-size: 0.75rem;
+}
+main #joinFrm dl dd input[name$=num] {width: 245px;}
+main #joinFrm dl dd .authen_get_num {background-color: #CCC;}
+main #joinFrm dl dd .address_search {    
+    display: block; width: 300px; letter-spacing: -0.02rem;
+    background-color: #FFF;border: 1px solid #9E00B7;
+    padding: 10px 0; text-align: center; border-radius: 5px;
+}
+main #joinFrm dl dd .address_search+p {
+    color: #AAA; font-size: 0.88rem; letter-spacing: -0.02rem; /* 주소 검색에 관련된 p */
+    margin-top: 8px;
+}
+main #joinFrm dl dd label:first-child {padding-left: 37px;}
+main #joinFrm dl dd label:nth-child(2) {margin: 0 30px;} 
+main #joinFrm dl dd label {padding: 10px 0; display:inline-block;}
+main #joinFrm dl dd label input[name=gender] {}
+main #joinFrm dl dd label span {
+    background-image: url(../image/kurly/gender_unchecked.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 20px; font-size: 0.88rem;
+}
+/* ------------------------------------------------------------------------------성별 활성화 기준 */
+main #joinFrm dl dd label input[name=gender]:checked+span {
+    background-image: url(../image/kurly/gender_checked.png);
+    
+} /* 인풋이 체크 됐을 때 형제 스팬을 뭐하겠다 */
+/* ------------------------------------------------------------------------------생년월일 */
+main #joinFrm dl dd .birthday_g {
+    background-color: #FFF;
+    border:1px solid #9E00B7; 
+    border-radius: 5px; width: 300px; padding: 10px 0;
+    text-align: center;
+}
+main #joinFrm dl dd .birthday_g input {
+    width: 29px; font-size: 0.88rem;
+}
+main #joinFrm dl dd .birthday_g input::placeholder{color: #AAA;}
+main #joinFrm dl dd .birthday_g span {}
+main #joinFrm dl dd .birthday_g span img {}
+/* ------------------------------------------------------------------------------가입 */
+main #joinFrm .btn {
+    text-align: center;
+    margin-top: 54px;
+}
+main #joinFrm .btn .join_ptn {
+    background-color: #9E00B7; color: #FFF;
+    border-radius: 10px; 
+    width: 200px; padding: 15px 0;
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+}
