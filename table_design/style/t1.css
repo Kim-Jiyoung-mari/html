@@ -1,0 +1,21 @@
+.book {
+    margin:206px auto; 
+    overflow: hidden; 
+    border-radius: 20px;
+}
+.book tr{background-color: #F2F2F2; }
+.book tr:nth-child(3), tr:nth-child(5) {background-color: #E8E8E8;}
+.book tr:nth-child(3) {
+    border: 2px solid #FF0066;
+    color: #FF0066;
+}
+.book tr:first-child {background-color: #FF0066}
+.book tr:first-child th {
+    color: #FFF; text-align: center; 
+    padding: 20px 0; font-size: 1.13rem; font-weight: 700; 
+}
+.book tr th {}
+.book tr th:first-child {width:300px; padding-left: 16px; font-weight: 500;}
+.book tr td{
+    width: 100px; padding: 16px 0; 
+    text-align: center; font-weight: 500;} /* 가운데 정렬이라 의미가 없어 좌주여백은 필요없음 */
