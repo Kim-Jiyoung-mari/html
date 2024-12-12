@@ -89,7 +89,7 @@ main #joinFrm dl dd label span {
     background-image: url(../image/kurly/gender_unchecked.png);
     background-repeat: no-repeat;
     background-position-y: center;
-    padding-left: 20px; font-size: 0.88rem;
+    padding-left: 0px; font-size: 0.88rem;
 }
 /* ------------------------------------------------------------------------------성별 활성화 기준 */
 main #joinFrm dl dd label input[name=gender]:checked+span {
