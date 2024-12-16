@@ -1,5 +1,5 @@
 # HTML
-## HTML 기초
+## HTML 기초1
 * `title` 제목태그
 * `meta` 문서정보태그
 * `Markup` HTML을 의미적으로 작성한다 == 마크업
