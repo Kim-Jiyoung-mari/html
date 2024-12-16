@@ -1,0 +1,137 @@
+header {
+    width:1152px; margin:0 auto;
+}
+/* ===========================================================header top */
+header .top {
+    height: 48px;
+    /* 왼쪽 큰 묶음lnb+오른쪽 큰묶음mylnb 자식을 정렬하기 위한 flex적용부모 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .top .lnb {
+    /* 서울특별시 h1~응답소 a 자식을 정렬하기 위한 flex적용부모 */
+    display:flex;
+    flex-flow: row nowrap;
+    align-items:center;
+    padding:10px;
+}
+header .top .lnb h1 {}
+header .top .lnb h1 a {}
+header .top .lnb h1 a img {margin-right: 20px;}
+header .top .lnb > a {
+    letter-spacing: -0.02rem;
+    margin-left: 20px;}
+header .top .my_lnb {}
+header .top .my_lnb a {
+    letter-spacing: -0.02rem;
+    margin-right: 20px;} /* 관계가 동일한 형제밖에 없어서 꺽새표시 안해도 됌 */
+header .top .my_lnb a:last-child {margin-right: 0;}
+/* ===========================================================header bottom */
+header .bottom {
+    height:119px;
+    /* 로고h1~언어div 자식을 묶는 flex적용부모 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .bottom h1 {}
+header .bottom h1 a {}
+header .bottom h1 img {}
+header .bottom #searchFrm {
+    background-color: #FFF;
+    width: 369px; height: 46px;
+    border: 2px solid #1E6CB3; padding: 0 20px;
+    /* input+button 정렬을 위한 flex부모 */
+    display: flex; flex-flow: row nowrap;
+    align-items: center; justify-content: space-between;
+}
+header .bottom #searchFrm input[name*=search] {}
+header .bottom #searchFrm input[name*=search]::placeholder {color: #1E6CB3; letter-spacing: -0.02rem;}
+header .bottom #searchFrm .search_btn {}
+header .bottom .lang {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .bottom .lang select[name*=lang] {
+    border: 1px solid #1E6CB3;
+    width: 93px; height: 29px; padding: 5px 10px;
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+}
+header .bottom .lang select[name*=lang] option {}
+header .bottom .lang .lang_btn {
+    background-color: #1E6CB3; color: #FFF;
+    width: 30px; height:29px; padding: 10px 0;
+    margin-left: 2px;
+    font-size: 0.81rem; letter-spacing: -0.02rem;
+}
+/* ===========================================================main */
+main {background-color: hotpink;}
+/* ===========================================================main 1. 상단 이벤트+공지사항 배너 */
+main .visual_container {
+    width: 1152px; margin: 0 auto;
+    /* 왼 : 거리두기 | 오 : 현황,교통 자식 정렬 부모 flex 대상 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .visual_container .corona_notice {position: relative;}
+main .visual_container .corona_notice img {}
+main .visual_container .corona_notice .close {
+    background-color: #1E6CB3; color: #FFF;
+    position: absolute; right: 10px; bottom: 10px; display: block;
+    border-radius: 5px; padding: 10px; letter-spacing: -0.02rem;
+}
+/* ===========================================================main 1. 오른쪽 배너 그룹 */
+main .visual_container .right_container {width: 360px;}
+main .visual_container .right_container .corona {position: relative;}
+main .visual_container .right_container .corona img {}
+main .visual_container .right_container .corona span {
+    position:absolute; display: inline-block; /* 인라인 블록 : 크기 인식 */
+}
+main .visual_container .right_container .corona .date {
+    right:20px; top: 19px; 
+    letter-spacing: -0.02rem;
+    
+}
+main .visual_container .right_container .corona .data {text-align: center;
+    color: #FFF; letter-spacing: -0.02rem;
+}
+main .visual_container .right_container .corona .data1 {width: 140px; left: 30px; top: 80px;}
+main .visual_container .right_container .corona .data2 {width: 140px; right: 30px; top: 80px;}
+main .visual_container .right_container .corona .data3 {width: 94px; left: 30px; bottom: 52px;}
+main .visual_container .right_container .corona .data4 {width: 94px; right: 121px; bottom: 52px;}
+main .visual_container .right_container .corona .data5 {width: 59px; right: 33px; bottom: 52px;}
+main .visual_container .right_container .traffic {margin-top: 10px;}
+main .visual_container .right_container .traffic a {}
+main .visual_container .right_container .traffic a img {}
+/* ===========================================================2 ~ 5 공통제목 디자인*/
+main > * .title {}
+main > * .title h1 {}
+main > * .title .more_view {}
+main .service_container .contents a em{}
+/* ===========================================================서비스 컨테이너 */
+main .service_container {}
+main .service_container .title {}
+main .service_container .title h1 {}
+main .service_container .title .more_view {}
+main .service_container .contents {}
+main .service_container .contents a {}
+main .service_container .contents a span {}
+main .service_container .contents a em {}
+main .service_container .contents a:first-child {}
+main .service_container .contents a:nth-child(2) {}
+main .service_container .contents a:nth-child(3) {}
+main .service_container .contents a:nth-child(4) {}
+main .service_container .contents a:nth-child(5) {}
+main .service_container .contents a:nth-child(6) {}
+main .service_container .contents a:nth-child(7) {}
+main .service_container .contents a:nth-child(8) {}
+main .service_container .contents a:nth-child(9) {}
+main .service_container .contents a:nth-child(10) {}
+main .service_container .contents a:last-child {}
+/* ===========================================================footer */

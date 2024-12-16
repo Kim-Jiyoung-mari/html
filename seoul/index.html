@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울시청</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/index.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="lnb"> <!-- lnb=local navigation bar : 작은 메뉴 정리할 때 많이 쓰는 메뉴-->
+                <h1><a href="#"><img src="./images/top_logo.png" alt="서울특별시 로고"></a></h1>
+                <a href="#">서울소식</a>
+                <a href="#">시민참여</a>
+                <a href="#">분야별정보</a>
+                <a href="#">서울소개</a>
+                <a href="#">부서안내</a>
+                <a href="#">정보공개</a>
+                <a href="#">응답소</a>
+            </div>
+            <div class="my_lnb">
+                <a href="#">로그인</a>
+                <a href="#">나의서울</a>
+                <a href="#">전자우편</a>
+            </div>
+        </div>
+        <div class="bottom">
+            <h1><a href="#"><img src="./images/logo.png" alt="I LOVE SEOUL"></a></h1>
+            <form action="#" method="get" id="searchFrm">
+                <input type="search" name="user_search" placeholder="검색어를 입력해주세요">
+                <button type="button" class="search_btn"><img src="./images/search_btn.png"></button>
+            </form>
+            <!-- 페이지 언어변경 기능은 form서버제출기능과 연관 없이 단순 해당 언어로 된 페이지 변경 기능이 다기 때문에 form 태그를  생략하는 경우가 많다. -->
+            <div class="lang">
+                <select name="lang_opt">
+                    <option value="en">ENGLISH</option>
+                    <option value="jp">JAPAN</option>
+                </select>
+                <button type="button" class="lang_btn">GO</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="visual_container">
+            <div class="corona_notice">
+                <img src="./images/left_bnr.jpg" alt="8월 16일부터 사회적 거리두기 2단계 격상, 코로나 19를 멈추기 위해 외출 자제, 마스크 착용, 손씻기, 거리두기2m 2주간의 잠시 멈춰요">
+                <a href="#" class="close">X닫기</a>
+            </div>
+            <div class="right_container">
+                <div class="corona">
+                    <img src="./images/corona_bnr.jpg" alt="코로나19 현황과 코로나 발생동향 전체보기">
+                    <span class="date">20.08.18.00시 기준</span>
+                    <span class="data data1" title="확진자">2,209</span>
+                    <span class="data data2" title="추가 확진자">132</span>
+                    <span class="data data3" title="퇴원">1,573</span>
+                    <span class="data data4" title="추가 퇴원">2</span>
+                    <span class="data data5" title="사망">14</span>
+                    <!-- title : 설명글을 추가로 붙여주는 내용 , 어떤 태그든 다 들어갈 수 있다(필요할 때만 사용할 것) alt : 이미지에만!! -->
+                </div>
+                <div class="traffic">
+                    <a href="#"><img src="./images/traffic_bnr.jpg" alt="서울시 실시간 교통정보 안내 바로가기"></a>
+                </div>
+            </div>
+        </div>
+        <div class="service_container">
+            <!-- 스프라이트 이미지 -->
+            <!-- 관리하기 어려운 비슷한 부류의 여러장의 작은 아이콘 이미지를 한 장으로 만들어 background로 삽입하고 x,y좌표와 w,h크기를 통하여 이미지를 사용하는 방법 -->
+            <div class="title">
+                <h1>주요 서비스</h1>
+                <a href="#" class="more_view">전체 사이트</a>
+            </div>
+            <div class="contents">
+                <a href="#"><span></span><em>응답소(민원신고)</em></a>
+                <a href="#"><span></span><em>민주주의서울</em></a>
+                <a href="#"><span></span><em>서울일자리</em></a>
+                <a href="#"><span></span><em>평생학습포털</em></a>
+                <a href="#"><span></span><em>우리동네키움포털</em></a>
+                <a href="#"><span></span><em>부동산정보</em></a>
+                <a href="#"><span></span><em>공공서비스예약</em></a>
+                <a href="#"><span></span><em>서울관광</em></a>
+                <a href="#"><span></span><em>서울주거포털</em></a>
+                <a href="#"><span></span><em>공약&매니페스토</em></a>
+                <a href="#"><span></span><em>시의회</em></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
