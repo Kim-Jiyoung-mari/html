@@ -115,23 +115,35 @@ main > * .title h1 {}
 main > * .title .more_view {}
 main .service_container .contents a em{}
 /* ===========================================================서비스 컨테이너 */
-main .service_container {}
-main .service_container .title {}
+main .service_container {width: 1152px; margin: 0 auto;}
+main .service_container .title {background-color: yellowgreen;}
 main .service_container .title h1 {}
 main .service_container .title .more_view {}
-main .service_container .contents {}
-main .service_container .contents a {}
-main .service_container .contents a span {}
-main .service_container .contents a em {}
-main .service_container .contents a:first-child {}
-main .service_container .contents a:nth-child(2) {}
-main .service_container .contents a:nth-child(3) {}
-main .service_container .contents a:nth-child(4) {}
-main .service_container .contents a:nth-child(5) {}
-main .service_container .contents a:nth-child(6) {}
-main .service_container .contents a:nth-child(7) {}
-main .service_container .contents a:nth-child(8) {}
-main .service_container .contents a:nth-child(9) {}
-main .service_container .contents a:nth-child(10) {}
-main .service_container .contents a:last-child {}
+main .service_container .contents {
+    background-color: aqua;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-around;
+}
+main .service_container .contents a {
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+
+main .service_container .contents a span {
+    background-color: #FFF;
+    width: 60px; height: 60px;
+    background-image: url(../images/service.png);
+}
+main .service_container .contents a em {font-size: 0.81rem; letter-spacing: -0.02rem; text-align: center;}
+main .service_container .contents a:first-child span {}
+main .service_container .contents a:nth-child(2) span {background-position-x: -60px;}
+main .service_container .contents a:nth-child(3) span {background-position-x: -120px;}
+main .service_container .contents a:nth-child(4) span {background-position-x: -180px;}
+main .service_container .contents a:nth-child(5) span {background-position-x: -240px;}
+main .service_container .contents a:nth-child(6) span {background-position-x: -300px;}
+main .service_container .contents a:nth-child(7) span {background-position-x: -360px;}
+main .service_container .contents a:nth-child(8) span {background-position-x: -420px;}
+main .service_container .contents a:nth-child(9) span {background-position-x: -480px;}
+main .service_container .contents a:nth-child(10) span {background-position-x: -540px;}
+main .service_container .contents a:last-child span {background-position-x: -600px;}
 /* ===========================================================footer */
