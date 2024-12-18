@@ -324,14 +324,12 @@ footer .top .sns a:nth-child(6){background-position-x: -125px;}
 footer .top .sns a:last-child {margin:0;}
 footer .top .sns a span {display: none;}
 footer .bottom {
-    background-color: lightskyblue;
     display: flex; flex-flow: row nowrap;
     /* flex-flow : 방향, 줄바꿈을 통합하는 속성 */
     justify-content: space-between;
     padding: 30px 0;
 }
 footer .bottom address {
-    background-color: lightcoral;
     line-height: 1.8; letter-spacing: -0.02rem;
 }
 footer .bottom address a {}
