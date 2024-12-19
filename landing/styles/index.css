@@ -1,0 +1,47 @@
+/* =======================================================================★전체 공통 디자인★ */
+#wrap {}
+#wrap .container {}
+/* =======================================================================1행 제목+후원 */
+#wrap .bg1 {
+    background-image:url(../images/bg1.png);
+    background-position: center;
+    background-size: cover;
+}
+#wrap .bg1 .gradient {
+    /* background:linear-gradient(각도, 색상, 색상 색상위치%, 색상) : 색깔 쓰는 제한이 없다는 뜻으로 여러개 색상 씀 */
+    background:linear-gradient(45deg,transparent,rgba(0,0,0,0.6) 69%);
+}
+#wrap .bg1 .gradient .contents { /* 자식이 커지면 부모가 함께 커진다. 높이를 설정할 때 묶어주는 레이아웃 중에 제일 안쪽에 있는 요소에 작성해준다. */
+    height: 100vh; width: 1250px; margin:0 auto;
+    background-color: rgba(0,0,0,0.4);
+    display: flex; flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px; 
+    }
+/* flex 이용해서 위치 잡기 */
+#wrap .bg1 .gradient .contents h1:nth-child(1) {
+    width:89px; align-self: flex-start;
+    
+}
+#wrap .bg1 .gradient .contents h1:nth-child(1) a {}
+#wrap .bg1 .gradient .contents h1:nth-child(1) a img {width: 100%;}
+#wrap .bg1 .gradient .contents h1:nth-child(2) {}
+#wrap .bg1 .gradient .contents h1:nth-child(2) span {}
+#wrap .bg1 .gradient .contents .sponsor_btn {
+}
+#wrap .bg1 .gradient .contents .sponsor_btn img {}
+#wrap .bg1 .gradient .contents .sponsor_q_btn {
+    align-self: flex-end;
+}
+#wrap .bg1 .gradient .contents .sponsor_q_btn img:first-child {}
+#wrap .bg1 .gradient .contents .sponsor_q_btn img:last-child {}
+/* =======================================================================2행 퀴즈+참여 */
+/* =======================================================================3행 동영상 */
+/* =======================================================================4행 빙하 50%감소 */
+/* =======================================================================5행 빙하 인류재앙3 */
+/* =======================================================================6행 지구전체위기 */
+/* =======================================================================7행 WWF소개 */
+/* =======================================================================8행 다양한활동 */
+/* =======================================================================9행 감사선물 */
+/* =======================================================================10행 안내사항 */
