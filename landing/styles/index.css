@@ -1,42 +1,111 @@
 /* =======================================================================★전체 공통 디자인★ */
 #wrap {}
-#wrap .container {}
-/* =======================================================================1행 제목+후원 */
-#wrap .bg1 {
-    background-image:url(../images/bg1.png);
+#wrap .container {
     background-position: center;
     background-size: cover;
 }
+#wrap .container .contents {
+    max-width: 1250px; min-width: 320px; /* 지정을 해놓으면 자동으로 width:100%; 적용할 수 있다. */
+    margin:0 auto;
+}
+#wrap .container .main_title { /* 대제목 70 스타일 */
+    font-size: 4.38rem; color: #fff;
+    text-align: center; line-height: 1.3; letter-spacing: -0.02rem;
+}
+#wrap .container .main_title span {font-weight: 700;} /* 대제목에 추가 옵션을 대비해서 넣기 */
+#wrap .container .sponsor_btn {
+    background: linear-gradient(90deg,#FE9300,#FF7300);
+    color: #FFF; border-radius: 50px; padding: 15px 70px;
+    font-size: 2.13rem; font-weight: 600; line-height: 1.2;
+}
+#wrap .container .sponsor_btn:hover {
+    background: linear-gradient(-90deg,#FE9300,#FF7300);
+}
+#wrap .container .sponsor_btn img {width: 32px; position: relative; top:3px;}
+#wrap .container .sponsor_q_btn {
+    background-color: #050505; border-radius: 30px; padding: 10px 30px;
+    color: #FFF; font-size: 1.63rem; line-height: 1.2;
+    display: flex; flex-flow:row nowrap; align-items: center;
+}
+#wrap .container .sponsor_q_btn:hover{
+    box-shadow: 0 0 10px #FE9300;
+}
+#wrap .container .sponsor_q_btn img {width: 24px;}
+#wrap .container .sponsor_q_btn img:first-child {margin-right: 10px;}
+#wrap .container .sponsor_q_btn img:last-child {margin-left: 10px;}
+/* =======================================================================1행 제목+후원 */
+#wrap .bg1 {
+    background-image:url(../images/bg1.png);
+    background-attachment: fixed; /* 기본값 scroll */
+}
 #wrap .bg1 .gradient {
     /* background:linear-gradient(각도, 색상, 색상 색상위치%, 색상) : 색깔 쓰는 제한이 없다는 뜻으로 여러개 색상 씀 */
-    background:linear-gradient(45deg,transparent,rgba(0,0,0,0.6) 69%);
+    background:linear-gradient(transparent,rgba(0,0,0,0.6) 69%);
 }
-#wrap .bg1 .gradient .contents { /* 자식이 커지면 부모가 함께 커진다. 높이를 설정할 때 묶어주는 레이아웃 중에 제일 안쪽에 있는 요소에 작성해준다. */
-    height: 100vh; width: 1250px; margin:0 auto;
-    background-color: rgba(0,0,0,0.4);
+#wrap .bg1 .gradient .contents {
+    height: 100vh; 
     display: flex; flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 80px 100px; 
     }
+    #wrap .bg1 .gradient .contents > * {margin-bottom: 100px;}
 /* flex 이용해서 위치 잡기 */
 #wrap .bg1 .gradient .contents h1:nth-child(1) {
-    width:89px; align-self: flex-start;
-    
+    width:89px; align-self: flex-start
 }
 #wrap .bg1 .gradient .contents h1:nth-child(1) a {}
 #wrap .bg1 .gradient .contents h1:nth-child(1) a img {width: 100%;}
-#wrap .bg1 .gradient .contents h1:nth-child(2) {}
+#wrap .bg1 .gradient .contents h1:nth-child(2) {} 
 #wrap .bg1 .gradient .contents h1:nth-child(2) span {}
-#wrap .bg1 .gradient .contents .sponsor_btn {
-}
+#wrap .bg1 .gradient .contents .sponsor_btn {}
 #wrap .bg1 .gradient .contents .sponsor_btn img {}
 #wrap .bg1 .gradient .contents .sponsor_q_btn {
-    align-self: flex-end;
+    align-self: flex-end; margin: 0;
 }
 #wrap .bg1 .gradient .contents .sponsor_q_btn img:first-child {}
 #wrap .bg1 .gradient .contents .sponsor_q_btn img:last-child {}
 /* =======================================================================2행 퀴즈+참여 */
+#wrap .bg2 {background-image: url(../images/quiz_bg.png)}
+#wrap .bg2 .contents {
+    display: flex; justify-content: space-between;
+}
+#wrap .bg2 .contents .quiz_contents {
+    background-color: purple; color: #FFF;
+    display: flex; flex-flow: column;
+}
+#wrap .bg2 .contents .quiz_contents > * {font-size: 1.25rem;}
+#wrap .bg2 .contents .quiz_contents h2 {
+    padding-bottom:34px; font-size: 3.44rem; font-weight: 500;
+    text-align: center;
+}
+#wrap .bg2 .contents .quiz_contents p {margin-bottom: 34px;}
+#wrap .bg2 .contents .quiz_contents form {
+    display: flex; flex-flow: column;
+}
+#wrap .bg2 .contents .quiz_contents form label {padding-bottom: 20px;}
+#wrap .bg2 .contents .quiz_contents form label:last-child {margin:0;}
+#wrap .bg2 .contents .quiz_contents form label input[name^=quiz] {}
+#wrap .bg2 .contents .quiz_contents form label input[name^=quiz]+span {
+    background-image: url(../images/check_n.png);
+    background-repeat: no-repeat; padding-left: 40px;
+}
+#wrap .bg2 .contents .quiz_contents form label input[name^=quiz]:checked+span {
+    background-image: url(../images/check_y.png);
+}
+#wrap .bg2 .contents .quiz_contents form .answer_btn {
+    background-color: #000; color: #FFF;
+    width: 450px; padding: 10px 0 ;
+    border-radius: 50px; margin-top: 38px;
+}
+#wrap .bg2 .contents .quiz_status {
+    background-color: brown;
+    display: flex; flex-flow: column; justify-content: center;
+}
+#wrap .bg2 .contents .quiz_status img {width: 500px;}
+#wrap .bg2 .contents .quiz_status span {
+    color: #FFF; font-size: 1.25rem;
+    text-align: right; padding-top: 20px;
+}
 /* =======================================================================3행 동영상 */
 /* =======================================================================4행 빙하 50%감소 */
 /* =======================================================================5행 빙하 인류재앙3 */
