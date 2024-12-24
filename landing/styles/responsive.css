@@ -17,19 +17,56 @@
     #wrap .bg2 .contents .quiz_contents form .answer_btn {width: 300px; font-size: 1.0rem;}
     #wrap .bg2 .contents .quiz_status img {width: 332px;}
     /* ==============================================3행 반응형디자인 (tablet) */
-    #wrap .bg3 {padding: 80px;}
+    #wrap .bg3 {padding: 80px 0;}
     /* ==============================================4행,6행 반응형디자인 (tablet) */
     #wrap .bg4,
-    #wrap .bg6 {padding: 80px;}
+    #wrap .bg6 {padding: 80px 0;}
     #wrap .bg4 .contents h2,
     #wrap .bg6 .contents h2 {font-size:2.50rem;}
     #wrap .bg4 .contents h2+p,
     #wrap .bg6 .contents h2+p {margin: 40px 0; font-size:1.38rem}
     /* ==============================================5행 반응형디자인 (tablet) */
+    #wrap .bg5 .contents ul li .title h3 {
+        font-size:2.50rem; font-weight:500; line-height:1.2; letter-spacing:-0.01em;
+    }
+    #wrap .bg5 .contents ul li .title p {font-size: 1.0rem; line-height:1.7;}
+    #wrap .bg5 .contents ul li .content {
+        height: auto; font-size: 1.0rem; line-height:1.7;}
     /* ==============================================7행 반응형디자인 (tablet) */
+    #wrap .bg7 .contents {padding: 80px 0;}
+    #wrap .bg7 .contents .main_title {
+        font-size:3.13rem;
+    }
+    #wrap .bg7 .contents p {
+        font-size:1.38rem; line-height:1.2;
+    }
     /* ==============================================8행 반응형디자인 (tablet) */
+    #wrap .bg8 .contents {padding: 80px;}
+    #wrap .bg8 .contents .activity {flex-flow: column nowrap;}
+    #wrap .bg8 .contents .activity li {width: 100%;}
+    #wrap .bg8 .contents .activity li:last-child {padding-top: 189px; margin-top: 22px;} /* 텍스트 박스와 이미지 여백처리 */
+    #wrap .bg8 .contents .activity li .list1,
+    #wrap .bg8 .contents .activity li .list2 {
+        height: auto; padding-top: 189px;
+    }
+    #wrap .bg8 .contents .activity li .text {
+        width: 100%; position: relative; bottom: 0; /* absolute 풀기 */
+    }
+    #wrap .bg8 .contents .activity li .text h3 {font-size:1.38rem;}
+    #wrap .bg8 .contents .activity li .text p {font-size: 1.0rem;}
+
     /* ==============================================9행 반응형디자인 (tablet) */
+    #wrap .bg9 {padding: 80px 0;}
+    #wrap .bg9 .contents .title h2 {font-size:2.50rem;}
+    #wrap .bg9 .contents .present_list {flex-flow: row wrap;}
+    #wrap .bg9 .contents .present_list li {width: calc((100% - 22px) / 2);}
+    #wrap .bg9 .contents .present_list li:last-child {margin-top: 22px; width: 100%;}
+    #wrap .bg9 .contents .present_list li .text p {font-size: 1.0rem;}
+    #wrap .bg9 .contents .benefit {margin-top: 40px;}
     /* ==============================================10행 반응형디자인 (tablet) */
+    #wrap .bg10 {padding: 80px 0;}
+    #wrap .bg10 .contents h3 {font-size:1.38rem;}
+    #wrap .bg10 .contents ul li {font-size: 1.0rem;}
 }/* 1250px end */
 @media screen and (max-width:900px) {
     /* ==============================================2행 반응형디자인 (769~900) */
@@ -42,6 +79,10 @@
     #wrap .bg6 .contents h2 {font-size: 1.56rem;}
     #wrap .bg4 .contents h2+p,
     #wrap .bg6 .contents h2+p {font-size:0.88rem;}
+    #wrap .bg7 .contents,
+    #wrap .bg8 .contents,
+    #wrap .bg9 .contents,
+    #wrap .bg10 .contents {padding: 100px 15px;}
 } /* 769~900 end */
 @media screen and (max-width:768px){
 /* =========================================================공통 선택자 + 1행 반응형디자인 (mobile) */
@@ -82,8 +123,46 @@
     }
     /* ==============================================4행,6행 반응형디자인 (mobile) */
     /* ==============================================5행 반응형디자인 (mobile) */
+    #wrap .bg5 .contents h2 {font-size: 1.56rem; font-weight:500; line-height:1.2; letter-spacing:-0.01em;}
+    #wrap .bg5 .contents > p {font-size: 0.81rem; line-height:1.7;}
+    #wrap .bg5 .contents ul{
+        flex-flow: column nowrap; align-items: center; justify-content: center;
+    }
+    #wrap .bg5 .contents ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #wrap .bg5 .contents ul li .title {height: auto; padding: 40px 0;}
+    #wrap .bg5 .contents ul li:last-child {margin: 0;}
+    #wrap .bg5 .contents ul li .title h3 {
+        font-size: 1.56rem; font-weight:500; line-height:1.2; letter-spacing:-0.01em;
+        padding-top: 0;
+    }
+    #wrap .bg5 .contents ul li .title p {font-size: 0.81rem; line-height:1.7;}
+    #wrap .bg5 .contents ul li .content {height: auto; font-size: 0.81rem; line-height:1.7;}
     /* ==============================================7행 반응형디자인 (mobile) */
+    #wrap .bg7 .contents .main_title {font-size: 1.69rem;}
+    #wrap .bg7 .contents p {font-size: 0.88rem}
+    #wrap .bg7 .contents p:first-of-type {margin:40px 0;}
     /* ==============================================8행 반응형디자인 (mobile) */
+    #wrap .bg8 .contents h2 {font-size: 1.56rem;}
+    #wrap .bg8 .contents .activity li .text h3 {font-size: 0.88rem;}
+    #wrap .bg8 .contents .activity li .text p {font-size: 0.81rem;}
     /* ==============================================9행 반응형디자인 (mobile) */
+    #wrap .bg9 .contents .title {
+        flex-flow: column; align-items:start; justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    #wrap .bg9 .contents .title h2 {font-size: 1.56rem; margin-bottom: 40px;}
+    #wrap .bg9 .contents .present_list {flex-flow: column nowrap;}
+    #wrap .bg9 .contents .present_list li {width: 100%; margin-bottom: 40px;}
+    #wrap .bg9 .contents .present_list li:last-child {margin: 0;}
+    #wrap .bg9 .contents .benefit {
+        float: none; width:100%; text-align: center;
+        font-size: 0.81rem; display: block;
+        margin: 69px auto 0;
+    }
     /* ==============================================10행 반응형디자인 (mobile) */
+    #wrap .bg10 .contents h3 {font-size: 0.88rem;}
+    #wrap .bg10 .contents ul li {font-size: 0.81rem}
 }/* 320~768 end */
