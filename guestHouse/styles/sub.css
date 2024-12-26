@@ -1,0 +1,107 @@
+#wrap {}
+/* ===================================헤더 */
+#wrap header {
+    background-color: rgba(0,0,0,0.1);
+    padding: 20px 80px;
+    display: flex; flex-flow: row nowrap; 
+    align-items: center; justify-content: space-between;
+    position:fixed; left: 0; top:0; z-index: 20; width: 100%;
+}
+#wrap header .title_pre {
+    font-size: 1.88rem; font-weight:700;
+    color: #FFF;
+}
+#wrap header .title_pre > a {}
+#wrap header .title_pre > a img {}
+#wrap header nav {position: relative; bottom: 10px;}
+#wrap header nav ul {padding: 20px 0;}
+#wrap header nav ul li {float: left;}
+#wrap header nav ul li {margin-right: 80px;}
+#wrap header nav ul li:last-child {
+    margin: 0;
+    border-bottom: 2px solid #FFF;
+}
+#wrap header nav ul li a {
+    font-size: 1.56rem; font-weight:700;
+    color: #FFF;
+}
+/* ===================================메인 */
+#wrap main {}
+/* ===================================메인 공통 선택자*/
+#wrap main .container {
+    width: 1261px; margin: 0 auto;
+}
+/* ===================================1행 메인타이틀 */
+#wrap main .title {
+    background-image: url(../images/travel_main.png);
+    background-size: cover;
+    width: 1920px; height: 600px;
+    position: relative;
+    margin-bottom: 60px;
+}
+#wrap main .title::after {
+    content:''; display: block; 
+    background-color: rgba(82, 91, 68, 0.5);
+    width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 5;
+}
+#wrap main .title .main_text {
+    padding: 240px 632px 0;
+    text-align:center; color:#FFF;position: absolute; z-index: 10;}
+#wrap main .title .main_text h2 {
+    font-size: 2.19rem; line-height: 1.2; letter-spacing: -0.02rem;
+}
+#wrap main .title .main_text h2:first-child{
+    padding-bottom: 70px;
+}
+#wrap main .title .main_text h2 span {
+    font-family: "Noto Serif", serif; font-size: 1.88rem; letter-spacing: -0.02rem;
+}
+#wrap main .title .main_text h1  {
+    font-size: 4.69rem; font-weight:500; line-height:1.2;}
+#wrap main .title .main_text h1 span {
+    font-size: 6.25rem; font-weight:700; line-height:1.2;
+}
+/* ===================================콘텐츠 리스트 영역 */
+#wrap main .travel_list {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#wrap main .travel_list li {
+    width: calc((100% - 22px) / 3);
+}
+#wrap main .travel_list li .content {}
+#wrap main .travel_list li:nth-child(1) .content {
+    background-image: url(../images/image1.png);
+}
+#wrap main .travel_list li:nth-child(2) .content {
+    background-image: url(../images/image2.png);
+}
+#wrap main .travel_list li:nth-child(3) .content {
+    background-image: url(../images/image3.png);
+}
+#wrap main .travel_list li .content .text {
+    height: 300px; background-size: cover;
+}
+#wrap main .travel_list li .content .text h2 {}
+#wrap main .travel_list li .content .text p {}
+/* ===================================footer 구역 */
+#wrap footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%; padding: 20px;
+}
+#wrap footer .top {
+    padding-bottom: 57px;
+}
+#wrap footer .top a {
+    font-size: 1.25rem; line-height:1.2; font-weight: 700; 
+    color: #538505;
+}
+#wrap footer .top a::after {
+    content:''; display: inline-block;
+    width:1px; height: 20px;
+    background-color: #222; margin: 0 15px; position: relative; top: 3px;
+}
+#wrap footer .top a:last-child::after {display: none; margin: 0;}
+#wrap footer .bottom {color: #222;}
+#wrap footer .bottom address {
+    font-size: 0.94redm; line-height: 2.0;
+}
