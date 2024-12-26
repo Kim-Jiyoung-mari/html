@@ -1,0 +1,225 @@
+#wrap {}
+/* ===================================헤더 */
+#wrap header {
+    background-color: rgba(0,0,0,0.1);
+    padding: 20px 80px;
+    display: flex; flex-flow: row nowrap; 
+    align-items: center; justify-content: space-between;
+    position:fixed; left: 0; top:0; z-index: 20; width: 100%;
+}
+#wrap header .title_pre {
+    font-size: 1.88rem; font-weight:700;
+    color: #FFF;
+}
+#wrap header .title_pre > a {}
+#wrap header .title_pre > a img {}
+#wrap header nav {position: relative; bottom: 10px;}
+#wrap header nav ul {padding: 20px 0;}
+#wrap header nav ul li {float: left;}
+#wrap header nav ul li {margin-right: 80px;}
+#wrap header nav ul li:last-child {margin: 0;}
+#wrap header nav ul li:first-child {
+    border-bottom: 2px solid #FFF;
+}
+#wrap header nav ul li a {
+    font-size: 1.56rem; font-weight:700;
+    color: #FFF;
+}
+/* ===================================메인 */
+#wrap main {}
+/* ===================================메인 공통 선택자*/
+#wrap main .container {
+    width: 1252px; margin: 0 auto;
+    padding-bottom: 100px;
+}
+#wrap main .container > * .sub_title {
+    font-size: 1.88rem; font-weight:700; color: #AAA;
+}
+#wrap main .container > * .contents {
+    font-size: 3.13rem; font-weight:700; letter-spacing:-0.02rem; color: #538505;
+    padding-bottom: 40px;
+}
+#wrap main .container .traffic_info > * .title_pre {
+    font-size: 1.88rem; font-weight:700;
+    border-bottom: 1px solid #5A6C57; padding: 10px;
+}
+#wrap main .container .traffic_info > * p {
+    font-size: 1.25rem; line-height:1.2;
+}
+/* ===================================1행 메인타이틀 */
+#wrap main .title {
+    background-image: url(../images/main.png);
+    background-size: cover;
+    width: 1920px; height: 900px;
+    position: relative;
+    margin-bottom: 60px;
+}
+#wrap main .title::after {
+    content:''; display: block; 
+    background-color: rgba(82, 91, 68, 0.5);
+    width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 5;
+}
+#wrap main .title .main_text {
+    padding: 168px 632px 0;
+    text-align:center; color:#FFF;position: absolute; z-index: 10;}
+#wrap main .title .main_text h2  {
+    font-family: "Noto Serif", serif; font-size: 1.88rem; letter-spacing: -0.02rem;}
+#wrap main .title .main_text h2 span  {
+    font-size: 2.19rem; line-height: 1.2; letter-spacing: -0.02rem;
+}
+#wrap main .title .main_text h1  {
+    padding: 100px 0;
+    font-size: 4.69rem; font-weight:500; line-height:1.2;}
+#wrap main .title .main_text h1 span {
+    font-size: 6.25rem; font-weight:700; line-height:1.2;
+}
+/* ===================================2행 객실소개 */
+#wrap main .intro {}
+#wrap main .intro > p {
+    font-size: 1.56rem; font-weight:500; letter-spacing:-0.02rem;
+    padding-bottom: 40px; color: #222;
+}
+#wrap main .intro .rooms {
+    position: relative;
+}
+#wrap main .intro .rooms .img {}
+#wrap main .intro .rooms .img > img {}
+#wrap main .intro .rooms .page_btn {
+    width: 100%;
+    position: absolute; left: 0; top:50%;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#wrap main .intro .rooms .page_btn .before {}
+#wrap main .intro .rooms .page_btn .before img {}
+#wrap main .intro .rooms .page_btn .next {}
+#wrap main .intro .rooms .page_btn .next img {}
+/* ===================================3행 주변여행지 */
+#wrap main .travel {}
+#wrap main .travel .travel_btn {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items:flex-end;
+}
+#wrap main .travel .travel_btn .travel_title {}
+#wrap main .travel .travel_btn a {
+    padding: 10px 30px;
+    border: 1px solid #525B44; border-radius: 5px;
+    margin-bottom: 40px; padding: 10px 30px;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+#wrap main .travel .travel_btn a img {}
+#wrap main .travel .travel_list {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#wrap main .travel .travel_list li {
+    width: calc((100% - 20px) / 3);
+    
+}
+#wrap main .travel .travel_list li .text {
+    height: 400px; background-size: cover;
+}
+#wrap main .travel .travel_list li .text .content {
+    height: 80px;
+}
+#wrap main .travel .travel_list li:nth-child(1) .text {
+    background-image: url(../images/travel1.png);
+}
+#wrap main .travel .travel_list li:nth-child(2) .text {
+    background-image: url(../images/travel2.png);
+}
+#wrap main .travel .travel_list li:nth-child(3) .text {
+    background-image: url(../images/travel3.png);
+}
+#wrap main .travel .travel_list li .text::before {
+    content: ''; display: block; width: 100%; height: 400px;
+    background-size: cover; background-position: center;
+}
+#wrap main .travel .travel_list li .text h2 {
+    color: #538505;
+    font-size: 1.56rem; font-weight:700;
+    padding: 20px 0;
+}
+#wrap main .travel .travel_list li .text p  {
+    color: #222; letter-spacing: -0.02rem;
+}
+/* ===================================4행 찾아오는 길 */
+#wrap main .location {}
+#wrap main .location .location_title {}
+#wrap main .location .location_title .sub_title {padding-top: 70px;}
+#wrap main .location .img {}
+#wrap main .location .img > img {
+    padding-bottom: 35px;
+}
+#wrap main .location .traffic_info {color: #222;}
+#wrap main .location .traffic_info ul {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#wrap main .location .traffic_info ul li {
+    width: calc((100% - 40px) / 3);
+}
+/* =======================================================================교통정보 그룹 선택자 */
+#wrap main .location .traffic_info ul .cs_info > *  h4,
+#wrap main .location .traffic_info ul .bus_info .bus_list h4,
+#wrap main .location .traffic_info ul .subway_info h4 {
+    padding-bottom: 10px;
+}
+#wrap main .location .traffic_info ul .cs_info .cs_address h4,
+#wrap main .location .traffic_info ul .cs_info .cs_tel h4 {
+    font-size: 1.56rem; font-weight:700;
+}
+/* ======================================================================예약문의 */
+#wrap main .location .traffic_info ul .cs_info {
+    padding: 20px 20px 100px;
+}
+#wrap main .location .traffic_info ul .cs_info .title_pre {}
+#wrap main .location .traffic_info ul .cs_info .cs_address,
+#wrap main .location .traffic_info ul .cs_info .cs_tel {padding: 10px;}
+#wrap main .location .traffic_info ul .cs_info .cs_address p,
+#wrap main .location .traffic_info ul .cs_info .cs_tel p {}
+#wrap main .location .traffic_info ul .cs_info .cs_address p {padding-bottom: 40px;}
+/* ======================================================================버스정보 */
+#wrap main .location .traffic_info ul .bus_info {
+    background-color: #F5F5F5;
+    padding: 20px 20px 70px;
+}
+#wrap main .location .traffic_info ul .bus_info .title_pre {}
+#wrap main .location .traffic_info ul .bus_info .bus_list {padding: 10px;}
+#wrap main .location .traffic_info ul .bus_info .bus_list h4 {
+    font-size: 1.13rem; font-weight:600;
+}
+#wrap main .location .traffic_info ul .bus_info .bus_list p {}
+#wrap main .location .traffic_info ul .bus_info .bus_list:nth-child(2) {
+    padding-bottom: 40px;
+}
+/* ======================================================================지하철 정보 */
+#wrap main .location .traffic_info ul .subway_info {
+    background-color: #F5F5F5;
+    padding: 20px 20px 120px;
+}
+#wrap main .location .traffic_info ul .subway_info .suaway_list {padding: 10px;}
+#wrap main .location .traffic_info ul .subway_info h4 {font-size: 1.25rem; font-weight:700 }
+#wrap main .location .traffic_info ul .subway_info p {}
+#wrap main .location .traffic_info ul .subway_info .suaway_list:nth-child(2) {
+    padding-bottom: 40px;
+}
+/* ===================================footer 구역 */
+#wrap footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%; padding: 20px;
+}
+#wrap footer .top {
+    padding-bottom: 57px;
+}
+#wrap footer .top a {
+    font-size: 1.25rem; line-height:1.2; font-weight: 700; 
+    color: #538505;
+}
+#wrap footer .top a::after {
+    content:''; display: inline-block;
+    width:1px; height: 20px;
+    background-color: #222; margin: 0 15px; position: relative; top: 3px;
+}
+#wrap footer .top a:last-child::after {display: none; margin: 0;}
+#wrap footer .bottom {color: #222;}
+#wrap footer .bottom address {
+    font-size: 0.94redm; line-height: 2.0;
+}

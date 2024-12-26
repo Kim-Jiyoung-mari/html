@@ -290,7 +290,7 @@
 #wrap .bg9 .contents .title {
     display: flex; flex-flow: row nowrap; 
     justify-content: space-between; align-items:flex-end;
-    margin-bottom: 69px;
+    
 } /* 같은 형제들끼리 높이가 강제로 맞춰진다 */
 #wrap .bg9 .contents .title h2 {color: #FFF;}
 #wrap .bg9 .contents .title .sponsor_btn {}
