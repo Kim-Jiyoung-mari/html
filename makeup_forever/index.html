@@ -3,63 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MakeUp Forever</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <title>메이크업 포에버</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/responsive.css">
-    <!-- class 규칙 : 배경관련 _bg / 특정방향레이아웃 _top _btm _left _right -->
 </head>
 <body>
     <div class="h_bg">
         <header>
-            <h1><a href="#"><img src="./images/logo.png" alt="makeupforever"></a></h1>
+            <h1><a href="#"><img src="./images/logo.png" alt="make up for ever"></a></h1>
             <div class="h_right">
                 <div class="h_top">
                     <div class="search">
                         <a href="#"><img src="./images/search.png" alt="검색"></a>
                         <!-- 검색 클릭 시 실행되는 팝업(아래) -->
                         <div class="search_popup">
-                            <a href="#" class="close_btn"><img src="./images/close_btn.png" alt="창닫기"></a>
+                            <a href="#" class="close_btn"><img src="./images/close_btn.png" alt="창 닫기"></a>
                             <form action="#" method="get" id="searchFrm">
-                                <input type="search" name="user_search" id="user_search" placeholder="검색어를 입력하세요.">
-                                <button type="button" id="search_btn"><img src="./images/search_large.png" alt="검색하기"></button>
+                                <input type="search" name="user_search" id="user_search" placeholder="검색어를 입력하세요">
+                                <button type="button" id="search_btn"><img src="./images/search_large.png" alt="검색"></button>
                             </form>
                             <h2>실시간 인기 검색어</h2>
-                            <ol class="search_list"> <!-- 의미적인 이름이 있으면 클래스명을 적어주는 것이 좋다. -->
+                            <ol class="search_list">
                                 <li>
                                     <span class="num">1</span>
-                                    <a href="#" class="keyword">쿠션</a>
-                                    <span class="rating"><img src="./images/line.png" alt="순위변동없음"></span>
+                                    <a href="#" class="keywords">쿠션</a>
+                                    <span class="rating"><img src="./images/line.png" alt="변동없음"></span>
                                 </li>
                                 <li>
                                     <span class="num">2</span>
-                                    <a href="#" class="keyword">파운데이션</a>
+                                    <a href="#" class="keywords">파운데이션</a>
                                     <span class="rating"><img src="./images/down.png" alt="순위하락"></span>
                                 </li>
                                 <li>
                                     <span class="num">3</span>
-                                    <a href="#" class="keyword">아이섀도우</a>
+                                    <a href="#" class="keywords">아이섀도우</a>
                                     <span class="rating"><img src="./images/up.png" alt="순위상승"></span>
                                 </li>
                                 <li>
                                     <span class="num">4</span>
-                                    <a href="#" class="keyword">아이라이너</a>
-                                    <span class="rating"><img src="./images/line.png" alt="순위변동없음"></span>
+                                    <a href="#" class="keywords">아이라이너</a>
+                                    <span class="rating"><img src="./images/line.png" alt="변동없음"></span>
                                 </li>
                                 <li>
                                     <span class="num">5</span>
-                                    <a href="#" class="keyword">립스틱</a>
+                                    <a href="#" class="keywords">립스틱</a>
                                     <span class="rating"><img src="./images/up.png" alt="순위상승"></span>
                                 </li>
                             </ol>
                             <h2>추천 키워드</h2>
                             <div class="keywords_recommend">
-                                <a href="#">푸딩블러셔</a>
+                                <a href="#">프라이머</a>
                                 <a href="#">립틴트</a>
                                 <a href="#">파운데이션</a>
-                                <a href="#">하이라이터</a>
-                                <a href="#">프로페셔널 마스카라</a>
+                                <a href="#">파우더</a>
+                                <a href="#">아이브로우</a>
                             </div>
                         </div>
                     </div>
@@ -78,39 +76,38 @@
                         <a href="#">FACE</a>
                         <a href="#">EYES</a>
                         <a href="#">LIPS</a>
-                    </nav>
-                    <!-- nav 마우스 오버 시 출력 서브 팝업(아래) -->
-                    <div class="sub_bg"> <!-- 너비 1920 -->
-                        <div class="sub_contents">
-                            <!-- 1단계 서브메뉴 -->
-                            <ul class="depth1">
-                                <li><a href="#">BEST</a></li>
-                                <li class="active"><a href="#">FACE</a></li>
-                                <li><a href="#">EYES</a></li>
-                                <li><a href="#">LIPS</a></li>
-                            </ul>
-                            <!-- 2단계 서브메뉴 -->
-                            <div class="depth2">
-                                <ul class="sub sub1"> <!-- face sub -->
-                                    <li><a href="#">파운데이션</a></li>
-                                    <li><a href="#">프라이머</a></li>
-                                    <li><a href="#">블러셔</a></li>
-                                    <li><a href="#">컨실러</a></li>
-                                    <li><a href="#">파우더</a></li>
+                        <!-- nav 마우스 오버 시 출력 서브메뉴(아래) -->
+                        <div class="sub_bg">
+                            <div class="sub_contents">
+                                <ul class="depth1">
+                                    <li><a href="#">BEST</a></li>
+                                    <li><a href="#">FACE</a></li>
+                                    <li><a href="#">EYES</a></li>
+                                    <li><a href="#">LIPS</a></li>
                                 </ul>
-                                <ul class="sub sub2"> <!-- eye sub -->
-                                    <li><a href="#">아이라이너</a></li>
-                                    <li><a href="#">아이섀도우</a></li>
-                                    <li><a href="#">아이브로우</a></li>
-                                </ul>
-                                <ul class="sub sub3"> <!-- lips sub -->
-                                    <li><a href="#">립스틱</a></li>
-                                    <li><a href="#">립라이너</a></li>
-                                    <li><a href="#">립케어</a></li>
-                                </ul>
+                                <!-- 2단계 서브메뉴 -->
+                                <div class="depth2">
+                                    <ul class="sub sub1">
+                                        <li><a href="#">파운데이션</a></li>
+                                        <li><a href="#">프라이머</a></li>
+                                        <li><a href="#">블러셔</a></li>
+                                        <li><a href="#">컨실러</a></li>
+                                        <li><a href="#">파우더</a></li>
+                                    </ul>
+                                    <ul class="sub sub2">
+                                        <li><a href="#">아이라이너</a></li>
+                                        <li><a href="#">아이섀도우</a></li>
+                                        <li><a href="#">아이브로우</a></li>
+                                    </ul>
+                                    <ul class="sub sub3">
+                                        <li><a href="#">립스틱</a></li>
+                                        <li><a href="#">립라이너</a></li>
+                                        <li><a href="#">립케어</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </header>
