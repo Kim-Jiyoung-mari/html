@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메포연습용</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        main {}
+        main .bnr_wrap {
+            height: 650px;
+            position: relative;
+        }
+        main .bnr_wrap .bnr_container {
+            height: 100%;
+        }
+        main .bnr_wrap .bnr_container .bnr {
+            height: 100%;
+        }
+        main .bnr_wrap .bnr_container .bnr .bnr_contents {
+            width: 1400px; margin: 0 auto; 
+            overflow: hidden;
+        }
+        main .bnr_wrap .bnr_container .bnr .bnr_contents .bnr_text {
+            width: 50%; float: right; padding-top: 126px;
+        }
+        main .bnr_wrap .bnr_container .bnr .bnr_contents .bnr_text img {}
+        main .bnr_wrap .bnr_container .bnr .bnr_contents .bnr_text a {
+            display: flex; flex-flow: column nowrap;
+            margin-top: 100px; width:min-content; 
+            border-radius: 5px; padding: 10px 20px;
+            font-weight:500; letter-spacing: -0.02rem;
+        }
+        main .bnr_wrap .bnr_container .bnr .bnr_contents .bnr_text a:hover {
+            background-color: #000; color: #FFF;
+        }
+        main .bnr_wrap .prev_btn,
+        main .bnr_wrap .next_btn {
+            position: absolute; top : 50%
+        }
+        main .bnr_wrap .prev_btn img,
+        main .bnr_wrap .next_btn img {}
+        main .bnr_wrap .prev_btn {left: 190px;}
+        main .bnr_wrap .prev_btn img {}
+        main .bnr_wrap .next_btn {right: 190px;}
+        main .bnr_wrap .next_btn img {}
+        main .bnr_wrap .scroll_bg {
+            background-color: #CCC;
+            width: 1400px; height: 2px; margin: 0 auto;
+            position: relative; bottom: 5%;
+        }
+        main .bnr_wrap .scroll_bg .scrollbar {
+            background-color: #111;
+            width: 200px; height: 100%;
+        }
+        /* ===================================================================== 개별1 */
+        main .bnr_wrap .bnr_container .bnr1 {
+            
+            background-image: url(./images/bnr1.png);
+        }
+        main .bnr_wrap .bnr_container .bnr1 .bnr_contents {}
+        main .bnr_wrap .bnr_container .bnr1 .bnr_contents .bnr_text {}
+        main .bnr_wrap .bnr_container .bnr1 .bnr_contents .bnr_text img {}
+        main .bnr_wrap .bnr_container .bnr1 .bnr_contents .bnr_text a {
+            border: 1px solid #000; 
+        }
+        /* ===================================================================== 개별2 */
+        main .bnr_wrap .bnr_container .bnr2 {
+            display: none;
+            background-image: url(./images/bnr2.png);
+        }
+        main .bnr_wrap .bnr_container .bnr2 .bnr_contents {}
+        main .bnr_wrap .bnr_container .bnr2 .bnr_contents .bnr_text {}
+        main .bnr_wrap .bnr_container .bnr2 .bnr_contents .bnr_text img {}
+        main .bnr_wrap .bnr_container .bnr2 .bnr_contents .bnr_text a {
+            background-color: #67C9FF;
+        }
+        </style>
+</head>
+<body>
+    <main>
+        <div class="bnr_wrap"><!-- 배너 전체 묶는 큰 부모 그룹 -->
+            <div class="bnr_container"> <!-- 배너들을 묶어주는 큰 그룹 -->
+                <div class="bnr bnr1"> <!-- 이미지만 들어가는 그룹 -->
+                    <div class="bnr_contents"> <!-- 배너 컨텐츠 넣어주는 그룹 -->
+                        <div class="bnr_text">
+                            <img src="./images/bnr1_txt.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+                            <a href="#" class="btn_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bnr bnr2">
+                    <div class="bnr_contents"> <!-- 배너 컨텐츠 넣어주는 그룹 -->
+                        <div class="bnr_text">
+                            <img src="./images/bnr2_txt.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+                            <a href="#" class="btn_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 버튼 -->
+            <a href="#" class="prev_btn"><img src="./images/bnr_prev.png" alt="이전 광고보기"></a>
+            <a href="#" class="next_btn"><img src="./images/bnr_next.png" alt="다음 광고보기"></a>
+            <!-- 진행바 -->
+            <div class="scroll_bg">
+                <div class="scrollbar"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

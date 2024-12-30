@@ -112,5 +112,39 @@
             </div>
         </header>
     </div>
+    <main>
+        <!-- 1행 광고배너 start-->
+        <!-- 전체 배너를 묶는 div / 각 배너1번, 배너2번 div / 배너들을 묶는 큰 그룹 div / 공용 버튼,스크롤 등 태그 -->
+        <div class="slides_wrap"> <!-- 전체 배너 대상 모두 묶는 큰 부모 -->
+            <div class="slides_container"> <!-- 배너들 묶는 큰 그룹 div -->
+                <div class="slide slide1"> <!-- 이미지만 들어가는 div-->
+                    <!-- 광고모델 이미지는 bg처리 -->
+                    <div class="contents"> <!-- 배너 컨텐츠 내용만 들어가는 div -->
+                        <div class="title"><!-- 배경의 50% 영역에 위치하게 하는 div -->
+                            <img src="./images/bnr1_txt.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+                            <a href="#" class="bnr_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <!-- 광고모델 이미지는 bg처리 -->
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr2_txt.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+                            <a href="#" class="bnr_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 버튼은 a태그 혹은 버튼으로 많이 쓴다. 그룹으로 묶지 않고 단독 a태그로 많이 쓴다. -->
+            <!-- 배너 이전, 다음 제어 버튼 -->
+            <a href="#" class="prev_btn"><img src="./images/bnr_prev.png" alt="이전 광고보기"></a>
+            <a href="#" class="next_btn"><img src="./images/bnr_next.png" alt="다음광고보기"></a>
+            <!-- 배너 진행 상태 스크롤 -->
+            <div class="scroll_bg">
+                <div class="scrollbar"></div> <!-- css에서 배경색, 가로세로 크기로 설정함 -->
+            </div>
+        </div>
+    </main>
 </body>
 </html>

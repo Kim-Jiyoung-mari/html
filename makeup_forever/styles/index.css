@@ -151,3 +151,77 @@
 .h_bg header .h_right .h_btm .sub_bg .sub_contents .depth2 .sub3 li a {}
 /* ================================================header 서브(E)*/
 /* ================================================main */
+main {}
+/* ================================================main1. 광고배너 */
+main .slides_wrap {
+    background-color: aquamarine;
+    height: 650px; /* 높이 고정값 많이 씀(광고 배너는 광고 요소에 따라 글자 단락이 다 다르기 때문에 내용 기준으로 자동 높이 설정시, 높낮이가 배너에 따라 불균형문제가 발생한다. 그래서 광고배너는 높이를 px로 고정해야 하는 경우가 많다. 그 외엔 자동높이 설정 권장) */
+    position: relative; /* 버튼과 스크롤바의 기준 설정값 */
+}
+main .slides_wrap .slides_container {
+    background-color: greenyellow;
+    height: 100%; /* slides_wrap과 높이 고정하게 유지할 수 있도록, 가장 가까운 부모 기준 크기가 따름 */
+}
+main .slides_wrap .slides_container .slide {
+    height: 100%; /* slides_container과 높이 고정하게 유지할 수 있도록, 가장 가까운 부모 기준 크기가 따름 */
+}
+main .slides_wrap .slides_container .slide .contents {
+    width: 1400px; margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid orangered;
+}
+main .slides_wrap .slides_container .slide .contents .title {
+    width: 50%; float: right; /* 부모의 자식에게 상대처리 : .contents 크기의 50% 크기로 만들기 */
+    padding-top: 126px; /* 부모와 자식 사이의 간격 체크 */
+    border: 3px solid blueviolet;
+}
+main .slides_wrap .slides_container .slide .contents .title img {}
+main .slides_wrap .slides_container .slide .contents .title .bnr_link {
+    display: block; width:min-content; margin-top: 100px;
+    font-weight:500; letter-spacing: -0.02rem; border-radius: 5px;
+    padding: 10px 20px;
+}
+main .slides_wrap .slides_container .slide .contents .title .bnr_link:hover{
+    background-color: #000; color: #FFF;
+}
+main .slides_wrap .prev_btn,
+main .slides_wrap .next_btn {
+    background-color: yellow;
+    position: absolute; top: 50%
+}
+main .slides_wrap .prev_btn img,
+main .slides_wrap .next_btn img {}
+main .slides_wrap .prev_btn {left: 190px;} /* 바디를 기준으로 각 방향 간격 체크 */
+main .slides_wrap .prev_btn img {}
+main .slides_wrap .next_btn {right: 190px;} /* 바디를 기준으로 각 방향 간격 체크 */
+main .slides_wrap .next_btn img {}
+main .slides_wrap .scroll_bg {
+    background-color: #CCC;
+    width: 1400px; height: 2px;
+    /* position: absolute; bottom: 5%;  */
+    position: relative; bottom: 30px; margin: 0 auto;
+}
+main .slides_wrap .scroll_bg .scrollbar {
+    width: 200px; height: 100%;
+    background-color: #111;
+}
+/* ================================================main1. 광고배너(개별 배너 선택자 position 많이 씀) */
+main .slides_wrap .slides_container .slide1 {
+    background-image: url(../images/bnr1.png);
+    display: none; /* 초기 숨기기 */
+}
+main .slides_wrap .slides_container .slide1 .contents {}
+main .slides_wrap .slides_container .slide1 .contents .title {}
+main .slides_wrap .slides_container .slide1 .contents .title img {}
+main .slides_wrap .slides_container .slide1 .contents .title .bnr_link {
+    border: 1px solid #000; border-radius: 5px;
+}
+main .slides_wrap .slides_container .slide2 {
+    background-image: url(../images/bnr2.png);
+}
+main .slides_wrap .slides_container .slide2 .contents {}
+main .slides_wrap .slides_container .slide2 .contents .title {}
+main .slides_wrap .slides_container .slide2 .contents .title img {}
+main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {
+    background-color: #67C9FF;
+}
