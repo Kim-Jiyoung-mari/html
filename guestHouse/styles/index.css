@@ -50,7 +50,7 @@
 #wrap main .title {
     background-image: url(../images/main.png);
     background-size: cover;
-    width: 1920px; height: 900px;
+    width: 100%; height: 100vh;
     position: relative;
     margin-bottom: 60px;
 }
@@ -60,7 +60,7 @@
     width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 5;
 }
 #wrap main .title .main_text {
-    padding: 168px 632px 0;
+    width: 100%; padding-top: 168px;
     text-align:center; color:#FFF;position: absolute; z-index: 10;}
 #wrap main .title .main_text h2  {
     font-family: "Noto Serif", serif; font-size: 1.88rem; letter-spacing: -0.02rem;}
@@ -75,6 +75,7 @@
 }
 /* ===================================2행 객실소개 */
 #wrap main .intro {}
+#wrap main .intro .intro_title {}
 #wrap main .intro > p {
     font-size: 1.56rem; font-weight:500; letter-spacing:-0.02rem;
     padding-bottom: 40px; color: #222;
@@ -84,15 +85,16 @@
 }
 #wrap main .intro .rooms .img {}
 #wrap main .intro .rooms .img > img {}
-#wrap main .intro .rooms .page_btn {
-    width: 100%;
-    position: absolute; left: 0; top:50%;
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
+#wrap main .intro .rooms .prev_btn,
+#wrap main .intro .rooms .next_btn {
+    position: absolute; top: 50%;
 }
-#wrap main .intro .rooms .page_btn .before {}
-#wrap main .intro .rooms .page_btn .before img {}
-#wrap main .intro .rooms .page_btn .next {}
-#wrap main .intro .rooms .page_btn .next img {}
+#wrap main .intro .rooms .prev_btn img,
+#wrap main .intro .rooms .next_btn img {}
+#wrap main .intro .rooms .prev_btn {left: 20px;}
+#wrap main .intro .rooms .prev_btn img {}
+#wrap main .intro .rooms .next_btn {right: 20px;}
+#wrap main .intro .rooms .next_btn img {}
 /* ===================================3행 주변여행지 */
 #wrap main .travel {}
 #wrap main .travel .travel_btn {
@@ -114,25 +116,24 @@
     width: calc((100% - 20px) / 3);
     
 }
-#wrap main .travel .travel_list li .text {
-    height: 400px; background-size: cover;
-}
-#wrap main .travel .travel_list li .text .content {
-    height: 80px;
-}
-#wrap main .travel .travel_list li:nth-child(1) .text {
-    background-image: url(../images/travel1.png);
-}
-#wrap main .travel .travel_list li:nth-child(2) .text {
-    background-image: url(../images/travel2.png);
-}
-#wrap main .travel .travel_list li:nth-child(3) .text {
-    background-image: url(../images/travel3.png);
-}
-#wrap main .travel .travel_list li .text::before {
+#wrap main .travel .travel_list li::before{
     content: ''; display: block; width: 100%; height: 400px;
     background-size: cover; background-position: center;
 }
+#wrap main .travel .travel_list li:first-child:before{
+    background-image: url(../images/travel1.png);
+}
+#wrap main .travel .travel_list li:nth-child(2):before{
+    background-image: url(../images/travel2.png);
+}
+#wrap main .travel .travel_list li:last-child:before{
+    background-image: url(../images/travel3.png);
+}
+#wrap main .travel .travel_list li .text {
+    position: relative;
+    background-size: cover; background-position: center 60%;
+}
+#wrap main .travel .travel_list li .text .content {}
 #wrap main .travel .travel_list li .text h2 {
     color: #538505;
     font-size: 1.56rem; font-weight:700;
@@ -149,7 +150,7 @@
 #wrap main .location .img > img {
     padding-bottom: 35px;
 }
-#wrap main .location .traffic_info {color: #222;}
+#wrap main .location .traffic_info > * {color: #222;}
 #wrap main .location .traffic_info ul {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
@@ -195,7 +196,7 @@
     background-color: #F5F5F5;
     padding: 20px 20px 120px;
 }
-#wrap main .location .traffic_info ul .subway_info .suaway_list {padding: 10px;}
+#wrap main .location .traffic_info ul .subway_info .suaway_list {}
 #wrap main .location .traffic_info ul .subway_info h4 {font-size: 1.25rem; font-weight:700 }
 #wrap main .location .traffic_info ul .subway_info p {}
 #wrap main .location .traffic_info ul .subway_info .suaway_list:nth-child(2) {
@@ -204,7 +205,7 @@
 /* ===================================footer 구역 */
 #wrap footer {
     background-color: rgba(0, 0, 0, 0.1);
-    width: 100%; padding: 20px;
+    padding: 20px;
 }
 #wrap footer .top {
     padding-bottom: 57px;
