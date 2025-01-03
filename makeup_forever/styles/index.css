@@ -6,7 +6,7 @@
     position: relative;
 }
 .h_bg header {
-    width: 1400px; margin: 0 auto; height: 125px;
+    max-width:1400px; margin: 0 auto; height: 125px;
     /* h1+h_right 정렬 */
     display: flex; flex-flow: row nowrap; align-items:center;
 }
@@ -24,6 +24,7 @@
 }
 .h_bg header .h_right .h_top .search {}
 .h_bg header .h_right .h_top .search > a {}
+.h_bg header .h_right .h_top .search .m_all_nav {display: none;}
 .h_bg header .h_right .h_top .search > a img {}
 .h_bg header .h_right .h_top > a {
     margin-left: 16px;
@@ -114,7 +115,7 @@
     /* absolute작성할 때 반드시 width 속성도 함께 써야 한다. 안쓰면 인라인 블록처럼 인식한다. */
 } 
 .h_bg header .h_right .h_btm .sub_bg .sub_contents {
-    width: 1400px; margin: 0 auto; height: 240px;
+    max-width:1400px; margin: 0 auto; height: 240px;
     display: flex; flex-flow: row nowrap;
     padding: 40px 0 0;
 }
@@ -150,6 +151,37 @@
 .h_bg header .h_right .h_btm .sub_bg .sub_contents .depth2 .sub3 li {}
 .h_bg header .h_right .h_btm .sub_bg .sub_contents .depth2 .sub3 li a {}
 /* ================================================header 서브(E)*/
+/* ================================================header 모바일 서브메뉴 (S)*/
+.h_bg header .h_right .h_top .search .m_nav {
+    position:fixed; left:0; top:125px; z-index: 10;
+    background-color: #FFF; width: 100%; height: (100% - 125px)vh;
+}
+.h_bg header .h_right .h_top .search .m_nav .m_login {
+    border-bottom: 2px solid #000; text-align: right;
+    padding: 30px 20px 10px; 
+}
+.h_bg header .h_right .h_top .search .m_nav .m_login a {
+    color: #000; margin-right: 40px; 
+}
+.h_bg header .h_right .h_top .search .m_nav .m_login a:last-child{margin: 0;}
+.h_bg header .h_right .h_top .search .m_nav nav {
+    padding: 20px;
+}
+.h_bg header .h_right .h_top .search .m_nav nav > ul {
+    text-align: right; 
+}
+.h_bg header .h_right .h_top .search .m_nav nav > ul > li {
+    width: 100%; background-color: coral;
+    padding: 10px 10px 10px 0 ; margin-bottom: 15px;
+}
+.h_bg header .h_right .h_top .search .m_nav nav > ul > li a {color: #000;}
+.h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub {
+    background-color: #FFF;
+    border-top: 1px solid #000; border-bottom: 1px solid #000;
+}
+.h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li {}
+.h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li a {color: #000;}
+/* ================================================header 모바일 서브메뉴 (E)*/
 /* ================================================main */
 main {}
 /* ================================================main1. 광고배너 */
@@ -164,7 +196,7 @@ main .slides_wrap .slides_container .slide {
     height: 100%; /* slides_container과 높이 고정하게 유지할 수 있도록, 가장 가까운 부모 기준 크기가 따름 */
 }
 main .slides_wrap .slides_container .slide .contents {
-    width: 1400px; margin: 0 auto;
+    max-width:1400px; margin: 0 auto;
     overflow: hidden;
 }
 main .slides_wrap .slides_container .slide .contents .title {
@@ -192,7 +224,7 @@ main .slides_wrap .next_btn {right: 190px;} /* 바디를 기준으로 각 방향
 main .slides_wrap .next_btn img {}
 main .slides_wrap .scroll_bg {
     background-color: #CCC;
-    width: 1400px; height: 2px;
+    max-width:1400px; height: 2px;
     /* position: absolute; bottom: 5%;  */
     position: relative; bottom: 30px; margin: 0 auto;
 }
@@ -202,7 +234,7 @@ main .slides_wrap .scroll_bg .scrollbar {
 }
 /* ================================================main1. 광고배너(개별 배너 선택자 position 많이 씀) */
 main .slides_wrap .slides_container .slide1 {
-    background-image: url(../images/bnr1.png);
+    background-image: url(../images/bnr1.png); 
     display: none; /* 초기 숨기기 */
 }
 main .slides_wrap .slides_container .slide1 .contents {}
@@ -220,9 +252,44 @@ main .slides_wrap .slides_container .slide2 .contents .title img {}
 main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {
     background-color: #67C9FF;
 }
+/* ================================================2행 BEST ITEM 상품*/
+main .best_item_wrap {
+    background-color: yellow;
+    max-width:1400px; margin: 0 auto;
+}
+main .best_item_wrap h2 {
+    font-size: 2.19rem; letter-spacing: -0.02rem; font-weight: 700;
+    margin-bottom: 30px;
+}
+main .best_item_wrap .contents {
+    background-color: lightcoral;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .best_item_wrap .contents li {
+    background-color: lightseagreen;
+    width: calc((100% - (21px * 3)) / 4);
+}
+main .best_item_wrap .contents li a {}
+main .best_item_wrap .contents li a img {
+    width: 100%;
+    padding-bottom: 10px;}
+main .best_item_wrap .contents li .txt {
+    background-color: lightcyan;
+}
+main .best_item_wrap .contents li .txt .category {
+    padding-bottom: 10px;
+    letter-spacing: -0.02rem;
+}
+main .best_item_wrap .contents li .txt h3 {
+    font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02rem;
+    padding-bottom: 35px;
+}
+main .best_item_wrap .contents li .txt .price {
+    font-size: 1.13rem; letter-spacing: -0.02rem; font-weight: 500;
+}
 /* ================================================3행 FACE BEST 상품*/
 main .face_best_wrap {
-    width: 1400px; margin: 0 auto;
+    max-width:1400px; margin: 0 auto;
 }
 main .face_best_wrap .title {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
@@ -238,7 +305,7 @@ main .face_best_wrap .contents {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 main .face_best_wrap .contents li {
-    width: calc((100%-(30 * 2)) / 3);
+    width: calc((100% - (30 * 2)) / 3);
 }
 main .face_best_wrap .contents li .product {
     position: relative;

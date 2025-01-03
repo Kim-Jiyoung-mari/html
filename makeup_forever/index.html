@@ -16,6 +16,36 @@
                 <div class="h_top">
                     <div class="search">
                         <a href="#"><img src="./images/search.png" alt="검색"></a>
+                        <!-- 모바일 출력 메뉴 -->
+                        <a href="#" class="m_all_nav"><img src="./images/mobile_menu.png" alt=""></a>
+                        <!-- 모바일 메뉴 클릭 시 실행되는 서브메뉴 전체(아래) -->
+                        <div class="m_nav"> <!-- 포지션 픽스 -->
+                            <div class="m_login">
+                                <a href="#">로그인</a>
+                                <a href="#">회원가입</a>
+                                <a href="#">고객센터</a>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">브랜드</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">미용소품</a></li>
+                                    <li><a href="#">BEST</a></li>
+                                    <li>
+                                        <a href="#" class="active_mobile">FACE</a>
+                                        <ul class="sub">
+                                            <li><a href="#">파운데이션</a></li>
+                                            <li><a href="#">프라이머</a></li>
+                                            <li><a href="#">블러셔</a></li>
+                                            <li><a href="#">컨실러</a></li>
+                                            <li><a href="#">파우더</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">EYES</a></li>
+                                    <li><a href="#">LIPS</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                         <!-- 검색 클릭 시 실행되는 팝업(아래) -->
                         <div class="search_popup">
                             <a href="#" class="close_btn"><img src="./images/close_btn.png" alt="창 닫기"></a>
@@ -147,17 +177,38 @@
         </div>
         <!-- 2행 best 상품 -->
         <div class="best_item_wrap"> 
-            <div class="title">
-                <h2>MakeUp BEST ITEM</h2>
-                <a href="#" class="more">MORE</a>
-            </div>
+            <h2>MakeUp BEST ITEM</h2>
             <ul class="contents">
                 <li>
-                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="./images/makeup1.jpg" alt=""></a>
                     <div class="txt">
-                        <p class="category">UHD 스틱 파운데이션</p>
-                        <h3>스테이 트루 파운데이션</h3>
-                        <p class="price">60,000</p>
+                        <p class="category">UHD 컨실러</p>
+                        <h3>라이트 캡쳐링 셀프-세팅 컨실러</h3>
+                        <p class="price">40,000</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/makeup2.jpg" alt=""></a>
+                    <div class="txt">
+                        <p class="category">ULTRA HD 파우더</p>
+                        <h3>마이크로피니싱 루스 파우더</h3>
+                        <p class="price">59,000</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/makeup3.jpg" alt=""></a>
+                    <div class="txt">
+                        <p class="category">UHD 프레스트 파우더</p>
+                        <h3>마이크로피니싱 프레스트 파우더</h3>
+                        <p class="price">59,000</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/makeup4.jpg" alt=""></a>
+                    <div class="txt">
+                        <p class="category">UHD 소프트라이트</p>
+                        <h3>리퀴드 하이라이터</h3>
+                        <p class="price">49,000</p>
                     </div>
                 </li>
             </ul>
