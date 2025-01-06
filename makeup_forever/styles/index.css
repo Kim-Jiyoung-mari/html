@@ -153,8 +153,9 @@
 /* ================================================header 서브(E)*/
 /* ================================================header 모바일 서브메뉴 (S)*/
 .h_bg header .h_right .h_top .search .m_nav {
+    display: none;
     position:fixed; left:0; top:125px; z-index: 10;
-    background-color: #FFF; width: 100%; height: (100% - 125px)vh;
+    background-color: #FFF; width: 100%;  height : calc(100vh - 125px);
 }
 .h_bg header .h_right .h_top .search .m_nav .m_login {
     border-bottom: 2px solid #000; text-align: right;
@@ -171,15 +172,17 @@
     text-align: right; 
 }
 .h_bg header .h_right .h_top .search .m_nav nav > ul > li {
-    width: 100%; background-color: coral;
-    padding: 10px 10px 10px 0 ; margin-bottom: 15px;
+    width: 100%; background-color: #F5F5F5;
+    margin-bottom: 15px; padding: 10px 10px 10px;
 }
 .h_bg header .h_right .h_top .search .m_nav nav > ul > li a {color: #000;}
 .h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub {
-    background-color: #FFF;
+    background-color: #FFF; padding: 15px; margin-top: 15px;
     border-top: 1px solid #000; border-bottom: 1px solid #000;
 }
-.h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li {}
+.h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li {padding-bottom: 20px;}
+.h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li:last-child {padding-bottom: 0;}
+h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li:last-child {padding: 0;}
 .h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li a {color: #000;}
 /* ================================================header 모바일 서브메뉴 (E)*/
 /* ================================================main */
@@ -188,6 +191,7 @@ main {}
 main .slides_wrap {
     height: 650px; /* 높이 고정값 많이 씀(광고 배너는 광고 요소에 따라 글자 단락이 다 다르기 때문에 내용 기준으로 자동 높이 설정시, 높낮이가 배너에 따라 불균형문제가 발생한다. 그래서 광고배너는 높이를 px로 고정해야 하는 경우가 많다. 그 외엔 자동높이 설정 권장) */
     position: relative; /* 버튼과 스크롤바의 기준 설정값 */
+    margin-bottom: 150px;
 }
 main .slides_wrap .slides_container {
     height: 100%; /* slides_wrap과 높이 고정하게 유지할 수 있도록, 가장 가까운 부모 기준 크기가 따름 */
@@ -245,8 +249,9 @@ main .slides_wrap .slides_container .slide1 .contents .title .bnr_link {
 }
 main .slides_wrap .slides_container .slide2 {
     background-image: url(../images/bnr2.png);
+    
 }
-main .slides_wrap .slides_container .slide2 .contents {}
+main .slides_wrap .slides_container .slide2 .contents {padding-bottom: 150px;}
 main .slides_wrap .slides_container .slide2 .contents .title {}
 main .slides_wrap .slides_container .slide2 .contents .title img {}
 main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {
@@ -254,28 +259,23 @@ main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {
 }
 /* ================================================2행 BEST ITEM 상품*/
 main .best_item_wrap {
-    background-color: yellow;
-    max-width:1400px; margin: 0 auto;
+    max-width:1400px; margin: 0 auto 150px;
 }
 main .best_item_wrap h2 {
     font-size: 2.19rem; letter-spacing: -0.02rem; font-weight: 700;
     margin-bottom: 30px;
 }
 main .best_item_wrap .contents {
-    background-color: lightcoral;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 main .best_item_wrap .contents li {
-    background-color: lightseagreen;
     width: calc((100% - (21px * 3)) / 4);
 }
 main .best_item_wrap .contents li a {}
 main .best_item_wrap .contents li a img {
     width: 100%;
     padding-bottom: 10px;}
-main .best_item_wrap .contents li .txt {
-    background-color: lightcyan;
-}
+main .best_item_wrap .contents li .txt {}
 main .best_item_wrap .contents li .txt .category {
     padding-bottom: 10px;
     letter-spacing: -0.02rem;
@@ -289,7 +289,7 @@ main .best_item_wrap .contents li .txt .price {
 }
 /* ================================================3행 FACE BEST 상품*/
 main .face_best_wrap {
-    max-width:1400px; margin: 0 auto;
+    max-width:1400px; margin: 0 auto 150px;
 }
 main .face_best_wrap .title {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
@@ -346,3 +346,49 @@ main .face_best_wrap .contents li .txt h3 {
 main .face_best_wrap .contents li .txt .price {
     font-size: 1.13rem; letter-spacing: -0.02rem; font-weight: 500;
 }
+/* ================================================4행 메이크업 예약*/
+main .reservation_wrap {
+    background-color: #000; margin-bottom: 150px;
+    padding: 40px 0 ;
+}
+main .reservation_wrap .reser_contants {
+    max-width: 1400px; margin: 0 auto;
+}
+main .reservation_wrap .reser_contants .top_title {
+    text-align:  center; margin-bottom: 70px;
+}
+main .reservation_wrap .reser_contants .top_title h2,
+main .reservation_wrap .reser_contants .top_title p {color: #FFF;}
+main .reservation_wrap .reser_contants .top_title h2 {
+    padding-bottom: 20px;
+    font-family: "Noto Serif", serif; font-size: 4.38rem; font-weight: 700;
+    letter-spacing: -0.02rem;
+}
+main .reservation_wrap .reser_contants .top_title p {
+    font-size: 1.56rem; font-weight: 600;
+    letter-spacing: -0.02rem;
+}
+main .reservation_wrap .reser_contants .btm_contant {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+main .reservation_wrap .reser_contants .btm_contant .left_btn {}
+main .reservation_wrap .reser_contants .btm_contant .left_btn p {}
+main .reservation_wrap .reser_contants .btm_contant .left_btn p > img {display: block; margin-bottom: 100px;}
+main .reservation_wrap .reser_contants .btm_contant .left_btn .reser_title,
+main .reservation_wrap .reser_contants .btm_contant .left_btn .reser_txt {color: #FFF;}
+main .reservation_wrap .reser_contants .btm_contant .left_btn .reser_title {
+    font-size: 2.19rem; font-weight: 700;
+    letter-spacing: -0.02rem; padding-bottom: 10px;
+}
+main .reservation_wrap .reser_contants .btm_contant .left_btn .reser_txt {
+    font-size: 1.25rem; font-weight: 500;
+    letter-spacing: -0.02rem; padding-bottom: 50px;
+}
+main .reservation_wrap .reser_contants .btm_contant .left_btn a {
+    display: block; text-align: center;
+    background-color: #FFF; padding: 40px 0;
+    font-size: 2.19rem; font-weight: 700;
+    letter-spacing: -0.02rem;
+}
+main .reservation_wrap .reser_contants .btm_contant .right_img {}
+main .reservation_wrap .reser_contants .btm_contant .right_img > img {}
