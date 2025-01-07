@@ -1,0 +1,140 @@
+/* --------------------------헤더구역--------------------------------- */
+.h_bg {
+    background-color: #FFF;
+}
+.h_bg header {
+    width: 1400px; margin: 0 auto;
+    display: flex; flex: row nowrap; justify-content: space-between;
+    padding: 20px 0;
+}
+.h_bg header h1 {}
+.h_bg header h1 > a {}
+.h_bg header h1 > a img {}
+.h_bg header .h_right {
+    width: calc(100% - 160px); padding: 0 20px 0 30px;
+}
+.h_bg header .h_right .top_layer {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding-bottom: 10px;
+}
+.h_bg header .h_right .top_layer .left_top {}
+.h_bg header .h_right .top_layer .left_top > a {
+    padding-right: 20px;
+    line-height: 1.5; letter-spacing: -0.02rem;
+}
+.h_bg header .h_right .top_layer .right_top {
+}
+.h_bg header .h_right .top_layer .right_top > a {padding-left: 20px;}
+.h_bg header .h_right .bottom_layer {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header .h_right .bottom_layer nav {}
+.h_bg header .h_right .bottom_layer nav ul {
+    display: flex; flex-flow: row nowrap;
+}
+.h_bg header .h_right .bottom_layer nav ul li {padding: 0;}
+.h_bg header .h_right .bottom_layer nav ul li > a {
+    font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02rem;
+    padding-right: 30px;
+    position: relative; top: 6px
+}
+.h_bg header .h_right .bottom_layer .right_search {
+    background-color: #F2F2F2; width: 322px;
+    border-radius: 20px; padding: 5px 10px;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm #user_search {
+    background: none;
+    line-height: 1.5; letter-spacing: -0.02rem; color: #000;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm #user_search::placeholder {
+    line-height: 1.5; letter-spacing: -0.02rem; color: #000;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm .search_btn {}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm .search_btn > img {}
+/* --------------------------메인구역--------------------------------- */
+/* --------------------------1행 배너라인--------------------------------- */
+main .bnr_wrap {
+    height: 700px; padding-bottom: 170px;
+    position: relative;
+}
+main .bnr_wrap .bnr_container {
+    height: 100%;
+}
+main .bnr_wrap .bnr_container .bnr1 {
+    background-image: url(../images/bnr.jpg); 
+    height: 100%;
+}
+main .bnr_wrap .bnr_container .bnr1 .content {
+    width:1400px; margin: 0 auto; height: 100%;
+}
+main .bnr_wrap .bnr_container .bnr1 .content .title {
+    width: 50%; color: #FFF;
+    position: relative; top: 40%; left: 5%;
+}
+main .bnr_wrap .bnr_container .bnr1 .content .title p:nth-of-type(1) {
+    padding-bottom: 40px;
+    font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .bnr_wrap .bnr_container .bnr1 .content .title p:nth-of-type(2) {
+    font-size: 1.88rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+main .bnr_wrap .bnr_container .bnr1 .content .title h2 {
+    font-size: 4.38rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+main .bnr_wrap .prev_btn,
+main .bnr_wrap .next_btn {
+    position: absolute; top: 50%;
+}
+main .bnr_wrap .prev_btn {left: 190px;}
+main .bnr_wrap .prev_btn img {}
+main .bnr_wrap .next_btn {right: 190px;}
+main .bnr_wrap .next_btn img {}
+/* --------------------------2행 MD추천--------------------------------- */
+main .wrap {
+    width: 1400px; margin: 0 auto 200px;
+}
+main .wrap .row2_title {
+    border-bottom: 1px solid #000; 
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: flex-end;
+    padding-bottom: 20px;
+}
+main .wrap .row2_title .title {}
+main .wrap .row2_title .title h2 {
+    font-size: 2.19rem; font-weight: 700; letter-spacing: -0.02rem;
+    padding-bottom: 11px;
+}
+main .wrap .row2_title .title p {
+    font-size: 1.44rem; letter-spacing: -0.02rem;
+}
+main .wrap .row2_title > a {
+    border: 1px solid #555; padding: 5px 20px;
+}
+main .wrap .row2_title > a > img {
+    width: 16px; padding-left: 5px;
+}
+main .wrap .row2_contents {margin-top: 60px;}
+main .wrap .row2_contents ul {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    width: calc(100% - 60px) / 3;
+}
+main .wrap .row2_contents ul li {}
+main .wrap .row2_contents ul li > a {}
+main .wrap .row2_contents ul li > a > img {padding-bottom: 51px;}
+main .wrap .row2_contents ul li .txt {}
+main .wrap .row2_contents ul li .txt h3 {
+    padding-bottom: 6px;
+    font-size: 1.25rem; letter-spacing: -0.02rem; line-height: 1.5;
+}
+main .wrap .row2_contents ul li .txt .mid_title {
+    font-size: 1.88rem; font-weight: 700; letter-spacing: -0.02rem;
+    color: #0A5E81;
+}
+main .wrap .row2_contents ul li .txt .mid_title span {
+    font-size: 1.44rem; letter-spacing: -0.02rem;    
+    color: #000;
+}
+main .row2 {}
+/* --------------------------푸터구역--------------------------------- */
