@@ -1,6 +1,6 @@
 main {
     padding-top: 123px;
-    width: 1136px; margin: 0 auto;
+    width: 1136px; margin: 0 auto ;
 }
 /* 상품경로 */
 main .path {
@@ -60,12 +60,11 @@ main .product_container .contents .price_result > * {font-size: 2.00rem;}
 main .product_container .contents .price_result em {font-weight: 700;}
 /* =========================================================================배송혜택*/
 main .product_container .contents dl {
-    
     display: flex; flex-flow: row wrap;
 }
-main .product_container .contents dl dt {width: 80px;}
+main .product_container .contents dl dt {width: 80px;  padding:15px 0;}
 main .product_container .contents dl dd {
-    width: calc(100% - 80px);
+    width: calc(100% - 80px); padding:15px 0;
     display: flex; flex-flow: column nowrap;
 }
 main .product_container .contents dl dd > em {}
@@ -74,11 +73,17 @@ main .product_container .contents dl dd .ship_schedule {
     background-color: #eee; border-radius: 7px;
     padding: 15px 10px;
 }
+main .product_container .contents dl dd > * {margin-bottom:10px;}
 main .product_container .contents dl dd .ship_schedule em {}
 /* ========================================================================클릭시 열리는 부분*/
+/* ==============================★★★★★ 배송정보 (js 클래스 전용) ★★★★★ */
+/* toggle매서드를 활용할 교차 클래스 생성 목적 */
+main .product_container .contents dl dd .hide {display: none !important;} 
+/* JS 관계없이 정적 CSS schedule_open(아래) */
 main .product_container .contents dl dd .schedule_open {
     padding:15px 10px; background-color: #eee; border-radius: 7px;
     border-top:1px solid #c5c5c5; 
+    display: block; 
 }
 main .product_container .contents dl dd .schedule_open > * {display:block;}
 main .product_container .contents dl dd .schedule_open em {border-bottom:1px dotted #aaa;}
@@ -106,6 +111,17 @@ main .product_container .contents .order_contents .select_contents select#size {
     
 }
 main .product_container .contents .order_contents .select_contents select#size option {}
+/* ===============================================================================주문개수설정*/
+main .product_container .contents .order_contents .num {float: right;}
+main .product_container .contents .order_contents .num #product_num{
+    border: 1px solid #CCC; width: 50px; border-radius: 5px; margin-left: 10px;
+}
+main .product_container .contents .order_contents .num #minus{}
+main .product_container .contents .order_contents .num #plus{}
+main .product_container .contents .order_contents .num button{
+    background-color: #EEE; width: 25px; height: 25px;
+    border-radius: 5px;
+}
 /* ===============================================================================주문금액*/
 main .product_container .contents .order_contents .order_price {
     display: flex; justify-content: space-between;
@@ -125,4 +141,33 @@ main .product_container .contents .order_contents .order_btn #cart_btn {
 }
 main .product_container .contents .order_contents .order_btn #buy_btn {
     background-color: #59AFFF;
+}
+/* ===============================================================================장바구니 클릭시 실행되는 팝업 */
+main .cart_open_bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; height: 100vh;
+    position: fixed; left: 0; top: 0;
+}
+main .cart_open_bg .cart_container {
+    background-color: #FFF;
+    width: 700px; margin: 125px auto 0; text-align: center;
+    border-radius: 5px;
+}
+main .cart_open_bg .cart_container p {
+    padding: 40px 0;
+}
+main .cart_open_bg .cart_container .link {
+    padding-bottom: 40px;
+}
+main .cart_open_bg .cart_container .link a {
+    padding: 10px 20px;
+}
+main .cart_open_bg .cart_container .link a:nth-child(1) {
+    background-color: #FFF; 
+    border: 1px solid #59AFFF; border-radius: 5px;
+}
+main .cart_open_bg .cart_container .link a:nth-child(2) {
+    background-color: #59AFFF; 
+    border: 1px solid #59AFFF; border-radius: 5px;
+    color: #FFF;
 }
