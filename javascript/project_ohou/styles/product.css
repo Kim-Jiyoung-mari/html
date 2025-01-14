@@ -1,0 +1,128 @@
+main {
+    padding-top: 123px;
+    width: 1136px; margin: 0 auto;
+}
+/* 상품경로 */
+main .path {
+    margin-bottom: 26px;
+}
+main .path a {font-size: 0.88rem; letter-spacing: -0.02rem;}
+main .path span {}
+main .product_container {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+/* 상품 미리보기 이미지 */ /* 너비 설정 한 쪽은 px(고정값)하면 반대쪽은 상대처리 할 것 */
+main .product_container .photo {
+    width:630px; display:flex; justify-content: space-between;
+}
+main .product_container .photo .thumnail {}
+main .product_container .photo .thumnail a { /* 인라인은 크기 인식 안돼 블록처리 */
+    margin:0 0 10px; width:56px; display:block; border-radius:5px; overflow:hidden;
+}
+main .product_container .photo .thumnail a img {width: 100%; display:block;}
+main .product_container .photo .big {width:559px; display:block; border-radius:5px; overflow:hidden;}
+main .product_container .photo .big img {width: 100%; display:block;}
+/* ==============================★★★★★상품 미리보기 이미지 (js 클래스 전용)★★★★★ */
+/* thumnail a에 마우스를 올렸을 때 적용되는 테두리 디자인 */
+main .product_container .photo .thumnail a.active {border:3px solid #59AFFF;}
+/* 상품 이름, 가격, 배송, 주문 정보 */
+main .product_container .contents {
+    width: calc(100% - (630px + 24px));
+}
+main .product_container .contents .brand,
+main .product_container .contents h1,
+main .product_container .contents .review,
+main .product_container .contents .price_before,
+main .product_container .contents .price_result,
+main .product_container .contents .benefit,
+main .product_container .contents .order_contents .select_contents select,
+main .product_container .contents .order_contents .order_price {margin-bottom: 25px;}
+
+main .product_container .contents .brand {
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+}
+main .product_container .contents h1 {
+    font-size: 1.38rem; letter-spacing: -0.02rem;
+}
+main .product_container .contents .review {
+    display: inline-block;
+    font-size: 0.81rem; letter-spacing: -0.02rem;
+}
+/* ===============================================================================가격정보*/
+main .product_container .contents .price_before {
+    letter-spacing: -0.02rem;
+}
+main .product_container .contents .price_before .sale {}
+main .product_container .contents .price_before .price {
+    color: #777;
+}
+main .product_container .contents .price_result > * {font-size: 2.00rem;}
+main .product_container .contents .price_result em {font-weight: 700;}
+/* =========================================================================배송혜택*/
+main .product_container .contents dl {
+    
+    display: flex; flex-flow: row wrap;
+}
+main .product_container .contents dl dt {width: 80px;}
+main .product_container .contents dl dd {
+    width: calc(100% - 80px);
+    display: flex; flex-flow: column nowrap;
+}
+main .product_container .contents dl dd > em {}
+main .product_container .contents dl dd > span {}
+main .product_container .contents dl dd .ship_schedule {
+    background-color: #eee; border-radius: 7px;
+    padding: 15px 10px;
+}
+main .product_container .contents dl dd .ship_schedule em {}
+/* ========================================================================클릭시 열리는 부분*/
+main .product_container .contents dl dd .schedule_open {
+    padding:15px 10px; background-color: #eee; border-radius: 7px;
+    border-top:1px solid #c5c5c5; 
+}
+main .product_container .contents dl dd .schedule_open > * {display:block;}
+main .product_container .contents dl dd .schedule_open em {border-bottom:1px dotted #aaa;}
+main .product_container .contents dl dd .schedule_open em span {font-weight:700;}
+main .product_container .contents dl dd .schedule_open em span:last-child {float:right;}
+main .product_container .contents dl dd .schedule_open span {line-height:1.5;}
+/* ===============================================================================옵션선택*/
+main .product_container .contents .order_contents {}
+main .product_container .contents .order_contents .select_contents {
+    
+}
+main .product_container .contents .order_contents .select_contents select {
+    display:block; width:100%; padding:10px 17px; font-size:0.88rem;
+    border:1px solid #59AFFF; margin: 0 0 25px; height:44px; border-radius: 5px;
+    background-repeat: no-repeat; background-position: right center;
+}
+main .product_container .contents .order_contents .select_contents select option {}
+main .product_container .contents .order_contents .select_contents select#color {
+    background-image: url(../images/color_down.png);
+}
+main .product_container .contents .order_contents .select_contents select#color option {}
+main .product_container .contents .order_contents .select_contents select#size {
+    border-color: rgba(0, 0, 0, 0.2);
+    background-image: url(../images/size_down.png);
+    
+}
+main .product_container .contents .order_contents .select_contents select#size option {}
+/* ===============================================================================주문금액*/
+main .product_container .contents .order_contents .order_price {
+    display: flex; justify-content: space-between;
+}
+main .product_container .contents .order_contents .order_price h2 {}
+main .product_container .contents .order_contents .order_price p {}
+main .product_container .contents .order_contents .order_price p .price {font-size:1.25rem; font-weight:800;}
+/* ===============================================================================버튼 */
+main .product_container .contents .order_contents .order_btn {
+    display: flex; justify-content: space-between;
+}
+main .product_container .contents .order_contents .order_btn button {
+    width: calc((100% - 10px) / 2); padding: 20px; border-radius: 5px;
+}
+main .product_container .contents .order_contents .order_btn #cart_btn {
+    background-color: #FFF;
+}
+main .product_container .contents .order_contents .order_btn #buy_btn {
+    background-color: #59AFFF;
+}
