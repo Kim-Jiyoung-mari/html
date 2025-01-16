@@ -1,0 +1,230 @@
+#login_wrap {
+    background-color: aqua;
+    width: 743px; margin: 0 auto;
+}
+/* 언어선택 */
+#login_wrap #lang_select {float: right;}
+#login_wrap #lang_select option {}
+/* 로고 */
+#login_wrap h1 {
+    clear: both;
+    width: 135px; height: 26px; margin: 0 auto;
+    background-image: url(../images/m_sp.png);
+    background-position: -316px -104px;
+    text-indent: -9999px; /* 화면 왼쪽으로 글자를 내보낸다 */
+}
+#login_wrap h1 a {display: block; height: 100%;}
+/* 로그인폼 */
+#login_wrap main {
+    background-color: yellow;
+    width: 458px; margin:0 auto;
+}
+#login_wrap main form {}
+/* 제목탭구성 */
+#login_wrap main form .title {
+    display: flex;
+}
+#login_wrap main form .title h2{
+    background-color: #f8f9fa;
+    width: calc(100% / 3); position: relative;
+    height: 68px; border-bottom: 1px solid #cdcdcd;
+    border-top: 1px solid #CDCDCE;
+    border-right: 1px solid #CDCDCE;
+}
+#login_wrap main form .title h2.active {
+    border: 1px solid #CECECE; border-radius: 10px;
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #FFF;
+}
+#login_wrap main form .title h2.active::before {
+    content:''; display:block;
+    width:18px; height:78px;
+/*     background-color: aquamarine; */
+    background-image:url(../images/m_sp_login.png);
+    background-position: -21px -176px;
+    position:absolute; left: -6px; top: -1px;
+}
+#login_wrap main form .title h2.active::after {
+    content:''; display:block;
+    width:18px; height:78px;
+/*     background-color: rgb(153, 255, 127); */
+    background-image:url(../images/m_sp_login.png);
+    background-position:0 -176px;
+    position:absolute; right:-1px; top: -1px;
+}
+#login_wrap main form .title h2:nth-child(1)::before {display: none;}
+#login_wrap main form .title h2:nth-child(3)::after {display: none;}
+#login_wrap main form .title h2 a {
+    /* 부모의 높이가 px 정해져있고 정렬하는 자식요소가 한 줄일 경우 수직정렬 */
+    line-height: 68px; /* 부모와 똑같은 높이를 설정해준다 */
+    display: block; text-align: center;
+}
+#login_wrap main form .title h2 a em {}
+#login_wrap main form .title h2 a .message {
+    background-color: #FFF; padding: 2px 10px;
+    border: 1px solid #09aa5c; border-radius: 20px;
+    position: absolute; right: -30px; top: -15px;
+    text-wrap: nowrap;
+}
+#login_wrap main form .title h2 a .message strong {
+    font-size: 0.63rem; color: #09aa5c;
+}
+#login_wrap main form .title h2 a .message .close {
+    font-size: 0.63rem; color: #09aa5c;
+}
+/* 내용탭구성 */
+#login_wrap main form .login_container {}
+#login_wrap main form .login_container .login_box {
+    /* 공통내용탭 */
+    padding: 25px 30px;
+    background-color: #FFF;
+    border: 1px solid #cdcdce; border-top: 0;
+}
+/* 내용1. ID 로그인 */
+#login_wrap main form .login_container .id_login {}
+#login_wrap main form .login_container .id_login ul {}
+#login_wrap main form .login_container .id_login ul li {
+    border: 1px solid #cdcdce;
+    padding: 15px 20px 15px 40px; position: relative;
+}
+#login_wrap main form .login_container .id_login ul li::before{
+    width: 20px; height: 21px;
+    content: ''; display: block;
+    background-image: url(../images/m_sp_login.png);
+    position: absolute; left: 10px; top: 15px;
+}
+#login_wrap main form .login_container .id_login ul li:nth-child(1)::before {
+    background-position: -117px -256px;
+}
+#login_wrap main form .login_container .id_login ul li:nth-child(2):before {
+    background-position: -162px -256px;
+}
+#login_wrap main form .login_container .id_login ul li:first-child{
+    border-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#login_wrap main form .login_container .id_login ul li:last-child{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#login_wrap main form .login_container .id_login ul li input {width: 100%;}
+#login_wrap main form .login_container .id_login ul li #user_id {}
+#login_wrap main form .login_container .id_login ul li #user_pw {}
+#login_wrap main form .login_container .id_login .state_group {}
+#login_wrap main form .login_container .id_login .state_group .login_state {}
+#login_wrap main form .login_container .id_login .state_group .login_state #login_state_y {}
+#login_wrap main form .login_container .id_login .state_group .login_state #login_state_y:checked+label {}
+#login_wrap main form .login_container .id_login .state_group .ip_state {}
+#login_wrap main form .login_container .id_login .state_group .ip_state > a {}
+#login_wrap main form .login_container .id_login .state_group .ip_state > #ip_on {}
+#login_wrap main form .login_container .id_login .state_group .ip_state > #ip_on:checked+label {}
+#login_wrap main form .login_container .id_login .state_group .ip_state > label {}
+#login_wrap main form .login_container .id_login .state_group .ip_state > label .switch {}
+#login_wrap main form .login_container .id_login .state_group .ip_state > label .switch_state {}
+#login_wrap main form .login_container .id_login .state_group .login_btn {}
+#login_wrap main form .login_container .id_login .state_group .login_btn #login {}
+/* 내용2. 일회용 로그인 */
+#login_wrap main form .login_container .one_time_login {}
+#login_wrap main form .login_container .one_time_login p {
+    text-align: center;
+}
+
+#login_wrap main form .login_container .one_time_login p > span {
+    font-weight: 500; color: #09aa5c;
+}
+#login_wrap main form .login_container .one_time_login p > span .set {
+    width: 19px; height: 18px; display: inline-block;
+    background-image: url(../images/m_sp_login.png);
+    background-position: -110px -218px;
+    position: relative; left: 2px; top: 2px;
+}
+#login_wrap main form .login_container .one_time_login p a{
+    width: 14px; height: 14px; display: inline-block;
+    background-image: url(../images/m_sp_login.png);
+    background-position: -250px -65px;
+    position: relative; left: 2px; top: 2px;
+}
+#login_wrap main form .login_container .one_time_login p input {
+    width: 100%; text-align: center;
+}
+#login_wrap main form .login_container .one_time_login p:nth-child(2) {
+    margin: 20px; padding: 10px 30px;
+    background-color: #FFF;
+    border: 1px solid #cdcdce; border-radius: 8px;
+}
+#login_wrap main form .login_container .one_time_login .login_btn {
+    text-align: center;
+}
+#login_wrap main form .login_container .one_time_login .login_btn #login {
+    width: 100%;
+    background-color: #09aa5c; color: #FFF;
+    padding: 20px; border-radius: 8px;
+}
+/* 내용3. QR 로그인 */
+#login_wrap main form .login_container .qr_login {}
+#login_wrap main form .login_container .qr_login .qr_time {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: center; align-items: flex-end;
+}
+#login_wrap main form .login_container .qr_login .qr_time {
+    padding-bottom: 20px;
+}
+#login_wrap main form .login_container .qr_login .qr_time p {}
+#login_wrap main form .login_container .qr_login .qr_time p > img {width: 100px;}
+#login_wrap main form .login_container .qr_login .qr_time .time {
+    position: relative; bottom: 10px;
+}
+#login_wrap main form .login_container .qr_login .qr_time .time .time_title {}
+#login_wrap main form .login_container .qr_login .qr_time .time .time_num {font-weight: 700; color: #09aa5c;}
+#login_wrap main form .login_container .qr_login > p {text-align: center;}
+#login_wrap main form .login_container .qr_login > p:nth-child(2){
+    margin-bottom: 10px;
+    font-weight: 500; font-size: 14px;
+}
+#login_wrap main form .login_container .qr_login > p:nth-child(3){
+    
+    font-weight: 500; font-size: 12px;
+}
+#login_wrap main form .login_container .qr_login > p .app{
+    width: 14px; height: 14px; display: inline-block;
+    background-image: url(../images/m_sp_login.png);
+    background-position: -250px -99px;
+    position: relative; left: 2px; top: 2px;
+}
+#login_wrap main form .login_container .qr_login > p .lens{
+    width: 14px; height: 14px; display: inline-block;
+    background-image: url(../images/m_sp_login.png);
+    background-position: -250px -82px;
+    position: relative; left: 2px; top: 2px;
+}
+#login_wrap main form .login_container .qr_login > p .num21 {
+    background-color: #000; color: #FFF;
+    font-size: 12px; padding: 1px 6px; 
+    border-radius: 8px;
+}
+#login_wrap main form .login_container .qr_login > p a{
+    width: 14px; height: 14px; display: inline-block;
+    background-image: url(../images/m_sp_login.png);
+    background-position: -250px -65px;
+    position: relative; left: 2px; top: 2px;
+}
+/* 회원가입 및 찾기 버튼 */
+#login_wrap main .search_join {}
+#login_wrap main .search_join > a {}
+/* 광고 */
+#login_wrap main .adver {}
+#login_wrap main .adver > a {}
+#login_wrap main .adver > a img {width: 100%;}
+/* 푸터 */
+#login_wrap footer {
+    background-color: pink;
+    width: 458px; margin:0 auto;
+}
+#login_wrap footer .menu {}
+#login_wrap footer .menu > a {}
+#login_wrap footer .copyright {}
+#login_wrap footer .copyright .logo {}
+#login_wrap footer .copyright span {}
