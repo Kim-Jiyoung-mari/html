@@ -163,7 +163,7 @@ testBtn.addEventListener('click',()=>{
     if(testNum.value%2 == 1){
         testResult.innerText = testFunc(testNum.value, '홀');
     }else{//위 if조건식이 거짓일 경우 자동실행
-        testResult.innerText = testFunc(testNum.value, '짝')
+        testResult.innerText = testFunc(testNum.value, '짝');
     }
     //짝수
 /*     if(testNum.value%2 == 0){
