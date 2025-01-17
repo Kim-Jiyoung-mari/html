@@ -47,19 +47,22 @@
                                 <input type="checkbox" name="ip_on" id="ip_on">
                                 <label for="ip_on">
                                     <span class="switch"></span>
-                                    <span class="switch_state">off</span>
+                                    <span class="switch_state">ON</span>
                                 </label>
                             </div>
-                            <!-- 로그인 오류 메세지 출력위치 (JS) -->
-                            <div class="login_btn">
-                                <button type="button" id="login">로그인</button>
-                            </div>
+                        </div>
+                        <!-- 로그인 오류 메세지 출력위치 (JS) -->
+                        <p class="error_message"></p>
+                        <div class="login_btn">
+                            <button type="button" id="login">로그인</button>
                         </div>
                     </div>
                     <!-- 내용2. 일회용로그인 -->
                     <div class="login_box one_time_login">
                         <p>네이버앱의 <span>메뉴 > 설정<span class="set"></span> > 로그인 아이디 관리 ><br>더보기 : > 일회용 로그인 번호</span>에 보이는 번호를 입력해 주세요. <a href="#" target="_blank" id></a></p>
                         <p><input type="text" name="login_num" id="login_num" placeholder="번호를 입력하세요."></p>
+                        <!-- 로그인 오류 메세지 출력위치 (JS) -->
+                        <p class="error_message"></p>
                         <div class="login_btn">
                             <button type="button" id="login">로그인</button>
                         </div>

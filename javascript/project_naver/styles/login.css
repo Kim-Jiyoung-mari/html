@@ -113,22 +113,74 @@
 #login_wrap main form .login_container .id_login ul li input {width: 100%;}
 #login_wrap main form .login_container .id_login ul li #user_id {}
 #login_wrap main form .login_container .id_login ul li #user_pw {}
-#login_wrap main form .login_container .id_login .state_group {}
-#login_wrap main form .login_container .id_login .state_group .login_state {}
+#login_wrap main form .login_container .id_login .state_group {
+    display: flex; justify-content: space-between;
+    margin: 10px 0 20px;
+}
+/* 로그인 상태 유지 */
+#login_wrap main form .login_container .id_login .state_group .login_state {
+    position: relative; top : -7px
+}
 #login_wrap main form .login_container .id_login .state_group .login_state #login_state_y {}
 #login_wrap main form .login_container .id_login .state_group .login_state #login_state_y:checked+label {}
-#login_wrap main form .login_container .id_login .state_group .ip_state {}
-#login_wrap main form .login_container .id_login .state_group .ip_state > a {}
-#login_wrap main form .login_container .id_login .state_group .ip_state > #ip_on {}
-#login_wrap main form .login_container .id_login .state_group .ip_state > #ip_on:checked+label {}
-#login_wrap main form .login_container .id_login .state_group .ip_state > label {}
-#login_wrap main form .login_container .id_login .state_group .ip_state > label .switch {}
-#login_wrap main form .login_container .id_login .state_group .ip_state > label .switch_state {}
-#login_wrap main form .login_container .id_login .state_group .login_btn {}
-#login_wrap main form .login_container .id_login .state_group .login_btn #login {}
+#login_wrap main form .login_container .id_login .state_group .login_state #login_state_y:checked+label::before{
+    background-position-y: -211px;
+}
+#login_wrap main form .login_container .id_login .state_group .login_state label::before:checked+label{}
+#login_wrap main form .login_container .id_login .state_group .login_state label::before {
+    content: ''; display: inline-block;
+    width: 23px; height: 23px; margin-right: 5px;
+    background-image: url(../images/m_sp_login.png);
+    background-position: -308px -110px;
+    position: relative; top: -2px;
+}
+#login_wrap main form .login_container .id_login .state_group .login_state label{
+    display: flex; align-items: center;
+}
+/* ip 보안 on/off */
+#login_wrap main form .login_container .id_login .state_group .ip_state {
+    display: flex; align-items: center;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state a {
+    margin-right: 5px;
+    position: relative; top: 2px;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state #ip_on {}
+#login_wrap main form .login_container .id_login .state_group .ip_state #ip_on:checked+label { /* 체크상태 */
+    background-color: #09aa5c;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state #ip_on:checked+label .switch {
+    left: 4px;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state #ip_on:checked+label .switch_state {
+    left: auto; right: 4px;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state label {
+    background-color: #cdcdce; width: 45px; height: 20px;
+    border-radius: 12px; display: inline-block;
+    position: relative; 
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state label .switch {
+    background-color: #FFF; width: 16px; height: 16px; 
+    border-radius: 50%; display: block;
+    position: absolute; right: 3px; top: 2px;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state label .switch_state {
+    color: #FFF; position: absolute; left: 4px; top: 5px;
+    font-size: 0.7rem;
+    font-family:AppleSDGothicNeoB, sans-serif;
+}
+/* 로그인 버튼*/
+#login_wrap main form .login_container .id_login .login_btn {}
+#login_wrap main form .login_container .id_login .login_btn #login {
+    background-color: #09aa5c; color: #FFF;
+    width: 100%; padding: 13px 0; border-radius: 8px;
+    font-family:AppleSDGothicNeoB, sans-serif;
+}
 /* 내용2. 일회용 로그인 */
 #login_wrap main form .login_container .one_time_login {}
-#login_wrap main form .login_container .one_time_login p {
+#login_wrap main form .login_container .one_time_login p {}
+#login_wrap main form .login_container .one_time_login p:first-child {
     text-align: center;
 }
 
@@ -148,20 +200,18 @@
     position: relative; left: 2px; top: 2px;
 }
 #login_wrap main form .login_container .one_time_login p input {
-    width: 100%; text-align: center;
-}
-#login_wrap main form .login_container .one_time_login p:nth-child(2) {
-    margin: 20px; padding: 10px 30px;
-    background-color: #FFF;
-    border: 1px solid #cdcdce; border-radius: 8px;
+    text-align: center;
+    width: 100%; padding: 13px 0; border-radius: 8px;
+    border: 1px solid #cdcdce; margin: 20px 0 10px 0;
 }
 #login_wrap main form .login_container .one_time_login .login_btn {
     text-align: center;
 }
 #login_wrap main form .login_container .one_time_login .login_btn #login {
-    width: 100%;
     background-color: #09aa5c; color: #FFF;
-    padding: 20px; border-radius: 8px;
+    width: 100%; padding: 13px 0; border-radius: 8px;
+    margin: 10px 0;
+    font-family:AppleSDGothicNeoB, sans-serif;
 }
 /* 내용3. QR 로그인 */
 #login_wrap main form .login_container .qr_login {}
@@ -212,19 +262,40 @@
     position: relative; left: 2px; top: 2px;
 }
 /* 회원가입 및 찾기 버튼 */
-#login_wrap main .search_join {}
-#login_wrap main .search_join > a {}
+#login_wrap main .search_join {
+    text-align: center;
+    padding: 20px 0 50px ;
+}
+#login_wrap main .search_join > a {color: #cdcdcd;}
+#login_wrap main .search_join > a::after{
+    content: ''; display: inline-block; margin: 0 6px;
+    background-color: #cdcdcd;
+    width: 1px; height: 15px; position: relative; top: 2px;
+}
+#login_wrap main .search_join > a:last-child::after {display: none; margin: 0;}
 /* 광고 */
-#login_wrap main .adver {}
+#login_wrap main .adver {margin: 20px 0;}
 #login_wrap main .adver > a {}
 #login_wrap main .adver > a img {width: 100%;}
 /* 푸터 */
 #login_wrap footer {
-    background-color: pink;
     width: 458px; margin:0 auto;
+    padding: 50px 0 30px; text-align: center;
 }
-#login_wrap footer .menu {}
-#login_wrap footer .menu > a {}
+#login_wrap footer .menu {margin-bottom: 10px;}
+#login_wrap footer .menu > a {
+    color: #cdcdcd;; font-size: 0.75rem;}
+#login_wrap footer .menu > a::after {
+    content: ''; display: inline-block; margin: 0 6px;
+    background-color: #cdcdcd;
+    width: 1px; height: 15px; position: relative; top: 2px;
+}
+#login_wrap footer .menu > a:last-child::after {display: none; margin: 0;}
 #login_wrap footer .copyright {}
-#login_wrap footer .copyright .logo {}
+#login_wrap footer .copyright .logo {
+    display: inline-block;
+    width: 135px; height: 27px; margin: 0 auto;
+    background-image: url(../images/m_sp.png);
+    background-position: -316px -104px;
+}
 #login_wrap footer .copyright span {}
