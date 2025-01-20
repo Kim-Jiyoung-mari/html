@@ -1,0 +1,182 @@
+.btn1{
+    background: #3498db; color: #FFF;
+    border-radius: 5px; font-size: 1.2rem;
+    padding: 15px 30px;
+    /* 변경되는 효과(hover)가 서서히 변경되는 애니매이션을 주고 싶을 때 */
+    transition: background 0.3s, font-size 0.5s 0.5s
+    /* 실제사용할 때 너무 느리면 안된다 */
+    /* 추가효과는 ,와 함께 연결해서 쓴다 */
+
+}
+.btn1:hover {background: #300057; font-size: 0.8rem;}
+.btn2{
+    background: pink; color: #FFF;
+    padding: 10px 30px; border-radius: 10px;
+    transition: background 0.5s, border-bottom 0.5s, font-weight 0.5s, font-size 1s 0.5s
+}
+.btn2:hover{
+    background: lightcoral; border-bottom: 1px solid #000;
+    font-weight: 700; font-size: 1.5rem;
+}
+.btn3 {
+    width: 300px; height: 300px; color: #FFF;
+    font-size: 1.2rem; font-weight: 700;
+    border-radius: 10px;
+    background:url(https://i.pinimg.com/736x/a5/4c/3a/a54c3a1344c127c2ff70f6d615ff76c5.jpg);
+    background-size: 100% auto; 
+    background-position: 40% 30%;
+    transition: background 0.5s, background-position 1.5s, background-size 1s
+    /* 이미지 관련 동작도 수치로 */
+}
+.btn3:hover {
+    background: url(https://i.pinimg.com/736x/da/b5/9a/dab59a1d4117369ef033c6d6092682f4.jpg);
+    background-position: 40% 90%;
+    background-size: 110% auto;
+}
+.btn4 {
+    width: 300px; height: 300px; color: #FFF;
+    background: url(https://i.pinimg.com/1200x/4a/de/37/4ade3729109e48e14e0e3126f49df099.jpg);
+    background-size: 100% auto;
+    border-radius: 30px;
+    transition: background 0.5s, background-size 0.3s 
+}
+.btn4:hover {
+    background: url(https://i.pinimg.com/1200x/84/97/1b/84971bb47268f1030294a50611918ce8.jpg);
+    background-size: 100% auto;
+}
+/* 메뉴 스타일 */
+.gnb {max-width: 600px; display: flex;}
+.gnb a {
+    /* 공통a */
+    display: block; width: 100%; line-height: 60px;
+}
+.gnb > li {
+    width: calc(100% / 2); text-align: center;
+    position: relative;
+}
+.gnb > li > a {
+    background-color: #222; color: #FFF;
+}
+.gnb > li > .sub {
+    position: absolute; width: 100%; /* 서브메뉴에 absolute, width100%, 좌표 필수! */
+    left: 0; top: 100%;
+    /* 변경되는 대상은 제일 뒤에 있는 대상이 기준이다 */
+    height: 0; overflow: hidden;
+    transition: height 0.3s;
+}
+.gnb > li > .sub li {border-bottom: 1px solid #ddd;}
+.gnb > li > .sub li a {
+    background-color: #EEE; color: #222;
+}
+/* hover - menu */
+.gnb > li:hover .sub {height: 180px;}
+.gnb > li .sub a:hover {background: #FFF;}
+.bnr {
+    height: 500px;
+    background-image: url(https://i.pinimg.com/736x/70/7a/b8/707ab8e613c36c450d14662e4ea7763b.jpg);
+    background-size: contain;
+}
+/* 새로 만들기 */
+.gnb2 {
+    display: flex; max-width: 600px;
+}
+.gnb2 a {
+    /* 공통 a */
+    width: 100%; display: block; line-height: 50px;
+    border-bottom: 1px solid #EEE;
+}
+.gnb2 > li {
+    background-color: rgb(238, 5, 44);
+    width: calc(100% / 2); text-align: center;
+    position: relative;
+}
+.gnb2 > li > a {
+    color: #FFF
+}
+.gnb2 > li > .sub {
+    position: absolute; width: 100%;
+    height: 0; overflow: hidden;
+    transition: 0.5s;
+}
+.gnb2 > li > .sub li {
+    background-color: pink;
+}
+.gnb2 > li > .sub li a {
+    color: #222
+}
+/* hover - menu */
+.gnb2 > li:hover .sub {height: 150px;}
+.gnb2 > li .sub a:hover {background-color: rgb(156, 44, 63); color: #FFF;}
+
+/* 버튼 애니메이션(Gradient 활용) */
+.btn5{
+    width: 300px; height: 150px;
+    background: linear-gradient(90deg,#3498db,#FFF,#3498db);
+    background-size: 400%;
+    background-position: 0 0;/* left top */
+    transition: background-position 1s;
+}
+.btn5:hover{
+    background-position: 100% 0;
+}
+.btn6{
+    width: 200px; height: 100px; border-radius: 50px; 
+    background: linear-gradient(90deg,rgb(255, 255, 150),rgb(255, 196, 0),rgb(61, 33, 0));
+    background-position: 0 0;
+    background-size: 400%;
+    transition: background-position 1s, color 0.5s, font-size 0.5s 1s, font-weight 0.5s 1s
+}
+.btn6:hover{
+    background-position: 100% 0;
+    color: #FFF; font-size: 1.5rem; font-weight: 700;
+}
+/* 글자 애니메이션 Gradient */
+h1 {
+    font-size: 4rem; font-weight: 900;
+    letter-spacing: -0.04em;
+    background: linear-gradient(90deg,#3498db,#FFF,#300057,#3498db);
+    width: max-content; /* 너비를 컨텐츠에 맞추기 */
+    /* 글자 안에서만 Gradient 적용되게 만들기 */
+    color: transparent;
+    -webkit-background-clip: text; /* 배경을 글자에서 보이게 하겠다 */
+    /* 애니메이션 준비 */
+    background-size: 400%; background-position: 100% 0;
+    transition: background-position 3s;
+}
+h1:hover {background-position: 0 0;}
+h2{
+    font-size: 3rem; font-weight: 900; letter-spacing: -0.04rem;
+    background: linear-gradient(270deg,rgb(0, 73, 0),rgb(192, 255, 192),rgb(0, 73, 0));
+    width: max-content;
+    color: transparent; /* 글자 투명화 필수 */
+    -webkit-background-clip: text;
+    /* 애니메이션준비 */
+    background-size: 400%; background-position: 100% 0;
+    transition: background-position 3s;
+}
+h2:hover {
+    background-position: 0 0;
+}
+/* 이동 애니메이션 (가속도 활용) */
+.box {
+    width: 500px; height: 500px; border: 2px solid #222;
+    position: relative;
+}
+.box p { /* 변화되는 대상 기준 */
+    width: 100px; height: 100px; background: orange;
+    border-radius: 50%;
+    position:absolute; left: 0; top: 0;
+    /* transition: left 0.5s, top 0.5s; */
+    transition: all 0.5s cubic-bezier(0.77,-0.57, 0.31, 1.15);
+    /* 같은 방향일 경우 all */
+    /* 
+        가속도 종류와 뜻 
+        1. ease (기본값) : 중간까지 빠르다가 뒤로 갈 수록 느리게
+        2. linear 일정한 속도
+        3. ease-in : 천천히 시작해서 점점 빨라짐
+        4. ease-out : 빠르게 시작해서 점점 느려짐
+        5. cubit-bezier(가속도 곡선 0~1값 사이) 커스텀 애니메이션 속도
+            => 개발자 도구에서 조정 후 복사 붙여넣기
+    */
+}
+.box:hover p{left: 79%; top: 79%;}
