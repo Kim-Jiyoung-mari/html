@@ -39,7 +39,7 @@ flowerBtn.addEventListener('click',()=>{
         if (birthday_flower[i].month === inputMonth) {
             flowerData = birthday_flower[i];
         }
-        flowerPic(flowerPic, birthday_flower[i]);
+/*         flowerPic(flowerPic, birthday_flower[i]); */
     }
 
     if (flowerData) {
