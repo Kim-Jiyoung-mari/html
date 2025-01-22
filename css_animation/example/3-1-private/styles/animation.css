@@ -1,0 +1,38 @@
+/* 마우스 */
+main .scroll {
+    animation: mouse 1s linear alternate infinite;}
+
+/* 바퀴 */
+main .car #left_tire,
+main .car #right_tire {
+    animation: tire 1s linear infinite; /* linear로 일정하게 움직여라 */
+}
+/* 배경 애니메이션 */
+main .bg_wrap .bg3 {
+    animation: bg 10s linear infinite;
+}
+main .bg_wrap .bg2 {
+    animation: bg 20s linear infinite;
+}
+main .bg_wrap .bg1 {
+    animation: bg 100s linear infinite;
+}
+
+
+/* 마우스 애니메이션 */
+@keyframes mouse {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-30px);}
+}
+
+/* 바퀴 회전 */
+@keyframes tire {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);} /* 단위 안씀 */
+}
+
+/* 배경 */
+@keyframes bg {
+    0% {background-position-x: 0;} /* 재생될 때 오른쪽으로 계속 이동 */
+    100% {background-position-x: 1000px;}
+}

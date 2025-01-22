@@ -32,6 +32,16 @@ main {
 main > * {max-width:1400px; margin:0 auto;}
 /* 중첩순서 처리 배경(10) 그라디언트(20) 나머지(30) */
 main .bg_wrap {position:absolute; z-index:10;}
+main .bg_wrap::before {
+    content: ''; display: block; width: 50%; height: 100%;
+    position: absolute; left: 0; top: 0; z-index: 999;
+    background: linear-gradient(90deg,rgb(9,13,43),transparent);
+}
+main .bg_wrap::after {
+    content: ''; display: block; width: 50%; height: 100%;
+    position: absolute; right: 0; top: 0; z-index: 99;
+    background: linear-gradient(-90deg,rgb(9,13,43),transparent);
+}
 main .txt, main .car_list, main .car, main .scroll {
     width:1400px; margin:0 auto; position:relative; z-index:30;
 }
@@ -48,6 +58,7 @@ main .bg_wrap .bg2 {
 main .bg_wrap .bg3 {
     height:100px; position:relative; top:-96px;
     background:url(../images/bg_city2.png) repeat-x;
+
 }
 /* 메인제목 */
 main .txt {}

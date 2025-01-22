@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머함수 | 자바스크립트</title>
+    <script src="./script/timer1.js" defer></script>
+    <style>
+        .box {
+            width: 50px; height: 50px; background-color: palevioletred;
+            border-radius: 50%;
+            animation: move 1s ease alternate infinite;
+        }
+        @keyframes move{
+            0%{transform: translateX(0);}
+            0%{transform: translateX(300px);}
+        }
+        .container {}
+        .container .text {font-size: 3rem; font-weight: 700;}
+        .container .cursor {
+            display: inline-block; width: 7px; height: 40px;
+            background-color: orange; margin-left: 2px;
+            position: relative; top: 3px;
+            animation: caret 0.5s infinite;
+        }
+
+        @keyframes caret{
+            from,to {background: transparent;} /* 숫자는 그룹 안됌 */
+            50% {background: orange;}
+            /* 0% {}
+            50% {}
+            100% {} */
+        }
+
+        .container2 {}
+        .container2 .text {font-size: 3rem; font-weight: 800; letter-spacing: -0.02rem}
+        .container2 .cursor {
+            display: inline-block; width: 8px; height: 40px;
+            background-color: aquamarine; margin-left: 2px;
+            animation: caret2 0.5s infinite;
+        }
+        @keyframes caret2{
+            0% {background:transparent};
+            50% {background-color: aquamarine};
+            100% {background:transparent};
+        }
+
+        .container3 {}
+        .container3 .text {font-size: 3rem; font-weight: 800; letter-spacing: -0.02rem}
+        .container3 .cursor {
+            display: inline-block; width: 8px; height: 40px;
+            background-color: black; margin-left: 2px;
+            animation: caret3 0.5s infinite;
+        }
+        @keyframes caret3{
+            0% {background:transparent};
+            50% {background-color: aquamarine};
+            100% {background:transparent};
+        }
+    </style>
+</head>
+<body>
+    <div class="timer"></div>
+    <div class="box"></div>
+    <div class="box_timer"></div>
+    <button type="button" id="stop">STOP!</button>
+    <button type="button" id="replay">Replay!</button>
+    <hr>
+    <div class="container">
+        <span class="text"></span>
+        <span class="cursor"></span>
+    </div>
+    <hr>
+    <div class="container2">
+        <span class="text"></span>
+        <span class="cursor"></span>
+    </div>
+    <hr>
+    <div class="container3">
+        <span class="text"></span>
+        <span class="cursor"></span>
+    </div>
+</body>
+</html>
