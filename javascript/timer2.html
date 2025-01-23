@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머함수2 | 자바스크립트</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/timer2.js" defer></script>
+    <style>
+        .news_container {
+            width: 800px; height: 40px; margin: 50px;
+            /* 보고자 하는 공지사항의 방향과 크기 기준 */
+            border: 1px solid #CCC; border-radius: 5px;
+            overflow: hidden; /* #list가 news_container안에서만 보이도록 */
+            position: relative;
+        }
+        .news_container #list {
+            background-color: #EEE;
+            transform: translateY(0); /* 공지1의 시작위치 */
+            /* position: relative; top: -40px; */
+            /* position:absolute; width: 100%; left: 0; top: -40px; */
+        }
+        .news_container #list li {
+            line-height: 40px; padding: 0 10px;
+        }
+        .news_container2 {
+            width: 800px; height: 40px; margin: 50px;
+            border: 2px solid #CCC; border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .news_container2 #list {
+            /* 옆으로 이동한 모든 li의 최대 너비를 인식하게 하기 위해 / 옆으로 나열해라 */
+            width: max-content; display: flex;
+            background-color: rgb(255, 205, 97);
+            /* position:absolute; width: 100%; left: 0; top: -40px; */
+            transform: translateX(0);
+        }
+        .news_container2 #list li {
+            /* 옆으로 나열되어야 하기 때문에 보이는 위치(부모)와 크기가 같아야 한다 */
+            width: 800px; line-height: 40px; padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn">STOP!</button>
+    <hr>
+    <div class="news_container">
+        <ul id="list">
+            <li>공지사항 1 : 새로운 업데이트가 출시되었습니다.</li>
+            <li>공지사항 2 : 서버 점검 일정이 확정되었습니다.</li>
+            <li>공지사항 3 : 이벤트가 곧 시작됩니다. 많은 참여바랍니다.</li>
+            <li>공지사항 4 : 고객 지원 팀이 강화되었습니다.</li>
+            <!-- <li>공지사항 1 : 새로운 업데이트가 출시되었습니다.</li> -->
+        </ul>
+    </div>
+    <hr>
+    <div class="news_container2">
+        <ul id="list"> <!-- 배너 느낌으로 넣고 싶으면 이미지로 넣기 -->
+            <li>공지사항 1 : 새로운 업데이트가 출시되었습니다.</li>
+            <li>공지사항 2 : 서버 점검 일정이 확정되었습니다.</li>
+            <li>공지사항 3 : 이벤트가 곧 시작됩니다. 많은 참여바랍니다.</li>
+            <li>공지사항 4 : 고객 지원 팀이 강화되었습니다.</li>
+            <!-- <li>공지사항 1 : 새로운 업데이트가 출시되었습니다.</li> -->
+        </ul>
+    </div>
+</body>
+</html>
