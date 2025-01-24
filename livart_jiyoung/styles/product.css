@@ -1,0 +1,170 @@
+main {
+    width: 1400px; margin: 196px auto ;
+}
+/* 메인구역============================================= */
+main .item_wrap {
+    display: flex; flex-flow: nowrap; justify-content: space-between;
+}
+/* 왼쪽 (이미지라인)============================================= */
+main .item_wrap .photo_left .path {
+}
+main .item_wrap .photo_left .path > a {
+}
+main .item_wrap .photo_left .path > span {padding: 0 20px;}
+main .item_wrap .photo_left .photo > *{margin: 30px 0;}
+main .item_wrap .photo_left .photo .big {
+    width: 690px; border-radius: 10px;
+    overflow: hidden;
+}
+main .item_wrap .photo_left .photo .big > img {
+    width: 100%; display: block;
+}
+main .item_wrap .photo_left .photo .thumnail {
+    display: flex; justify-content: space-between;
+}
+main .item_wrap .photo_left .photo .thumnail > a {
+    width: 130px; display: block; border-radius: 10px;
+    overflow: hidden;
+}
+main .item_wrap .photo_left .photo .thumnail > a > img {width: 100%;}
+/* 오른쪽 (정보라인) ============================================= */
+main .item_wrap .info_right {
+    width: calc(100% - (690px + 30px));
+}
+main .item_wrap .info_right > * {
+    margin-bottom: 35px;
+}
+/* 상품명, 상품 가격 정보============================================= */
+main .item_wrap .info_right .title {}
+main .item_wrap .info_right .title .best {
+    background-color: #0A5E81; color: #FFF;
+    border-radius: 5px; display: inline-block;
+    padding: 5px 10px;
+}
+main .item_wrap .info_right .title h1 {
+    padding: 30px 0;
+    font-size: 1.88rem; font-weight:700; letter-spacing:-0.02rem;
+}
+main .item_wrap .info_right .title .price_info {
+    display: flex; flex-flow: row nowrap; align-items: flex-end;
+}
+main .item_wrap .info_right .title .price_info .sale_before {
+    padding-right: 30px;
+}
+main .item_wrap .info_right .title .price_info .sale_before .price {
+    color: #d9d9d9;
+    font-size: 1.44rem; letter-spacing:-0.02rem;
+}
+main .item_wrap .info_right .title .price_info .sale_before .sale {
+    font-size: 1.88rem; font-weight:700; letter-spacing:-0.02rem;
+}
+main .item_wrap .info_right .title .price_info .sale_after {
+    color: #0A5E81;
+    font-size: 3.13rem; font-weight: 700; letter-spacing:-0.02rem;
+}
+main .item_wrap .info_right .title .price_info .sale_after span {
+    color: #222;
+    font-size: 2.19rem; font-weight:700; letter-spacing:-0.02rem;
+}
+/* 배송, 혜택 정보============================================= */
+main .item_wrap .info_right .info {
+    border-top: 2px solid #0A5E81;
+    border-bottom: 2px solid #0A5E81; padding: 15px 0;
+}
+main .item_wrap .info_right .info > * {
+    background-color: #F2F2F2;
+}
+main .item_wrap .info_right .info .delivary {
+    background-color: #F2F2F2; border-radius: 20px;
+    display: flex; flex-flow: row wrap;
+    padding: 20px 15px; margin-bottom: 15px;
+}
+main .item_wrap .info_right .info > * dt {
+    font-size: 1.25rem; font-weight:500; letter-spacing:-0.02rem;
+    width: 130px;  padding:15px 0
+}
+main .item_wrap .info_right .info > * dd {
+    line-height:1.5; letter-spacing:-0.02rem;
+    width: calc(100% - 130px); padding:15px 0;
+    display: flex; flex-flow: column nowrap;
+}
+main .item_wrap .info_right .info > * a {
+    width: 20px; position: relative; left: 100px; top: -18px;
+}
+main .item_wrap .info_right .info .delivary dt {}
+main .item_wrap .info_right .info .delivary dd {}
+main .item_wrap .info_right .info .delivary dd span {}
+main .item_wrap .info_right .info .delivary dd a {
+    left: 280px;
+}
+main .item_wrap .info_right .info .benefit {
+    background-color: #F2F2F2; border-radius: 20px;
+    display: flex; flex-flow: row wrap;
+    padding: 20px 15px;
+}
+main .item_wrap .info_right .info .benefit dt {}
+main .item_wrap .info_right .info .benefit dd {}
+main .item_wrap .info_right .info .benefit dd span {}
+main .item_wrap .info_right .info .benefit dd a {}
+main .item_wrap .info_right .info .benefit dd img {}
+main .item_wrap .info_right .info .benefit dd em {}
+/* 상품 옵션 선택구역============================================= */
+main .item_wrap .info_right .item_option {}
+main .item_wrap .info_right .item_option select {
+    width: 100%; padding: 17px 30px;
+    border: 1px solid #888; border-radius: 5px;
+    background-repeat: no-repeat; background-position: right center;
+    right: 30px;
+    font-size: 1.25rem; font-weight:500; letter-spacing:-0.02rem;
+}
+main .item_wrap .info_right .item_option select:first-child{
+    margin-bottom: 10px;
+}
+main .item_wrap .info_right .item_option select option {}
+/* 사이즈============================================= */
+main .item_wrap .info_right .item_option .size select {
+    background-image: url(../images/down_arrow.png);
+}
+main .item_wrap .info_right .item_option .size select option {}
+main .item_wrap .info_right .item_option .size #size option[value^=size] {}
+/* 컬러============================================= */
+main .item_wrap .info_right .item_option .color {}
+main .item_wrap .info_right .item_option .color select {
+    background-image: url(../images/down_arrow.png);
+}
+main .item_wrap .info_right .item_option .color select option {
+    display: flex; justify-content: space-between;
+}
+main .item_wrap .info_right .item_option .color #color option span {}
+/* 주문 금액 구역============================================= */
+main .item_wrap .info_right .order_price {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding: 15px;
+    border-top: 2px solid #0A5E81;
+    border-bottom: 2px solid #0A5E81;
+}
+main .item_wrap .info_right .order_price h2 {
+    color: #0A5E81;
+    font-size: 1.25rem; font-weight:500; letter-spacing:-0.02rem;
+}
+main .item_wrap .info_right .order_price p {font-size: 1.44rem; letter-spacing:-0.02rem;}
+main .item_wrap .info_right .order_price p .price  {font-size: 1.44rem; letter-spacing:-0.02rem;}
+/* 버튼 구역============================================= */
+main .item_wrap .info_right .btn_wrap {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .item_wrap .info_right .btn_wrap .like {}
+main .item_wrap .info_right .btn_wrap .like > img {
+    border: 1px solid #d9d9d9; border-radius: 5px;
+    padding: 14px;
+}
+main .item_wrap .info_right .btn_wrap button {
+    width: 296px; padding: 23px 0; border-radius: 5px;
+    font-size: 1.44rem; letter-spacing:-0.02rem;
+}
+main .item_wrap .info_right .btn_wrap .cart {
+    background-color: #FFF; border: 1px solid #0A5E81;
+}
+main .item_wrap .info_right .btn_wrap .order {
+    background-color: #0A5E81; border: 1px solid #0A5E81; color: #FFF;
+}
