@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper 2. 옵션추가</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/swiper2.js" defer></script>
+    <style>
+        .best_swiper {
+            width: 100%; height: 100vh; margin: 0 auto;
+        }
+        .best_swiper .swiper-wrapper {position: relative;}
+        .best_swiper .swiper-wrapper .swiper-slide {
+            background-size: cover; 
+            background-position: center;
+            position: relative;
+        }
+        .best_swiper .swiper-wrapper .swiper-slide > * {
+            width: 1200px; position: absolute; left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+        }
+        .best_swiper .swiper-wrapper .slide1 {
+            background-image: url(./images/bnr1.jpg);
+        }
+        .best_swiper .swiper-wrapper .slide1 .contents {
+            padding-left: 20px;
+            /* 정해진 너비에서 위치 잡을 때  */
+             bottom: 325px; /* absolute가 들어가면 마진이 안 먹힌다 */
+            /* 중심축을 center로 인식하는 속성 */
+            /* 절반만 안쪽으로 오기 */
+        }
+        .best_swiper .swiper-wrapper .slide1 .contents .sub_title {
+            font-size: 1.38rem; /* 22 */ letter-spacing: -0.02rem; font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .best_swiper .swiper-wrapper .slide1 .contents h1 {
+            font-size: 3.13rem; letter-spacing: -0.02rem; font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .best_swiper .swiper-wrapper .slide1 .contents p {
+            letter-spacing: -0.02rem; line-height: 1.5;
+        }
+        .best_swiper .swiper-wrapper .slide2 {
+            background-image: url(./images/bnr2.jpg);
+        }
+        .best_swiper .swiper-wrapper .slide2 .contents {
+            padding-left: 15px; top:180px;
+        }
+        .best_swiper .swiper-wrapper .slide2 .contents .sub_title {
+            font-size: 1.38rem; /* 22 */ letter-spacing: -0.02rem; font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .best_swiper .swiper-wrapper .slide2 .contents h1 {
+            font-size: 3.13rem; letter-spacing: -0.02rem; font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .best_swiper .swiper-wrapper .slide2 .contents p {
+            letter-spacing: -0.02rem; line-height: 1.5;
+        }
+        .best_swiper .swiper-wrapper .slide3 {
+            background-image: url(./images/bnr3.jpg);
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents {
+            padding-right: 20px; bottom: 80px;
+        }
+        .best_swiper .swiper-wrapper .slide3::after{
+            content: ''; display: block; width: 100%; height: 100vh;
+            position: absolute; left: 0; top: 0; z-index: 80;
+            background:linear-gradient(180deg,transparent,#000);
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents > * {
+            color: #FFF; text-align: right; 
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents .sub_title {
+            font-size: 1.38rem; /* 22 */ letter-spacing: -0.02rem; font-weight: 600;
+            margin-bottom: 40px
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents h1 {
+            font-size: 3.13rem; letter-spacing: -0.02rem; font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents p {
+            letter-spacing: -0.02rem; line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Swiper 슬라이드가 보이는 영역 -->
+    <div class="swiper best_swiper"> <!-- 얘 필수 -->
+        <!-- 실제로 움직이는 영역 -->
+        <div class="swiper-wrapper">
+            <!-- 개별슬라이드(디자인 편의성을 위해 ⭐사용자정의클래스 작성권장⭐) -->
+            <div class="swiper-slide slide1"><!-- bnr1 배경 삽입 -->
+                <div class="contents">
+                    <p class="sub_title">역사의 향기가 머무는 곳 </p>
+                    <h1>경복궁에서 만나는 시간 여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가보세요.  </p>
+                </div>
+            </div>
+            <div class="swiper-slide slide2">
+                <div class="contents">
+                    <p class="sub_title">역사의 향기가 머무는 곳 </p>
+                    <h1>경복궁에서 만나는 시간 여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가보세요.  </p>
+                </div>
+            </div>
+            <div class="swiper-slide slide3">
+                <div class="contents">
+                    <p class="sub_title">역사의 향기가 머무는 곳 </p>
+                    <h1>경복궁에서 만나는 시간 여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가보세요.  </p>
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
