@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll3 | 자바스크립트</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/scroll2.js" defer></script>
+    <style>
+        .box1, .box3 {height: 100vh; background: yellow; font-size: 5rem;}
+        .box2 {
+            height: calc((500px * 3) + 1000px);
+        }
+        .box2 h1 {/* 스크롤 화면 고정 대상 */
+            font-size: 5rem; position: sticky;
+            top: 100px; margin-top: 100px;
+        }
+        .box2 .bg {/* 스크롤 화면 고정 대상 */
+            float: right; width: 350px;
+            position:sticky; top: 100px; margin-top: 100px;
+        }
+        .box2 .bg .card {}
+        .box2 .bg .card img {
+            width: 100%;
+            display: block; height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">
+        <h1>Sticky Text</h1>
+        <div class="bg"> <!-- 이미지 들어가는 배경영역 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/f4/76/c8/f476c829853e16534c9b857cffd1f128.jpg" alt="">
+                <img src="https://i.pinimg.com/736x/92/9a/65/929a6544a1efb9c79693fec247be934b.jpg" alt="">
+                <img src="https://i.pinimg.com/736x/a3/06/1c/a3061ca88e45b548de917f4e8fc90ec4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="box box3">3</div>
+</body>
+</html>
