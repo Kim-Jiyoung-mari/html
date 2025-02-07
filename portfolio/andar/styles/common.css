@@ -122,7 +122,8 @@ main .main_swiper .swiper-wrapper .slide2 .contents p {
 }
 main .main_swiper .swiper-wrapper .slide2 .contents .btn_link {}
 main .main_swiper .swiper-pagination {
-position: absolute; bottom: 30px;}
+    bottom: 30px;
+}
 main .main_swiper .swiper-pagination-bullet {
     background-color: #AAA; opacity: 0.5;
 }

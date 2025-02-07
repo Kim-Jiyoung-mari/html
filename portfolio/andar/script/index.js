@@ -1,5 +1,4 @@
-const mainSwiper = new Swiper('.swiper',{
-    /* effect:'fade',  */// 제자리에서 배너 이미지 변경하는 스와이퍼 효과
+const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
         delay:5000, // 실제 배너 5~7초 많이 사용
     },
@@ -8,14 +7,13 @@ const mainSwiper = new Swiper('.swiper',{
         el:'.main_swiper .swiper-pagination',
         type: 'bullets',
         clickable: true,
-        dynamicBullets:true, //페이지 번호 크기 차이 주는 속성
+        dynamicBullets:true,
     },
 });
 
-const contentSwiper = new Swiper('.swiper',{
-    /* effect:'fade',  */// 제자리에서 배너 이미지 변경하는 스와이퍼 효과
+const contentSwiper = new Swiper('.c_swiper',{
     autoplay:{
-        delay:5000, // 실제 배너 5~7초 많이 사용
+        delay:6000, // 실제 배너 5~7초 많이 사용
     },
     loop:true,
     scrollbar: {

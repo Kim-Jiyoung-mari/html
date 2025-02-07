@@ -10,61 +10,27 @@ main .m_row .c_swiper {
     margin: 40px 0;
 }
 main .m_row .c_swiper .swiper-wrapper {}
-
-/* =================================================== 슬라이드1 */
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 {
-    background-color: yellow;
+main .m_row .c_swiper .swiper-wrapper .swiper-slide {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a img {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info h3 {
+main .m_row .c_swiper .swiper-wrapper > * h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
 }
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .i_txt {
+main .m_row .c_swiper .swiper-wrapper > * .i_txt {
     font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding: 10px 0 20px;
 }
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .price {
+main .m_row .c_swiper .swiper-wrapper > * .price {
     letter-spacing: -0.02rem;
 }
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .price del {
+main .m_row .c_swiper .swiper-wrapper > * .price del {
     color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding-left: 10px;
 }
-main .m_row .progress {
-    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
-}
-/* =================================================== 슬라이드2 */
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 {
-    background-color: yellow;
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
-}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a img {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info h3 {
-    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
-}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .i_txt {
-    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
-    padding: 10px 0 20px;
-}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price {
-    letter-spacing: -0.02rem;
-}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price del {
-    color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
-    padding-left: 10px;
-}
-main .m_row .progress {
-    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
-}
-
 /* =================================================== 진행바*/
+main .m_row .progress {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
 main .m_row .progress .s_btn {
     position: relative; bottom: 3px;
 }
@@ -117,3 +83,22 @@ main .row2 .title .t_btm .more_view > a > img {
     position: relative; top: 3px;
     padding-left: 5px;
 }
+/* =================================================== 2행 개별 슬라이드1 */
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a img {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info h3 {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .i_txt {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .price del {}
+/* =================================================== 2행 개별 슬라이드2 */
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a img {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info h3 {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .i_txt {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price del {}
