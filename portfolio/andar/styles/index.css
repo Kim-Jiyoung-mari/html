@@ -1,0 +1,119 @@
+/* =================================================== 공통디자인 */
+main .m_row {
+    width: 1400px; margin: 0 auto 100px;
+}
+main .m_row .title {}
+main .m_row .title .more_view {}
+main .m_row .title .more_view > a {}
+main .m_row .c_swiper {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 40px 0;
+}
+main .m_row .c_swiper .swiper-wrapper {}
+
+/* =================================================== 슬라이드1 */
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 {
+    background-color: yellow;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a img {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info h3 {
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .i_txt {
+    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding: 10px 0 20px;
+}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .price {
+    letter-spacing: -0.02rem;
+}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .price del {
+    color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding-left: 10px;
+}
+main .m_row .progress {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+/* =================================================== 슬라이드2 */
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 {
+    background-color: yellow;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a img {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info h3 {
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .i_txt {
+    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding: 10px 0 20px;
+}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price {
+    letter-spacing: -0.02rem;
+}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price del {
+    color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding-left: 10px;
+}
+main .m_row .progress {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+
+/* =================================================== 진행바*/
+main .m_row .progress .s_btn {
+    position: relative; bottom: 3px;
+}
+main .m_row .progress .s_btn button {}
+main .m_row .progress .s_btn .prev {}
+main .m_row .progress .s_btn .next {}
+main .m_row .progress .swiper-scrollbar {
+    width: 1330px; height: 2px;
+    position: relative; margin: 0 auto; top: 3x;
+}
+main .m_row .progress .scrollbar .active-scrollbar {
+    width: 10%; height: 2px;
+    position: absolute; left: 0; top: 0;
+}
+/* =================================================== 2행 개별 */
+main .row2 {}
+main .row2 .title {}
+main .row2 .title .t_top {
+    display: flex; flex-flow: row nowrap; align-items: flex-end;
+}
+main .row2 .title .t_top .row_title {
+    font-size: 2.19rem; font-weight: 600; letter-spacing: -0.04rem;
+    padding-right: 10px;
+}
+main .row2 .title .t_top .row_txt {
+    font-size: 0.94rem; letter-spacing: -0.02rem;;
+}
+main .row2 .title .t_top .row_txt {}
+main .row2 .title .t_btm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding-top: 20px;
+}
+main .row2 .title .t_btm .tab {}
+main .row2 .title .t_btm .tab .active {
+    border: 2px solid #C86733; color: #C86733;
+}
+main .row2 .title .t_btm .tab > a {
+    border: 1px solid #888; border-radius: 20px;
+    padding: 7px 20px;
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+main .row2 .title .t_btm .tab a:nth-child(2) {
+    margin: 0 10px;
+}
+main .row2 .title .t_btm .more_view {}
+main .row2 .title .t_btm .more_view > a {
+    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .row2 .title .t_btm .more_view > a > img {
+    position: relative; top: 3px;
+    padding-left: 5px;
+}
