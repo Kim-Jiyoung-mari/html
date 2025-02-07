@@ -6,6 +6,8 @@
     <link rel="icon" href="./images/logo.png" type="image/x-icon">
     <href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -59,7 +61,31 @@
             </div>
         </header>
     </div>
-
+    <!-- ======================= 배너 ========================= -->
+    <!-- Swiper 슬라이드가 보이는 영역 -->
+    <main>
+        <div class="swiper main_swiper"> <!-- 얘 필수 -->
+            <!-- 실제로 움직이는 영역 -->
+            <div class="swiper-wrapper">
+                <!-- 개별슬라이드(디자인 편의성을 위해 ⭐사용자정의클래스 작성권장⭐) -->
+                <div class="swiper-slide slide1"><!-- bnr1 배경 삽입 -->
+                    <div class="contents">
+                        <h1 class="sub_title"><span>25SS</span> NEW ITEM</h1>
+                        <p>안다르의 신상으로 새로운 계절을 열어보세요</p>
+                        <a href="#" class="btn_link">25SS 신상 바로보기</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="contents">
+                        <h1 class="sub_title">오직 안다르에만</h1>
+                        <p>전지현이 선택한 애슬레저 스타일링<br>그대로 쇼핑하기</p>
+                        <a href="#" class="btn_link">전지현의 안다르 바로보기</a>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div class="swiper-pagination"> <!--내용작성불가--></div>
+    </main>
     <!-- ======================= 푸터 ========================= -->
     <footer>
         <div class="ft_bg">
@@ -93,19 +119,28 @@
                 </div>
                 <div class="btm_right">
                     <p>애슬레저 1위, 2024 대한민국 패션품질대상 스포츠 애슬레저 부문</p>
-                    <div class="cs"></div>
-                    <div class="sns">
-                        <div class="sns_left">
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
+                    <div class="cs_info">
+                        <div class="cs">
+                            <p class="title">고객센터</p>
+                            <p>1566-7318</p>
                         </div>
-                        <div class="sns_right">
-                            <a href="#"></a>
-                            <p><img src="" alt=""></p>
-                            <a href="#"></a>
+                        <div class="time">
+                            <p>평일 AM 10:00 ~ PM 05:30 / 주말, 공휴일 휴무</p>
+                            <p>점심 PM 12:00 ~ PM 01:00</p>
                         </div>
                     </div>
+                    <div class="sns">
+                        <div class="sns_left">
+                            <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
+                            <a href="#"><img src="./images/youtube.png" alt="유튜브"></a>
+                            <a href="#"><img src="./images/insta.png" alt="인스타"></a>
+                        </div>
+                        <div class="sns_right">
+                            <a href="#"><img src="./images/symbol.png" alt="공정거래위원회"></a>
+                            <p><img src="./images/symantec.png" alt="symantec 마크크"></p>
+                            <a href="#"><img src="./images/kg.png" alt="kg마크"></a>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
