@@ -213,16 +213,17 @@ main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .i_txt {}
 main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price {}
 main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price del {}
 /* =================================================== 5행 개별 */
-main .row5 {width: 100%;}
+main .row5 {
+    width: 100%; height: 2600px;
+}
 main .row5 .row5_bg {
-    position: sticky; top: 0; height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #FFF;
+    padding: 20px 0; position: sticky; top: 80px; z-index: 999;
 }
 main .row5 .row5_bg .row5_title {
     width: 1400px; margin: 0 auto;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
 }
 main .row5 .row5_bg .row5_title .row5_left {}
 main .row5 .row5_bg .row5_title .row5_left .row_title {
@@ -239,25 +240,27 @@ main .row5 .row5_bg .row5_title .row5_tab > a {
     padding: 0 20px;
 }
 main .row5 .row5_bg .row5_title .row5_tab > .active {
-    color: #222; padding-bottom: 10px;
+    color: #222; padding-bottom: 5px;
     border-bottom: 2px solid #C86733;
 }
 main .row5 .row5_contents {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    margin: 0 80px;
+    margin: 0 80px; 
 }
-main .row5 .row5_contents .right {
+main .row5 .row5_contents .right_bg { 
+}
+main .row5 .row5_contents .right_bg .right {
     background-image: url(../images/row5_main.jpg);
     width: 490px; height: 900px;
     background-size: cover; background-position: center;
-    position: relative;
+    position: sticky; top: 80px;
 }
-main .row5 .row5_contents .right > a {
+main .row5 .row5_contents .right_bg .right > a {
     position: absolute; bottom: 40px; right: 45px;
     font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02rem;
     color: #FFF; 
 }
-main .row5 .row5_contents .right > a > img {
+main .row5 .row5_contents .right_bg .right > a > img {
     display: block; padding-top: 10px;
 }
 main .row5 .row5_contents .left_list {
@@ -281,5 +284,6 @@ main .row5 .row5_contents > * .i_txt {
 }
 main .row5 .row5_contents > * .price {letter-spacing: -0.02rem;}
 main .row5 .row5_contents > * .price del {
-    color: #AAA; font-size: 0.81rem; line-height: 1.2; 
+    color: #AAA; font-size: 0.81rem; line-height: 1.2;
+    padding-left: 10px;
 }
