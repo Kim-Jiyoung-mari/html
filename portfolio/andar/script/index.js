@@ -11,12 +11,45 @@ const mainSwiper = new Swiper('.main_swiper',{
     },
 });
 
+
 const contentSwiper = new Swiper('.c_swiper',{
     autoplay:{
-        delay:6000, // 실제 배너 5~7초 많이 사용
+        delay:5000, // 실제 배너 5~7초 많이 사용
     },
     loop:true,
     scrollbar: {
-        el: ".m_row .progress .swiper-scrollbar",
+        el: " .progress .swiper-scrollbar",
     },
+    navigation: {
+        nextEl: ".s_btn .next",
+        prevEl: ".s_btn .prev",
+    }
+});
+
+const contentSwiper2 = new Swiper('.c_swiper2',{
+    autoplay:{
+        delay:5000, // 실제 배너 5~7초 많이 사용
+    },
+    loop:true,
+    scrollbar: {
+        el: " .progress .swiper-scrollbar",
+    },
+    navigation: {
+        nextEl: ".s_btn .next",
+        prevEl: ".s_btn .prev",
+    }
+});
+
+const contentSwiper3 = new Swiper('.c_swiper3',{
+    autoplay:{
+        delay:5000, // 실제 배너 5~7초 많이 사용
+    },
+    loop:true,
+    scrollbar: {
+        el: " .progress .swiper-scrollbar",
+    },
+    navigation: {
+        nextEl: ".s_btn .next",
+        prevEl: ".s_btn .prev",
+    }
 });

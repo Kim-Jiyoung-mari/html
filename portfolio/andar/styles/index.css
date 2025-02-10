@@ -3,8 +3,34 @@ main .m_row {
     width: 1400px; margin: 0 auto 100px;
 }
 main .m_row .title {}
-main .m_row .title .more_view {}
-main .m_row .title .more_view > a {}
+main .m_row .title .row_txt {
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+    padding-bottom: 10px;
+}
+main .m_row .title .t_btm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .m_row .title .t_btm .row_title {
+    font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02rem;
+}
+main .m_row .title .t_btm .item_tab {}
+main .m_row .title .t_btm .item_tab a {
+    font-size: 0.88rem; letter-spacing: -0.02rem; color: #AAA;
+    padding: 0 30px;
+}
+main .m_row .title .t_btm .item_tab .active {
+    color: #222; padding-bottom: 10px;
+    border-bottom: 2px solid #C86733;
+}
+main .m_row .title .t_btm .more_view {}
+main .m_row .title .t_btm .more_view > a {
+    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .m_row .title .t_btm .more_view > a > img {
+    position: relative; top: 3px;
+    padding-left: 5px;
+}
+/* =================================================== 스와이퍼 1*/
 main .m_row .c_swiper {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     margin: 40px 0;
@@ -27,6 +53,52 @@ main .m_row .c_swiper .swiper-wrapper > * .price del {
     color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding-left: 10px;
 }
+/* =================================================== 스와이퍼 2*/
+main .m_row .c_swiper2 {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 40px 0;
+}
+main .m_row .c_swiper2 .swiper-wrapper {}
+main .m_row .c_swiper2 .swiper-wrapper .swiper-slide {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .m_row .c_swiper2 .swiper-wrapper > * h3 {
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .m_row .c_swiper2 .swiper-wrapper > * .i_txt {
+    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding: 10px 0 20px;
+}
+main .m_row .c_swiper2 .swiper-wrapper > * .price {
+    letter-spacing: -0.02rem;
+}
+main .m_row .c_swiper2 .swiper-wrapper > * .price del {
+    color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding-left: 10px;
+}
+/* =================================================== 스와이퍼 2*/
+main .m_row .c_swiper3 {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 40px 0;
+}
+main .m_row .c_swiper3 .swiper-wrapper {}
+main .m_row .c_swiper3 .swiper-wrapper .swiper-slide {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .m_row .c_swiper3 .swiper-wrapper > * h3 {
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .m_row .c_swiper3 .swiper-wrapper > * .i_txt {
+    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding: 10px 0 20px;
+}
+main .m_row .c_swiper3 .swiper-wrapper > * .price {
+    letter-spacing: -0.02rem;
+}
+main .m_row .c_swiper3 .swiper-wrapper > * .price del {
+    color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding-left: 10px;
+}
 /* =================================================== 진행바*/
 main .m_row .progress {
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
@@ -34,16 +106,54 @@ main .m_row .progress {
 main .m_row .progress .s_btn {
     position: relative; bottom: 3px;
 }
+main .m_row .progress .s_btn .swiper-button-prev {
+    background-color: yellow;
+}
+main .m_row .progress .s_btn .swiper-button-next {background-color: pink;}
 main .m_row .progress .s_btn button {}
 main .m_row .progress .s_btn .prev {}
 main .m_row .progress .s_btn .next {}
 main .m_row .progress .swiper-scrollbar {
     width: 1330px; height: 2px;
-    position: relative; margin: 0 auto; top: 3x;
+    position: relative; margin: 0 auto;
 }
 main .m_row .progress .scrollbar .active-scrollbar {
+    background-color: red;
     width: 10%; height: 2px;
     position: absolute; left: 0; top: 0;
+}
+/* =================================================== 배너*/
+main .m_bnr {
+    margin-bottom: 100px; position: relative;
+    width: 100%; height: 360px;
+    background-size: cover;
+}
+main .bnr1 {
+    background-image: url(../images/m_bnr_001.jpg);
+}
+main .bnr2 {
+    background-image: url(../images/m_bnr_002.jpg);
+    margin: 0;
+}
+main .m_bnr .bnr_contents {
+    width: 1400px; position: absolute; left: 50%; bottom: 108px;
+    transform: translateX(-50%); 
+
+}
+main .m_bnr .bnr_contents h4 {
+    font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02rem;
+}
+main .m_bnr .bnr_contents .bnr_txt {
+    font-size: 1.06rem; font-weight: 500; 
+    letter-spacing: -0.02rem; line-height: 1.5;
+    padding: 10px 0 30px;
+}
+main .m_bnr .bnr_contents .bnr_link {}
+main .m_bnr .bnr_contents .bnr_link > a {
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+main .m_bnr .bnr_contents .bnr_link > a > img {
+    padding-left: 10px; position: relative; top: 6px;
 }
 /* =================================================== 2행 개별 */
 main .row2 {}
@@ -102,3 +212,74 @@ main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info h3 {}
 main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .i_txt {}
 main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price {}
 main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price del {}
+/* =================================================== 5행 개별 */
+main .row5 {width: 100%;}
+main .row5 .row5_bg {
+    position: sticky; top: 0; height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+main .row5 .row5_bg .row5_title {
+    width: 1400px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+main .row5 .row5_bg .row5_title .row5_left {}
+main .row5 .row5_bg .row5_title .row5_left .row_title {
+    display: inline-block;
+    font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02rem;
+}
+main .row5 .row5_bg .row5_title .row5_left .row_txt {
+    display: inline-block;
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+main .row5 .row5_bg .row5_title .row5_tab {}
+main .row5 .row5_bg .row5_title .row5_tab > a {
+    font-size: 0.88rem; letter-spacing: -0.02rem; color: #AAA;
+    padding: 0 20px;
+}
+main .row5 .row5_bg .row5_title .row5_tab > .active {
+    color: #222; padding-bottom: 10px;
+    border-bottom: 2px solid #C86733;
+}
+main .row5 .row5_contents {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 0 80px;
+}
+main .row5 .row5_contents .right {
+    background-image: url(../images/row5_main.jpg);
+    width: 490px; height: 900px;
+    background-size: cover; background-position: center;
+    position: relative;
+}
+main .row5 .row5_contents .right > a {
+    position: absolute; bottom: 40px; right: 45px;
+    font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02rem;
+    color: #FFF; 
+}
+main .row5 .row5_contents .right > a > img {
+    display: block; padding-top: 10px;
+}
+main .row5 .row5_contents .left_list {
+    width: calc(100% - 648px);    
+}
+main .row5 .row5_contents .left_list ul {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
+main .row5 .row5_contents .left_list ul li {
+    width: calc((100% - (28px * 2)) / 3);
+    padding-bottom: 50px;
+}
+main .row5 .row5_contents .left_list ul li > a {}
+main .row5 .row5_contents .left_list ul li > a img {}
+main .row5 .row5_contents > * h3 {
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .row5 .row5_contents > * .i_txt {
+    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding: 10px 0 20px;
+}
+main .row5 .row5_contents > * .price {letter-spacing: -0.02rem;}
+main .row5 .row5_contents > * .price del {
+    color: #AAA; font-size: 0.81rem; line-height: 1.2; 
+}
