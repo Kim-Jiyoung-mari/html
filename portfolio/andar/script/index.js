@@ -18,7 +18,7 @@ const contentSwiper = new Swiper('.c_swiper',{
     },
     loop:true,
     scrollbar: {
-        el: " .progress .swiper-scrollbar",
+        el: " .row2 .progress .swiper-scrollbar",
     },
     navigation: {
         nextEl: ".s_btn .next",
@@ -32,7 +32,7 @@ const contentSwiper2 = new Swiper('.c_swiper2',{
     },
     loop:true,
     scrollbar: {
-        el: " .progress .swiper-scrollbar",
+        el: " .row3 .progress .swiper-scrollbar",
     },
     navigation: {
         nextEl: ".s_btn .next",
@@ -46,7 +46,7 @@ const contentSwiper3 = new Swiper('.c_swiper3',{
     },
     loop:true,
     scrollbar: {
-        el: " .progress .swiper-scrollbar",
+        el: " .row4 .progress .swiper-scrollbar",
     },
     navigation: {
         nextEl: ".s_btn .next",
