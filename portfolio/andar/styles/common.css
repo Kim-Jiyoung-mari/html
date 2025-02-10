@@ -15,7 +15,7 @@
 }
 .h_bg header .h_left h1 {}
 .h_bg header .h_left h1 > a {}
-.h_bg header .h_left h1 > a > img {}
+.h_bg header .h_left h1 > a > img {height: 40px;}
 .h_bg header .h_left nav {}
 .h_bg header .h_left nav > ul {}
 .h_bg header .h_left nav > ul > li {
