@@ -1,3 +1,9 @@
+// const aClick = document.querySelectorAll('nav a');
+// console.log(aClick)
+// aClick.addEventListener('click',(e) => {
+//     
+// })
+
 const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
         delay:5000, // 실제 배너 5~7초 많이 사용
@@ -55,3 +61,4 @@ const contentSwiper3 = new Swiper('.c_swiper3',{
         prevEl: ".row4 .s_btn .prev",
     }
 });
+

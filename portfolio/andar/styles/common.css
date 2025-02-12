@@ -19,14 +19,14 @@
 .h_bg header .h_left nav {}
 .h_bg header .h_left nav > ul {}
 .h_bg header .h_left nav > ul > li {
-    margin: 0 20px; float: left; height: 80px;
+    margin-left: 20px; float: left; height: 80px;
     display: flex; align-items: center;
     
 }
 .h_bg header .h_left nav > ul > li > a {
     font-size: 0.94rem; letter-spacing: -0.02rem;
 }
-.h_bg header .h_left nav > ul > li:last-child{margin: 0;}
+.h_bg header .h_left nav > ul > li:nth-child(2) > a {color: #C86733;}
 .h_bg header .h_left nav ul li .sub_bg {
     background-color: #FFF; z-index: 999;
     position: absolute; left: 0; top: 80px; width: 100%; height: 500px;
@@ -44,6 +44,14 @@
     max-width:1400px; margin: 40px auto; height: 400px;
     display: flex; flex-flow: row nowrap; align-items: flex-start;
     padding-left: 20px;
+}
+.h_bg header .h_left nav ul li:nth-child(4) .sub_bg >.sub_mg {
+    background-image: url(../images/sub_manz.jpg);
+    background-repeat: no-repeat; background-position: right center;
+}
+.h_bg header .h_left nav ul li:nth-child(5) .sub_bg >.sub_mg {
+    background-image: url(../images/sub_active.jpg);
+    background-repeat: no-repeat; background-position: right center;
 }
 .h_bg header .h_left nav ul li .sub_bg > .sub_mg h2 {
     padding-right: 30px;
