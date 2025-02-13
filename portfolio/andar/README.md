@@ -3,7 +3,8 @@
 <href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
 ## 글꼴 가이드
 * 배너 큰제목 (50) | font-size: 3.13rem; font-weight: 600; letter-spacing: -0.02rem;
-* 메인대제목(25) |  font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02rem;
+* 메인대제목(23) |  font-size: 1.44rem; font-weight: 600; letter-spacing: -0.02rem;
+* 메인중제목(19) |  font-size: 1.19rem; font-weight: 600; letter-spacing: -0.02rem;
 * 소비자가(16) |  letter-spacing: -0.02rem;
 * [M]제품명(15) |  font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
 * [R]헤더카테고리·내용(15) |  font-size: 0.94rem; letter-spacing: -0.02rem;
