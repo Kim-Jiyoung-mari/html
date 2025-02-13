@@ -220,37 +220,37 @@ const beaccSwiper = new Swiper('.best_acc .c_swiper3',{
 const tabC2 = document.querySelectorAll('.row4 .best_container > div');
 const tabT2 = document.querySelectorAll('.row4 .t_btm .item_tab a');
 console.log(tabC2, tabT2);
-// for(let i of tabC2){
-//     function tabCHide2 (){ /* 탭내용 모두 숨기기용 함수 : 생성 */
-//         for(let i of tabC2) i.style.display = 'none';
-//     }
-// }
-// function tabClsReset2(){/* 클래스 초기화 함수 : 생성 */
-//     for(let i of tabT2) i.classList.remove('active');
-// }
-// tabCHide2();
-// tabClsReset2();
+for(let i of tabC2){
+    function tabCHide2 (){ /* 탭내용 모두 숨기기용 함수 : 생성 */
+        for(let i of tabC2) i.style.display = 'none';
+    }
+}
+function tabClsReset2(){/* 클래스 초기화 함수 : 생성 */
+    for(let i of tabT2) i.classList.remove('active');
+}
+tabCHide2();
+tabClsReset2();
 
-// tabC2[0].style.display = 'block';
-// tabT2[0].classList.add('active');
+tabC2[0].style.display = 'block';
+tabT2[0].classList.add('active');
 
 //[2]. "tabT" 탭 제목을 클릭했을 때(1,2,3,4 모두 가능)    
 //  1. 탭제목 클래스 초기화 
 //  2. 탭제목 클래스 적용(현재 이벤트 대상) 
 //  3. 탭내용 모두 숨기기 
 //  4. 탭내용 보이기 (탭제목 현재 이벤트 대상의 내용의 인덱스)
-// tabT2.forEach((target,index)=>{
-//     target.addEventListener('click',(e)=>{
-//         // console.log(target);
-//         tabClsReset2(); // 호출하기만 하면 됨
-//         target.classList.add('active');
-//         //누를 때 클래스를 옮기기
-//         tabCHide2();//탭 내용 숨기기 함수 호출
-//         tabC2[index].style.display = 'block';
-//         //탭제목 현재 이벤트 대상의 내용의 인덱스
-//         e.preventDefault();
-//     })
-// })
+tabT2.forEach((target,index)=>{
+    target.addEventListener('click',(e)=>{
+        // console.log(target);
+        tabClsReset2(); // 호출하기만 하면 됨
+        target.classList.add('active');
+        //누를 때 클래스를 옮기기
+        tabCHide2();//탭 내용 숨기기 함수 호출
+        tabC2[index].style.display = 'block';
+        //탭제목 현재 이벤트 대상의 내용의 인덱스
+        e.preventDefault();
+    })
+})
 
 // =====================================================  5행 스크롤업
 // 탭 메뉴를 클릭하면 해당 섹션으로 이동하는 JS
