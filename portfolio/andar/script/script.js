@@ -80,7 +80,7 @@ for(let i of tabC){
     }
 }
 function tabClsReset(){/* 클래스 초기화 함수 : 생성 */
-    for(let i of tabT) i.classList.remove('active');
+    for(let i of tabT) i.classList.remove('active_info');
 }
 tabCHide();
 tabClsReset();
@@ -96,7 +96,7 @@ tabT[0].classList.add('active');
 tabT.forEach((target,index)=>{
     target.addEventListener('click',(e)=>{
         tabClsReset();
-        target.classList.add('active');
+        target.classList.add('active_info');
         //누를 때 클래스를 옮기기
         tabCHide();
         tabC[index].style.display = 'block';
