@@ -241,39 +241,50 @@ tabT2.forEach((target,index)=>{
 // 탭 메뉴를 클릭하면 해당 섹션으로 이동하는 JS
 // 1. 탭 메뉴를 선택하면
 // 2. 해당되는 탭 내용으로 스크롤된다
+// for문으로 하나로 돌리기
+const golfTab = document.querySelector('.golf_tab');
+const runTab = document.querySelector('.run_tab');
+const yogaTab = document.querySelector('.yoga_tab');
 
-/* const golfTab = document.querySelector('.golf_tab a:nth-child(1)');
-const runTab = document.querySelector('.run_tab a:nth-child(2)');
-const yogaTab = document.querySelector('.yoga_tab a:nth-child(3)');
-const golfCon = document.querySelector('.golf_con');
-const runCon = document.querySelector('.run_con');
-const yogaCon = document.querySelector('.yoga_con');
+const golfCon = document.querySelectorAll('.row5_tab .golf')
+const runCon = document.querySelectorAll('.row5_tab .running')
+const yogaCon = document.querySelectorAll('.row5_tab .yoga')
+
 console.log(golfTab,runTab,yogaTab);
 console.log(golfCon,runCon,yogaCon);
 
-golfTab.addEventListener('click',(e)=>{
-    e.preventDefault();
-    console.log('골프 섹션 offsetTop:', golfCon.offsetTop);
-    window.scrollTo({
-        left:0, 
-        top:golfCon.offsetTop
+for(let i of golfCon){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault();
+        console.log('골프 섹션:',golfTab.offsetTop);
+        window.scrollTo({
+            left:0,
+            top:golfTab.offsetTop,
+            behavior: 'smooth',
+        });
     });
-});
+};
 
-runTab.addEventListener('click',(e)=>{
-    e.preventDefault();
-    console.log('러닝 섹션 offsetTop:', runCon.offsetTop);
-    window.scrollTo({
-        left:0, 
-        top:runCon.offsetTop
+for(let i of runCon){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault();
+        console.log('러닝섹션:',runTab.offsetTop);
+        window.scrollTo({
+            left:0,
+            top:runTab.offsetTop,
+            behavior: 'smooth',
+        });
     });
-});
+};
 
-yogaTab.addEventListener('click',(e)=>{
-    e.preventDefault();
-    console.log('요가 섹션 offsetTop:', yogaCon.offsetTop);
-    window.scrollTo({
-        left:0, 
-        top:yogaCon.offsetTop
+for(let i of yogaCon){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault();
+        console.log('요가 섹션:',yogaTab.offsetTop);
+        window.scrollTo({
+            left:0,
+            top:yogaTab.offsetTop,
+            behavior: 'smooth',
+        });
     });
-}); */
+};
