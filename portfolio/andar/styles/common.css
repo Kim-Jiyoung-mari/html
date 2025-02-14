@@ -216,7 +216,7 @@ footer .ft_bg .ft_btm .btm_right .sns .sns_right > p {padding: 0 17px;}
 footer .ft_bg .ft_btm .btm_right .sns .sns_left > a > img {}
 footer .ft_bg .ft_btm .btm_right .sns .sns_right {}
 footer .ft_bg .ft_btm .btm_right .sns .sns_right > a {
-    \float: left;}
+    float: left;}
 footer .ft_bg .ft_btm .btm_right .sns .sns_right > a > img {}
 footer .ft_bg .ft_btm .btm_right .sns .sns_right > p {float: left;}
 footer .ft_bg .ft_btm .btm_right .sns .sns_right > p > img {}

@@ -255,10 +255,10 @@ main .row5 .row5_contents .right_bg .right {
     position: sticky; top: 80px;
 }
 main .row5 .row5_contents .right_bg .golf {
-    background-image: url(../images/row5_main2.jpg);
+    background-image: url(../images/row5_main1.jpg);
 }
 main .row5 .row5_contents .right_bg .running {
-    background-image: url(../images/row5_main.jpg);
+    background-image: url(../images/row5_main2.jpg);
 }
 main .row5 .row5_contents .right_bg .yoga {
     background-image: url(../images/row5_main3.jpg);
