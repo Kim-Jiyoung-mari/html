@@ -1,15 +1,3 @@
-// document.querySelectorAll('main > * a').forEach(a => {
-//     a.addEventListener('click', (e) => {
-//         e.preventDefault();
-//     });
-// });
-
-// document.querySelectorAll('nav > * a').forEach(a => {
-//     a.addEventListener('click', (e) => {
-//         e.preventDefault();
-//     });
-// });
-
 const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
         delay:5000, // 실제 배너 5~7초 많이 사용
@@ -288,3 +276,4 @@ for(let i of yogaCon){
         });
     });
 };
+

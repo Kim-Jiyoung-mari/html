@@ -140,34 +140,80 @@
                 </div>
                 <div class="select_content">
                     <p>선택1</p>
-                    <select name="size" id="size">
+                    <select name="size" id="size1">
                         <option value="">사이즈 선택</option>
-                        <option value="">XS</option>
-                        <option value="">S</option>
-                        <option value="">M</option>
-                        <option value="">L</option>
-                        <option value="">XL</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
                     </select>
-                    <select name="color" id="color">
+                    <select name="color" id="color1">
                         <option value="">색상 선택</option>
-                        <option value="">다크올리브</option>
-                        <option value="">모브딥퍼플</option>
-                        <option value="">블랙</option>
-                        <option value="">네이비블레이저</option>
-                        <option value="">다크그레이</option>
-                        <option value="">월넛브라운</option>
-                        <option value="">페더베이지</option>
-                        <option value="">올리브카키</option>
-                        <option value="">블루베리</option>
-                        <option value="">마쉬멜로우</option>
+                        <option value="다크올리브">다크올리브</option>
+                        <option value="모브딥퍼플">모브딥퍼플</option>
+                        <option value="블랙">블랙</option>
+                        <option value="네이비블레이저">네이비블레이저</option>
+                        <option value="다크그레이">다크그레이</option>
+                        <option value="월넛브라운">월넛브라운</option>
+                        <option value="페더베이지">페더베이지</option>
+                        <option value="올리브카키">올리브카키</option>
+                        <option value="블루베리">블루베리</option>
+                        <option value="마쉬멜로우">마쉬멜로우</option>
+                    </select>
+                </div>
+                <div class="select_content">
+                    <p>선택2</p>
+                    <select name="size" id="size2">
+                        <option value="">사이즈 선택</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <select name="color" id="color2">
+                        <option value="">색상 선택</option>
+                        <option value="다크올리브">다크올리브</option>
+                        <option value="모브딥퍼플">모브딥퍼플</option>
+                        <option value="블랙">블랙</option>
+                        <option value="네이비블레이저">네이비블레이저</option>
+                        <option value="다크그레이">다크그레이</option>
+                        <option value="월넛브라운">월넛브라운</option>
+                        <option value="페더베이지">페더베이지</option>
+                        <option value="올리브카키">올리브카키</option>
+                        <option value="블루베리">블루베리</option>
+                        <option value="마쉬멜로우">마쉬멜로우</option>
                     </select>
                 </div>
                 <div class="fit_size">
                     <button type="button" class="fit"><span class="tip">TIP</span>나와 맞는 사이즈 찾기</button>
                 </div>
+                <div class="op_bg">
+                    <div class="op1">
+                        <p class="item_name"><!-- 스크립트에 의해서 삽입되는 자리 h1자리 --></p>
+                        <!-- 스크립트 정보  : 실제 선택 정보 색깔/사이즈-->
+                        <span class="size_op1"></span>
+                        <span class="color_op1"></span>
+                    </div>
+                    <div class="op2">
+                        <p class="item_name"><!-- 스크립트에 의해서 삽입되는 자리 h1자리 --></p>
+                        <!-- 스크립트 정보  : 실제 선택 정보 색깔/사이즈-->
+                        <span class="size_op2"></span>
+                        <span class="color_op2"></span>
+                    </div>
+                    <div class="count">
+                        <p>수량</p>
+                        <div class="num">
+                            <button type="button" id="minus"><img src="./images/minus.png" alt="수량빼기버튼"></button>
+                            <input type="number" name="product_num" id="product_num">
+                            <button type="button" id="plus"><img src="./images/plus.png" alt="수량추가버튼"></button>
+                        </div>
+                    </div>
+                </div>
                 <div class="order_price">
                     <h2>주문금액</h2>
-                    <p><em class="or_price">0</em>원</p>
+                    <p><em class="or_price"><!-- 0 --></em>원</p>
                 </div>
                 <div class="order_btn">
                     <button type="button" class="like"><img src="./images/like.png" alt="관심상품등록하기"></button>

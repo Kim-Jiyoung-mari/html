@@ -121,6 +121,43 @@ main .contents .right_info .fit_size .fit .tip {
     background-color: #C86733; color: #FFF; margin-right: 20px;
     padding: 5px 10px; border-radius: 10px; letter-spacing: -0.02rem;
 }
+/* ============================================== 수량추가버튼 */
+main .contents .right_info .op_bg {
+    background-color: #F2F2F2;
+    border-radius: 10px; padding: 13px 15px;
+    margin-bottom: 35px; 
+}
+main .contents .right_info .op_bg .op1 {padding-bottom: 20px;}
+main .contents .right_info .op_bg .op2 {}
+main .contents .right_info .op_bg > * .item_name {
+    font-size: 0.88rem; letter-spacing: -0.02rem; padding-bottom: 5px;
+}
+main .contents .right_info .op_bg > * span {
+    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .contents .right_info .op_bg .count {
+    text-align: right;
+}
+main .contents .right_info .op_bg .count > p {
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+    padding-bottom: 10px;
+}
+main .contents .right_info .op_bg .count .num {}
+main .contents .right_info .op_bg .count .num button {
+    background-color: #222; padding: 5px;
+    border-radius: 5px;
+}
+main .contents .right_info .op_bg .count .num button img {
+    position: relative; top: 1px;
+}
+main .contents .right_info .op_bg .count .num #minus {}
+main .contents .right_info .op_bg .count .num #plus {}
+main .contents .right_info .op_bg .count .num input {
+    width: 67px; height: 39px;  border: 1px solid #D9D9D9;
+    color: #AAA; text-align: center;
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .contents .right_info .op_bg .count .num #product_num {}
 /* ============================================== 주문금액 */
 main .contents .right_info .order_price {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
