@@ -182,7 +182,7 @@
 }
 .h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li {padding-bottom: 20px;}
 .h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li:last-child {padding-bottom: 0;}
-h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li:last-child {padding: 0;}
+.h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li:last-child {padding: 0;}
 .h_bg header .h_right .h_top .search .m_nav nav > ul > li .sub > li a {color: #000;}
 /* ================================================header 모바일 서브메뉴 (E)*/
 /* ================================================main */

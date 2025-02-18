@@ -1,6 +1,24 @@
+// 모바일 서브메뉴
+// 1. 모바일 서브메뉴 버튼을 클릭하면 moNav
+// 2. 메뉴 리스트가 나옴 menuList
+const moNav = document.querySelector('.m_menu');
+const menuList = document.querySelector('.m_nav');
+
+moNav.addEventListener('click',()=>{
+    menuList.style.display = 'block';
+});
+
+// 모바일 서브메뉴 닫기
+// 1. 닫기 버튼 누르면
+// 2. 메뉴 닫힘
+const closeBtn = document.querySelector('.close');
+closeBtn.addEventListener('click',()=>{
+    menuList.style.display = 'none'
+})
+
 const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
-        delay:5000, // 실제 배너 5~7초 많이 사용
+        delay:5000000, // 실제 배너 5~7초 많이 사용
     },
     loop:true,
     pagination:{
