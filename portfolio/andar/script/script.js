@@ -163,7 +163,6 @@ selectSize1.addEventListener('change',()=>{
 selectColor1.addEventListener('change',()=>{
     const color1 = document.querySelector('#color1 option:checked').value;
     colorOp1.textContent = color1;
-    opBack.style.display = 'block'
 });
 
 // 2-1. 선택 2 의 사이즈 선택

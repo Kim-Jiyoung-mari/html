@@ -1,6 +1,6 @@
 /* =================================================== 공통디자인 */
 main .m_row {
-    width: 1400px; margin: 0 auto 100px;
+    max-width: 1400px; margin: 0 auto 100px;
 }
 main .m_row .title {}
 main .m_row .title .row_txt {
@@ -39,6 +39,9 @@ main .m_row .c_swiper .swiper-wrapper {}
 main .m_row .c_swiper .swiper-wrapper .swiper-slide {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
+main .m_row .c_swiper .swiper-wrapper .swiper-slide a {}
+main .m_row .c_swiper .swiper-wrapper .swiper-slide a img {width:100%;}
+main .m_row .c_swiper .swiper-wrapper .swiper-slide .item {width:calc((100% - 28px) / 4);}
 main .m_row .c_swiper .swiper-wrapper > * h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
 }
@@ -53,6 +56,25 @@ main .m_row .c_swiper .swiper-wrapper > * .price del {
     color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding-left: 10px;
 }
+/* =================================================== 2행 개별 슬라이드1 */
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a img {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info h3 {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .i_txt {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .price del {}
+/* =================================================== 2행 개별 슬라이드2 */
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a img {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info h3 {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .i_txt {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price {}
+main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price del {}
 /* =================================================== 스와이퍼 2*/
 main .m_row .c_swiper2 {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
@@ -62,6 +84,9 @@ main .m_row .c_swiper2 .swiper-wrapper {}
 main .m_row .c_swiper2 .swiper-wrapper .swiper-slide {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
+main .m_row .c_swiper2 .swiper-wrapper .swiper-slide a {}
+main .m_row .c_swiper2 .swiper-wrapper .swiper-slide .item {width:calc((100% - 28px) / 4);}
+main .m_row .c_swiper2 .swiper-wrapper .swiper-slide a img {width:100%;}
 main .m_row .c_swiper2 .swiper-wrapper > * h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
 }
@@ -76,6 +101,7 @@ main .m_row .c_swiper2 .swiper-wrapper > * .price del {
     color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding-left: 10px;
 }
+
 /* =================================================== 스와이퍼 2*/
 main .m_row .c_swiper3 {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
@@ -85,6 +111,9 @@ main .m_row .c_swiper3 .swiper-wrapper {}
 main .m_row .c_swiper3 .swiper-wrapper .swiper-slide {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
+main .m_row .c_swiper3 .swiper-wrapper .swiper-slide a {}
+main .m_row .c_swiper3 .swiper-wrapper .swiper-slide .item {width:calc((100% - 28px) / 4);}
+main .m_row .c_swiper3 .swiper-wrapper .swiper-slide a img {width:100%;}
 main .m_row .c_swiper3 .swiper-wrapper > * h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
 }
@@ -107,26 +136,24 @@ main .m_row .progress .s_btn {
     position: relative; bottom: 3px;
 }
 main .m_row .progress .s_btn .swiper-button-prev {
-    background-color: yellow;
+    
 }
-main .m_row .progress .s_btn .swiper-button-next {background-color: pink;}
+main .m_row .progress .s_btn .swiper-button-next {}
 main .m_row .progress .s_btn button {}
 main .m_row .progress .s_btn .prev {}
 main .m_row .progress .s_btn .next {}
 main .m_row .progress .swiper-scrollbar {
-    width: 1330px; height: 2px;
+    max-width: 1330px; height: 2px;
     position: relative; margin: 0 auto;
 }
 main .m_row .progress .scrollbar .active-scrollbar {
-    background-color: red;
     width: 10%; height: 2px;
     position: absolute; left: 0; top: 0;
 }
 /* =================================================== 배너*/
 main .m_bnr {
-    margin-bottom: 100px; position: relative;
-    width: 100%; height: 360px;
-    background-size: cover;
+    height: 360px;
+    background-size: cover; margin-bottom: 100px; 
 }
 main .bnr1 {
     background-image: url(../images/m_bnr_001.jpg);
@@ -136,9 +163,8 @@ main .bnr2 {
     margin: 0;
 }
 main .m_bnr .bnr_contents {
-    width: 1400px; position: absolute; left: 50%; bottom: 108px;
-    transform: translateX(-50%); 
-
+    max-width: 1400px; margin: 0 auto;
+    padding-top: 108px;
 }
 main .m_bnr .bnr_contents h4 {
     font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02rem;
@@ -165,22 +191,20 @@ main .row2 .title .t_top .row_title {
     font-size: 2.19rem; font-weight: 600; letter-spacing: -0.04rem;
     padding-right: 10px;
 }
-main .row2 .title .t_top .row_txt {
-    font-size: 0.94rem; letter-spacing: -0.02rem;;
-}
-main .row2 .title .t_top .row_txt {}
+main .row2 .title .t_top .row_txt {padding-bottom: 0;}
 main .row2 .title .t_btm {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     padding-top: 20px;
 }
 main .row2 .title .t_btm .tab {}
-main .row2 .title .t_btm .tab .active {
-    border: 2px solid #C86733; color: #C86733;
-}
+
 main .row2 .title .t_btm .tab > a {
     border: 1px solid #888; border-radius: 20px;
     padding: 7px 20px;
     font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+main .row2 .title .t_btm .tab .active {
+    border: 2px solid #C86733; color: #C86733;
 }
 main .row2 .title .t_btm .tab a:nth-child(2) {
     margin: 0 10px;
@@ -193,35 +217,18 @@ main .row2 .title .t_btm .more_view > a > img {
     position: relative; top: 3px;
     padding-left: 5px;
 }
-/* =================================================== 2행 개별 슬라이드1 */
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item > a img {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info h3 {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .i_txt {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item .item_info .price del {}
-/* =================================================== 2행 개별 슬라이드2 */
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item > a img {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info h3 {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .i_txt {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price {}
-main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price del {}
+
 /* =================================================== 5행 개별 */
 main .row5 {
-    width: 100%; height: 2600px;
+    height: 2600px;
 }
 main .row5 .row5_bg {
     background-color: #FFF;
     padding: 20px 0; position: sticky; top: 80px; z-index: 999;
 }
 main .row5 .row5_bg .row5_title {
-    width: 1400px; margin: 0 auto;
+    background-color: #FFF;
+    max-width: 1400px; margin: 0 auto;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     align-items: center;
 }
@@ -266,24 +273,22 @@ main .row5 .row5_contents .right_bg .yoga {
 main .row5 .row5_contents .right_bg .right > a {
     width: 490px; height: 900px;
     position: absolute; left: 0; top: 0;
-    font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02rem;
-    color: #FFF; 
 }
 main .row5 .row5_contents .right_bg .right > a > img {
     padding-top: 10px; display: none;
 }
 main .row5 .row5_contents .left_list {
-    width: calc(100% - 648px);    
+    max-width: calc(100% - 648px);    
 }
 main .row5 .row5_contents .left_list ul {
     display: flex; flex-flow: row wrap; justify-content: space-between;
 }
 main .row5 .row5_contents .left_list ul li {
-    width: calc((100% - (28px * 2)) / 3);
+    max-width: calc((100% - (28px * 2)) / 3);
     padding-bottom: 50px;
 }
 main .row5 .row5_contents .left_list ul li > a {}
-main .row5 .row5_contents .left_list ul li > a img {}
+main .row5 .row5_contents .left_list ul li > a img {width: 100%;}
 main .row5 .row5_contents > * h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
 }

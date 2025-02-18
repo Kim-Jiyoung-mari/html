@@ -14,8 +14,9 @@ const mainSwiper = new Swiper('.main_swiper',{
 // 2행 에어쿨링
 const contentSwiper = new Swiper('.c_swiper',{
     autoplay:{
-        delay:5000, // 실제 배너 5~7초 많이 사용
+        delay:3000, // 실제 배너 5~7초 많이 사용
     },
+    slidesPerView:1,
     loop:true,
     scrollbar: {
         el: " .row2 .progress .swiper-scrollbar",
@@ -23,7 +24,7 @@ const contentSwiper = new Swiper('.c_swiper',{
     navigation: {
         nextEl: ".row2 .s_btn .next",
         prevEl: ".row2 .s_btn .prev",
-    }
+    },
 });
 
 // =====================================================  3행 신상
@@ -40,6 +41,7 @@ const allSwiper = new Swiper('.all .c_swiper2',{
         prevEl: ".all .all_new .prev",
     }
 });
+
 const womanSwiper = new Swiper('.womanz .c_swiper2',{
     autoplay:{
         delay:3000, // 실제 배너 5~7초 많이 사용
@@ -122,8 +124,8 @@ tabT.forEach((target,index)=>{
         tabC[index].style.display = 'block';
         //탭제목 현재 이벤트 대상의 내용의 인덱스
         e.preventDefault();
-    })
-})
+    });
+});
 
 // =====================================================  4행 베스트셀러
 const beallSwiper = new Swiper('.best_all .c_swiper3',{

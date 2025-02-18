@@ -1,0 +1,73 @@
+@media screen and (max-width:1400px){
+    
+/* =================================================== 메인배너 태블릿반응형*/
+main .main_swiper {
+    height: 500px;
+    position: relative; top: 80px;
+    
+}
+/* =================================================== 개별메인배너 태블릿반응형*/
+main .main_swiper .swiper-wrapper .slide1 .contents {padding-top: 18%;}
+/* =================================================== 공통메인배너 태블릿반응형*/
+    main .main_swiper .swiper-wrapper .swiper-slide > * {
+        padding-top: 15%; margin: 0 80px
+    }    
+    main .main_swiper .swiper-wrapper .swiper-slide > * h1,
+    main .main_swiper .swiper-wrapper .swiper-slide > * h1 span {font-size: 2.50rem;}
+    main .main_swiper .swiper-wrapper > * .contents p {font-size: 1.06rem;}
+    main .main_swiper .swiper-wrapper > * .btn_link {font-size: 0.75rem;}
+/* =================================================== 배너 태블릿반응형*/
+
+    main .m_bnr { height: 210px;}
+    main .m_bnr .bnr_contents {
+        margin: 0 80px; padding: 50px 0;
+    }
+    main .m_bnr .bnr_contents h4 {font-size: 1.44rem;}
+    main .m_bnr .bnr_contents .bnr_txt {font-size: 0.75rem;}
+    main .m_bnr .bnr_contents .bnr_link > a {font-size: 0.81rem;}
+    
+/* =================================================== 메인 태블릿반응형*/
+
+/* =================================================== 메인공통 태블릿반응형 */
+    main .m_row {padding:0 80px;}
+    main .m_row .title .row_txt {}
+    main .m_row .title .t_btm .item_tab a {
+        font-size: 0.81rem; padding: 0 20px;}
+    main > * .progress .s_btn {width: 8%;}
+
+    main .m_row .c_swiper2 .swiper-wrapper > * h3,
+    main .m_row .c_swiper3 .swiper-wrapper > * h3,
+    main .row5 .row5_contents > * h3 {font-size: 0.75rem;}
+
+    main .m_row .c_swiper2 .swiper-wrapper > * .i_txt,
+    main .m_row .c_swiper3 .swiper-wrapper > * .i_txt,
+    main .row5 .row5_contents > * .i_txt {font-size: 0.63rem;}
+
+    main .m_row .c_swiper2 .swiper-wrapper > * .price,
+    main .m_row .c_swiper3 .swiper-wrapper > * .price,
+    main .row5 .row5_contents > * .price {font-size: 0.81rem;}
+
+/* =================================================== 2행 에어쿨링 태블릿반응형*/
+    main .row2 .title .t_top .row_title {
+        font-size: 1.56rem; margin-top: 80px;
+    }
+    main .row2 .title .t_btm .tab > a {font-size: 0.88rem;}
+    main .m_row .c_swiper .swiper-wrapper > * h3 {font-size: 0.75rem;}
+    main .m_row .c_swiper .swiper-wrapper > * .i_txt {font-size: 0.63rem;}
+    main .m_row .c_swiper .swiper-wrapper > * .price {font-size: 0.81rem;}
+/* =================================================== 5행 태블릿반응형*/
+    main .row5 {
+        height: 1900px;
+    }
+    main .row5 .row5_bg {margin: 0 80px; padding: 13px 0;}
+    main .row5 .row5_bg .row5_title .row5_tab > a {padding: 0 15px;}
+    main .row5 .row5_contents .right_bg {}
+    main .row5 .row5_contents .right_bg .right {
+        width: 259px; height: 474px;
+    }
+    main .row5 .row5_contents .left_list {
+        max-width: calc(100% - 270px);    
+    }
+}
+
+@media screen and (max-width:864px){}
