@@ -82,7 +82,11 @@
 /* =================================================== 배너 */
 main {position: relative;}
 main .main_swiper {
+<<<<<<< HEAD
     height: 950px; margin: 0 auto;
+=======
+    width: 100%; height: 950px; margin: 0 auto;
+>>>>>>> 4ead4a3ac715d66cd11e545f72d8cfb5356cedbc
     margin-bottom: 100px;
 }
 main .main_swiper .swiper-wrapper {position: relative;}
@@ -208,13 +212,15 @@ footer .ft_bg .ft_btm .btm_right .sns {
     padding-top: 15px;
 }
 footer .ft_bg .ft_btm .btm_right .sns .sns_left {}
-footer .ft_bg .ft_btm .btm_right .sns .sns_left > a {}
+footer .ft_bg .ft_btm .btm_right .sns .sns_left > a {width: 30px; display: inline-block;}
 footer .ft_bg .ft_btm .btm_right .sns .sns_left > a:nth-child(2),
-footer .ft_bg .ft_btm .btm_right .sns .sns_right > p {padding: 0 17px;}
-footer .ft_bg .ft_btm .btm_right .sns .sns_left > a > img {}
+footer .ft_bg .ft_btm .btm_right .sns .sns_right > p {}
+footer .ft_bg .ft_btm .btm_right .sns .sns_left > a > img {width: 30px;}
 footer .ft_bg .ft_btm .btm_right .sns .sns_right {}
 footer .ft_bg .ft_btm .btm_right .sns .sns_right > a {
-    float: left;}
-footer .ft_bg .ft_btm .btm_right .sns .sns_right > a > img {}
+    width: 30px; display: inline-block;
+    float: left;
+}
+footer .ft_bg .ft_btm .btm_right .sns .sns_right > a > img {width: 100%;}
 footer .ft_bg .ft_btm .btm_right .sns .sns_right > p {float: left;}
-footer .ft_bg .ft_btm .btm_right .sns .sns_right > p > img {}
+footer .ft_bg .ft_btm .btm_right .sns .sns_right > p > img {width: 100%;}

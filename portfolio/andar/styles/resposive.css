@@ -1,14 +1,25 @@
+<<<<<<< HEAD
 @media screen and (max-width:1400px){
     
 /* =================================================== 메인배너 태블릿반응형*/
+=======
+@media screen and (max-width:1400px){    
+    /* =================================================== 메인배너 태블릿반응형*/
+>>>>>>> 4ead4a3ac715d66cd11e545f72d8cfb5356cedbc
 main .main_swiper {
     height: 500px;
     position: relative; top: 80px;
     
 }
+<<<<<<< HEAD
 /* =================================================== 개별메인배너 태블릿반응형*/
 main .main_swiper .swiper-wrapper .slide1 .contents {padding-top: 18%;}
 /* =================================================== 공통메인배너 태블릿반응형*/
+=======
+    /* =================================================== 개별메인배너 태블릿반응형*/
+main .main_swiper .swiper-wrapper .slide1 .contents {padding-top: 18%;}
+    /* =================================================== 공통메인배너 태블릿반응형*/
+>>>>>>> 4ead4a3ac715d66cd11e545f72d8cfb5356cedbc
     main .main_swiper .swiper-wrapper .swiper-slide > * {
         padding-top: 15%; margin: 0 80px
     }    
@@ -16,7 +27,11 @@ main .main_swiper .swiper-wrapper .slide1 .contents {padding-top: 18%;}
     main .main_swiper .swiper-wrapper .swiper-slide > * h1 span {font-size: 2.50rem;}
     main .main_swiper .swiper-wrapper > * .contents p {font-size: 1.06rem;}
     main .main_swiper .swiper-wrapper > * .btn_link {font-size: 0.75rem;}
+<<<<<<< HEAD
 /* =================================================== 배너 태블릿반응형*/
+=======
+    /* =================================================== 배너 태블릿반응형*/
+>>>>>>> 4ead4a3ac715d66cd11e545f72d8cfb5356cedbc
 
     main .m_bnr { height: 210px;}
     main .m_bnr .bnr_contents {
@@ -26,9 +41,15 @@ main .main_swiper .swiper-wrapper .slide1 .contents {padding-top: 18%;}
     main .m_bnr .bnr_contents .bnr_txt {font-size: 0.75rem;}
     main .m_bnr .bnr_contents .bnr_link > a {font-size: 0.81rem;}
     
+<<<<<<< HEAD
 /* =================================================== 메인 태블릿반응형*/
 
 /* =================================================== 메인공통 태블릿반응형 */
+=======
+    /* =================================================== 메인 태블릿반응형*/
+
+    /* =================================================== 메인공통 태블릿반응형 */
+>>>>>>> 4ead4a3ac715d66cd11e545f72d8cfb5356cedbc
     main .m_row {padding:0 80px;}
     main .m_row .title .row_txt {}
     main .m_row .title .t_btm .item_tab a {
@@ -47,7 +68,11 @@ main .main_swiper .swiper-wrapper .slide1 .contents {padding-top: 18%;}
     main .m_row .c_swiper3 .swiper-wrapper > * .price,
     main .row5 .row5_contents > * .price {font-size: 0.81rem;}
 
+<<<<<<< HEAD
 /* =================================================== 2행 에어쿨링 태블릿반응형*/
+=======
+    /* =================================================== 2행 에어쿨링 태블릿반응형*/
+>>>>>>> 4ead4a3ac715d66cd11e545f72d8cfb5356cedbc
     main .row2 .title .t_top .row_title {
         font-size: 1.56rem; margin-top: 80px;
     }
@@ -55,7 +80,11 @@ main .main_swiper .swiper-wrapper .slide1 .contents {padding-top: 18%;}
     main .m_row .c_swiper .swiper-wrapper > * h3 {font-size: 0.75rem;}
     main .m_row .c_swiper .swiper-wrapper > * .i_txt {font-size: 0.63rem;}
     main .m_row .c_swiper .swiper-wrapper > * .price {font-size: 0.81rem;}
+<<<<<<< HEAD
 /* =================================================== 5행 태블릿반응형*/
+=======
+    /* =================================================== 5행 태블릿반응형*/
+>>>>>>> 4ead4a3ac715d66cd11e545f72d8cfb5356cedbc
     main .row5 {
         height: 1900px;
     }
@@ -69,5 +98,18 @@ main .main_swiper .swiper-wrapper .slide1 .contents {padding-top: 18%;}
         max-width: calc(100% - 270px);    
     }
 }
+<<<<<<< HEAD
+=======
+    /* =================================================== 푸터 */  
+    footer .ft_bg {padding:0 80px;}
+
+    footer .ft_bg .ft_top > a,
+    footer .ft_bg .ft_btm .btm_left ul li,
+    footer .ft_bg .ft_btm .btm_left > p,
+    footer .ft_bg .ft_btm .btm_right > p,
+    footer .ft_bg .ft_btm .btm_right .cs_info .time > p {font-size: 0.63rem;}
+
+    footer .ft_bg .ft_btm .btm_right .cs_info {background-size: 70px 40px;}
+>>>>>>> 4ead4a3ac715d66cd11e545f72d8cfb5356cedbc
 
 @media screen and (max-width:864px){}
