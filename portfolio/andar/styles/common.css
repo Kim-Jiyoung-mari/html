@@ -182,8 +182,8 @@ footer .ft_bg .ft_top > a::after{
     max-width: 1px; height: 11px; background-color: #000;
     margin: 0 7px; position: relative; top: 1px;
 }
-footer .ft_bg .ft_btm .btm_left ul li:last-child:after,
-footer .ft_bg .ft_top > a:last-child:after {display: none;}
+/* footer .ft_bg .ft_btm .btm_left ul li:last-child:after,
+footer .ft_bg .ft_top > a:last-child:after {display: none;} */
 footer .ft_bg .ft_btm {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     padding: 30px 10px 0;

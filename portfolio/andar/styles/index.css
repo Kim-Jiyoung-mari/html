@@ -56,6 +56,40 @@ main .m_row .c_swiper .swiper-wrapper > * .price del {
     color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding-left: 10px;
 }
+/* =================================================== 2행 개별 */
+main .row2 {}
+main .row2 .title {}
+main .row2 .title .t_top {
+    display: flex; flex-flow: row nowrap; align-items: flex-end;
+}
+main .row2 .title .t_top .row_title {
+    font-size: 2.19rem; font-weight: 600; letter-spacing: -0.04rem;
+    padding-right: 10px;
+}
+main .row2 .title .t_top .row_txt {padding-bottom: 0;}
+main .row2 .title .t_btm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding-top: 20px;
+}
+main .row2 .title .t_btm .tab {}
+
+main .row2 .title .t_btm .tab > a {
+    border: 1px solid #888; border-radius: 20px;
+    padding: 7px 20px;
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+main .row2 .title .t_btm .tab .active {
+    border: 2px solid #C86733; color: #C86733;
+}
+main .row2 .title .t_btm .tab a:nth-child(2) {
+    margin: 0 10px;
+}
+main .row2 .title .t_btm .more_view {}
+main .row2 .title .t_btm .more_view > a {}
+main .row2 .title .t_btm .more_view > a > img {
+    position: relative; top: 3px;
+    padding-left: 5px;
+}
 /* =================================================== 2행 개별 슬라이드1 */
 main .m_row .c_swiper .swiper-wrapper .item-wrap1 {}
 main .m_row .c_swiper .swiper-wrapper .item-wrap1 .item {}
@@ -101,8 +135,7 @@ main .m_row .c_swiper2 .swiper-wrapper > * .price del {
     color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding-left: 10px;
 }
-
-/* =================================================== 스와이퍼 2*/
+/* =================================================== 스와이퍼 3*/
 main .m_row .c_swiper3 {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     margin: 40px 0;
@@ -143,11 +176,11 @@ main .m_row .progress .s_btn button {}
 main .m_row .progress .s_btn .prev {}
 main .m_row .progress .s_btn .next {}
 main .m_row .progress .swiper-scrollbar {
-    max-width: 1330px; height: 2px;
+    max-width: 1330px;  height: 2px;
     position: relative; margin: 0 auto;
 }
 main .m_row .progress .scrollbar .active-scrollbar {
-    width: 10%; height: 2px;
+    /* width: 10%; */ height: 2px;
     position: absolute; left: 0; top: 0;
 }
 /* =================================================== 배너*/
@@ -180,42 +213,6 @@ main .m_bnr .bnr_contents .bnr_link > a {
 }
 main .m_bnr .bnr_contents .bnr_link > a > img {
     padding-left: 10px; position: relative; top: 6px;
-}
-/* =================================================== 2행 개별 */
-main .row2 {}
-main .row2 .title {}
-main .row2 .title .t_top {
-    display: flex; flex-flow: row nowrap; align-items: flex-end;
-}
-main .row2 .title .t_top .row_title {
-    font-size: 2.19rem; font-weight: 600; letter-spacing: -0.04rem;
-    padding-right: 10px;
-}
-main .row2 .title .t_top .row_txt {padding-bottom: 0;}
-main .row2 .title .t_btm {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
-    padding-top: 20px;
-}
-main .row2 .title .t_btm .tab {}
-
-main .row2 .title .t_btm .tab > a {
-    border: 1px solid #888; border-radius: 20px;
-    padding: 7px 20px;
-    font-size: 0.94rem; letter-spacing: -0.02rem;
-}
-main .row2 .title .t_btm .tab .active {
-    border: 2px solid #C86733; color: #C86733;
-}
-main .row2 .title .t_btm .tab a:nth-child(2) {
-    margin: 0 10px;
-}
-main .row2 .title .t_btm .more_view {}
-main .row2 .title .t_btm .more_view > a {
-    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
-}
-main .row2 .title .t_btm .more_view > a > img {
-    position: relative; top: 3px;
-    padding-left: 5px;
 }
 
 /* =================================================== 5행 개별 */
@@ -278,13 +275,13 @@ main .row5 .row5_contents .right_bg .right > a > img {
     padding-top: 10px; display: none;
 }
 main .row5 .row5_contents .left_list {
-    max-width: calc(100% - 648px);    
+    width: calc(100% - 648px);    
 }
 main .row5 .row5_contents .left_list ul {
     display: flex; flex-flow: row wrap; justify-content: space-between;
 }
 main .row5 .row5_contents .left_list ul li {
-    max-width: calc((100% - (28px * 2)) / 3);
+    width: calc((100% - (28px * 2)) / 3);
     padding-bottom: 50px;
 }
 main .row5 .row5_contents .left_list ul li > a {}

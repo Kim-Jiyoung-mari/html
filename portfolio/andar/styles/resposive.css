@@ -6,10 +6,10 @@
         
     }
     /* =================================================== 개별메인배너 태블릿반응형*/
-    main .main_swiper .swiper-wrapper .slide1 .contents {padding-top: 183px;}
+
     /* =================================================== 공통메인배너 태블릿반응형*/
     main .main_swiper .swiper-wrapper .swiper-slide > * {
-        padding-top: 15%; margin: 0 80px
+        padding-top: 183px; margin: 0 80px
     }    
     main .main_swiper .swiper-wrapper .swiper-slide > * h1,
     main .main_swiper .swiper-wrapper .swiper-slide > * h1 span {font-size: 2.50rem;}
@@ -23,14 +23,13 @@
     main .m_bnr .bnr_contents h4 {font-size: 1.44rem;}
     main .m_bnr .bnr_contents .bnr_txt {font-size: 0.75rem;}
     main .m_bnr .bnr_contents .bnr_link > a {font-size: 0.81rem;}
-    
     /* =================================================== 메인 태블릿반응형*/
 
     /* =================================================== 메인공통 태블릿반응형 */
     main .m_row {padding:0 80px;}
     main .m_row .title .t_btm .item_tab a {
         font-size: 0.81rem; padding: 0 20px;}
-    main > * .progress .s_btn {width: 8%;}
+    main > * .progress .s_btn {width: 46px;}
     main .m_row .c_swiper2 .swiper-wrapper > * h3,
     main .m_row .c_swiper3 .swiper-wrapper > * h3,
     main .row5 .row5_contents > * h3 {font-size: 0.75rem;}
@@ -62,7 +61,7 @@
         width: 259px; height: 474px;
     }
     main .row5 .row5_contents .left_list {
-        max-width: calc(100% - 270px);    
+        width: calc(100% - 270px);    
     }
 }
     /* =================================================== 푸터 */  
@@ -87,30 +86,97 @@
 
     /* =================================================== 메인배너 모바일반응형*/
     main .main_swiper {}
-    main .main_swiper .swiper-wrapper .slide1 .contents {margin: 0 15px;}
-
+    main .main_swiper .swiper-wrapper .swiper-slide > * {
+        margin: 0 15px; position: absolute; top: 150px;
+    }
+    main .main_swiper .swiper-wrapper .swiper-slide > * h1,
+    main .main_swiper .swiper-wrapper .swiper-slide > * h1 span {font-size: 1.44rem;}
+    main .main_swiper .swiper-wrapper > * .contents p {font-size: 0.88rem;}
+    main .main_swiper .swiper-wrapper > * .btn_link {font-size: 0.63rem;}
+    /* =================================================== 배너 모바일반응형*/
+    main .m_bnr { height: 258px;}
+    main .m_bnr .bnr_contents {
+        margin: 0 15px;
+        position: relative; top: 55px;
+    }
+    main .m_bnr .bnr_contents h4 {font-size: 1.25rem;}
+    main .m_bnr .bnr_contents .bnr_txt {padding-bottom: 15px;}
+    main .m_bnr .bnr_contents .bnr_link > a {}
     /* =================================================== 메인공통 모바일반응형 */
     main .m_row {padding:0 15px;}
+    main .m_row .title .row_txt {font-size: 0.81rem; padding-top: 10px;}
+    main .m_row .title .t_btm {flex-flow: row wrap;}
+    main .m_row .title .t_btm .item_tab {padding-top: 30px; margin: 0 auto;}
+    main .m_row .title .t_btm .more_view > a {font-size: 0.81rem;}
+    main .m_row .title .t_btm .more_view {
+        margin-top: 30px; width: 100%; text-align: right;
+    }
+
+    main .m_row .c_swiper2 .swiper-wrapper > * h3,
+    main .m_row .c_swiper3 .swiper-wrapper > * h3,
+    main .row5 .row5_contents > * h3 {font-size: 0.75rem;}
+
+    main .m_row .c_swiper2 .swiper-wrapper > * .i_txt,
+    main .m_row .c_swiper3 .swiper-wrapper > * .i_txt,
+    main .row5 .row5_contents > * .i_txt {font-size: 0.63rem;}
+
+    main .m_row .c_swiper2 .swiper-wrapper > * .price,
+    main .m_row .c_swiper3 .swiper-wrapper > * .price,
+    main .row5 .row5_contents > * .price {font-size: 0.81rem;}
     /* =================================================== 2행 에어쿨링 모바일반응형*/
     main .row2 .title .t_top {flex-flow: row wrap;}
     main .row2 .title .t_top .row_title {font-size: 1.25rem; margin-top: 80px;}
     main .row2 .title .t_btm {flex-flow: row wrap;}
-
-    main .m_row .title .row_txt {font-size: 0.81rem; padding-top: 10px;}
     main .row2 .title .t_btm .tab > a {font-size: 0.81rem;}
+    
+    main .row2 .c_swiper .swiper-wrapper .swiper-slide .item {width:calc((100% - 10px) / 2);}
+    main .row2 .c_swiper .swiper-wrapper .swiper-slide .item:nth-child(3) {display: none;}
+    main .row2 .c_swiper .swiper-wrapper .swiper-slide .item:nth-child(4) {display: none;}
+
+    /* =================================================== 3행 신상 모바일반응형*/
+    
+    main .row3 .c_swiper2 .swiper-wrapper .swiper-slide .item {width:calc((100% - 10px) / 2);}
+    main .row3 .c_swiper2 .swiper-wrapper .swiper-slide .item:nth-child(3) {display: none;}
+    main .row3 .c_swiper2 .swiper-wrapper .swiper-slide .item:nth-child(4) {display: none;}
+
+    /* =================================================== 4행 베스트셀러 모바일반응형*/
+
+    main .row4 .c_swiper3 .swiper-wrapper .swiper-slide .item {width:calc((100% - 10px) / 2);}
+    main .row4 .c_swiper3 .swiper-wrapper .swiper-slide .item:nth-child(3) {display: none;}
+    main .row4 .c_swiper3 .swiper-wrapper .swiper-slide .item:nth-child(4) {display: none;}
     
     /* =================================================== 5행 모바일반응형*/
     main .row5 {
-        height: 1500px;
+        height: 2000px;
     }
     main .row5 .row5_bg {margin: 0 15px;}
+    main .row5 .row5_bg .row5_title {flex-flow: row wrap; padding-bottom: 30px;}
+    main .row5 .row5_bg .row5_title .row5_tab {margin: 0 auto; padding-top: 30px;}
+    main .row5 .row5_bg .row5_title .row5_tab > a {
+        font-size: 0.75rem; padding: 0 10px;
+    }
     main .row5 .row5_contents .right_bg .right {
         width: 410px; height: 527px;
-        padding-bottom: 10px;
+        background-size: contain; background-repeat: no-repeat;
+        margin-bottom: 30px;
     }
+    main .row5 .row5_contents .right_bg .right > a {width: 410px; height: 527px;}
+    main .row5 .row5_contents .left_list {width: 410px;}
+    main .row5 .row5_contents .left_list ul li {width: calc((100% - (5px * 2)) / 3);}
     main .row5 .row5_contents {
         flex-flow: column wrap; justify-content: space-between;
         margin: 0 15px; 
     }
+    /* =================================================== 푸터 */  
+    footer .ft_bg {padding:0 15px;}
+
+    footer .ft_bg .ft_top > a,
+    footer .ft_bg .ft_btm .btm_left ul li,
+    footer .ft_bg .ft_btm .btm_left > p,
+    footer .ft_bg .ft_btm .btm_right > p,
+    footer .ft_bg .ft_btm .btm_right .cs_info .time > p {font-size: 0.63rem;}
+
+    footer .ft_bg .ft_btm .btm_right .cs_info {background-size: 70px 40px;}
 }
+
 @media screen and (max-width:632px){}
