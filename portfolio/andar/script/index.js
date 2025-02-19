@@ -18,7 +18,7 @@ closeBtn.addEventListener('click',()=>{
 
 const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
-        delay:5000000, // 실제 배너 5~7초 많이 사용
+        delay:5000, // 실제 배너 5~7초 많이 사용
     },
     loop:true,
     pagination:{

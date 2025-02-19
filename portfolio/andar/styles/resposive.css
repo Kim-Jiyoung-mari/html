@@ -29,7 +29,7 @@
     main .m_row {padding:0 80px;}
     main .m_row .title .t_btm .item_tab a {
         font-size: 0.81rem; padding: 0 20px;}
-    main > * .progress .s_btn {width: 46px;}
+    main > * .progress .s_btn {display: flex;}
     main .m_row .c_swiper2 .swiper-wrapper > * h3,
     main .m_row .c_swiper3 .swiper-wrapper > * h3,
     main .row5 .row5_contents > * h3 {font-size: 0.75rem;}
@@ -81,11 +81,13 @@
     .h_bg header {padding: 0 15px;}
     /* =================================================== 메인헤더 모바일반응형*/
     .h_bg header .h_left > a img {display: block;}
-    .h_bg header .h_left nav > ul > li > a {display: none;}
+    .h_bg header .h_left > nav {display: none;}
     .h_bg header .h_left .m_nav > nav .m_ul li a {display: inline-block;}
 
     /* =================================================== 메인배너 모바일반응형*/
     main .main_swiper {}
+    main .main_swiper .swiper-wrapper .slide1 {background-position: 70% center;}
+    main .main_swiper .swiper-wrapper .slide2 {background-position: 80% center;}
     main .main_swiper .swiper-wrapper .swiper-slide > * {
         margin: 0 15px; position: absolute; top: 150px;
     }
@@ -94,7 +96,9 @@
     main .main_swiper .swiper-wrapper > * .contents p {font-size: 0.88rem;}
     main .main_swiper .swiper-wrapper > * .btn_link {font-size: 0.63rem;}
     /* =================================================== 배너 모바일반응형*/
-    main .m_bnr { height: 258px;}
+    main .m_bnr {height: 258px; background-size: cover;}
+    main .bnr1 {background-position: 69% center;}
+    main .bnr2 {background-position: 79% center;}
     main .m_bnr .bnr_contents {
         margin: 0 15px;
         position: relative; top: 55px;
@@ -127,7 +131,8 @@
     main .row2 .title .t_top {flex-flow: row wrap;}
     main .row2 .title .t_top .row_title {font-size: 1.25rem; margin-top: 80px;}
     main .row2 .title .t_btm {flex-flow: row wrap;}
-    main .row2 .title .t_btm .tab > a {font-size: 0.81rem;}
+    main .row2 .title .t_btm .tab {margin: 0 auto;}
+    main .row2 .title .t_btm .tab > a {font-size: 0.81rem; padding: 7px 10px;}
     
     main .row2 .c_swiper .swiper-wrapper .swiper-slide .item {width:calc((100% - 10px) / 2);}
     main .row2 .c_swiper .swiper-wrapper .swiper-slide .item:nth-child(3) {display: none;}
@@ -149,27 +154,27 @@
     main .row5 {
         height: 2000px;
     }
-    main .row5 .row5_bg {margin: 0 15px;}
-    main .row5 .row5_bg .row5_title {flex-flow: row wrap; padding-bottom: 30px;}
+    main .row5 .row5_bg {margin: 0 15px; width: 100%;}
+    main .row5 .row5_bg .row5_title {flex-flow: row wrap; padding-bottom: 10px;}
     main .row5 .row5_bg .row5_title .row5_tab {margin: 0 auto; padding-top: 30px;}
     main .row5 .row5_bg .row5_title .row5_tab > a {
         font-size: 0.75rem; padding: 0 10px;
     }
     main .row5 .row5_contents .right_bg .right {
-        width: 410px; height: 527px;
+        width: 100%;
         background-size: contain; background-repeat: no-repeat;
         margin-bottom: 30px;
     }
     main .row5 .row5_contents .right_bg .right > a {width: 410px; height: 527px;}
-    main .row5 .row5_contents .left_list {width: 410px;}
-    main .row5 .row5_contents .left_list ul li {width: calc((100% - (5px * 2)) / 3);}
+    main .row5 .row5_contents .left_list {width: 100%;}
+    main .row5 .row5_contents .left_list ul li {width: calc((100% - (3px * 2)) / 3);}
     main .row5 .row5_contents {
         flex-flow: column wrap; justify-content: space-between;
         margin: 0 15px; 
     }
     /* =================================================== 푸터 */  
     footer .ft_bg {padding:0 15px;}
-
+    footer .ft_bg .ft_btm {flex-flow: row wrap;}
     footer .ft_bg .ft_top > a,
     footer .ft_bg .ft_btm .btm_left ul li,
     footer .ft_bg .ft_btm .btm_left > p,

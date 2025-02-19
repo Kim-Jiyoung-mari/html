@@ -176,14 +176,9 @@ footer .ft_bg .ft_top {
 }
 footer .ft_bg .ft_top > a {
     font-size: 0.69rem; line-height: 1.2; letter-spacing: -0.02rem;
+    padding-right: 3px;
 }
-footer .ft_bg .ft_top > a::after{
-    content: ''; display: inline-block;
-    max-width: 1px; height: 11px; background-color: #000;
-    margin: 0 7px; position: relative; top: 1px;
-}
-/* footer .ft_bg .ft_btm .btm_left ul li:last-child:after,
-footer .ft_bg .ft_top > a:last-child:after {display: none;} */
+footer .ft_bg .ft_top > a:last-child {padding: 0;}
 footer .ft_bg .ft_btm {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     padding: 30px 10px 0;
