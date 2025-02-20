@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="reset.css">
     <style>
         body {background:#000;}
-        /* body * {border:1px solid aqua;} */
+        body * {border:1px solid aqua;}
         header {
             padding:20px 0; width:1400px; margin:0 auto;
             display:flex; justify-content:space-between; align-items:center;
@@ -42,12 +42,13 @@
             background:url(images/bg_flow.png) repeat-x left top;
             height:150px; width:100%;
             position:absolute; z-index:30;
-            animation: bg 15s linear linfinite;
+
+            animation: bg 100s linear linfinite;
         }
 
         @keyframes bg {
             0% {background-position-x: 0;}
-            100% {background-position-x: 1000px;}
+            100% {background-position-x: -1000px;}
         }
     </style>
 </head>

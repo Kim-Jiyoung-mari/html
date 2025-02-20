@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper+scroll</title>
+    <!-- scrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>>
+
+    <!-- design -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        header {
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 2px solid #222; position: fixed; left: 0; top: 0; width: 100%; height: 80px; z-index: 999
+        }
+        #main {height: 100vh; width: 100%;} /* swiper-wrapper 나 swiper-slide는 크기를 쓸 수 없음 */
+        #main .box1 {background-color: lightgreen;}
+        #main .box2 {background-color: lightpink;}
+        #main .box3 {background-color: lightgray;}
+        #main .box4 {background-color: aquamarine;}
+        #main .swiper-slide {text-align: center; padding-top: 200px;}
+        #main .swiper-slide h1 {font-size: 4rem; font-weight: 700;}
+
+        /* animation */
+        #main .box1 h1 {animation: mainTitle 1.5s both;} /* 메인 타이틀은 스크롤 트리거와 상관없이 동작만 하는 것 */
+        #main .box2 h1 {
+            /* 안보이다가 보이게 하고 싶을 때 = 시작 동작모습을 css에 미리 작성하기 */
+            opacity: 0;
+        } 
+        #main .box3 h1 {}
+        #main .box4 h1 {}
+
+        /* @keyframes */
+        @keyframes mainTitle {
+            0% {opacity:0; transform: scale(1.5);}
+            100% {opacity:1; transform: scale(1);}
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 한화면 단위 구성 : 처음부터 구성하기 -->
+    <header>header</header> <!-- 상단에 고정될 대상 -->
+    <div class="swiper" id="main"> <!-- swiper 마우스 휠로 움직일 대상 / id는 편한대로 주고 공통 이름은 유지하기 -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box1"><h1>MAIN TITLE</h1></div> <!-- 이 안에 넣기 -->
+            <div class="swiper-slide box2"><h1>SUB TITLE-1</h1></div>
+            <div class="swiper-slide box3"><h1>SUB TITLE-2</h1></div>
+            <div class="swiper-slide box4"><h1>SUB TITLE-3</h1></div>
+        </div>
+    </div>
+
+    <script>
+
+        const mainS = new Swiper('#main',{
+            mousewheel:true,
+            direction:'vertical',
+            /* ↓ 별도의 함수를 인식하는 on */
+            on:{
+                slideChangeTransitionEnd:function(){
+                    /* 딱 한번만 동작하게 하는 거 */
+                    /* scrollTrigger.refresh() : 스크롤이 변경될 때 재인식 = 새로고침 */
+                    setTimeout(()=> ScrollTrigger.refresh() ,0)
+                }
+            }
+        });
+
+        /* 스크롤트리거 */
+        gsap.registerPlugin(ScrollTrigger);
+        /* 누구한테 스크롤 트리거 걸건지? 대상 작성하는 'gsap.to()' */
+        gsap.to('.box2 h1',{
+            /* 트리거 자체의 동작설정을 위해 트리거 한번 더 쓰기 */
+            scrollTrigger:{
+                trigger:'.box2 h1', /* 트리거가 동작하는 기준 대상 작성 */
+                start:'top 80%', /* 시작 지점의 80% 부터 시작 */
+                end:'top 20%', /* 시작 지점의 20%에서 끝 */
+                markers:true, /* 포폴로 완성했을 때 마커 지우기 */
+                toggleAction:'play reverse restart reverse',
+            },/* ↑ 트리거 설정  */
+            opacity:1,
+            y:100,
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to('.box3 h1',{
+            scrollTrigger:{
+                trigger:'.box2 h1',
+                start:'top 80%',
+                end:'top 20%',
+                markers:true,
+                toggleAction:'play reverse restart reverse',
+            },
+            opacity:1,
+            y:100,
+        }); 
+
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to('.box4 h1',{
+            scrollTrigger:{
+                trigger:'.box2 h1',
+                start:'top 80%',
+                end:'top 20%',
+                markers:true,
+                toggleAction:'play reverse restart reverse',
+            },
+            opacity:1,
+            y:100,
+        }); 
+
+    </script>
+</body>
+</html>
