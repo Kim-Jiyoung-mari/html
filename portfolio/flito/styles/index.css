@@ -1,0 +1,288 @@
+.top {
+    background-color: rgba(245, 245, 245, 0.7); 
+    cursor: pointer;
+    width: 50px; height: 50px; border-radius: 50%;
+    position: fixed; z-index: 9999; right: 80px; bottom: 80px;
+}
+.top img {position: relative; left: 16px; top: 12px;}
+
+#main {width: 100%; height: 100vh;}
+/* ============================================= 공통 메인디자인 */
+#main .swiper-wrapper {position: relative;}
+#main .swiper-wrapper .swiper-slide {position: relative;}
+#main .swiper-wrapper .swiper-slide video {}
+#main .swiper-wrapper .swiper-slide .contents {}
+#main .swiper-wrapper .swiper-slide > *  {color: #FFF;}
+#main .swiper-wrapper .swiper-slide .contents .big_title {
+    font-size: 4.56rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+#main .swiper-wrapper .swiper-slide .contents .big_con {
+    font-size: 1.69rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+#main .swiper-wrapper .swiper-slide .contents .mid_title {
+    font-size: 3.13rem; font-weight: 700; line-height:1.5; letter-spacing: -0.02rem;
+    padding: 25px 0;
+}
+#main .swiper-wrapper .swiper-slide .contents .sub_title {
+    font-size: 2.50rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+#main .swiper-wrapper .swiper-slide > * .sub_title {
+    font-size: 2.50rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+#main .swiper-wrapper .swiper-slide .contents .main_con {
+    margin-bottom: 60px;
+    font-size: 1.13rem; line-height: 1.6; letter-spacing: -0.02rem;
+}
+#main .swiper-wrapper .swiper-slide .contents > a {
+    background-color: #0C1147; color: #FFF; padding: 15px 20px; 
+    font-size: 0.88rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.02rem;
+    border: 1px solid #FFF; border-radius: 30px;
+}
+/* ============================================= 메인 */
+#main .swiper-wrapper {}
+/* ============================================= 1행 */
+#main .swiper-wrapper .makeai_01 {}
+#main .swiper-wrapper .makeai_01 video {}
+
+#main .swiper-wrapper .makeai_01 .contents {
+    bottom: 70px; left: 80px;
+    position: absolute;
+}
+#main .swiper-wrapper .makeai_01 .contents .big_title {
+    padding-bottom: 30px;
+}
+#main .swiper-wrapper .makeai_01 .contents .big_con {}
+
+/* ============================================= 2행 */
+#main .swiper-wrapper .allinone_02 {
+    background-image: url(../images/bg01.jpg);
+}
+#main .swiper-wrapper .allinone_02 .contents {
+    position: absolute;
+    top: 160px; left: 80px;
+}
+#main .swiper-wrapper .allinone_02 .contents .sub_title {}
+#main .swiper-wrapper .allinone_02 .contents .main_con {
+    padding: 20px 0 50px;
+}
+#main .swiper-wrapper .allinone_02 .contents > a {}
+
+/* ============================================= 3행 */
+#main .swiper-wrapper .reason_03 {
+    background-image: url(../images/bg02.jpg);
+}
+#main .swiper-wrapper .reason_03 .box {
+    width: 1260px;
+    position: absolute; top: 219px; left: 330px;
+}
+#main .swiper-wrapper .reason_03 .box .sub_title {
+    text-align: center; padding-bottom: 87px;
+}
+#main .swiper-wrapper .reason_03 .box .con_03 {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+/* ============================================= 3행 그룹선택자 */
+#main .swiper-wrapper .reason_03 .box .con_03 .high,
+#main .swiper-wrapper .reason_03 .box .con_03 .trust,
+#main .swiper-wrapper .reason_03 .box .con_03 .various,
+#main .swiper-wrapper .reason_03 .box .con_03 .integrity {
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.9); border-radius: 30px;
+    width: 270px; height: 270px;  
+    padding: 0 40px;
+}
+
+#main .swiper-wrapper .reason_03 .box .con_03 .high::after,
+#main .swiper-wrapper .reason_03 .box .con_03 .various::after {
+    content: ''; display: block; clear: both;
+    width: 270px; height: 190px; border-radius: 30px;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.8) -40%,transparent 50%);
+    position: relative; top: 81px; right: 40px;
+}
+#main .swiper-wrapper .reason_03 .box .con_03 .trust::after,
+#main .swiper-wrapper .reason_03 .box .con_03 .integrity::after {
+    content: ''; display: block; clear: both;
+    width: 270px; height: 190px; border-radius: 30px;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.8) -40%,transparent 50%);
+    position: relative; top: 98px; right: 40px;
+}
+
+#main .swiper-wrapper .reason_03 .box .con_03 .high .contents > .sub_title,
+#main .swiper-wrapper .reason_03 .box .con_03 .trust .contents > .sub_title,
+#main .swiper-wrapper .reason_03 .box .con_03 .various .contents > .sub_title,
+#main .swiper-wrapper .reason_03 .box .con_03 .integrity .contents > .sub_title {
+    padding-bottom: 40px; margin-top: 58px;
+}
+
+#main .swiper-wrapper .reason_03 .box .con_03 .high .contents > .em_con,
+#main .swiper-wrapper .reason_03 .box .con_03 .trust .contents > .em_con,
+#main .swiper-wrapper .reason_03 .box .con_03 .various .contents > .em_con,
+#main .swiper-wrapper .reason_03 .box .con_03 .integrity .contents > .em_con {
+    text-align: center;
+    font-size: 0.88rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.02rem;
+}
+/* ============================================= 3행 개별선택자 */
+#main .swiper-wrapper .reason_03 .box .con_03 .high {}
+#main .swiper-wrapper .reason_03 .box .con_03 .high .contents {}
+#main .swiper-wrapper .reason_03 .box .con_03 .high .contents .sub_title {}
+#main .swiper-wrapper .reason_03 .box .con_03 .high .contents .em_con {}
+#main .swiper-wrapper .reason_03 .box .con_03 .trust {}
+#main .swiper-wrapper .reason_03 .box .con_03 .trust .contents {}
+#main .swiper-wrapper .reason_03 .box .con_03 .trust .contents .sub_title {}
+#main .swiper-wrapper .reason_03 .box .con_03 .trust .contents .em_con {}
+#main .swiper-wrapper .reason_03 .box .con_03 .various {}
+#main .swiper-wrapper .reason_03 .box .con_03 .various .contents {}
+#main .swiper-wrapper .reason_03 .box .con_03 .various .contents .sub_title {}
+#main .swiper-wrapper .reason_03 .box .con_03 .various .contents .em_con {}
+#main .swiper-wrapper .reason_03 .box .con_03 .integrity {}
+#main .swiper-wrapper .reason_03 .box .con_03 .integrity .contents {}
+#main .swiper-wrapper .reason_03 .box .con_03 .integrity .contents .sub_title {}
+#main .swiper-wrapper .reason_03 .box .con_03 .integrity .contents .em_con {}
+/* ============================================= 4행 */
+#main .swiper-wrapper .translate_04 {
+    background-image: url(../images/bg03.jpg);
+}
+#main .swiper-wrapper .translate_04 .contents {
+    position: absolute; left: 80px; top: 280px;
+}
+#main .swiper-wrapper .translate_04 .contents .big_con {}
+#main .swiper-wrapper .translate_04 .contents .mid_title {}
+#main .swiper-wrapper .translate_04 .contents .main_con {}
+#main .swiper-wrapper .translate_04 .contents > a {}
+
+/* ============================================= 5행 */
+#main .swiper-wrapper .tts_05 {
+    background-image: url(../images/bg04.jpg);
+}
+#main .swiper-wrapper .tts_05 .contents {
+    position: absolute; right: 80px; top: 280px;
+    text-align: right;
+}
+#main .swiper-wrapper .tts_05 .contents .big_con {}
+#main .swiper-wrapper .tts_05 .contents .mid_title {}
+#main .swiper-wrapper .tts_05 .contents .main_con {}
+#main .swiper-wrapper .tts_05 .contents > a {}
+
+/* ============================================= 6행 */
+#main .swiper-wrapper .ocr_06 {
+    background-image: url(../images/bg05.jpg);
+}
+#main .swiper-wrapper .ocr_06 .contents {
+    position: absolute; left: 80px; top: 280px;
+}
+#main .swiper-wrapper .ocr_06 .contents .big_con {}
+#main .swiper-wrapper .ocr_06 .contents .mid_title {}
+#main .swiper-wrapper .ocr_06 .contents .main_con {}
+#main .swiper-wrapper .ocr_06 .contents > a {}
+
+/* ============================================= 7행 */
+#main .swiper-wrapper .solution_07 {
+    background-image: url(../images/bg05.jpg);
+}
+#main .swiper-wrapper .solution_07 .video {
+    width: 1450px;
+}
+#main .swiper-wrapper .solution_07 .contents {
+    position: absolute; right: 80px; top: 280px;
+    text-align: right; z-index: 100; 
+}
+#main .swiper-wrapper .solution_07 .contents > * {
+    position: relative;     z-index: 300;
+}
+#main .swiper-wrapper .solution_07 .contents::after {
+    content: ''; display: block;
+    width: 500px; height: 200vh;
+    background-color: #000;
+    position: absolute; top: -280px; right: -80px; z-index: 200;
+}
+#main .swiper-wrapper .solution_07 .contents .big_con {}
+#main .swiper-wrapper .solution_07 .contents .mid_title {}
+#main .swiper-wrapper .solution_07 .contents .main_con {}
+#main .swiper-wrapper .solution_07 .contents > a {}
+
+/* ============================================= 8행 */
+#main .swiper-wrapper .nlp_08 {
+    background-image: url(../images/bg07.jpg);
+}
+#main .swiper-wrapper .nlp_08 .contents {
+    position: absolute; left: 80px; top: 280px;
+}
+#main .swiper-wrapper .nlp_08 .contents .big_con {}
+#main .swiper-wrapper .nlp_08 .contents .mid_title {}
+#main .swiper-wrapper .nlp_08 .contents .main_con {}
+#main .swiper-wrapper .nlp_08 .contents > a {}
+
+/* ============================================= 8행 */
+#main .swiper-wrapper > .num_img {}
+/* ============================================= 숫자 퍼센테이지 JS*/
+#main .swiper-wrapper .num_img .percent_bg {
+    color: #222; padding: 100px 0;
+}
+#main .swiper-wrapper .num_img .percent_bg .percent {
+    width: 1130px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    text-align: center;
+}
+
+/* ============================================= 그룹선택자*/
+#main .swiper-wrapper .num_img .percent_bg .percent .score .sm_title,
+#main .swiper-wrapper .num_img .percent_bg .percent .period .sm_title,
+#main .swiper-wrapper .num_img .percent_bg .percent .reduction .sm_title,
+#main .swiper-wrapper .num_img .revolutionize .sm_title {
+    font-size: 2.19rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+#main .swiper-wrapper .num_img .percent_bg .percent .score .main_con,
+#main .swiper-wrapper .num_img .percent_bg .percent .period .main_con,
+#main .swiper-wrapper .num_img .percent_bg .percent .reduction .main_con,
+#main .swiper-wrapper .num_img .revolutionize .main_con {
+    margin: 20px 0; height: 70px;
+    font-size: 1.13rem; line-height: 1.6; letter-spacing: -0.02rem;
+}
+#main .swiper-wrapper .num_img .percent_bg .percent .score .mid_title,
+#main .swiper-wrapper .num_img .percent_bg .percent .period .mid_title,
+#main .swiper-wrapper .num_img .percent_bg .percent .reduction .mid_title {
+    font-size: 3.13rem; font-weight: 700; line-height:1.5; letter-spacing: -0.02rem;
+}
+#main .swiper-wrapper .num_img .percent_bg .percent .score .mid_title em,
+#main .swiper-wrapper .num_img .percent_bg .percent .period .mid_title em,
+#main .swiper-wrapper .num_img .percent_bg .percent .reduction .mid_title em {
+    color: #037AA7;
+    font-size: 3.13rem; font-weight: 700; line-height:1.5; letter-spacing: -0.02rem;
+}
+/* ============================================= 개별선택자*/
+#main .swiper-wrapper .num_img .percent_bg .percent .score {}
+#main .swiper-wrapper .num_img .percent_bg .percent .score .sm_title {}
+#main .swiper-wrapper .num_img .percent_bg .percent .score .main_con {}
+#main .swiper-wrapper .num_img .percent_bg .percent .score .mid_title {}
+#main .swiper-wrapper .num_img .percent_bg .percent .score .mid_title em {}
+
+#main .swiper-wrapper .num_img .percent_bg .percent .period {}
+#main .swiper-wrapper .num_img .percent_bg .percent .period .sm_title {}
+#main .swiper-wrapper .num_img .percent_bg .percent .period .main_con {}
+#main .swiper-wrapper .num_img .percent_bg .percent .period .mid_title {}
+#main .swiper-wrapper .num_img .percent_bg .percent .period .mid_title em {}
+
+#main .swiper-wrapper .num_img .percent_bg .percent .reduction {}
+#main .swiper-wrapper .num_img .percent_bg .percent .reduction .sm_title {}
+#main .swiper-wrapper .num_img .percent_bg .percent .reduction .main_con {}
+#main .swiper-wrapper .num_img .percent_bg .percent .reduction .mid_title {}
+#main .swiper-wrapper .num_img .percent_bg .percent .reduction .mid_title em {}
+
+/* ============================================= 띠 배너 이미지 애니메이션*/
+#main .swiper-wrapper .num_img .logo_bg_ain {
+    background-image: url(../images/ani.jpg);
+    width: 100%; height: 180px;
+}
+
+/* ============================================= 글씨 그레디언트*/
+#main .swiper-wrapper .num_img .revolutionize {
+    color: #222; text-align: center; padding: 120px 0; 
+}
+#main .swiper-wrapper .num_img .revolutionize .sm_title {
+    background: linear-gradient(90deg,#A73BA2,#037AA7,#0B1445);
+    width: max-content; margin: 0 auto;
+    color: transparent; -webkit-background-clip: text;
+}
+#main .swiper-wrapper .num_img .revolutionize .main_con {
+    padding-top: 50px;
+}

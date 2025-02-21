@@ -21,7 +21,7 @@ window.addEventListener('mousemove',function(e){
 const topDiv = document.querySelector('.top');
 const box = document.querySelectorAll('.box ');
 topDiv.addEventListener('click',()=>{
-    window.scrollTo({left:0, top:box[1].offsetTop})
+    window.scrollTo({left:0, top:box[0].offsetTop, behavior:'smooth'})
     // window.scrollTo(0, 0)
     // window.scrollTo({left:0, top:0, behavior:'smooth'});
     // 버튼을 클릭하면 2번째 박스 위치로 가기

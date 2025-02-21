@@ -1,0 +1,50 @@
+/* ----------------------------------------------------------헤더 */
+.h_bg {
+    padding: 20px 80px;
+    position: absolute; z-index: 999;
+}
+.h_bg header {
+    width: 1760px; margin: 0 auto; 
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+.h_bg header h1 {max-width: 200px;}
+.h_bg header h1 > a {}
+.h_bg header h1 > a img {width: 100%;}
+.h_bg header nav {}
+.h_bg header nav ul {}
+.h_bg header nav ul li {
+    float: left;
+    padding-right: 50px;
+}
+.h_bg header nav ul li:last-child {padding: 0;}
+.h_bg header nav ul li > a {font-weight: 500; letter-spacing: -0.02rem; color: #FFF;}
+.h_bg header .h_right {
+    display: flex; flex-flow: row nowrap;
+}
+.h_bg header .h_right .contact {color: #FFF;}
+.h_bg header .h_right .lang_icon {
+    width: 24px; height: 24px;
+    background-image: url(../images/language.png);
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+.h_bg header .h_right .lang_icon .lang {display: none;}
+.h_bg header .h_right .lang_icon .lang li {}
+.h_bg header .h_right .lang_icon .lang li > a {}
+/* ----------------------------------------------------------푸터 */
+footer {background-color: #F5F5F5;}
+footer .ft_btm_bg {
+    width: 1760px; margin: 0 auto; padding: 80px 0;}
+footer .ft_btm_bg h4 {width: 200px;}
+footer .ft_btm_bg h4 > a {}
+footer .ft_btm_bg h4 > a img {}
+footer .ft_btm_bg .btm_info  {margin: 20px 0;}
+footer .ft_btm_bg .btm_info > ul  {
+    display: flex; flex-flow: row nowrap;
+}
+footer .ft_btm_bg .btm_info > ul li {
+    font-size: 0.69rem; font-weight: 500; line-height: 1.6; letter-spacing: -0.02rem;
+}
+footer .ft_btm_bg .btm_info > p  {
+    font-size: 0.69rem; font-weight: 500; line-height: 1.6; letter-spacing: -0.02rem;
+}
