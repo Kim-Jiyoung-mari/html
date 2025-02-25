@@ -1,0 +1,104 @@
+.login_wrap {
+    width: 420px; margin: 80px auto; text-align: center;
+}
+.login_wrap h1 {
+    width: 70px; margin: 0 auto 30px; 
+}
+.login_wrap h1 > a {
+
+}
+.login_wrap h1 > a img {width: 100%;}
+.login_wrap .login_title {
+    margin-bottom: 30px;
+}
+.login_wrap .login_title h2 {
+    font-size: 1.44rem; font-weight: 600; letter-spacing: -0.02rem;
+    margin-bottom: 20px;
+}
+.login_wrap .login_title .txt {
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+.login_wrap .kakako_join {margin-bottom: 30px;}
+.login_wrap .kakako_join > a {
+    background-color: #FEE502; display: inline-block;
+    border-radius: 10px;
+    width: 100%; padding: 15px 0; margin-bottom: 30px;
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+    
+}
+.login_wrap .kakako_join > a img {
+    width: 22px;
+    padding-right: 10px;
+}
+.login_wrap .kakako_join > .or {
+    color: #AAA;
+    font-size: 0.94rem; letter-spacing: -0.02rem
+}
+/* 로그인 폼 */
+.login_wrap form {
+}
+.login_wrap form .login_box {margin-bottom: 30px;}
+.login_wrap form .login_box ul {}
+.login_wrap form .login_box ul li {
+    background-color: #FFF;
+    border: 1px solid #E0E0E0;
+    padding: 15px 20px;
+}
+.login_wrap form .login_box ul li:first-child {margin-bottom: 10px;}
+.login_wrap form .login_box ul li input {width: 100%;}
+.login_wrap form .login_box ul li input ::placeholder {
+    color: #E0E0E0;
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+.login_wrap form .login_box ul li #user_id {}
+.login_wrap form .login_box ul li #user_pw {}
+.login_wrap form .login_box ul li #user_pw {}
+.login_wrap form .login_btn {
+    background-color: #222222; padding: 15px 0;
+    border-radius: 10px;
+    margin-bottom: 13px;
+}
+.login_wrap form .login_btn button {
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+    color: #FFF;
+}
+.login_wrap form .login_btn #login {}
+.login_wrap form .search_join {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.login_wrap form .search_join > a {
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+    color: #AAAAAA;
+}
+/* sns 가입 및 기타 내용*/
+.login_wrap > .or {
+    margin: 30px 0; color: #AAA;
+    font-size: 0.94rem; letter-spacing: -0.02rem
+}
+.login_wrap .sns_join {margin-bottom: 40px;}
+.login_wrap .sns_join > a {}
+.login_wrap .sns_join > a img {}
+.login_wrap .benefit {
+    width: 100%; background-color: #FFF;
+    display: inline-block; border: 1px solid #E0E0E0;
+    padding: 15px 20px;
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+    margin-bottom: 30px;
+}
+.login_wrap .leader {
+    background-color: #F2F4F6; padding: 30px 20px;
+}
+.login_wrap .leader > .txt {font-size: 0.94rem; letter-spacing: -0.02rem;}
+.login_wrap .leader > .leader_btn {
+    width: 100%; display: inline-block;
+    background-color: #FFF; border: 1px solid #AAA;
+    padding: 15px 0; margin: 15px 0;
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+.login_wrap .leader > .leader_btn img {
+    position: relative; top: 4px;
+}
+.login_wrap .leader > .sub_txt {
+    color: #AAA;
+    font-size: 0.69rem; line-height: 1.2; letter-spacing: -0.02rem;
+}

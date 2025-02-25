@@ -1,3 +1,4 @@
+// 메인 스와이퍼
 const mainS = new Swiper('#main',{
     mousewheel:true,
     direction:'vertical',
@@ -17,3 +18,5 @@ console.log(topBtn,slide);
 topBtn.addEventListener('click',()=>{
     mainS.slideTo(0, 1000);
 });
+
+// 카운트 효과

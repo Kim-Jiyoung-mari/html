@@ -1,0 +1,8 @@
+#main .swiper-wrapper .num_img .logo_bg_ani {
+    animation: bg_ani 10s linear infinite
+}
+
+@keyframes bg_ani {
+    0% {background-position-x: 0;}
+    100% {background-position-x: -1000px;}
+}

@@ -28,9 +28,23 @@
     background-repeat: no-repeat;
     margin-left: 20px;
 }
-.h_bg header .h_right .lang_icon .lang {display: none;}
-.h_bg header .h_right .lang_icon .lang li {}
-.h_bg header .h_right .lang_icon .lang li > a {}
+.h_bg header .h_right .lang_icon .lang {
+    background-color: #FFF;
+    width: 110px; padding: 20px 15px; border-radius: 30px;
+    position: relative; top: 30px; right: 35px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    height: 0; overflow: hidden;
+}
+.h_bg header .h_right .lang_icon:hover .lang {
+    opacity: 1; height: max-content;
+}
+.h_bg header .h_right .lang_icon .lang li {margin-bottom: 13px;}
+.h_bg header .h_right .lang_icon .lang li:last-child {margin: 0;}
+.h_bg header .h_right .lang_icon .lang li > a {
+    letter-spacing: -0.02rem;
+    
+}
 /* ----------------------------------------------------------푸터 */
 footer {background-color: #F5F5F5;}
 footer .ft_btm_bg {
