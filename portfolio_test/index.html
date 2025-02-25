@@ -79,6 +79,7 @@
         const popup_bg = document.querySelector('.popup_bg');
         const bnr = document.querySelectorAll('.bnr img');
         const sns = document.querySelectorAll('.sns img');
+        const swiper = document.querySelector('.swiper');
 
         popup_bg.style.display = 'none'; //팝업숨기기
 
@@ -90,6 +91,8 @@
                 popup_bg.children[0].children[0].src = i.src;
                 popup_bg.children[0].style.width = '900px';
                 popup_bg.children[0].style.marginTop = '200px';
+
+                swiper.mousewheel.disable(); //마우스휠 금지(팝업 출력 시)
 
                 // console.log(i.src);
                 // console.log(popup_bg.children[0].children[0]);
@@ -103,12 +106,15 @@
                 popup_bg.children[0].children[0].src = i.src;
                 popup_bg.children[0].style.width = '700px';
                 popup_bg.children[0].style.marginTop = '90px';
+
+                swiper.mousewheel.disable(); //마우스휠 금지(팝업 출력 시)
             });
         };
 
         //팝업 닫기
         popup_bg.addEventListener('click',()=>{
             popup_bg.style.display = 'none';
+            swiper.mousewheel.enable(); //마우스휠 허용(팝업 숨길 시)
         })
         
     </script>
