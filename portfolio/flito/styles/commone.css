@@ -45,6 +45,7 @@
     letter-spacing: -0.02rem;
     
 }
+.h_bg header .h_right .lang_icon .lang li > a:hover{color: #A73BA2;}
 /* ----------------------------------------------------------푸터 */
 footer {background-color: #F5F5F5;}
 footer .ft_btm_bg {

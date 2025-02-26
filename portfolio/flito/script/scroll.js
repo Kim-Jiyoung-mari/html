@@ -7,7 +7,7 @@ gsap.to('.allinone_02 .contents',{
         trigger:'.allinone_02 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -15,62 +15,18 @@ gsap.to('.allinone_02 .contents',{
 });
 
 /* ============================================= 3행 */
-const rowReason = document.querySelectorAll('.reason_03 .con_03 .list')
 
-gsap.to('.reason_03 .sub_title',{
+gsap.to('.reason_03 .box',{
 
     scrollTrigger:{
-        trigger:'.reason_03 .sub_title',
+        trigger:'.reason_03 .box',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
     y: 30,
-});
-
-gsap.to(rowReason, {
-    scrollTrigger: {
-        trigger: ".reason_03 .con_03 .list",
-        start: "top 80%",
-        end: "top 20%",
-        scrub:true,
-        toggleActions: "play reverse restart reverse",
-        markers: false, // 디버깅 마커 (테스트 후 false)
-        onEnter: () => {
-            gsap.to(rowReason,{
-                opacity: 1,
-                y: 50,
-                duration: 0.8,
-                stagger: 0.2, // ★ 순차적으로 등장 ★
-            });
-        },
-        onLeaveBack: () => {
-            gsap.to(rowReason, {
-                opacity: 0,
-                y: 0,
-                duration: 0.5,
-                stagger: 0.1, // ★ 사라질 때도 순차적으로 ★
-            });
-        },
-        onEnterBack: () => {
-            gsap.to(rowReason,{
-                opacity: 1,
-                y: 50,
-                duration: 0.8,
-                stagger: 0.2, // ★ 순차적으로 등장 ★
-            });
-        },
-        onLeave: () => {
-            gsap.to(rowReason, {
-                opacity: 0,
-                y: 0,
-                duration: 0.5,
-                stagger: 0.1, // ★ 사라질 때도 순차적으로 ★
-            });
-        },
-    },
 });
 
 /* ============================================= 4행 */
@@ -80,7 +36,7 @@ gsap.to('.translate_04 .contents',{
         trigger:'.translate_04 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -94,7 +50,7 @@ gsap.to('.tts_05 .contents',{
         trigger:'.tts_05 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -108,7 +64,7 @@ gsap.to('.ocr_06 .contents',{
         trigger:'.ocr_06 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -122,7 +78,7 @@ gsap.to('.solution_07 .contents',{
         trigger:'.solution_07 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
@@ -135,7 +91,7 @@ gsap.to('.nlp_08 .contents',{
         trigger:'.nlp_08 .contents',
         start:'top 80%',
         end:'top 20%',
-        markers:true,
+        markers:false, /* false 변경하기 */
         toggleAction:'play reverse restart reverse',
     },
     opacity:1,
