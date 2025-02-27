@@ -137,6 +137,10 @@ main .main_swiper .swiper-wrapper > * .btn_link {
     padding: 15px;
     color: #C86733;
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+    transition: all 0.5s;
+}
+main .main_swiper .swiper-wrapper > * .btn_link:hover {
+    background-color: #C86733; color: #FFF;
 }
 /* 배너 개별 디자인 */
 main .main_swiper .swiper-wrapper .slide1 {
@@ -175,7 +179,7 @@ footer .ft_bg .ft_top {
     border-bottom: 1px solid #CCC;
 }
 footer .ft_bg .ft_top > a {
-    font-size: 0.69rem; line-height: 1.2; letter-spacing: -0.02rem;
+    font-size: 0.75rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding-right: 3px;
 }
 footer .ft_bg .ft_top > a:last-child {padding: 0;}

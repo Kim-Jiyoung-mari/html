@@ -63,7 +63,6 @@
     main .row5 .row5_contents .left_list {
         width: calc(100% - 270px);    
     }
-}
     /* =================================================== 푸터 */  
     footer .ft_bg {padding:0 80px;}
 
@@ -74,6 +73,7 @@
     footer .ft_bg .ft_btm .btm_right .cs_info .time > p {font-size: 0.63rem;}
 
     footer .ft_bg .ft_btm .btm_right .cs_info {background-size: 70px 40px;}
+}
 
 /* =================================================== 모바일반응형*/   
 

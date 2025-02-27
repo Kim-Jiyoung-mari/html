@@ -15,7 +15,7 @@ main .m_row .title .t_btm .row_title {
 }
 main .m_row .title .t_btm .item_tab {}
 main .m_row .title .t_btm .item_tab a {
-    font-size: 0.88rem; letter-spacing: -0.02rem; color: #AAA;
+    font-size: 0.94rem; letter-spacing: -0.02rem; color: #AAA;
     padding: 0 30px;
 }
 main .m_row .title .t_btm .item_tab .active {
@@ -61,6 +61,7 @@ main .row2 {}
 main .row2 .title {}
 main .row2 .title .t_top {
     display: flex; flex-flow: row nowrap; align-items: flex-end;
+    margin-bottom: 30px;
 }
 main .row2 .title .t_top .row_title {
     font-size: 2.19rem; font-weight: 600; letter-spacing: -0.04rem;
@@ -69,7 +70,7 @@ main .row2 .title .t_top .row_title {
 main .row2 .title .t_top .row_txt {padding-bottom: 0;}
 main .row2 .title .t_btm {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 main .row2 .title .t_btm .tab {}
 
@@ -240,7 +241,7 @@ main .row5 .row5_bg .row5_title .row5_left .row_txt {
 }
 main .row5 .row5_bg .row5_title .row5_tab {}
 main .row5 .row5_bg .row5_title .row5_tab > a {
-    font-size: 0.88rem; letter-spacing: -0.02rem; color: #AAA;
+    font-size: 0.94rem; letter-spacing: -0.02rem; color: #AAA;
     padding: 0 20px;
 }
 main .row5 .row5_bg .row5_title .row5_tab > .active {
