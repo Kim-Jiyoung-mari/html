@@ -3,6 +3,7 @@ const mainS = new Swiper('#main',{
     mousewheel:true,
     direction:'vertical',
     behavior:'smooth',
+    speed: 1000,
     on:{
         slideChangeTransitionEnd:function(){
             setTimeout(()=> ScrollTrigger.refresh() ,0)
