@@ -16,6 +16,7 @@ closeBtn.addEventListener('click',()=>{
     menuList.style.display = 'none'
 })
 
+//메인 배너
 const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
         delay:5000, // 실제 배너 5~7초 많이 사용
@@ -34,7 +35,13 @@ const contentSwiper = new Swiper('.c_swiper',{
     autoplay:{
         delay:3000, // 실제 배너 5~7초 많이 사용
     },
-    slidesPerView:1,
+    slidesPerView:4,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{slidesPerView:4,}, /* => 화면 너비 1024 이상 시 4개 표시 (1024~max) */
+        799:{slidesPerView:3,}, /* => 화면 너비 768 이상 시 3개 표시(768~1024) */
+        400:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (480~767) */
+    },
     loop:true,
     scrollbar: {
         el: " .row2 .progress .swiper-scrollbar",
@@ -50,6 +57,13 @@ const allSwiper = new Swiper('.all .c_swiper2',{
     autoplay:{
         delay:3000, // 실제 배너 5~7초 많이 사용
     },
+    slidesPerView:4,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{slidesPerView:4,}, /* => 화면 너비 1024 이상 시 4개 표시 (1024~max) */
+        799:{slidesPerView:3,}, /* => 화면 너비 768 이상 시 3개 표시(768~1024) */
+        400:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (480~767) */
+    },
     loop:true,
     scrollbar: {
         el: " .all .progress .swiper-scrollbar",
@@ -63,6 +77,13 @@ const allSwiper = new Swiper('.all .c_swiper2',{
 const womanSwiper = new Swiper('.womanz .c_swiper2',{
     autoplay:{
         delay:3000, // 실제 배너 5~7초 많이 사용
+    },
+    slidesPerView:4,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{slidesPerView:4,}, /* => 화면 너비 1024 이상 시 4개 표시 (1024~max) */
+        799:{slidesPerView:3,}, /* => 화면 너비 768 이상 시 3개 표시(768~1024) */
+        400:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (480~767) */
     },
     loop:true,
     scrollbar: {
@@ -78,6 +99,13 @@ const manSwiper = new Swiper('.manz .c_swiper2',{
     autoplay:{
         delay:3000, // 실제 배너 5~7초 많이 사용
     },
+    slidesPerView:4,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{slidesPerView:4,}, /* => 화면 너비 1024 이상 시 4개 표시 (1024~max) */
+        799:{slidesPerView:3,}, /* => 화면 너비 768 이상 시 3개 표시(768~1024) */
+        400:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (480~767) */
+    },
     loop:true,
     scrollbar: {
         el: " .manz .man .swiper-scrollbar",
@@ -91,6 +119,13 @@ const manSwiper = new Swiper('.manz .c_swiper2',{
 const underSwiper = new Swiper('.under .c_swiper2',{
     autoplay:{
         delay:3000, // 실제 배너 5~7초 많이 사용
+    },
+    slidesPerView:4,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{slidesPerView:4,}, /* => 화면 너비 1024 이상 시 4개 표시 (1024~max) */
+        799:{slidesPerView:3,}, /* => 화면 너비 768 이상 시 3개 표시(768~1024) */
+        400:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (480~767) */
     },
     loop:true,
     scrollbar: {
@@ -150,6 +185,13 @@ const beallSwiper = new Swiper('.best_all .c_swiper3',{
     autoplay:{
         delay:5000, // 실제 배너 5~7초 많이 사용
     },
+    slidesPerView:4,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{slidesPerView:4,}, /* => 화면 너비 1024 이상 시 4개 표시 (1024~max) */
+        799:{slidesPerView:3,}, /* => 화면 너비 768 이상 시 3개 표시(768~1024) */
+        400:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (480~767) */
+    },
     loop:true,
     scrollbar: {
         el: " .row4 .be_all .swiper-scrollbar",
@@ -163,6 +205,13 @@ const beallSwiper = new Swiper('.best_all .c_swiper3',{
 const bewomanSwiper = new Swiper('.best_woman .c_swiper3',{
     autoplay:{
         delay:5000, // 실제 배너 5~7초 많이 사용
+    },
+    slidesPerView:4,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{slidesPerView:4,}, /* => 화면 너비 1024 이상 시 4개 표시 (1024~max) */
+        799:{slidesPerView:3,}, /* => 화면 너비 768 이상 시 3개 표시(768~1024) */
+        400:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (480~767) */
     },
     loop:true,
     scrollbar: {
@@ -178,6 +227,13 @@ const bemanSwiper = new Swiper('.best_man .c_swiper3',{
     autoplay:{
         delay:5000, // 실제 배너 5~7초 많이 사용
     },
+    slidesPerView:4,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{slidesPerView:4,}, /* => 화면 너비 1024 이상 시 4개 표시 (1024~max) */
+        799:{slidesPerView:3,}, /* => 화면 너비 768 이상 시 3개 표시(768~1024) */
+        400:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (480~767) */
+    },
     loop:true,
     scrollbar: {
         el: " .row4 .be_man .swiper-scrollbar",
@@ -191,6 +247,13 @@ const bemanSwiper = new Swiper('.best_man .c_swiper3',{
 const bejuSwiper = new Swiper('.best_juni .c_swiper3',{
     autoplay:{
         delay:5000, // 실제 배너 5~7초 많이 사용
+    },
+    slidesPerView:4,
+    spaceBetween:10,
+    breakpoints:{
+        1024:{slidesPerView:4,}, /* => 화면 너비 1024 이상 시 4개 표시 (1024~max) */
+        799:{slidesPerView:3,}, /* => 화면 너비 768 이상 시 3개 표시(768~1024) */
+        400:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (480~767) */
     },
     loop:true,
     scrollbar: {

@@ -41,7 +41,7 @@ main .m_row .c_swiper .swiper-wrapper .swiper-slide {
 }
 main .m_row .c_swiper .swiper-wrapper .swiper-slide a {}
 main .m_row .c_swiper .swiper-wrapper .swiper-slide a img {width:100%;}
-main .m_row .c_swiper .swiper-wrapper .swiper-slide .item {width:calc((100% - 28px) / 4);}
+main .m_row .c_swiper .swiper-wrapper .swiper-slide .item {}
 main .m_row .c_swiper .swiper-wrapper > * h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
 }
@@ -120,7 +120,7 @@ main .m_row .c_swiper2 .swiper-wrapper .swiper-slide {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 main .m_row .c_swiper2 .swiper-wrapper .swiper-slide a {}
-main .m_row .c_swiper2 .swiper-wrapper .swiper-slide .item {width:calc((100% - 28px) / 4);}
+main .m_row .c_swiper2 .swiper-wrapper .swiper-slide .item {}
 main .m_row .c_swiper2 .swiper-wrapper .swiper-slide a img {width:100%;}
 main .m_row .c_swiper2 .swiper-wrapper > * h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
@@ -146,7 +146,7 @@ main .m_row .c_swiper3 .swiper-wrapper .swiper-slide {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 main .m_row .c_swiper3 .swiper-wrapper .swiper-slide a {}
-main .m_row .c_swiper3 .swiper-wrapper .swiper-slide .item {width:calc((100% - 28px) / 4);}
+main .m_row .c_swiper3 .swiper-wrapper .swiper-slide .item {}
 main .m_row .c_swiper3 .swiper-wrapper .swiper-slide a img {width:100%;}
 main .m_row .c_swiper3 .swiper-wrapper > * h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;

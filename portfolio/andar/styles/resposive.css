@@ -133,22 +133,11 @@
     main .row2 .title .t_btm {flex-flow: row wrap;}
     main .row2 .title .t_btm .tab {margin: 0 auto;}
     main .row2 .title .t_btm .tab > a {font-size: 0.81rem; padding: 7px 10px;}
-    
-    main .row2 .c_swiper .swiper-wrapper .swiper-slide .item {width:calc((100% - 10px) / 2);}
-    main .row2 .c_swiper .swiper-wrapper .swiper-slide .item:nth-child(3) {display: none;}
-    main .row2 .c_swiper .swiper-wrapper .swiper-slide .item:nth-child(4) {display: none;}
 
-    /* =================================================== 3행 신상 모바일반응형*/
     
-    main .row3 .c_swiper2 .swiper-wrapper .swiper-slide .item {width:calc((100% - 10px) / 2);}
-    main .row3 .c_swiper2 .swiper-wrapper .swiper-slide .item:nth-child(3) {display: none;}
-    main .row3 .c_swiper2 .swiper-wrapper .swiper-slide .item:nth-child(4) {display: none;}
+    /* =================================================== 3행 신상 모바일반응형*/
 
     /* =================================================== 4행 베스트셀러 모바일반응형*/
-
-    main .row4 .c_swiper3 .swiper-wrapper .swiper-slide .item {width:calc((100% - 10px) / 2);}
-    main .row4 .c_swiper3 .swiper-wrapper .swiper-slide .item:nth-child(3) {display: none;}
-    main .row4 .c_swiper3 .swiper-wrapper .swiper-slide .item:nth-child(4) {display: none;}
     
     /* =================================================== 5행 모바일반응형*/
     main .row5 {
