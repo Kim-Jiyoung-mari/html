@@ -46,18 +46,6 @@ const circleSwiper = new Swiper('.circulation .i_slide1',{
         el: " .circulation .progress .swiper-scrollbar",
     },
 });
-// 흡수탄력
-const absorpSwiper = new Swiper('.absorption .i_slide1',{
-    autoplay:{
-        delay:3000, // 실제 배너 5~7초 많이 사용
-    },
-    slidesPerView:4,
-    spaceBetween:14,
-    loop:true,
-    scrollbar: {
-        el: " .absorption .progress .swiper-scrollbar",
-    },
-});
 // 탄력초음파
 const elasticSwiper = new Swiper('.elasticity .i_slide1',{
     autoplay:{
