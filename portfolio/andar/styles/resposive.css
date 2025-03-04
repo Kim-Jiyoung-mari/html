@@ -72,8 +72,10 @@
     footer .ft_bg .ft_btm .btm_right > p,
     footer .ft_bg .ft_btm .btm_right .cs_info .time > p {font-size: 0.63rem;}
 
-    footer .ft_bg .ft_btm .btm_right .cs_info {background-size: 70px 40px;}
+    footer .ft_bg .ft_btm .btm_right .cs_info {background-size: 70px 40px;}    
 }
+
+
 
 /* =================================================== 모바일반응형*/   
 
@@ -85,7 +87,6 @@
     .h_bg header .h_left .m_nav > nav .m_ul li a {display: inline-block;}
 
     /* =================================================== 메인배너 모바일반응형*/
-    main .main_swiper {}
     main .main_swiper .swiper-wrapper .slide1 {background-position: 70% center;}
     main .main_swiper .swiper-wrapper .slide2 {background-position: 80% center;}
     main .main_swiper .swiper-wrapper .swiper-slide > * {

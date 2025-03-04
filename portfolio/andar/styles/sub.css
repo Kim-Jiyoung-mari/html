@@ -1,6 +1,6 @@
 main {}
 main .contents_wrap {
-    width: 1400px; margin: 130px auto;
+    max-width: 1400px; margin: 130px auto;
 }
 main .contents_wrap .title_bg {
     border-bottom: 1px solid #C86733; text-align: center;
@@ -27,11 +27,13 @@ main .contents_wrap .item_wrap ul {
     display: flex; flex-flow: row wrap; justify-content: space-between;
     padding: 80px 0 50px;
 }
-main .contents_wrap .item_wrap ul li {padding-bottom: 80px;}
+main .contents_wrap .item_wrap ul li {padding-bottom: 50px;}
 main .contents_wrap .item_wrap ul li > a {}
-main .contents_wrap .item_wrap ul li > a > img {padding-bottom: 10px;}
+main .contents_wrap .item_wrap ul li > a > img {
+    width: 100%;
+    padding-bottom: 10px;}
 main .contents_wrap .item_wrap ul li .item_info {}
-main .contents_wrap .item_wrap ul li .item_info h2 {
+main .contents_wrap .item_wrap ul li .item_info h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
 }
 main .contents_wrap .item_wrap ul li .item_info .i_txt {
@@ -49,8 +51,8 @@ main .contents_wrap .item_wrap .more_view {
 
 /* =================================================== 배너*/
 main .m_bnr {
-    width: 100%; height: 360px;
     background-size: cover;
+
 }
 main .bnr1 {
     background-image: url(../images/sub_brn.jpg);
@@ -58,8 +60,8 @@ main .bnr1 {
     position: relative; top: 80px;
 }
 main .bnr1 .bnr_contents {
-    width: 1400px; position: absolute; left: 50%; bottom: 50%;
-    transform: translateX(-50%); 
+    max-width: 1400px;
+    position: absolute; left: 260px; top: 200px;
     
 }
 main .bnr1 .bnr_contents .bnr_txt {
@@ -73,7 +75,6 @@ main .bnr1 .bnr_contents h2 {
 }
 main .bnr1 .coupon {
     background-color: #181818; color: #FFDBC8;
-    width: 100%;
     position: relative; top: 500px; text-align: center;
     padding: 20px 0;
 }
@@ -88,12 +89,12 @@ main .bnr1 .coupon > .coupontxt {
 
 main .bnr2 {
     background-image: url(../images/m_bnr_002.jpg);
+    height: 360px;
     margin: 0;
 }
 main .bnr2 .bnr_contents {
-    width: 1400px; position: absolute; left: 50%; bottom: 108px;
-    transform: translateX(-50%); 
-
+    max-width: 1400px; margin: 0 auto;
+    padding-top: 108px;
 }
 main .bnr2 .bnr_contents h4 {
     font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02rem;

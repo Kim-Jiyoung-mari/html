@@ -12,3 +12,6 @@
 * [R]메인내용(13) | font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
 * 할인가 | color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
 * 푸터내용(11) | font-size: 0.69rem; line-height: 1.2; letter-spacing: -0.02rem;
+# 테블릿
+* <T> [제품명] (12) | font-size: 0.75rem;
+* <T> [R]메인내용(13) | font-size: 0.63rem;

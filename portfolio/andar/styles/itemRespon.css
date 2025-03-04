@@ -1,0 +1,53 @@
+@media screen and (max-width:1400px) {
+    main .contents {
+        padding: 100px 80px; flex-flow: row wrap;
+    }
+    main .contents .left_img {margin: 80px auto;}
+    main .contents .right_info {
+        width: 1400px
+    }
+
+    main .contents .right_info .order_btn .cart,
+    main .contents .right_info .order_btn .order {width: 396px;}
+    /* =================================================== 푸터 */  
+    footer .ft_bg {padding:0 80px;}
+
+    footer .ft_bg .ft_top > a,
+    footer .ft_bg .ft_btm .btm_left ul li,
+    footer .ft_bg .ft_btm .btm_left > p,
+    footer .ft_bg .ft_btm .btm_right > p,
+    footer .ft_bg .ft_btm .btm_right .cs_info .time > p {font-size: 0.63rem;}
+
+    footer .ft_bg .ft_btm .btm_right .cs_info {background-size: 70px 40px;}  
+}
+
+@media screen and (max-width:700px) {
+    .h_bg header {padding: 0 15px;}
+    /* =================================================== 메인헤더 모바일반응형*/
+    .h_bg header .h_left > a img {display: block;}
+    .h_bg header .h_left > nav {display: none;}
+    .h_bg header .h_left .m_nav > nav .m_ul li a {display: inline-block;}
+
+    main .contents {padding: 15px;}
+    main .contents .left_img .thumnail {
+    flex-flow: row wrap; padding-bottom: 20px;
+    }
+
+    main .contents .right_info .notice dl dd {
+        width: 100%
+    }
+
+    main .contents .right_info .order_btn .cart,
+    main .contents .right_info .order_btn .order {width: 165px;}
+
+    footer .ft_bg {padding:0 15px;}
+    footer .ft_bg .ft_btm {flex-flow: row wrap;}
+    footer .ft_bg .ft_top > a,
+    footer .ft_bg .ft_btm .btm_left ul li,
+    footer .ft_bg .ft_btm .btm_left > p,
+    footer .ft_bg .ft_btm .btm_right > p,
+    footer .ft_bg .ft_btm .btm_right .cs_info .time > p {font-size: 0.63rem;}
+
+    footer .ft_bg .ft_btm .btm_right .cs_info {background-size: 70px 40px;}
+
+}
