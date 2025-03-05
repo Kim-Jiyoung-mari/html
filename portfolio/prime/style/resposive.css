@@ -1,0 +1,121 @@
+@media screen and (max-width:1400px) {
+    /* 헤더 */
+    .h_bg header {padding: 0 80px;}
+    .h_bg header .h_btm nav > ul > li {margin-right: 20px;}
+
+    /* 메인배너 */
+    main .main_swiper .swiper-wrapper .slide1 {background-position: 60% center;}
+    main .main_swiper .swiper-wrapper .slide1 .contents {left: 80px;}
+    main .main_swiper .swiper-wrapper .slide2 {background-position: 70% center;}
+    main .main_swiper .swiper-wrapper .slide2 .contents {left: 80px;}
+
+    /* 메인 */
+    main .item_wrap {padding:0 80px;}
+    main .item_wrap .title_contents .t_top .title_row {font-size:1.38rem;}
+    main .item_wrap .title_contents .t_top .more_view > a {font-size: 0.88rem;}
+
+
+    main .item_wrap .item_list .title_contents .t_top {padding: 10px;}
+    main .item_wrap .item_list .title_contents .t_top .t_left .title_btm {margin-top: 10px} 
+    main .item_wrap .item_list .title_contents .t_btm .txt {font-size: 0.88rem;}
+
+    main .item_wrap .item_list {
+        width: calc(100% - 350px);
+        padding-left: 10px;
+    }
+    main .row4 .item_list {padding-right: 10px;}
+    main .item_wrap .item_list .item_contents .swiper {padding: 2% 0;}
+    main .item_wrap .item_list .title_contents .t_btm {padding: 10px 10px 0;}
+    main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info {margin-top: 10px;}
+
+    main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale,
+    main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale {
+        padding: 7px 0; display: block;
+    }
+    main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name h3,
+    main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name > h3 {
+        font-size:0.88rem;
+    }
+    main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale > .sale,
+    main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .sale {
+        font-size:1.13rem; padding-top: 10px;
+    }
+
+    main .review_wrap {padding:0 80px;}
+    
+    /* -------------------- 이벤트 배너 */
+    main .event_bnr .bnr_contents h4 {font-size: 1.56rem;}
+    main .event_bnr .bnr_contents .bnr_txt {font-size: 0.88rem;}
+    main .event_bnr .bnr_contents {left: 80px;}
+    main .row2 {background-position: 85% center;}
+    main .row6 {background-position: 83% center;}
+
+
+    /* 푸터 */
+    footer .ft_bg {padding: 0 80px;}
+}
+
+@media screen and (max-width:799px) {
+    .h_bg header {padding: 0 15px; height: 57px;}
+    .h_bg header .h_btm {padding-top: 7px;}
+    .h_bg header .h_btm > a > img {display: block;}
+    .h_bg header .h_btm > nav {display: none;}
+
+    /* 메인배너 */
+    main .main_swiper .swiper-wrapper .slide1 {background-position: 71% center;}
+    main .main_swiper .swiper-wrapper .slide1 .contents {left: 15px;}
+    main .main_swiper .swiper-wrapper .slide2 {background-position: 80% center;}
+    main .main_swiper .swiper-wrapper .slide2 .contents {left: 15px; top: 610px}
+    main .main_swiper .progress {left: 0;}
+
+    /* 메인 */
+    main .item_wrap {padding:0 15px;}
+    main .item_wrap .title_contents .t_btm > a {
+        padding-right: 7px; font-size:0.81rem; 
+    }
+    main .item_wrap .title_contents .t_btm > .active {
+        background-color: #34346A; color: #FFF;
+        margin-right: 0;
+    }
+    main .item_wrap .item_list .item_contents .swiper .swiper-wrapper {padding: 20px 0;}
+    main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale {
+    flex-flow: row wrap;
+    }
+
+    main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name h3,
+    main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name > h3 {
+        font-size:0.81rem;
+    }
+
+    main .row3,
+    main .row4,
+    main .row5 {flex-flow: row wrap;}
+
+    main .item_wrap .big_main {display: none;}
+    main .item_wrap .item_list {
+        width: 100%
+    }
+
+    main .review_wrap {padding:0 15px;}
+    main .review_wrap .review_contants {
+        width: 100%;
+        flex-flow: column wrap;
+    }
+
+    /* -------------------- 이벤트 배너 */
+    main .event_bnr .bnr_contents h4 {font-size: 1.25rem;}
+    main .event_bnr .bnr_contents .bnr_txt {font-size: 0.88rem; padding: 10px 0;}
+    main .event_bnr .bnr_contents {left: 15px; top: 188px;}
+    main .row6 .bnr_contents {left: 15px; top: 15px;}
+    main .row2 {background-position: 85% center;}
+    main .row6 {background-position: 86% 87px;}
+
+    /* 푸터 */
+    footer .ft_bg {padding: 0 15px;}
+    footer .ft_bg .ft_btm {flex-flow: row wrap;}
+
+}
+
+@media screen and (max-width:632px) {
+    
+}

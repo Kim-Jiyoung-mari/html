@@ -1,3 +1,18 @@
+// 모바일 서브메뉴
+const mMenu = document.querySelector('.m_menu');
+const menuLi = document.querySelector('.m_nav');
+const close = document.querySelector('.close');
+console.log(mMenu, menuLi);
+
+mMenu.addEventListener('click',()=>{
+    menuLi.style.display = 'block'
+})
+
+close.addEventListener('click',()=>{
+    menuLi.style.display = 'none'
+})
+
+
 //메인배너
 const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
@@ -17,6 +32,11 @@ const contentSwiper = new Swiper('.all .i_slide1',{
     },
     slidesPerView:4,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:4,},
+        799:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .all .progress .swiper-scrollbar",
@@ -25,10 +45,15 @@ const contentSwiper = new Swiper('.all .i_slide1',{
 // 마데카프라임
 const primeSwiper = new Swiper('.madeca .i_slide1',{
     autoplay:{
-        delay:3000, // 실제 배너 5~7초 많이 사용
+        delay:300000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:4,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:4,},
+        799:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .madeca .progress .swiper-scrollbar",
@@ -37,10 +62,15 @@ const primeSwiper = new Swiper('.madeca .i_slide1',{
 // 순환탄력
 const circleSwiper = new Swiper('.circulation .i_slide1',{
     autoplay:{
-        delay:3000, // 실제 배너 5~7초 많이 사용
+        delay:300000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:4,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:4,},
+        799:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .circulation .progress .swiper-scrollbar",
@@ -49,10 +79,15 @@ const circleSwiper = new Swiper('.circulation .i_slide1',{
 // 탄력초음파
 const elasticSwiper = new Swiper('.elasticity .i_slide1',{
     autoplay:{
-        delay:3000, // 실제 배너 5~7초 많이 사용
+        delay:300000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:4,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:4,},
+        799:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .elasticity .progress .swiper-scrollbar",
@@ -61,10 +96,15 @@ const elasticSwiper = new Swiper('.elasticity .i_slide1',{
 // 앰플
 const ampouleSwiper = new Swiper('.ampoule .i_slide1',{
     autoplay:{
-        delay:3000, // 실제 배너 5~7초 많이 사용
+        delay:300000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:4,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:4,},
+        799:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .ampoule .progress .swiper-scrollbar",
@@ -114,10 +154,14 @@ tabT.forEach((target,index)=>{
 // 3행 마데카 프라임
 const madecaSwiper = new Swiper('.i_slide2',{
     autoplay:{
-        delay:3000, // 실제 배너 5~7초 많이 사용
+        delay:30000000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:3,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:3,}, 
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .row3 .progress .swiper-scrollbar",
@@ -131,6 +175,10 @@ const whiteSwiper = new Swiper('.i_slide3',{
     },
     slidesPerView:3,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .row4 .progress .swiper-scrollbar",
@@ -144,6 +192,10 @@ const skinSwiper = new Swiper('.skin .i_slide4',{
     },
     slidesPerView:3,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .skin .progress .swiper-scrollbar",
@@ -157,6 +209,10 @@ const amSwiper = new Swiper('.ampoules .i_slide4',{
     },
     slidesPerView:3,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .ampoules .progress .swiper-scrollbar",
@@ -170,6 +226,10 @@ const creamSwiper = new Swiper('.cream .i_slide4',{
     },
     slidesPerView:3,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .cream .progress .swiper-scrollbar",
@@ -183,6 +243,10 @@ const tonorSwiper = new Swiper('.tonor .i_slide4',{
     },
     slidesPerView:3,
     spaceBetween:14,
+    breakpoints:{
+        1025:{slidesPerView:3,},
+        430:{slidesPerView:2,},
+    },
     loop:true,
     scrollbar: {
         el: " .tonor .progress .swiper-scrollbar",

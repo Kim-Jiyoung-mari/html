@@ -4,7 +4,7 @@
     border-bottom: 1px solid #AAA;
 }
 .h_bg header {
-    width: 1600px; margin: 15px auto 0; height: 80px;
+    max-width: 1600px; margin: 15px auto 0; height: 80px;
 }
 .h_bg header .h_top {
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
@@ -27,14 +27,34 @@
 }
 .h_bg header .h_btm nav > ul > li > a {font-size:0.94rem;}
 .h_bg header .h_btm .btm_right {}
-.h_bg header .h_btm .btm_right > a {width: 18px; display: inline-block;}
+.h_bg header .h_btm .btm_right > a {max-width: 18px; display: inline-block;}
 .h_bg header .h_btm .btm_right > a:nth-child(2) {margin: 0 15px;}
 .h_bg header .h_btm .btm_right > a > img {width: 100%;}
-
+/* =================================================== 모바일 서브메뉴 start */
+.h_bg header .h_btm > a {}
+.h_bg header .h_btm > .m_nav {
+    display: none;
+    background-color: #fff;
+    width: 100%; height: calc(100vh - 57px);
+    position: fixed; left: 0; top: 72px; z-index: 999;
+}
+.h_bg header .h_btm > .m_nav .close {
+    float: right; margin: 20px;
+}
+.h_bg header .h_btm > .m_nav .close > img {}
+.h_bg header .h_btm > .m_nav nav {}
+.h_bg header .h_btm > .m_nav nav .m_ul {}
+.h_bg header .h_btm > .m_nav nav .m_ul > li {
+    background-color: #f5f5f5;
+    width: 100%; margin: 7px 0; padding: 10px 0;
+    text-align: center;
+}
+.h_bg header .h_btm .m_nav > nav .m_ul > li a {width: 100%; display: inline-block;} 
+/* =================================================== 모바일 서브메뉴 end */
 /* --------------------메인배너-------------------- */
 main {position: relative;}
 main .main_swiper {
-    width: 100%; height: 800px; margin-bottom: 100px;
+    height: 800px; margin-bottom: 100px;
 }
 main .main_swiper .swiper-wrapper {position: relative;}
 
@@ -97,12 +117,12 @@ main .main_swiper .progress {
     position: relative; bottom: 15px; left: 100px;
 }
 main .main_swiper .progress .swiper-scrollbar {
-    width: 1600px; 
+    max-width: 1600px; 
 }
 /* --------------------푸터-------------------- */
 footer {background-color: #EBEBEB; padding: 20px 0;}
 footer .ft_bg {
-    width: 1600px; margin: 0 auto;
+    max-width: 1600px; margin: 0 auto;
 }
 
 /* 공통/그룹 선택자 <푸터> */
@@ -133,7 +153,7 @@ footer .ft_bg .ft_btm .btm_left > ul:nth-child(2) {
 }
 footer .ft_bg .ft_btm .btm_left > p {}
 footer .ft_bg .ft_btm .btm_right {
-    width: 400px;
+    max-width: 400px;
 }
 footer .ft_bg .ft_btm .btm_right .cs_num {}
 footer .ft_bg .ft_btm .btm_right .cs_num .cs {

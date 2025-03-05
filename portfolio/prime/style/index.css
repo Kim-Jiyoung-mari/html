@@ -2,7 +2,7 @@ main {}
 
 /* -------------------- 베스트셀러 */
 main .item_wrap {
-    width: 1600px; margin: 100px auto;
+    max-width: 1600px; margin: 100px auto;
 }
 main .item_wrap .title_contents {}
 /* 타이틀 탑 */
@@ -22,7 +22,7 @@ main .item_wrap .title_contents .t_top .more_view > a > img {
 main .item_wrap .title_contents .t_btm {margin-top: 10px;}
 main .item_wrap .title_contents .t_btm > a {
     padding-right: 20px;
-    font-size:0.94rem; font-weight:600; color: #AAA;
+    font-size:0.94rem; font-weight:500; color: #AAA;
 }
 main .item_wrap .title_contents .t_btm > .active {
     background-color: #34346A; color: #FFF;
@@ -48,6 +48,7 @@ main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item
 main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name {}
 main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name h3 {
     font-size:0.94rem; font-weight:600;
+    padding-bottom: 5px;
 }
 main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name .i_txt {
     font-size:0.81rem; line-height:1.2; letter-spacing: -0.02rem
@@ -61,15 +62,15 @@ main .item_wrap .tab_container .best .swiper .swiper-wrapper .swiper-slide .item
 }
 main .item_wrap .tab_container .best .progress {}
 main .item_wrap .tab_container .best .progress .swiper-scrollbar {
-    width: 1600px;
+    max-width: 1600px;
     position: relative; left: 1px;
 }
 
 /* -------------------- 아이템리스트 연속 3행 공통 */
 /* 메인이미지*/
 main .item_wrap .big_main {}
-main .item_wrap .big_main > a {}
-main .item_wrap .big_main > a > img {}
+main .item_wrap .big_main > a {max-width: 500px;}
+main .item_wrap .big_main > a > img {width: 100%;}
 /* 컨텐츠 */
 main .item_wrap .item_list {
     width: calc(100% - 540px);
@@ -111,6 +112,7 @@ main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide 
 main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name {}
 main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name > h3 {
     font-size:0.94rem; font-weight:600;
+    padding-bottom: 5px;
 }
 main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name > .i_txt {
     font-size:0.81rem; line-height:1.2; letter-spacing: -0.02rem
@@ -123,7 +125,7 @@ main .item_wrap .item_list .item_contents .swiper .swiper-wrapper .swiper-slide 
 /* 진행바 (오른쪽) */
 main .item_wrap .item_list .item_contents .progress {}
 main .item_wrap .item_list .item_contents .progress .swiper-scrollbar {
-    width: 1060px;
+    max-width: 1000px;
     position: relative; left: 1px;
 }
 /* -------------------- 그룹선택자 */
@@ -228,7 +230,7 @@ main .row6 .bnr_contents .bnr_link > a {}
 main .row6 .bnr_contents .bnr_link > a img {}
 /* -------------------- 리뷰 */
 main .review_wrap {
-    width: 1600px; margin: 100px auto;
+    max-width: 1600px; margin: 100px auto;
 }
 /* -------------------- 리뷰 타이틀 */
 main .review_wrap .title_contents {
@@ -258,7 +260,7 @@ main .review_wrap .review_contants .review .review_hover {
     position: relative; overflow: hidden;
 }
 main .review_wrap .review_contants .review .review_hover .review_img {}
-main .review_wrap .review_contants .review .review_hover .review_img > img {}
+main .review_wrap .review_contants .review .review_hover .review_img > img {width: 100%;}
 main .review_wrap .review_contants .review .review_hover .review_bg {
     background-color: rgba(0, 0, 0, 0.5);
     width: 390px; padding: 15px;
