@@ -45,7 +45,7 @@ const contentSwiper = new Swiper('.all .i_slide1',{
 // 마데카프라임
 const primeSwiper = new Swiper('.madeca .i_slide1',{
     autoplay:{
-        delay:300000, // 실제 배너 5~7초 많이 사용
+        delay:3000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:4,
     spaceBetween:14,
@@ -62,7 +62,7 @@ const primeSwiper = new Swiper('.madeca .i_slide1',{
 // 순환탄력
 const circleSwiper = new Swiper('.circulation .i_slide1',{
     autoplay:{
-        delay:300000, // 실제 배너 5~7초 많이 사용
+        delay:3000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:4,
     spaceBetween:14,
@@ -79,7 +79,7 @@ const circleSwiper = new Swiper('.circulation .i_slide1',{
 // 탄력초음파
 const elasticSwiper = new Swiper('.elasticity .i_slide1',{
     autoplay:{
-        delay:300000, // 실제 배너 5~7초 많이 사용
+        delay:3000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:4,
     spaceBetween:14,
@@ -96,7 +96,7 @@ const elasticSwiper = new Swiper('.elasticity .i_slide1',{
 // 앰플
 const ampouleSwiper = new Swiper('.ampoule .i_slide1',{
     autoplay:{
-        delay:300000, // 실제 배너 5~7초 많이 사용
+        delay:3000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:4,
     spaceBetween:14,
@@ -154,7 +154,7 @@ tabT.forEach((target,index)=>{
 // 3행 마데카 프라임
 const madecaSwiper = new Swiper('.i_slide2',{
     autoplay:{
-        delay:30000000, // 실제 배너 5~7초 많이 사용
+        delay:3000, // 실제 배너 5~7초 많이 사용
     },
     slidesPerView:3,
     spaceBetween:14,
