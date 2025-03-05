@@ -263,7 +263,7 @@ main .review_wrap .review_contants .review .review_hover .review_img {}
 main .review_wrap .review_contants .review .review_hover .review_img > img {width: 100%;}
 main .review_wrap .review_contants .review .review_hover .review_bg {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 390px; padding: 15px;
+    width: 100%; padding: 15px;
     position: absolute; bottom: 2px;
     transform: translateY(30px); opacity: 0;
     overflow: hidden;

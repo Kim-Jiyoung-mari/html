@@ -1,9 +1,9 @@
 main {}
 /* =================================================== 배너*/
-main .m_bnr {background-size: cover;}
 main .m_bnr {
     background-image: url(../images/sub_bnr.jpg);
-    height: 400px;
+    background-size: cover;
+    height: 400px; 
     position: relative;
 }
 main .m_bnr .bnr_contents {
@@ -36,7 +36,7 @@ main .m_bnr .coupon > .coupontxt {
 
 /* -------------------- 메인 */
 main .contents_wrap {
-    width: 1600px; margin: 100px auto;
+    max-width: 1600px; margin: 100px auto;
 }
 /* 제목 */
 main .contents_wrap .title {

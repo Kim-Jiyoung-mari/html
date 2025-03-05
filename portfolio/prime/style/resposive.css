@@ -1,4 +1,4 @@
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1600px) {
     /* 헤더 */
     .h_bg header {padding: 0 80px;}
     .h_bg header .h_btm nav > ul > li {margin-right: 20px;}
@@ -54,6 +54,7 @@
     /* 푸터 */
     footer .ft_bg {padding: 0 80px;}
 }
+
 
 @media screen and (max-width:799px) {
     .h_bg header {padding: 0 15px; height: 57px;}
