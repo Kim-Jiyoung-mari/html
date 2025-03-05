@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 파비콘 & 글꼴 -->
+    <link rel="shortcut icon" href="./images/favi_logo.png" type="iamge/x-icon">
+    <link rel="icon" href="./images/favi_logo.png" type="image/x-icon">
+    <href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- 디자인파일 -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/item.css">
+    
+    <!-- 스크립트 -->
+    <script src="./script/script.js" defer></script>
+
+    <title>마데카 프라임 프리즘 핑크 | 마데카 프라임</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <div class="h_bg">
+        <header>
+            <div class="h_top">
+                <h1><a href="./index.html"><img src="./images/logo.png" alt="센텔리안24 마데카 프라임"></a></h1>
+                <div class="top_right">
+                    <a href="./item.html">회원가입</a>
+                    <a href="./item.html">고객센터</a>
+                </div>
+            </div>
+            <div class="h_btm">
+                <nav>
+                    <ul>
+                        <li><a href="./item.html">마데카 프라임</a></li>
+                        <li><a href="./item.html">순환미백 케어</a></li>
+                        <li><a href="./item.html">탄력초음파 케어</a></li>
+                        <li><a href="./item.html">부스팅 앰플&젤</a></li>
+                        <li><a href="./item.html">브랜드</a></li>
+                        <li><a href="./item.html">이벤트</a></li>
+                        <li><a href="./item.html">멤버십</a></li>
+                        <li><a href="./item.html">커뮤니티</a></li>
+                    </ul>
+                </nav>
+                <div class="btm_right">
+                    <a href="#"><img src="./images/search.png" alt="검색하기"></a>
+                    <a href="#"><img src="./images/mypage.png" alt="로그인하기"></a>
+                    <a href="#"><img src="./images/cart.png" alt="장바구니"></a>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+    <!----------------메인영역----------------->
+    <main>
+        <div class="contents">
+            <div class="left_img">
+                <div class="big">
+                    <img src="./images/big_1.jpg" alt="">
+                </div>
+                <div class="thumnail">
+                    <a href="#" class="active"><img src="./images/thum_1.jpg" alt=""></a>
+                    <a href="#"><img src="./images/thum_2.jpg" alt=""></a>
+                    <a href="#"><img src="./images/thum_3.jpg" alt=""></a>
+                    <a href="#"><img src="./images/thum_4.jpg" alt=""></a>
+                    <a href="#"><img src="./images/thum_5.jpg" alt=""></a>
+                    <a href="#"><img src="./images/thum_6.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="right_info">
+                <div class="title_price">
+                    <h1>마데카 프라임 프리즘 핑크</h1>
+                    <p>신제품 프리즘 핑크 에디션<br>콜라겐 타이트닝 부스팅 앰플 구성!</p>
+                    <div class="sale_price">
+                        <p class="price">349,000원 <del>502,000원</del> <span class="sale">30%</span></p>
+                    </div>
+                    <div class="review">
+                        <p><img src="./images/star.png" alt=""><em>4.8 </em>12,945개 리뷰</p>
+                    </div>
+                </div>
+                <div class="notice">
+                    <dl class="delivary">
+                        <dt>배송안내</dt>
+                        <dd>당일발송 (오후 12시 전 주문시)</dd>
+                    </dl>
+                    <dl class="how">
+                        <dt>배송방법</dt>
+                        <dd>택배</dd>
+                    </dl>
+                    <dl class="pay">
+                        <dt>택배비</dt>
+                        <dd>2,500원(20,000원 이상 구매시 무료)</dd>
+                    </dl>
+                </div>
+                <div class="select_content">
+                    <p>옵션</p>
+                    <select name="choice" id="choice">
+                        <option value="">[필수] 옵션을 선택해주세요</option>
+                        <option value="마데카 프라임 프리즘 핑크 에디션">마데카 프라임 프리즘 핑크 에디션</option>
+                    </select>
+                </div>
+                <div class="op_bg">
+                    <div class="op">
+                        <!-- 스크립트 정보  : 실제 선택 정보 색깔/사이즈-->
+                        <span class="option_txt"></span>
+                    </div>
+                    <div class="count">
+                        <p>수량</p>
+                        <div class="num">
+                            <button type="button" id="minus"><img src="./images/minus.png" alt="수량빼기버튼"></button>
+                            <input type="number" name="product_num" id="product_num">
+                            <button type="button" id="plus"><img src="./images/plus.png" alt="수량추가버튼"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="order_price">
+                    <h2>총 상품금액</h2>
+                    <p><em class="or_price"><!-- 0 --></em>원</p>
+                </div>
+                <div class="order_btn">
+                    <button type="button" class="like"><img src="./images/like.png" alt="관심상품등록하기"></button>
+                    <button type="button" class="cart">장바구니</button>
+                    <button type="button" class="order">바로 구매하기</button>
+                </div>
+            </div>
+            <div class="cart_bg">
+                <div class="cart_container">
+                    <p>상품이 장바구니에 담겼습니다.</p>
+                    <div class="link">
+                        <a href="#">쇼핑 계속하기</a>
+                        <a href="./index.html">장바구니 가기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item_detail">
+            <div class="tab">
+                <a href="#" class="active_info">상세정보</a>
+                <a href="#">리뷰(12,945개)</a>
+                <a href="#">배송/교환/반품</a>
+                <a href="#">상품문의</a>
+            </div>
+            <div class="tab_contents">
+                <div class="info">상품정보</div>
+                <div class="review_con">리뷰내용</div>
+                <div class="delivary">배송은 상품에 따라 입금확인 일로부터 최고 1일~5일 정도 소요되며, 협력업체의 사정으로 인해 배송이 지연될 경우도 있습니다. 지연될 경우 별도로 연락을 드리거나 상품 설명에 기재 하고 있으니 구매 전 참고해 주세요.</div>
+                <div class="cs">상품문의내용</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="ft_bg">
+            <div class="ft_top">
+                <a href="#">이용 약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">동국제약 소개</a>
+                <a href="#">대량구매 안내</a>
+                <a href="#">에스크로 가입확인</a>
+            </div>
+            <div class="ft_btm">
+                <div class="btm_left">
+                    <ul>
+                        <li>동국제약(주)</li>
+                        <li>대표이사 : 송준호</li>
+                        <li>사업자등록번호 : 301-85-08241</li>
+                        <li>통신판매업신고 : 제2012-충북진천-0029호</li>
+                    </ul>
+                    <ul>
+                        <li>본사 : 27809 동국제약빌딩, 서울특별시 강남구 영동대로 715</li>
+                        <li>사업장소재지 : 충북 진천군 광혜원면 용소2길 33-19 (죽현리 488-5)</li>
+                    </ul>
+                    <p>&copy;2022 센텔리안24 마데카 프라임. ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="btm_right">
+                    <div class="cs_num">
+                        <div class="cs">
+                            <p class="customer">고객센터</p>
+                            <p>080-569-8607</p>
+                        </div>
+                    </div>
+                    <div class="cs_time">
+                        <p>평일 AM 09:00 ~ PM 05:30 / 주말, 공휴일 휴무</p>
+                        <p>점심 PM 12:00 ~ PM 01:30</p>
+                        <p>대량구매 문의는 고객센터로연락 부탁드립니다.</p>
+                    </div>
+                    <div class="cs_link">
+                        <a href="#" class="question">자주 묻는 질문</a>
+                        <a href="#" class="inquiry">1:1문의</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
