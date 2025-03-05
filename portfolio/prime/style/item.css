@@ -114,7 +114,7 @@ main .contents .right_info .select_content select {
     background-repeat: no-repeat; background-position: right center;
 }
 main .contents .right_info .select_content #choice {}
-main .contents .right_info .select_content #choice option {color: #F2F2F2;}
+main .contents .right_info .select_content #choice option {color: #777;}
 
 /* 옵션 배경 JS  */
 main .contents .right_info .op_bg {

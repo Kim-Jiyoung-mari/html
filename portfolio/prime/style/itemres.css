@@ -1,0 +1,49 @@
+@media screen and (max-width:1600px) {
+    /* 헤더 */
+    .h_bg header {padding: 0 80px;}
+    .h_bg header .h_btm nav > ul > li {margin-right: 20px;}
+
+    /* 메인 */
+    main {margin: 0 auto;}
+    main .contents {padding: 0 80px; flex-flow: row wrap;}
+    main .contents .left_img {margin: 80px auto;}
+    main .contents .right_info {width: 1600px}
+    main .item_detail {padding: 100px 80px;}
+
+    /* 푸터 */
+    footer .ft_bg {padding: 0 80px;}
+}
+
+
+@media screen and (max-width:799px) {
+    /* 헤더 */
+    .h_bg header {padding: 0 15px; height: 57px;}
+    .h_bg header .h_btm {padding-top: 7px;}
+    .h_bg header .h_btm > a > img {display: block;}
+    .h_bg header .h_btm > nav {display: none;}
+
+    /* 메인 */
+    main .contents {padding: 0 15px;}
+    main .contents .left_img .thumnail {flex-flow: row wrap;}
+
+    /* 버튼 */
+    main .contents .right_info .order_btn button {width: 165px;}
+    main .contents .right_info .order_btn .cart {margin: 0}
+
+    /* 상세정보 */
+    main .item_detail {padding: 50px 15px;}
+
+    /* 푸터 */
+    footer .ft_bg {padding: 0 15px;}
+    footer .ft_bg .ft_btm {flex-flow: row wrap;}
+
+}
+
+@media screen and (max-width:632px){
+    main .contents .left_img .big {width: 410px;}
+    /* 공지 */
+    main .contents .right_info .notice dl dt {width: 90px;}
+    main .contents .right_info .notice dl dd {width: calc(100% - 90px);}
+    /* 옵션 선택 */
+    main .contents .right_info .select_content select {width: 410px;}
+}
