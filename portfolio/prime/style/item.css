@@ -7,7 +7,7 @@ main .contents .right_info .notice,
 main .contents .right_info .select_content,
 main .contents .right_info .op_bg,
 main .contents .right_info .order_price {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 /* ============================== 상품 컨텐츠 영역 */
 main .contents {
@@ -72,15 +72,21 @@ main .contents .right_info .title_price .review > p > em {
 }
 
 /* 상품 공지 */
-main .contents .right_info .notice {}
+main .contents .right_info .notice {
+    background-color: #F9F9F9; border-radius: 10px;
+    padding: 20px;
+}
 main .contents .right_info .notice dl {
     display: flex; flex-flow: row wrap;
-    padding: 25px 20px; border-radius: 10px;
+    padding: 25px 20px;
 }
 
-main .contents .right_info .notice .delivary,
-main .contents .right_info .notice .how,
-main .contents .right_info .notice .pay {background-color: #F2F2F2;}
+main .contents .right_info .notice .delivary {}
+main .contents .right_info .notice .how {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+main .contents .right_info .notice .pay {}  
 
 main .contents .right_info .notice dl dt {
     width: 120px;
@@ -103,22 +109,23 @@ main .contents .right_info .select_content > p {
 main .contents .right_info .select_content select {
     width: 100%; color: #222;
     padding: 17px 30px; margin: 5px 0;
-    border: 0.5px solid #D9D9D9; border-radius: 5px;
+    border: 0.5px solid #F2F2F2; border-radius: 5px;
     background-image: url(../images/down.png);
     background-repeat: no-repeat; background-position: right center;
 }
 main .contents .right_info .select_content #choice {}
-main .contents .right_info .select_content #choice option {color: #AAA;}
+main .contents .right_info .select_content #choice option {color: #F2F2F2;}
 
 /* 옵션 배경 JS  */
 main .contents .right_info .op_bg {
-    background-color: #F2F2F2;
-    border-radius: 10px; padding: 13px 15px;
-    margin-bottom: 35px; 
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 35px; padding: 13px 15px;
+
 }
 main .contents .right_info .op_bg .op {}
 main .contents .right_info .op_bg .op > .option_txt  {
-    font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
+    font-size: 0.94rem; line-height: 1.2; letter-spacing: -0.02rem;
 }
 
 /* 상품 수량 */
@@ -133,7 +140,6 @@ main .contents .right_info .op_bg .count .num {}
 
 main .contents .right_info .op_bg .count .num button {
     background-color: #F2F2F2; padding: 5px;
-    border-radius: 5px;
 }
 main .contents .right_info .op_bg .count .num button > img {
     position: relative; top: 1px;
