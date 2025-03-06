@@ -37,6 +37,10 @@
     background-color: #0C1147; color: #FFF; padding: 15px 20px; 
     font-size: 0.88rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.02rem;
     border: 1px solid #FFF; border-radius: 30px;
+    transition: all 1s;
+}
+#main .swiper-wrapper .swiper-slide .contents > a:hover {
+    background-color: #FFF; color: #0B1445;
 }
 /* ============================================= 메인 */
 #main .swiper-wrapper {}
@@ -66,6 +70,7 @@
     padding: 20px 0 50px;
 }
 #main .swiper-wrapper .allinone_02 .contents > a {}
+#main .swiper-wrapper .allinone_02 .contents > a:hover {}
 
 /* ============================================= 3행 */
 #main .swiper-wrapper .reason_03 {
@@ -151,6 +156,7 @@
 #main .swiper-wrapper .translate_04 .contents .mid_title {}
 #main .swiper-wrapper .translate_04 .contents .main_con {}
 #main .swiper-wrapper .translate_04 .contents > a {}
+#main .swiper-wrapper .translate_04 .contents > a:hover {}
 
 /* ============================================= 5행 */
 #main .swiper-wrapper .tts_05 {
