@@ -2,7 +2,7 @@
 .h_bg {background-color: aquamarine;}
 .h_bg header {
     background-color: lightpink;
-    width: 1500px; margin: 0 auto; /* padding: 20px 0;  */
+    width: 1500px; margin: 0 auto; padding: 20px 0; 
 }
 .h_bg header .h_top {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
