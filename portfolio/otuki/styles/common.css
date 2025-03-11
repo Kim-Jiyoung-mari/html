@@ -1,7 +1,6 @@
 /* 헤더 */
-.h_bg {background-color: aquamarine;}
+.h_bg {}
 .h_bg header {
-    background-color: lightpink;
     width: 1500px; margin: 0 auto; padding: 20px 0; 
 }
 .h_bg header .h_top {
@@ -27,21 +26,54 @@
 
 /* 메인 배너 */
 main .main_bnr {
-    height: 800px;
+    height: 800px; position: relative; margin-bottom: 100px;
 }
 main .main_bnr .swiper-wrapper {}
 main .main_bnr .swiper-wrapper .swiper-slide {}
-main .main_bnr .swiper-wrapper .swiper-slide > h1 {}
-main .main_bnr .swiper-wrapper .swiper-slide > h1 em {}
-main .main_bnr .swiper-wrapper .swiper-slide > p {}
-main .main_bnr .swiper-wrapper .swiper-slide > .link {}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents {
+    position: absolute; left: 210px; top: 315px;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > h1 {
+    font-size: 2.19rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > h1 em {
+    color: #D3233A;
+    font-size: 2.19rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > p {
+    font-size: 1.25rem; line-height: 1.5; letter-spacing: -0.02rem;
+    margin: 20px 0 ;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > .link {
+    font-size: 0.94rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.02rem;
+    border: 1px solid #D3233A; padding: 15px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > .link:hover{
+    background-color: #D3233A; color: #FFF;
+}
+main .main_bnr .progress {}
+main .main_bnr .progress .swiper-scrollbar {bottom: 10px;}
+
+/* 배너 1 */
 main .main_bnr .swiper-wrapper .slide1 {
     background-image: url(../images/main_bnr.jpg);
 }
-main .main_bnr .swiper-wrapper .slide1 > h1 {}
-main .main_bnr .swiper-wrapper .slide1 > h1 em {}
-main .main_bnr .swiper-wrapper .slide1 > p {}
-main .main_bnr .swiper-wrapper .slide1 > .link {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_contents {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_contents > h1 {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_contents > h1 em {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_contents > p {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_contents > .link {}
+/* 배너 2 */
+main .main_bnr .swiper-wrapper .slide2 {
+    background-image: url(../images/main_bnr.jpg);
+}
+main .main_bnr .swiper-wrapper .slide2 .bnr_contents {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_contents > h1 {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_contents > h1 em {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_contents > p {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_contents > .link {}
 
 /* 푸터 */
 footer {background-color: #F5F5F5;}

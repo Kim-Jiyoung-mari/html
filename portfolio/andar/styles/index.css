@@ -30,15 +30,10 @@ main .m_row .title .t_btm .more_view > a > img {
     position: relative; top: 3px;
     padding-left: 5px;
 }
-/* =================================================== 스와이퍼 1*/
-main .m_row .c_swiper {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
-    margin: 40px 0;
-}
+/* =================================================== 에어쿨링 */
+main .m_row .c_swiper {margin: 40px 0;}
 main .m_row .c_swiper .swiper-wrapper {}
-main .m_row .c_swiper .swiper-wrapper .swiper-slide {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
-}
+main .m_row .c_swiper .swiper-wrapper .swiper-slide {}
 main .m_row .c_swiper .swiper-wrapper .swiper-slide a {}
 main .m_row .c_swiper .swiper-wrapper .swiper-slide a img {width:100%;}
 main .m_row .c_swiper .swiper-wrapper .swiper-slide .item {}
@@ -56,7 +51,7 @@ main .m_row .c_swiper .swiper-wrapper > * .price del {
     color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding-left: 10px;
 }
-/* =================================================== 2행 개별 */
+/* =================================================== 에어쿨링 개별 */
 main .row2 {}
 main .row2 .title {}
 main .row2 .title .t_top {
@@ -110,15 +105,10 @@ main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info h3 {}
 main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .i_txt {}
 main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price {}
 main .m_row .c_swiper .swiper-wrapper .item-wrap2 .item .item_info .price del {}
-/* =================================================== 스와이퍼 2*/
-main .m_row .c_swiper2 {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
-    margin: 40px 0;
-}
+/* =================================================== 신상 */
+main .m_row .c_swiper2 {margin: 40px 0;}
 main .m_row .c_swiper2 .swiper-wrapper {}
-main .m_row .c_swiper2 .swiper-wrapper .swiper-slide {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
-}
+main .m_row .c_swiper2 .swiper-wrapper .swiper-slide {}
 main .m_row .c_swiper2 .swiper-wrapper .swiper-slide a {}
 main .m_row .c_swiper2 .swiper-wrapper .swiper-slide .item {}
 main .m_row .c_swiper2 .swiper-wrapper .swiper-slide a img {width:100%;}
@@ -136,15 +126,10 @@ main .m_row .c_swiper2 .swiper-wrapper > * .price del {
     color: #AAA; font-size: 0.81rem; line-height: 1.2; letter-spacing: -0.02rem;
     padding-left: 10px;
 }
-/* =================================================== 스와이퍼 3*/
-main .m_row .c_swiper3 {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
-    margin: 40px 0;
-}
+/* =================================================== 베스트 셀러*/
+main .m_row .c_swiper3 {margin: 40px 0;}
 main .m_row .c_swiper3 .swiper-wrapper {}
-main .m_row .c_swiper3 .swiper-wrapper .swiper-slide {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
-}
+main .m_row .c_swiper3 .swiper-wrapper .swiper-slide {}
 main .m_row .c_swiper3 .swiper-wrapper .swiper-slide a {}
 main .m_row .c_swiper3 .swiper-wrapper .swiper-slide .item {}
 main .m_row .c_swiper3 .swiper-wrapper .swiper-slide a img {width:100%;}
@@ -181,7 +166,7 @@ main .m_row .progress .swiper-scrollbar {
     position: relative; margin: 0 auto;
 }
 main .m_row .progress .scrollbar .active-scrollbar {
-    /* width: 10%; */ height: 2px;
+    height: 2px;
     position: absolute; left: 0; top: 0;
 }
 /* =================================================== 배너*/

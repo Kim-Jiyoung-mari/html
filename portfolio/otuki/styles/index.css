@@ -1,5 +1,26 @@
 main {}
+/* 공통선택자 */
 main .main_contents {
     background-color: lightgray;
-    max-width: 1500px; margin: 0 auto;
+    width: 1500px; margin: 0 auto;
 }
+main .main_contents .swiper {}
+main .main_contents .swiper .swiper-wrapper {}
+main .main_contents .swiper .swiper-wrapper .swiper-slide {}
+main .main_contents .swiper .swiper-wrapper .swiper-slide > a {}
+main .main_contents .swiper .swiper-wrapper .swiper-slide > a > img {}
+main .main_contents .swiper .swiper-wrapper .swiper-slide > .item_text {}
+main .main_contents .swiper .swiper-wrapper .swiper-slide > .item_text h3 {}
+main .main_contents .swiper .swiper-wrapper .swiper-slide > .item_text .i_txt {}
+main .main_contents .swiper .swiper-wrapper .swiper-slide > .item_text .price {}
+
+/* 신상 업데이트 개별 */
+main .main_contents .row1 {}
+main .main_contents .row1 .swiper-wrapper {}
+main .main_contents .row1 .swiper-wrapper .new_i {}
+main .main_contents .row1 .swiper-wrapper .new_i > a {}
+main .main_contents .row1 .swiper-wrapper .new_i > a > img {}
+main .main_contents .row1 .swiper-wrapper .new_i > .item_text {}
+main .main_contents .row1 .swiper-wrapper .new_i > .item_text h3 {}
+main .main_contents .row1 .swiper-wrapper .new_i > .item_text .i_txt {}
+main .main_contents .row1 .swiper-wrapper .new_i > .item_text .price {}
