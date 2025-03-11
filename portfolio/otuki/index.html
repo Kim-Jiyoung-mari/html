@@ -10,8 +10,8 @@
     <href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
 
     <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- 디자인파일 -->
     <link rel="stylesheet" href="./styles/reset.css">
@@ -22,6 +22,7 @@
     <script src="./script/index.js" defer></script>
     <title>오뚜기몰 | 오뚜기몰에는 다 있다!</title>
 </head>
+
 <body>
     <!-- 헤더 -->
     <div class="h_bg">
@@ -79,9 +80,9 @@
         </div>
 
         <!-- 오뚜기 신상 업데이트 -->
-        <div class="main_contents new">
+        <div class="main_contents new_wrap">
             <h2>오뚜기 신상 업데이트</h2>
-            <div class="swiper row1">
+            <div class="swiper new">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide new_i">
                         <a href="#"><img src="./images/new_001.jpg" alt="마라볶음밥 용기 230g"></a>
@@ -125,17 +126,22 @@
                     </div>
                 </div>
             </div>
+            <div class="progress">
+                <div class="swiper-scrollbar"></div>
+            </div>
             <a href="#" class="viewmore">오뚜기 신상 더보기</a>
         </div>
 
         <!-- 이벤트 배너1 -->
         <div class="main_contents bnr1">
-            <h4>맛있는건 한 개 더! 오뚜기 원쁠원모음</h4>
-            <p class="bnr_txt">원쁠원으로 만나요💛</p>
+            <div class="bnr_contents">
+                <h4>맛있는건 한 개 더! 오뚜기 원쁠원모음</h4>
+                <p class="bnr_txt">원쁠원으로 만나요💛</p>
+            </div>
         </div>
 
         <!-- 오뚜기 베스트 PICK -->
-        <div class="main_contents best">
+        <div class="main_contents best_wrap">
             <div class="title">
                 <h2>오뚜기 베스트 PICK</h2>
                 <div class="item_tab">
@@ -147,9 +153,9 @@
                     <a href="#">간편식</a>
                 </div>
             </div>
-            <div class="swiper row3">
+            <div class="swiper best">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide best1">
+                    <div class="swiper-slide best_i">
                         <a href="#"><img src="./images/pick_001.jpg" alt="맛있는 오뚜기밥 3입"></a>
                         <div class="item_text">
                             <h3>[99마켓] 맛있는 오뚜기밥 3입</h3>
@@ -157,7 +163,7 @@
                             <p class="price">9,900원</p>
                         </div>
                     </div>
-                    <div class="swiper-slide best2">
+                    <div class="swiper-slide best_i">
                         <a href="#"><img src="./images/pick_002.jpg" alt="피자 3판 골라담기"></a>
                         <div class="item_text">
                             <h3>[99마켓] 피자 3판 골라담기</h3>
@@ -165,7 +171,7 @@
                             <p class="price">19,900원</p>
                         </div>
                     </div>
-                    <div class="swiper-slide best3">
+                    <div class="swiper-slide best_i">
                         <a href="#"><img src="./images/pick_003.jpg" alt="컵밥 7개 골라담기"></a>
                         <div class="item_text">
                             <h3>[99마켓] 컵밥 7개 골라담기</h3>
@@ -173,7 +179,7 @@
                             <p class="price">19,900원</p>
                         </div>
                     </div>
-                    <div class="swiper-slide best1">
+                    <div class="swiper-slide best_i">
                         <a href="#"><img src="./images/pick_004.jpg" alt="진라면 메운맛 컵 65g"></a>
                         <div class="item_text">
                             <h3>진라면 메운맛 컵 65g</h3>
@@ -181,7 +187,7 @@
                             <p class="price">850원</p>
                         </div>
                     </div>
-                    <div class="swiper-slide best1">
+                    <div class="swiper-slide best_i">
                         <a href="#"><img src="./images/pick_001.jpg" alt="맛있는 오뚜기밥 3입"></a>
                         <div class="item_text">
                             <h3>[99마켓] 맛있는 오뚜기밥 3입</h3>
@@ -191,18 +197,21 @@
                     </div>
                 </div>
             </div>
+            <div class="progress">
+                <div class="swiper-scrollbar"></div>
+            </div>
             <a href="#" class="viewmore">오뚜기 베스트 더보기</a>
         </div>
 
         <!-- 오뚜기 베스트 상품 리뷰 -->
-        <div class="main_contents review">
+        <div class="main_contents review_wrap">
             <div class="title">
                 <h2>오뚜기 베스트 상품 리뷰</h2>
                 <p>좋은건 모두 알아야 하니까!</p>
             </div>
-            <div class="swiper row4">
+            <div class="swiper review">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide review1">
+                    <div class="swiper-slide review_i">
                         <a href="#"><img src="./images/review_001.jpg" alt=""></a>
                         <div class="review_txt">
                             <div class="stars">
@@ -219,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide review2">
+                    <div class="swiper-slide review_i">
                         <a href="#"><img src="./images/review_002.jpg" alt=""></a>
                         <div class="review_txt">
                             <div class="stars">
@@ -236,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide review1">
+                    <div class="swiper-slide review_i">
                         <a href="#"><img src="./images/review_003.jpg" alt=""></a>
                         <div class="review_txt">
                             <div class="stars">
@@ -253,7 +262,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide review4">
+                    <div class="swiper-slide review_i">
                         <a href="#"><img src="./images/review_004.jpg" alt=""></a>
                         <div class="review_txt">
                             <div class="stars">
@@ -270,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide review1">
+                    <div class="swiper-slide review_i">
                         <a href="#"><img src="./images/review_001.jpg" alt=""></a>
                         <div class="review_txt">
                             <div class="stars">
@@ -289,13 +298,18 @@
                     </div>
                 </div>
             </div>
+            <div class="progress">
+                <div class="swiper-scrollbar"></div>
+            </div>
         </div>
 
         <!-- 유튜브 배너2 -->
         <div class="main_contents youtude">
-            <div class="main_bnr bnr2">
-                <p class="bnr_txt">매일 맛있는 여기, 오뚜기 맛집</p>
-                <h4>오뚜기 Daily</h4>
+            <div class="youtube_bnr">
+                <div class="bnr_content">
+                    <p class="bnr_txt">매일 맛있는 여기, 오뚜기 맛집</p>
+                    <h4>오뚜기 Daily</h4>
+                </div>
             </div>
             <div class="youtube_channel">
                 <a href="#"><img src="./images/circle.png" alt="오뚜기 프로필"></a>
@@ -306,28 +320,31 @@
             </div>
             <ul>
                 <li>
-                    <video><iframe width="1035" height="582" src="https://www.youtube.com/embed/mC5jxchu6Qs" title="[오뚜기 진라면] 더 맛있게 매워진 진매! 진라면에 진~하게 끌린다! (30초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video>
-                    <p class="video_title">[오뚜기 진라면] 라면 먹으러 가자~🍜 더 맛있게 매워진 진매!<br>진라면에 진~하게 끌린다!
+                    <iframe width="490" height="255" src="https://www.youtube.com/embed/mC5jxchu6Qs" title="[오뚜기 진라면] 더 맛있게 매워진 진매! 진라면에 진~하게 끌린다! (30초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="video_title">[오뚜기 진라면] 라면 먹으러 가자~🍜 더 맛있게 매워진 진매! 진라면에 진~하게 끌린다!
                     </p>
                 </li>
                 <li>
-                    <video><iframe width="1035" height="582" src="https://www.youtube.com/embed/mC5jxchu6Qs" title="[오뚜기 진라면] 더 맛있게 매워진 진매! 진라면에 진~하게 끌린다! (30초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video>
-                    <p class="video_title">[오뚜기 진라면] 라면 먹으러 가자~🍜 더 맛있게 매워진 진매!<br>진라면에 진~하게 끌린다!</p>
+                    <iframe width="490" height="255" src="https://www.youtube.com/embed/e1Rmr7KwXak" title="[오뚜기 진비빔면] 이제 비빔면도 손~크게! 양도 맛도 120% 만족 오뚜기 진비빔면 (15초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="video_title">[오뚜기 진비빔면] 이제 비빔면도 손~크게!😎 양도 맛도 120% 만족 오뚜기 진비빔면 </p>
                 </li>
                 <li>
-                    <video><iframe width="1035" height="582" src="https://www.youtube.com/embed/_pVxvT8uYvs" title="[오뚜기 카레] 나만 아는 맛집, 우리 아빠 카레🍛 카레로 아빠의 마음까지 싹~싹~💛 (30초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video>
+                    <iframe width="490" height="255" src="https://www.youtube.com/embed/_pVxvT8uYvs" title="[오뚜기 카레] 나만 아는 맛집, 우리 아빠 카레🍛 카레로 아빠의 마음까지 싹~싹~💛 (30초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p class="video_title">[오뚜기 카레] 나만 아는 맛집, 우리 아빠 카레🍛 카레로 아빠의 마음까지 싹~싹~💛</p>
                 </li>
             </ul>
         </div>
+
         <!-- 이벤트 배너2 -->
         <div class="main_contents bnr2">
-            <h4>우리에게 필요한 시간 단 3분</h4>
-            <p class="bnr_txt">잠깐의 기다림도 더 즐거울 수 있도록</p>
+            <div class="bnr_contents">
+                <h4>우리에게 필요한 시간 단 3분</h4>
+                <p class="bnr_txt">잠깐의 기다림도 더 즐거울 수 있도록</p>
+            </div>
         </div>
 
         <!-- 오직 오뚜기몰에서만 -->
-        <div class="main_contents only">
+        <div class="main_contents only_wrap">
             <div class="title">
                 <h2>오직 오뚜기몰에서만</h2>
                 <div class="itme_tab">
@@ -338,9 +355,9 @@
                     <a href="#">라면</a>
                 </div>
             </div>
-            <div class="swiper row5">
+            <div class="swiper only">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide only1">
+                    <div class="swiper-slide only_i">
                         <a href="#"><img src="./images/mall_001.jpg" alt="오뚜기 X 상쾌환 선물세트"></a>
                         <div class="item_text">
                             <h3>오뚜기 X 상쾌환 선물세트</h3>
@@ -348,7 +365,7 @@
                             <p class="price">16,900원<del>29,000원</del><span class="sale">42%</span></p>
                         </div>
                     </div>
-                    <div class="swiper-slide only2">
+                    <div class="swiper-slide only_i">
                         <a href="#"><img src="./images/mall_002.jpg" alt="순후추크림 파스타소스 370g"></a>
                         <div class="item_text">
                             <h3>순후추크림 파스타소스 370g</h3>
@@ -356,7 +373,7 @@
                             <p class="price">6,980원</p>
                         </div>
                     </div>
-                    <div class="swiper-slide only1">
+                    <div class="swiper-slide only_i">
                         <a href="#"><img src="./images/mall_003.jpg" alt="컵누들 짬뽕맛 (38.2g X 6)"></a>
                         <div class="item_text">
                             <h3>컵누들 짬뽕맛 (38.2g X 6)</h3>
@@ -364,7 +381,7 @@
                             <p class="price">9,480원</p>
                         </div>
                     </div>
-                    <div class="swiper-slide only1">
+                    <div class="swiper-slide only_i">
                         <a href="#"><img src="./images/mall_004.jpg" alt="오즈키친 울릉도호박죽 420g"></a>
                         <div class="item_text">
                             <h3>오즈키친 울릉도호박죽 420g</h3>
@@ -372,7 +389,7 @@
                             <p class="price">5,980원</p>
                         </div>
                     </div>
-                    <div class="swiper-slide only1">
+                    <div class="swiper-slide only_i">
                         <a href="#"><img src="./images/mall_001.jpg" alt="오뚜기 X 상쾌환 선물세트"></a>
                         <div class="item_text">
                             <h3>오뚜기 X 상쾌환 선물세트</h3>
@@ -382,13 +399,18 @@
                     </div>
                 </div>
             </div>
+            <div class="progress">
+                <div class="swiper-scrollbar"></div>
+            </div>
             <a href="#" class="viewmore">오뚜기몰 더보기</a>
         </div>
 
         <!-- 이벤트 배너3 -->
         <div class="main_contents bnr3">
-            <h4>오뚜기몰이 처음이라면?</h4>
-            <p class="bnr_txt">웰컴쿠폰으로 시작하세요!</p>
+            <div class="bnr_contents">
+                <h4>오뚜기몰이 처음이라면?</h4>
+                <p class="bnr_txt">웰컴쿠폰으로 시작하세요!</p>
+            </div>
         </div>
 
         <!-- 오뚜기 인스타그램 -->
@@ -399,16 +421,17 @@
                         <h2>오뚜기 인스타그램</h2>
                         <p class="ottogi">@ottogi_daily</p>
                     </li>
-                    <li><img src="./images/insta_001.jpg" alt=""></li>
-                    <li><img src="./images/insta_002.jpg" alt=""></li>
-                    <li><img src="./images/insta_003.jpg" alt=""></li>
-                    <li><img src="./images/insta_004.jpg" alt=""></li>
-                    <li><img src="./images/insta_005.jpg" alt=""></li>
-                    <li><img src="./images/insta_006.jpg" alt=""></li>
-                    <li><img src="./images/insta_007.jpg" alt=""></li>
+                    <li><a href="#"><img src="./images/insta_001.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_002.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_003.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_004.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_005.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_006.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_007.jpg" alt=""></a></li>
                 </ul>
             </div>
-        </div>    
+        </div>   
+    
     </main>
 
     <!-- 푸터 -->
