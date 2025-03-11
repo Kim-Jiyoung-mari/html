@@ -45,14 +45,14 @@
         width: calc(100% - 460px);
     }
     #main .swiper-wrapper #redesign .project_img > p > img{
-        width: 500px;
-        left: 35px; top: 200px
+        left: 35px; top: 250px;
+        width: 85%;
     }
 
     /* ===================================== 메인 7행 디자인*/
     #main .swiper-wrapper .design .contents {
-        background-color: yellow;
-        margin: 10px auto;}
+        margin: 10px auto;
+    }
     #main .swiper-wrapper .design .contents .left {
         width: 100%; display: flex;
         margin-bottom: 70px;
@@ -64,7 +64,7 @@
         width: 1070px; height: 500px; 
     }
 }
-@media screen and (max-width:799px){
+@media screen and (max-width:600px){
     .h_bg {padding: 20px 15px;}
     .h_bg header nav > ul li {padding-right: 15px;}
     .h_bg header nav > ul li .nav_active {padding: 5px 13px}
@@ -90,13 +90,20 @@
     #main .swiper-wrapper .profile .right .right_top > p {width: 270px; margin: 0 auto;}
 
     #main .swiper-wrapper #redesign {flex-flow: column;}
-    #main .swiper-wrapper #redesign .project_info .pj_contents {top: 90px;}
+    #main .swiper-wrapper #redesign .project_info .pj_contents {top: 90px; left: 0; padding: 0 15px;}
 
     #main .swiper-wrapper .design .contents .left {
         flex-flow: column wrap
     }
-    #main .swiper-wrapper .design .contents .left .banner {height: 130px;}
+    #main .swiper-wrapper .design .contents .left .banner {height: 130px; margin: 0;}
+    #main .swiper-wrapper .design .contents .left .sns {margin: 25px auto;}
     #main .swiper-wrapper .design .contents .right .detail {
-        width: 430px; height: 300px; 
+        width: 350px; height: 350px; 
+    }
+
+    #main .swiper-wrapper #redesign .project_info .pj_contents .pj_title > .pj_txt {width: 400px;}
+    #main .swiper-wrapper #redesign .project_img  {width: 100%; height: 250px; bottom: -656px;}
+    #main .swiper-wrapper #redesign .project_img > p > img{
+        width: 85%; top: -60px;
     }
 }

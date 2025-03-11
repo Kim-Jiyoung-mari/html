@@ -192,10 +192,10 @@
     width: calc(100% - 775px);
     position: relative;
 }
-#main .swiper-wrapper #redesign .project_img > p {width: 860px; height: 740px;}
+#main .swiper-wrapper #redesign .project_img > p {}
 #main .swiper-wrapper #redesign .project_img > p > img{
-    width: 100%;
-    position: absolute; left: 70px; top: 104px;
+    width: 70%;
+    position: absolute; left: 80px; top: 120px;
 }
 
 /* ===================================== 메인 3행 프로젝트-안다르*/
