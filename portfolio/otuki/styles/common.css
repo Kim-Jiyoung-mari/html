@@ -1,23 +1,85 @@
 /* 헤더 */
 .h_bg {}
 .h_bg header {
-    width: 1500px; margin: 0 auto; padding: 20px 0; 
+    width: 1500px; margin: 0 auto; padding-top: 20px; 
 }
 .h_bg header .h_top {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
     padding-bottom: 20px;
 }
 .h_bg header .h_top h1 {}
 .h_bg header .h_top h1 > a {}
 .h_bg header .h_top h1 > a > img {}
 .h_bg header .h_top .top_right {}
-.h_bg header .h_top .top_right > a {}
+.h_bg header .h_top .top_right > a {
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+    border: 2px solid #ffd400; border-radius: 20px;
+    padding: 10px 15px;
+}
 .h_bg header .h_btm {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 .h_bg header .h_btm nav {}
-.h_bg header .h_btm nav > ul {}
-.h_bg header .h_btm nav > ul > li {float: left; padding-right: 35px;}
+.h_bg header .h_btm nav > ul {} 
+.h_bg header .h_btm nav > ul > li {
+    float: left; padding-right: 35px;}
+.h_bg header .h_btm nav > ul > li:first-child {
+    height: 30px;
+}
+/* 서브메뉴 start */
+.h_bg header .h_btm nav > ul > li .submenu {
+    background-color: #FFF;
+    position: absolute; left: 0; top: 103px; z-index: 10;
+    width: 100%;
+    opacity: 0;
+    height: 0; overflow: hidden;
+    transition: opacity 0.3s;
+}
+.h_bg header .h_btm nav > ul > li:hover .submenu {
+    opacity: 1;
+    height: max-content;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg {
+    width: 1500px; margin: 0 auto; padding: 30px;
+    background: url(../images/sub_bg.jpg) no-repeat right 90%;
+    background-size: 550px 400px;
+}
+/* 서브 - 그룹 */
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top,
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm {
+    display: flex; flex-flow: row nowrap;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg > * dd {
+    display: flex; flex-flow: column;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg > * dt {
+    padding-bottom: 14px;
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg > * a {
+    padding-bottom: 15px;
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+} 
+/* 서브 - 개별 */
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top {
+    padding-bottom: 50px;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl {
+    padding-right: 40px;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dt {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dd {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dd > a {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dd > a > span {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl {
+    padding-right: 30px;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl dt {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl dd {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl dd > a {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl dd > a > span {}
+/* 서브메뉴 end */
 .h_bg header .h_btm nav > ul > li > a {}
 .h_bg header .h_btm nav > ul > li > a > img {}
 .h_bg header .h_btm .btm_right {}
