@@ -44,6 +44,10 @@ main .main_contents .viewmore {
     padding: 15px 20px;
     font-size: 0.88rem; letter-spacing: -0.02rem;
     position: relative; top: 55px; left: 45%;
+    transition: background-color 0.3s;
+}
+main .main_contents .viewmore:hover{
+    background-color: #FFD400; font-weight: 600;
 }
 
 /* 신상 업데이트 개별 */
@@ -219,6 +223,7 @@ main .bnr3 {
 main .bnr1 {
     background-image: url(../images/bnr_001.jpg);
     margin-bottom: 150px;
+    color: #FFF;
 }
 main .bnr1 > h4 {}
 main .bnr1 > .bnr_txt {}

@@ -94,7 +94,15 @@ main .main_bnr .swiper-wrapper {}
 main .main_bnr .swiper-wrapper .swiper-slide {}
 main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents {
     position: absolute; left: 210px; top: 315px;
+    animation: transform 1s linear 1 both;
+    
 }
+
+@keyframes transform {
+    0% {transform:translateX(-40px); opacity: 0;}
+    100% {transform:translateX(-0px); opacity: 1;}
+}
+
 main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > h1 {
     font-size: 2.19rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02rem;
 }
@@ -129,7 +137,7 @@ main .main_bnr .swiper-wrapper .slide1 .bnr_contents > p {}
 main .main_bnr .swiper-wrapper .slide1 .bnr_contents > .link {}
 /* 배너 2 */
 main .main_bnr .swiper-wrapper .slide2 {
-    background-image: url(../images/main_bnr.jpg);
+    background-image: url(../images/main_bnr002.jpg);
 }
 main .main_bnr .swiper-wrapper .slide2 .bnr_contents {}
 main .main_bnr .swiper-wrapper .slide2 .bnr_contents > h1 {}
