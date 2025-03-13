@@ -95,17 +95,18 @@ main .main_bnr {
 }
 main .main_bnr .swiper-wrapper {}
 main .main_bnr .swiper-wrapper .swiper-slide {}
-main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents {
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt {
     position: absolute; left: 210px; top: 315px;
 }
 /* 
-애니메이션 적용 될 때 애드클래스 전용 대상을 생성 = 변수
+애니메이션 적용 될 때 애드클래스 전용 대상을 생성 => 변수?
 애니메이션 속성도 JS 클래스 적용되게 따로 js 전용 클래스명 만들기
 슬라이드 체인지 = 애니메이션이 끝나면 함수 안에 
 클래스 리스트 = classList.add
 */
+
 main .main_bnr .swiper-wrapper .swiper-slide .js_bnr {
-    animation: transform 1s linear 1 both;
+    animation: transform 1s linear both;
 }
 
 @keyframes transform {
@@ -113,24 +114,24 @@ main .main_bnr .swiper-wrapper .swiper-slide .js_bnr {
     100% {transform:translateX(0px); opacity: 1;}
 }
 
-main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > h1 {
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > h1 {
     font-size: 2.19rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02rem;
 }
-main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > h1 em {
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > h1 em {
     color: #D3233A;
     font-size: 2.19rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02rem;
 }
-main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > p {
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > p {
     font-size: 1.25rem; line-height: 1.5; letter-spacing: -0.02rem;
     margin: 20px 0 ;
 }
-main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > .link {
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > .link {
     font-size: 0.94rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.02rem;
     border: 1px solid #D3233A; padding: 15px;
     border-radius: 10px;
     transition: all 1s;
 }
-main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > .link:hover{
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > .link:hover{
     background-color: #D3233A; color: #FFF;
 }
 main .main_bnr .progress {}
@@ -140,20 +141,20 @@ main .main_bnr .progress .swiper-scrollbar {bottom: 10px;}
 main .main_bnr .swiper-wrapper .slide1 {
     background-image: url(../images/main_bnr.jpg);
 }
-main .main_bnr .swiper-wrapper .slide1 .bnr_contents {}
-main .main_bnr .swiper-wrapper .slide1 .bnr_contents > h1 {}
-main .main_bnr .swiper-wrapper .slide1 .bnr_contents > h1 em {}
-main .main_bnr .swiper-wrapper .slide1 .bnr_contents > p {}
-main .main_bnr .swiper-wrapper .slide1 .bnr_contents > .link {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt > h1 {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt > h1 em {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt > p {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt > .link {}
 /* 배너 2 */
 main .main_bnr .swiper-wrapper .slide2 {
     background-image: url(../images/main_bnr002.jpg);
 }
-main .main_bnr .swiper-wrapper .slide2 .bnr_contents {}
-main .main_bnr .swiper-wrapper .slide2 .bnr_contents > h1 {}
-main .main_bnr .swiper-wrapper .slide2 .bnr_contents > h1 em {}
-main .main_bnr .swiper-wrapper .slide2 .bnr_contents > p {}
-main .main_bnr .swiper-wrapper .slide2 .bnr_contents > .link {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt > h1 {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt > h1 em {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt > p {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt > .link {}
 
 /* 푸터 */
 footer {background-color: #F5F5F5;}

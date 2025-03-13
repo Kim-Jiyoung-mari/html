@@ -1,5 +1,5 @@
 //메인배너
-const ani = document.querySelector('.js_bnr');
+const ani = document.querySelectorAll('.bnr_txt');
 console.log(ani);
 
 const mainBnr = new Swiper('.main_bnr',{
@@ -8,9 +8,12 @@ const mainBnr = new Swiper('.main_bnr',{
     },
     loop:true,
     on: {
-        slideChangeTransitionEnd: function (){
-            for(let i of ani) i.classList.remove('js_bnr') 
+        slideChange: function () {
+            for(let i of ani) i.classList.remove('js_bnr')
             ani[this.activeIndex].classList.add('js_bnr')
+            // setTimeout(() => {
+            //     ScrollTrigger.refresh(); // ★ Swiper 로드 후 강제 새로고침 ★
+            // }, 0);
         }
     },
     scrollbar: {

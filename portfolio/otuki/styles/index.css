@@ -40,7 +40,7 @@ main .main_contents .progress .swiper-scrollbar {
 }
 /* 더보기 버튼 */
 main .main_contents .viewmore {
-    border: 1px solid #E4E4E4; border-radius: 20px;
+    border: 1px solid #999; border-radius: 20px;
     padding: 15px 20px;
     font-size: 0.88rem; letter-spacing: -0.02rem;
     position: relative; top: 55px; left: 45%;
@@ -90,7 +90,7 @@ main .best_wrap .best .swiper-wrapper .new_i > .item_text .price {}
 main .review_wrap {margin-bottom: 150px;}
 main .review_wrap .title {}
 main .review_wrap .title > h2 {}
-main .review_wrap .title > p {}
+main .review_wrap .title > p {color: #AAAAAA; padding-top: 10px;}
 main .review_wrap .review {}
 main .review_wrap .review .swiper-wrapper {}
 main .review_wrap .review .swiper-wrapper .review_i {}

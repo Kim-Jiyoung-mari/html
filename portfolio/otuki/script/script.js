@@ -9,10 +9,8 @@ const tabC = document.querySelectorAll('.login_container > div');
 const tabT = document.querySelectorAll('.login_title a');
 console.log(tabC,tabT)
 
-for(let i of tabC){
-    function tabHide(){
-        for(let i of tabC)i.style.display = 'none';
-    }
+function tabHide(){
+    for(let i of tabC)i.style.display = 'none';
 }
 
 function tabReset(){
