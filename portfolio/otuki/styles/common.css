@@ -40,9 +40,9 @@
     height: max-content;
 }
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg {
-    width: 1500px; margin: 0 auto; padding: 30px;
-    background: url(../images/sub_bg.jpg) no-repeat right 90%;
-    background-size: 550px 400px;
+    width: 1500px; margin: 0 auto; padding: 10px;
+    /* background: url(../images/sub_bg.jpg) no-repeat right top;
+    background-size: 550px 400px; */
 }
 /* 서브 - 그룹 */
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top,
@@ -62,7 +62,8 @@
 } 
 /* 서브 - 개별 */
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top {
-    padding-bottom: 50px;
+    padding: 20px 0;
+    border-bottom: 1px solid #AAA;
 }
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl {
     padding-right: 40px;
@@ -71,7 +72,9 @@
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dd {}
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dd > a {}
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dd > a > span {}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm {
+    padding: 20px 0;
+}
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl {
     padding-right: 30px;
 }
@@ -94,13 +97,20 @@ main .main_bnr .swiper-wrapper {}
 main .main_bnr .swiper-wrapper .swiper-slide {}
 main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents {
     position: absolute; left: 210px; top: 315px;
+}
+/* 
+애니메이션 적용 될 때 애드클래스 전용 대상을 생성 = 변수
+애니메이션 속성도 JS 클래스 적용되게 따로 js 전용 클래스명 만들기
+슬라이드 체인지 = 애니메이션이 끝나면 함수 안에 
+클래스 리스트 = classList.add
+*/
+main .main_bnr .swiper-wrapper .swiper-slide .js_bnr {
     animation: transform 1s linear 1 both;
-    
 }
 
 @keyframes transform {
     0% {transform:translateX(-40px); opacity: 0;}
-    100% {transform:translateX(-0px); opacity: 1;}
+    100% {transform:translateX(0px); opacity: 1;}
 }
 
 main .main_bnr .swiper-wrapper .swiper-slide .bnr_contents > h1 {

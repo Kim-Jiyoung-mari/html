@@ -20,7 +20,7 @@ main .main_contents .swiper .swiper-wrapper .swiper-slide > .item_text h3 {
     font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
 }
 main .main_contents .swiper .swiper-wrapper .swiper-slide > .item_text .i_txt {
-    margin: 10px 0;
+    margin: 10px 0; height: 14px;
     font-size: 0.88rem; letter-spacing: -0.02rem;
 }
 main .main_contents .swiper .swiper-wrapper .swiper-slide > .item_text .price {
@@ -67,9 +67,15 @@ main .new_wrap .new .swiper-wrapper .new_i > .item_text .price {}
 main .best_wrap {margin-bottom: 150px;}
 main .best_wrap .title {}
 main .best_wrap .title > h2 {}
-main .best_wrap .title .item_tab {}
-main .best_wrap .title .item_tab > a {}
-main .best_wrap .title .item_tab > .active {}
+main .best_wrap .title .item_tab {padding-top: 30px;}
+main .best_wrap .title .item_tab > a {
+    border: 1px solid #999; border-radius: 20px;
+    padding: 10px 20px; color: #999;
+    margin-right: 7px;
+}
+main .best_wrap .title .item_tab > .active {
+    background-color: #FFD400; color: #222;
+}
 main .best_wrap .best {}
 main .best_wrap .best .swiper-wrapper {}
 main .best_wrap .best .swiper-wrapper .new_i {}
@@ -166,9 +172,15 @@ main .youtude > ul > li .video_title {
 main .only_wrap {margin-bottom: 150px;}
 main .only_wrap .title {}
 main .only_wrap .title > h2 {}
-main .only_wrap .title .item_tab {}
-main .only_wrap .title .item_tab > a {}
-main .only_wrap .title .item_tab > .active {}
+main .only_wrap .title .item_tab {padding-top: 30px;}
+main .only_wrap .title .item_tab > a {
+    border: 1px solid #999; border-radius: 20px;
+    padding: 10px 20px; color: #999;
+    margin-right: 7px;
+}
+main .only_wrap .title .item_tab > .active {
+    background-color: #FFD400; color: #222;
+}
 main .only_wrap .only {}
 main .only_wrap .only .swiper-wrapper {}
 main .only_wrap .only .swiper-wrapper .only_i {}
