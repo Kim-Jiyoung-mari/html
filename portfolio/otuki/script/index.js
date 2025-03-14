@@ -10,10 +10,7 @@ const mainBnr = new Swiper('.main_bnr',{
     on: {
         slideChange: function () {
             for(let i of ani) i.classList.remove('js_bnr')
-            ani[this.activeIndex].classList.add('js_bnr')
-            // setTimeout(() => {
-            //     ScrollTrigger.refresh(); // ★ Swiper 로드 후 강제 새로고침 ★
-            // }, 0);
+            ani[this.realIndex].classList.add('js_bnr')
         }
     },
     scrollbar: {
