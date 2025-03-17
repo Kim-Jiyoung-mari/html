@@ -49,7 +49,7 @@
 /* ----------------------------------------------------------푸터 */
 footer {background-color: #F5F5F5;}
 footer .ft_btm_bg {
-    width: 1760px; margin: 0 auto; padding: 80px 0;}
+    width: 1760px; margin: 0 auto; padding: 20px 0;}
 footer .ft_btm_bg h4 {width: 200px;}
 footer .ft_btm_bg h4 > a {}
 footer .ft_btm_bg h4 > a img {}
@@ -59,7 +59,9 @@ footer .ft_btm_bg .btm_info > ul  {
 }
 footer .ft_btm_bg .btm_info > ul li {
     font-size: 0.69rem; font-weight: 500; line-height: 1.6; letter-spacing: -0.02rem;
+    color: #222;
 }
 footer .ft_btm_bg .btm_info > p  {
     font-size: 0.69rem; font-weight: 500; line-height: 1.6; letter-spacing: -0.02rem;
+    color: #222;
 }
