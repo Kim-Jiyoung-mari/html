@@ -6,7 +6,7 @@ console.log(pageAll,pageCurrent,pageSlide)
 
 pageAll.textContent = pageSlide.length;
 const mainBnr = new Swiper('.swiper-horizontal',{
-    autoplay:{delay:6000,},
+    autoplay:{delay:3000,},
     loop:true,
     on:{
         slideChange:function(){
