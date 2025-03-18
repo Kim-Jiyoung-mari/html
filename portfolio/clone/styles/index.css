@@ -268,7 +268,7 @@
     background-color: transparent;
     border-top-left-radius: 12px;
     flex: 1 1; overflow: hidden; position: relative;
-    cursor: pointer; background-color: transparent;
+    cursor: pointer;
 }
 .main_wrap .btn_bg .main_btn > a::before{
     border-top-left-radius: 12px;
