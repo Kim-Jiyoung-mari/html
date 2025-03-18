@@ -14,3 +14,9 @@ const mainBnr = new Swiper('.swiper-horizontal',{
         }
     },
 })
+
+// 첫구매 혜택 슬라이드
+const beneFit = new Swiper('.benefit_horizontal',{
+    slidesPerView:3,
+    spaceBetween:3,
+})
