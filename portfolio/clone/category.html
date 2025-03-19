@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 파비콘 & 글꼴 -->
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="iamge/x-icon">
+    <link rel="icon" href="./images/favicon.jpg" type="image/x-icon">
+    <href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 디자인파일 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/category.css">
+
+    <!-- 스크립트 -->
+    <script src="./script/index.js" defer></script>
+    <title>지그재그 스토어</title>
+</head>
+<body>
+    <div class="main_wrap"><!-- 메인 배경 -->
+        <!-- 메인 여백잡기 -->
+        <main>
+            <div class="top_barbg">
+                <div class="top_bar">
+                    <nav class="top">
+                        <div class="left_logo">
+                            <h1><a href="./index.html"><img src="./images/icon/logo.png" alt="지그재그 홈"></a></h1>
+                        </div>
+                        <div class="right_nav">
+                            <a href="#"><img src="./images/icon/search.png" alt="검색"></a>
+                            <a href="#"><img src="./images/icon/cart.png" alt="장바구니"></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- 카테고리 -->
+            <section class="category-tab-wrap">
+                <section class="left-category">
+                    <ul>
+                        <div class="css-absole absole_box"></div>
+                        <li class="category-list">
+                            <a class="list-btn">
+                                <span class="body-semibold">의류</span>
+                            </a>
+                        </li>
+                        <li class="category-list">
+                            <a class="list-btn">
+                                <span class="body-semibold">가방</span>
+                            </a>
+                        </li>
+                        <li class="category-list">
+                            <a class="list-btn">
+                                <span class="body-semibold">슈즈</span>
+                            </a>
+                        </li>
+                        <li class="category-list">
+                            <a class="list-btn">
+                                <span class="body-semibold">패션잡화</span>
+                            </a>
+                        </li>
+                        <li class="category-list">
+                            <a class="list-btn">
+                                <span class="body-semibold">주얼리</span>
+                            </a>
+                        </li>
+                        <li class="category-list">
+                            <a class="list-btn">
+                                <span class="body-semibold">푸드</span>
+                            </a>
+                        </li>
+                        <li class="category-list">
+                            <a class="list-btn">
+                                <span class="body-semibold">라이프</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="right-menu">
+                    <ul>
+                        <li class="menu-list">
+                            <a href="#" class="menu-title">
+                                <span class="menu-bold">의류</span>
+                                <img src="./images/icon/menutitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">신상품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">상의</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">아우터</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">팬츠</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">원피스</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">니트/카디건</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">스커트</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">트레이닝</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">투피스/세트</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">비치웨어</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">임부복</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-title">
+                                <span class="menu-bold">가방</span>
+                                <img src="./images/icon/menutitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">신상품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">크로스백</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">숄더백</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">토트백</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">미니백</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">백팩</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">에코/캔버스백</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">지갑</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">클러치</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">파우치</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">캐리어</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">가방 액세서리</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-title">
+                                <span class="menu-bold">슈즈</span>
+                                <img src="./images/icon/menutitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">신상품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">힐</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">플랫/로퍼</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">부츠/워커</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">스니커즈</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">샌들</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">슬리퍼/쪼리</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-title">
+                                <span class="menu-bold">패션잡화</span>
+                                <img src="./images/icon/menutitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">신상품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">핸드폰</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">양말</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">모자</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">타이즈/스타킹</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">스카프/머플러</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">네일 스티커</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">시계</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">벨트</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">아이웨어</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">장갑</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">헤어 액세서리</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">커플 액세서리</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-title">
+                                <span class="menu-bold">주얼리</span>
+                                <img src="./images/icon/menutitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">신상품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">귀걸이</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">목걸이</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">반지</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">팔찌</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">발찌</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">브로치</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-title">
+                                <span class="menu-bold">뷰티</span>
+                                <img src="./images/icon/menutitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">신상품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">스킨케어</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">선케어</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">베이스메이크업</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">아이메이크업</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">립메이크업</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">클렌징</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">마스크/팩</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">바디</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">네일</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">헤어</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">향수</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">여성 용품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">뷰티 디바이스</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">식단관리</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">이너뷰티</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">뷰티 소품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">기타</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-title">
+                                <span class="menu-bold">푸드</span>
+                                <img src="./images/icon/menutitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">디저트/간식</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">간편식</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">식단관리</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">생수/음료/커피</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">이너뷰티</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-title">
+                                <span class="menu-bold">라이프</span>
+                                <img src="./images/icon/menutitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">신상품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">디지털/가전</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">폰꾸미기</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">패브릭</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">키친</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">홈데코/조명</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">여행용품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">문구/취미</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">가구</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">수납/정리</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">욕실</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">생활용품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">캠핑/피크닉</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">반려동물</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">운동용품</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                            <a href="#" class="sub-title">
+                                <span class="menu-semibold">푸드</span>
+                                <img src="./images/icon/subtitle.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+        <!-- 메인 하단 버튼 -->
+        <div class="btn_bg">
+            <div class="main_btn">
+                <a href="./index.html" class="home">
+                    <div class="icon_wrap">
+                        <img src="./images/icon/home.png" alt="">
+                        <span>홈</span>
+                    </div>
+                </a>
+                <a href="#" class="home">
+                    <div class="icon_wrap">
+                        <img src="./images/icon/menu.png" alt="">
+                        <span>카테고리</span>
+                    </div>
+                </a>
+                <a href="#" class="home">
+                    <div class="icon_wrap">
+                        <img src="./images/icon/favorite.png" alt="">
+                        <span>찜</span>
+                    </div>
+                </a>
+                <a href="#" class="home">
+                    <div class="icon_wrap">
+                        <img src="./images/icon/my.png" alt="">
+                        <span>마이페이지</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

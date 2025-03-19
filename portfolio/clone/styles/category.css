@@ -1,0 +1,60 @@
+.main_wrap main .category-tab-wrap {
+    position: relative; display: -webkit-box; display: -webkit-flex;
+    display: flex; -webkit-box-pack: start; justify-content: flex-start; align-items: flex-start;
+    padding-bottom: 48px; width: 100%;
+}
+/* (좌) 카테고리 */
+.main_wrap main .category-tab-wrap .left-category {
+    position: sticky; top: 44px; height: calc(100vh - 44px);
+    background-color: #F5F6F8;
+}
+.main_wrap main .category-tab-wrap .left-category > ul {}
+.main_wrap main .category-tab-wrap .left-category > ul .css-absole {
+    width: 114px; height: 56px;
+    position: absolute; background-color: #fff; color: #292b2b;
+
+}
+.main_wrap main .category-tab-wrap .left-category > ul .category-list {
+    width: 114px; height: 56px; position: relative;
+}
+.main_wrap main .category-tab-wrap .left-category > ul .category-list .list-btn {
+    padding: 20px; 
+    font-size: 14px; text-decoration: none; display: block;
+    color: #292b2b; cursor: pointer;
+}
+.main_wrap main .category-tab-wrap .left-category > ul .category-list .list-btn .body-semibold {
+    font-weight: 600; font-size: 15px; line-height: 18px;
+}
+
+/* (우) 메뉴 리스트 */
+.main_wrap main .category-tab-wrap .right-menu {
+    position: sticky; top: 44px; width: 100%; height: 100%;
+    overflow: scroll;
+}
+.main_wrap main .category-tab-wrap .right-menu > ul {}
+.main_wrap main .category-tab-wrap .right-menu > ul .menu-list {
+    display: flex; -webkit-box-pack: start; justify-content: flex-start;
+    flex-wrap: wrap; padding-bottom: 24px; width: 100%; 
+}
+.main_wrap main .category-tab-wrap .right-menu > ul .menu-list .menu-title {
+    display: flex; -webkit-box-pack: justify; justify-content: space-between; -webkit-box-align: center;
+    align-items: center;
+    width: 100%; height: 48px;
+    padding: 0px 12px 0px 20px; color: rgb(41, 32, 110); cursor: pointer;
+}
+.main_wrap main .category-tab-wrap .right-menu > ul .menu-list .menu-title {}
+.main_wrap main .category-tab-wrap .right-menu > ul .menu-list .menu-title .menu-bold {
+    font-weight: 700; font-size: 18px; line-height: 22px;
+}
+.main_wrap main .category-tab-wrap .right-menu > ul .menu-list .menu-title > img {width: 24px;}
+
+.main_wrap main .category-tab-wrap .right-menu > ul .menu-list .sub-title {
+    width: 50%; height: 48px; padding: 0 12px 0 20px;
+    display: flex; -webkit-box-pack: justify; justify-content: space-between;
+    -webkit-box-align: center; align-items: center;
+    color: #292b2b; cursor: pointer;
+}
+.main_wrap main .category-tab-wrap .right-menu > ul .menu-list .sub-title .menu-semibold {
+    font-weight: 600; font-size: 15px; line-height: 18px;
+}
+.main_wrap main .category-tab-wrap .right-menu > ul .menu-list .sub-title > img {width: 24px;}
