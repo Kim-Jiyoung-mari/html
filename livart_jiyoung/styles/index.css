@@ -1,3 +1,59 @@
+/* --------------------------헤더구역--------------------------------- */
+.h_bg {
+    background-color: #FFF;
+}
+.h_bg header {
+    width: 1400px; margin: 0 auto;
+    display: flex; flex: row nowrap; justify-content: space-between;
+    padding: 20px 0;
+}
+.h_bg header h1 {}
+.h_bg header h1 > a {}
+.h_bg header h1 > a img {}
+.h_bg header .h_right {
+    width: calc(100% - 160px); padding: 0 20px 0 30px;
+}
+.h_bg header .h_right .top_layer {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding-bottom: 10px;
+}
+.h_bg header .h_right .top_layer .left_top {}
+.h_bg header .h_right .top_layer .left_top > a {
+    padding-right: 20px;
+    line-height: 1.5; letter-spacing: -0.02rem;
+}
+.h_bg header .h_right .top_layer .right_top {
+}
+.h_bg header .h_right .top_layer .right_top > a {padding-left: 20px;}
+.h_bg header .h_right .bottom_layer {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header .h_right .bottom_layer nav {}
+.h_bg header .h_right .bottom_layer nav ul {
+    display: flex; flex-flow: row nowrap;
+}
+.h_bg header .h_right .bottom_layer nav ul li {padding: 0;}
+.h_bg header .h_right .bottom_layer nav ul li > a {
+    font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02rem;
+    padding-right: 30px;
+    position: relative; top: 6px
+}
+.h_bg header .h_right .bottom_layer .right_search {
+    background-color: #F2F2F2; width: 322px;
+    border-radius: 20px; padding: 5px 10px;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm #user_search {
+    background: none;
+    line-height: 1.5; letter-spacing: -0.02rem; color: #000;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm #user_search::placeholder {
+    line-height: 1.5; letter-spacing: -0.02rem; color: #000;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm .search_btn {}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm .search_btn > img {}
 /* --------------------------메인구역--------------------------------- */
 /* --------------------------1행 배너라인--------------------------------- */
 main .bnr_wrap {
@@ -126,7 +182,9 @@ main .row4 {
     position: relative;
 }
 main .row4 .row_title {}
-main .row4 .row4_contents {}
+main .row4 .row4_contents {
+    background-color: yellow;
+}
 main .wrap .row4_contents .row4_slides {
     width: 100%; margin: 60px 0 0;
     display: flex; flex-flow: row nowrap; justify-content: space-around;
@@ -193,3 +251,55 @@ main .wrap .row5_contents ul li a img {}
 main .wrap .row5_contents ul li .txt {}
 main .wrap .row5_contents ul li .txt h3 {}
 main .wrap .row5_contents ul li .txt p {}
+/* --------------------------푸터구역--------------------------------- */
+footer {
+    background-color: #0A5E81; color: #FFF;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding: 40px 80px;
+}
+footer .ft_left {}
+footer .ft_left .top {
+    border-bottom: 1px solid #BBBBBB;
+    padding-bottom: 30px;
+}
+footer .ft_left .top a {
+    color: #FFF; padding-right: 20px;
+}
+footer .ft_left .top a:last-child {padding: 0;}
+footer .ft_left .bottom {
+    margin-top: 50px; 
+
+}
+footer .ft_left .bottom ul {
+    display: flex; flex-flow: row nowrap;
+}
+footer .ft_left .bottom ul:nth-child(2) {padding: 10px 0;}
+footer .ft_left .bottom ul li {
+    font-size: 0.88rem; line-height: 1.5; letter-spacing: -0.02rem;
+}
+footer .ft_left .bottom ul li::after {
+    content: ''; display: inline-block;
+    width: 1px; height: 13px;
+    background-color: #BBB; margin: 0 6px; position: relative; top: 2px;
+}
+footer .ft_left .bottom > p {}
+footer .ft_right {}
+footer .ft_right .r_top {padding-bottom: 30px;}
+footer .ft_right .r_top > * {padding-bottom: 10px;}
+footer .ft_right .r_top h3 {font-size: 1.44rem; letter-spacing:-0.02rem;}
+footer .ft_right .r_top .num {
+    font-size: 1.25rem; font-weight:500; letter-spacing:-0.02rem;
+}
+footer .ft_right .r_top p {line-height:1.5; letter-spacing:-0.02rem;}
+footer .ft_right .r_btm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+footer .ft_right .r_btm > * h4 {
+    padding-bottom: 10px;
+    font-size: 1.25rem; font-weight: 700;
+}
+footer .ft_right .r_btm > * p {line-height:1.5; letter-spacing:-0.02rem;}
+footer .ft_right .r_btm .btm_cs {
+    padding-right: 20px;
+}
+footer .ft_right .r_btm .btm_mail {}

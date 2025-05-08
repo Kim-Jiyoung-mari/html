@@ -1,0 +1,161 @@
+main {}
+main h1 {
+    margin: 21px 0 25px  88px;
+}
+main h1 a {}
+main h1 a img {}
+/* ============================================회원가입 */
+main #wrap {
+    width:360px; margin: 0 auto;
+}
+main #wrap .sns {}
+main #wrap .sns h2 {
+    font-weight: 600; font-size: 1.25rem; letter-spacing: -0.02;
+}
+main #wrap .sns p {
+    text-align: center;
+    color:#777; font-size: 0.88rem; letter-spacing: -0.02;
+    padding: 14px 0 14px 0; 
+}
+main #wrap .sns .social {
+    text-align: center;
+    padding-bottom: 49px;
+}
+main #wrap .sns .social a {}
+main #wrap .sns .social a img {}
+main #wrap #joinFrm {}
+main #wrap #joinFrm fieldset {}
+/* ============================================폼 공통 선택자 */
+main #wrap #joinFrm fieldset dl {}
+main #wrap #joinFrm fieldset dl dt {
+    font-weight: 500; font-size: 1.06rem; letter-spacing: -0.02;
+    padding-bottom: 10px;
+} 
+main #wrap #joinFrm fieldset dl dd,
+main #wrap #joinFrm fieldset dl dd p {
+    padding-bottom: 10px;
+    color: #777; font-size: 0.88rem; letter-spacing: -0.02; 
+}
+main #wrap #joinFrm fieldset dl dd select,
+main #wrap #joinFrm fieldset dl dd .authen_btn,
+main #wrap #joinFrm fieldset dl dd input,
+main #wrap #joinFrm fieldset .agree_checkbox {
+    background-color: #FFF;
+    border: 1px solid #DDD; border-radius: 3px;
+    padding: 10px; letter-spacing: -0.02;
+}
+main #wrap #joinFrm fieldset dl dd input::placeholder {color: #BBB; letter-spacing: -0.02;}
+/* ============================================ 이메일 폼 디자인 선택자 */
+
+main #wrap #joinFrm fieldset dl dd select,
+main #wrap #joinFrm fieldset dl dd .authen_btn,
+main #wrap #joinFrm fieldset dl dd input[name$=email] {
+    background-color: #FFF;
+    width:170px;
+}
+main #wrap #joinFrm fieldset dl dd {}
+main #wrap #joinFrm fieldset dl dd span {
+    padding: 0 2px;
+}
+main #wrap #joinFrm fieldset dl dd select {
+    background: #FFF url(../images/arrow_drop_down.png) no-repeat right center;
+    width:164px; padding: 10px; 
+
+}
+main #wrap #joinFrm fieldset dl dd select option {}
+main #wrap #joinFrm fieldset dl dd .authen_btn {
+    background-color: #F5F5F5;
+    width: 360px;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+/* ============================================ 비밀번호, 닉네임 공통 선택자 */
+main #wrap #joinFrm fieldset dl dd input[name*=pw],
+main #wrap #joinFrm fieldset dl dd input[name*=name] {width: 100%}
+/* ======================================================================체크박스 */
+main #wrap #joinFrm fieldset h3 {
+    font-weight: 500; font-size: 1.06rem; letter-spacing: -0.02rem;
+    padding-bottom: 10px;
+}
+
+main #wrap #joinFrm fieldset .agree_checkbox .total_agree {
+    width:340px; padding-bottom: 5px;
+    border-bottom: 1px solid #EEE;
+    margin: 10px;
+}
+main #wrap #joinFrm fieldset .agree_checkbox .total_agree label{
+    font-weight: 600; letter-spacing: -0.02rem;
+}
+main #wrap #joinFrm fieldset .agree_checkbox .total_agree span {
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+    color: #777; 
+}
+main #wrap #joinFrm fieldset .agree_checkbox .age_checkbox {
+    padding: 10px 0;
+}
+main #wrap #joinFrm fieldset .agree_checkbox .age_checkbox,
+main #wrap #joinFrm fieldset .agree_checkbox .use_checkbox,
+main #wrap #joinFrm fieldset .agree_checkbox .individual_checkbox,
+main #wrap #joinFrm fieldset .agree_checkbox .marketing_checkbox,
+main #wrap #joinFrm fieldset .agree_checkbox .event_checkbox{
+    padding: 10px;
+    font-size: 0.81rem; letter-spacing: -0.02rem;
+}
+main #wrap #joinFrm fieldset .agree_checkbox .age_checkbox label,
+main #wrap #joinFrm fieldset .agree_checkbox .use_checkbox label,
+main #wrap #joinFrm fieldset .agree_checkbox .individual_checkbox label, 
+main #wrap #joinFrm fieldset .agree_checkbox .marketing_checkbox label, 
+main #wrap #joinFrm fieldset .agree_checkbox .event_checkbox label{
+    font-size: 0.81rem; letter-spacing: -0.02rem;}
+
+main #wrap #joinFrm fieldset .agree_checkbox .age_checkbox span, 
+main #wrap #joinFrm fieldset .agree_checkbox .use_checkbox span,
+main #wrap #joinFrm fieldset .agree_checkbox .individual_checkbox span{
+    font-size: 0.81rem; letter-spacing: -0.02rem;
+    color: #3292FF;
+}
+
+main #wrap #joinFrm fieldset .agree_checkbox .marketing_checkbox span, 
+main #wrap #joinFrm fieldset .agree_checkbox .event_checkbox span {
+    font-size: 0.75rem; letter-spacing: -0.02rem;
+    color: #777;
+}
+main #wrap #joinFrm fieldset .agree_checkbox .use_checkbox a img, 
+main #wrap #joinFrm fieldset .agree_checkbox .individual_checkbox a img, 
+main #wrap #joinFrm fieldset .agree_checkbox .marketing_checkbox a img{
+    float: right;
+}
+
+main #wrap #joinFrm fieldset .agree_checkbox * input {} 
+main #wrap #joinFrm fieldset .agree_checkbox * input:checked+label {
+    background-image: url(../images/check_box_y.png);
+}
+main #wrap #joinFrm fieldset .agree_checkbox * label {
+    background-image: url(../images/check_box_n.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 34px;
+}
+/* 가입버튼 */
+main #wrap #joinFrm fieldset .btn {
+
+    text-align: center;
+    margin: 22px 0;
+}
+main #wrap #joinFrm fieldset .btn .about_btn {
+    background-color: #3292FF; color: #FFF; 
+    width: 100%;
+    padding: 10px 15px; border-radius: 3px;
+    letter-spacing: -0.02rem;
+}
+
+
+main #wrap #joinFrm fieldset .login {
+    padding-bottom: 70px; text-align: center;
+}
+main #wrap #joinFrm fieldset .login span {font-size: 0.88rem; letter-spacing: -0.02rem;}
+main #wrap #joinFrm fieldset .login > a {
+    font-size: 0.88rem; font-weight: 600;
+    border-bottom: 1px solid #000;
+    letter-spacing: -0.02rem;
+}

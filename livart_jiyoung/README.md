@@ -3,7 +3,6 @@
 `href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">`
 ## 글꼴가이드
 * 메인 대대제목(70) | font-size: 4.38rem; font-weight:700; letter-spacing:-0.02rem;
-* 메인 대제목(50) | font-size: 3.13rem; font-weight: 700; letter-spacing:-0.02rem;
 * 메인 대제목(35) | font-size: 2.19rem; font-weight:700; letter-spacing:-0.02rem;
 * 메인 중제목(30) | font-size: 1.88rem; font-weight:700; letter-spacing:-0.02rem;
 * 메인 소제목(23) | font-size: 1.44rem; letter-spacing:-0.02rem;

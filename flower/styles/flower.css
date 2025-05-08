@@ -1,0 +1,41 @@
+main {
+    background-image: url(../images/bg.jpg);
+    width: 440px; height: 965px; margin: 0 auto;
+}
+main .bflower {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 380px; height: 800px; margin: 0 auto;
+    position: relative; top: 78px;
+}
+main .bflower p {
+    padding-top: 84px;
+    font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02rem;
+}
+main .bflower .birth {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding: 80px 5px 50px;
+}
+main .bflower .birth > * input {
+    width: 90px; padding: 7px 10px; text-align: center;
+    border: 1px solid #A9B38E; border-radius: 10px;
+}
+main .bflower .birth > * input::placeholder {
+    text-align: center; color: #CDCDCE; letter-spacing: -0.02rem;
+}
+main .bflower .birth > * span {color: #222; letter-spacing: -0.02rem;}
+main .bflower .birth .byear {}
+main .bflower .birth .byear #year {}
+main .bflower .birth .byear span {}
+main .bflower .birth .bmonth {}
+main .bflower .birth .bmonth #month {}
+main .bflower .birth .bmonth span {}
+main .bflower .birth .bday {}
+main .bflower .birth .bday #day {}
+main .bflower .birth .bday span {}
+main .bflower #btn {
+    background-color: #A9B38E; 
+    width: 375px; padding: 10px; border-radius: 10px;
+    color: #FFF; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02rem;
+}
+main .bflower .bdayResult {}
