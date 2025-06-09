@@ -40,9 +40,8 @@
     height: max-content;
 }
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg {
-    width: 1500px; margin: 0 auto; padding: 10px;
-    /* background: url(../images/sub_bg.jpg) no-repeat right top;
-    background-size: 550px 400px; */
+    width: 1500px; margin: 0 auto; padding: 10px;   
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
 }
 /* 서브 - 그룹 */
 .h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top,
@@ -61,27 +60,31 @@
     font-size: 0.88rem; letter-spacing: -0.02rem;
 } 
 /* 서브 - 개별 */
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top {
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top {
     padding: 20px 0;
-    border-bottom: 1px solid #AAA;
+    border-bottom: 1px solid #d5d5d5;
 }
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl {
-    padding-right: 40px;
-}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dt {}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dd {}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dd > a {}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top dl dd > a > span {}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm {
-    padding: 20px 0;
-}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl {
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl {
     padding-right: 30px;
 }
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl dt {}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl dd {}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl dd > a {}
-.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm dl dd > a > span {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl dt {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl dd {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl dd > a {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl dd > a > span {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm {
+    padding: 20px 0;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl {
+    padding-right: 30px;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl dt {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl dd {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl dd > a {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl dd > a > span {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_bg {} 
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_bg p {} 
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_bg p > img {} 
 /* 서브메뉴 end */
 .h_bg header .h_btm nav > ul > li > a {}
 .h_bg header .h_btm nav > ul > li > a > img {}
