@@ -1,7 +1,7 @@
 /* 헤더 */
 .h_bg {}
 .h_bg header {
-    width: 1500px; margin: 0 auto; padding-top: 20px; 
+    width: 1500px; margin: 0 auto; padding-top: 20px;
 }
 .h_bg header .h_top {
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;

@@ -1,0 +1,108 @@
+main {
+    width: 1500px; margin: 150px auto;
+}
+main .main_contents {
+    background-color: lightgreen;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+
+/* (왼쪽) 상품 썸네일 */
+main .main_contents .left_wrap {
+    background-color: lightpink;
+}
+main .main_contents .left_wrap .left_thum {}
+main .main_contents .left_wrap .left_thum .big_img {
+    width: 690px;
+    display:block; border-radius:30px; overflow:hidden;
+}
+main .main_contents .left_wrap .left_thum .big_img > img {width: 100%;}
+main .main_contents .left_wrap .left_thum .thumnail {
+    width: 110px; padding-top: 50px;
+}
+main .main_contents .left_wrap .left_thum .thumnail > a {
+    display:block; border-radius:15px; overflow:hidden;
+}
+main .main_contents .left_wrap .left_thum .thumnail > a > img {width: 100%;}
+
+/* (오른쪽) 상품 정보 */
+main .main_contents .right_info {
+    background-color: lightblue;
+    width: calc(100% - 820px);
+}
+
+/* 그룹선택자 */
+main .main_contents .right_info .item_info,
+main .main_contents .right_info .notice,
+main .main_contents .right_info .order_price {
+    margin-bottom: 35px;
+}
+
+/* 상품정보 - 상품 타이틀/가격/후기 */
+main .main_contents .right_info .item_info {
+    background-color: yellow;
+}
+main .main_contents .right_info .item_info .title {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+main .main_contents .right_info .item_info .title h1 {}
+main .main_contents .right_info .item_info .title > a {}
+main .main_contents .right_info .item_info .title > a > img {}
+
+main .main_contents .right_info .item_info .item_price {
+    padding: 30px 0;
+}
+main .main_contents .right_info .item_info .item_price p {}
+main .main_contents .right_info .item_info .item_price p > span {}
+
+main .main_contents .right_info .item_info .item_review {}
+main .main_contents .right_info .item_info .item_review p {}
+main .main_contents .right_info .item_info .item_review p > img {}
+main .main_contents .right_info .item_info .item_review p em {}
+
+/* 상품정보 - 제품 공지 */
+main .main_contents .right_info .notice {
+    background-color: olivedrab;
+}
+main .main_contents .right_info .notice .origin {}
+main .main_contents .right_info .notice .origin > h2 {}
+main .main_contents .right_info .notice .origin > p {}
+
+main .main_contents .right_info .notice .save {}
+main .main_contents .right_info .notice .save > h2 {}
+main .main_contents .right_info .notice .save > p {}
+
+main .main_contents .right_info .notice .delivary {}
+main .main_contents .right_info .notice .delivary > h2 {}
+main .main_contents .right_info .notice .delivary .deli_txt {}
+main .main_contents .right_info .notice .delivary .deli_txt > p {}
+main .main_contents .right_info .notice .delivary .deli_txt > p > span {}
+main .main_contents .right_info .notice .delivary .deli_txt > p > .deli_info {}
+main .main_contents .right_info .notice .delivary .deli_txt > p > .deli_info > img {}
+
+main .main_contents .right_info .notice .amount {}
+main .main_contents .right_info .notice .amount > h2 {}
+main .main_contents .right_info .notice .amount .num {}
+main .main_contents .right_info .notice .amount .num button {}
+main .main_contents .right_info .notice .amount .num button img {}
+main .main_contents .right_info .notice .amount .num #minus {}
+main .main_contents .right_info .notice .amount .num #plus {}
+main .main_contents .right_info .notice .amount .num input {}
+main .main_contents .right_info .notice .amount .num #amount_num {}
+
+/* 상품정보 - 주문금액 */
+main .main_contents .right_info .order_price {
+    background-color: orange;
+}
+main .main_contents .right_info .order_price > h2 {}
+main .main_contents .right_info .order_price > p {}
+main .main_contents .right_info .order_price > p > .or_price {}
+
+/* 상품정보 - 주문버튼 */
+main .main_contents .right_info .order_btn {
+    background-color: red;
+}
+main .main_contents .right_info .order_btn > button {}
+main .main_contents .right_info .order_btn .like {}
+main .main_contents .right_info .order_btn .present {}
+main .main_contents .right_info .order_btn .cart {}
+main .main_contents .right_info .order_btn .order {}
