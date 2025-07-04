@@ -17,3 +17,4 @@
 * 상세_[B]내용(23) | font-size:  1.44rem; font-weight:700; letter-spacing: -0.02rem;
 * 상세_[M]타이틀(20) | font-size:  1.25rem; font-weight:500; line-height: 1.5; letter-spacing: -0.02rem;
 * 상세_내용(16) | line-height: 1.5; letter-spacing: -0.02rem;
+* 가격(50) | font-size:3.13rem; font-weight: 700; letter-spacing: -0.02rem;

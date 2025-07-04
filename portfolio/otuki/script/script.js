@@ -1,35 +1,62 @@
-//로그인 탭 내용 변경하기
+//썸네일 변경
+const thumnail = document.querySelectorAll('.thumnail a img');
+const bigImg = document.querySelector('.big_img img');
+console.log(thumnail,bigImg);
+console.log(thumnail[0].parentElement);
 
-//초기세팅
-//1. "tabC" 탭내용 모두 숨기기 > 함수생성 "tabHide"
-//2. 탭내용 1번에 보이기
-//3. 탭제목 클래스 초기화 => 함수생성 "tabReset"
-//4. 탭제목 1번에 클래스 적용
-const tabC = document.querySelectorAll('.login_container > div');
-const tabT = document.querySelectorAll('.login_title a');
-console.log(tabC,tabT)
+//두번째 썸네일에 마우스 올렸을 때 큰 이미지 bigthum_002.jpg 변경
+//클래스명 제거
+function thum_remove(){
+    thumnail[0].parentElement.classList.remove('active');
+    thumnail[1].parentElement.classList.remove('active');
+};
 
-function tabHide(){
-    for(let i of tabC)i.style.display = 'none';
+function bigSrc(num){
+    return bigImg.src = `./images/bigthum_${num}.jpg`
 }
 
-function tabReset(){
-    for(let i of tabT) i.classList.remove('active');
-}
+thumnail[0].addEventListener('mouseover',function(){
+    bigSrc(1);
+    thum_remove();
+    thumnail[0].parentElement.classList = 'active';
+});
+thumnail[1].addEventListener('mouseover',function(){
+    bigSrc(2);
+    thum_remove();
+    thumnail[1].parentElement.classList = 'active';
+});
 
-tabHide();
-tabReset();
+//주문수량 + 주문 금액
+// 초기값 | 주문수량 = 1개 , 주문금액 = 3980원
+let price = 3980; //초기 주문 금액
+let number = 1; //초기 주문 수량
+let totalPrice = 3980; //최종 가격을 저장하는 변수
 
-tabC[0].style.display = 'block';
-tabT[0].classList.add('active');
+const item_num = document.querySelector('#amount_num');//수량표시 DOM
+const plus = document.querySelector('#plus'); //수량증가버튼 DOM
+const minus = document.querySelector('#minus'); //수량감소버튼 DOM
+const orderPrice = document.querySelector('.order_price .or_price'); 
 
-tabT.forEach((target,index)=>{
-    target.addEventListener('click',(e)=>{
-        tabReset();
-        target.classList.add('active');
+console.log(price, number, totalPrice, item_num, plus, minus, orderPrice);
 
-        tabHide();
-        tabC[index].style.display = 'block'
-        e.preventDefault();
-    })
+//초기값 설정 : 주문수량 1개 + 주문금액 3980원표시
+item_num.value = number;
+orderPrice.textContent = price*number;
+orderPrice.textContent = Number(price*number).toLocaleString('ko-kr');
+
+//수량 증가버튼 설정
+plus.addEventListener('click',()=>{
+    number++;
+    item_num.value = number;
+    totalPrice = price*number;
+    orderPrice.textContent = totalPrice.toLocaleString('ko-kr');
+})
+
+//수량 감소버튼 설정
+// 1개 이하 '최소구매수량입니다'
+minus.addEventListener('click',()=>{
+    number <= 1 ? alert('최소 구매 수량입니다.') :number--;
+    item_num.value = number;
+    totalPrice = price*number;
+    orderPrice.textContent = totalPrice.toLocaleString('ko-kr');
 })
