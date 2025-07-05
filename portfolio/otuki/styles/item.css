@@ -166,14 +166,9 @@ main .main_contents .right_info .order_btn > button {
     border: 1px solid #d9d9d9; border-radius: 10px;
 }
 /* 주문버튼 - 그룹선택자 */
-main .main_contents .right_info .order_btn .like,
-main .main_contents .right_info .order_btn .present {
-    width: 60px;
-    transition: background-color 0.5s;
-}
 main .main_contents .right_info .order_btn .cart,
 main .main_contents .right_info .order_btn .order {
-    width: 266px;
+    width: 300px;
     transition: background-color 0.5s;
 }
 main .main_contents .right_info .order_btn .cart:hover,
@@ -184,7 +179,138 @@ main .main_contents .right_info .order_btn .present:hover {
 }
 
 /* 주문버튼 - 개별선택자 */
-main .main_contents .right_info .order_btn .like {}
-main .main_contents .right_info .order_btn .present {}
+main .main_contents .right_info .order_btn .like {
+    width: 60px;
+    transition: background-color 0.5s;
+}
 main .main_contents .right_info .order_btn .cart {}
 main .main_contents .right_info .order_btn .order {}
+
+
+/* =====================================배송팝업창 */
+main .main_contents .notice_bg {
+    background-color: rgba(217, 217, 217, 0.5);
+    width: 100%; height: 100vh;
+    position:fixed; left: 0; top: 0;
+}
+main .main_contents .notice_bg .notice_wrap {
+    background-color: #FFF;
+    width: 420px; height: 700px; overflow:auto; overflow-x: hidden;
+    margin: 80px auto;
+    padding: 50px 30px;
+    border: 1px solid #AAA;
+}
+main .main_contents .notice_bg .notice_wrap::-webkit-scrollbar-thumb {
+    margin: 10px 0;
+}
+/* 그룹선택자 */
+main .main_contents .notice_bg .notice_wrap > * {
+    padding-bottom: 50px;
+}
+main .main_contents .notice_bg .notice_wrap > * h3 {
+    padding-bottom: 15px;
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .main_contents .notice_bg .notice_wrap > * p {
+    color: #AAA;
+    font-size: 0.94rem; line-height: 1.5; letter-spacing: -0.02rem;
+}
+/* 개별선택자 */
+main .main_contents .notice_bg .notice_wrap .close_btn {text-align: right;}
+main .main_contents .notice_bg .notice_wrap .close_btn button {}
+main .main_contents .notice_bg .notice_wrap .close_btn #close {}
+main .main_contents .notice_bg .notice_wrap .close_btn #close > img {}
+
+main .main_contents .notice_bg .notice_wrap > h2 {
+    text-align: center;
+}
+main .main_contents .notice_bg .notice_wrap > h2 a {}
+main .main_contents .notice_bg .notice_wrap > h2 a img {}
+
+main .main_contents .notice_bg .notice_wrap .deli_notice {}
+main .main_contents .notice_bg .notice_wrap .deli_notice > h3 {}
+main .main_contents .notice_bg .notice_wrap .deli_notice > .notice_txt {}
+main .main_contents .notice_bg .notice_wrap .deli_notice > .notice_txt > p {}
+
+main .main_contents .notice_bg .notice_wrap .deli_type {}
+main .main_contents .notice_bg .notice_wrap .deli_type > h3 {
+    border-bottom: 2px solid #000;
+}
+main .main_contents .notice_bg .notice_wrap .deli_type dl {
+    display: flex; flex-flow: row wrap;
+}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dt {
+    width: 66px; padding: 15px 0;
+    font-size: 0.94rem; line-height: 1.5; letter-spacing: -0.02rem;
+    color: #222;
+}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dd {
+    width: calc(100% - 66px); padding: 15px 0;
+    font-size: 0.94rem; line-height: 1.5; letter-spacing: -0.02rem;
+    color: #AAA;
+}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dd > span {}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dd:first-of-type > span {color: #FF0000;}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dd:last-of-type > span {color: #0000FF;}
+
+main .main_contents .notice_bg .notice_wrap .deli_add {}
+main .main_contents .notice_bg .notice_wrap .deli_add > h3 {}
+main .main_contents .notice_bg .notice_wrap .deli_add > .notice_txt {}
+main .main_contents .notice_bg .notice_wrap .deli_add > .notice_txt > p {}
+
+main .main_contents .notice_bg .notice_wrap .deli_period {}
+main .main_contents .notice_bg .notice_wrap .deli_period > h3 {}
+main .main_contents .notice_bg .notice_wrap .deli_period > .notice_txt {}
+main .main_contents .notice_bg .notice_wrap .deli_period > .notice_txt > p {}
+
+main .main_contents .notice_bg .notice_wrap .deli_company {padding-bottom: 0;}
+main .main_contents .notice_bg .notice_wrap .deli_company > h3 {}
+main .main_contents .notice_bg .notice_wrap .deli_company > .notice_txt {}
+main .main_contents .notice_bg .notice_wrap .deli_company > .notice_txt > p {}
+main .main_contents .notice_bg .notice_wrap .deli_company > .notice_txt > p > span {}
+
+/* =====================================장바구니 팝업 */
+main .main_contents .cart_bg {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    width: 100%; height: 100vh;
+    position:fixed; left: 0; top: 0;
+}
+main .main_contents .cart_bg .cart_wrap {
+    background-color: #FFF;
+    width: 450px; margin: 300px auto;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+main .main_contents .cart_bg .cart_wrap .title_close {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .main_contents .cart_bg .cart_wrap .title_close > h3 {
+    font-size: 1.56rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .main_contents .cart_bg .cart_wrap .title_close .close_btn {}
+main .main_contents .cart_bg .cart_wrap .title_close .close_btn > button {}
+main .main_contents .cart_bg .cart_wrap .title_close .close_btn #close {}
+main .main_contents .cart_bg .cart_wrap .title_close .close_btn #close > img {}
+
+main .main_contents .cart_bg .cart_wrap .cart_txt {
+    margin: 80px 0; padding: 50px 0 ; 
+    text-align: center; color: #AAA;
+    font-size: 1.06rem; font-weight: 500; letter-spacing: -0.02rem;
+    border: 1px solid #FF0000; border-radius: 20px;
+}
+
+main .main_contents .cart_bg .cart_wrap .cart_btn {}
+main .main_contents .cart_bg .cart_wrap .cart_btn > a {
+    display: inline-block; width: 173px;
+    text-align: center; padding: 23px 0;
+    border: 1px solid #f7f7f7; border-radius: 20px;
+    transition: background-color 0.7s;
+}
+
+main .main_contents .cart_bg .cart_wrap .cart_btn > a:hover {
+    background-color: #FF0000; color: #FFF;
+}
+main .main_contents .cart_bg .cart_wrap .cart_btn .shopping {}
+main .main_contents .cart_bg .cart_wrap .cart_btn .move {}

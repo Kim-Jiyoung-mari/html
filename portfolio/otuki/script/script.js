@@ -60,3 +60,52 @@ minus.addEventListener('click',()=>{
     totalPrice = price*number;
     orderPrice.textContent = totalPrice.toLocaleString('ko-kr');
 })
+
+//배송팝업창 닫기버튼
+// 1. 초기값 : 팝업 숨기기
+// 2. 배송안내 ! 클릭시
+// 3. 팝업창 보이기
+// 4. 팝업 내 'X' 클릭시
+// 5. 팝업 숨기기
+
+const noticePopup = document.querySelector('.notice_bg');
+const deliBtn = document.querySelector('.deli_info');
+const closeBtn = document.querySelector('#close');
+console.log(noticePopup, deliBtn, closeBtn);
+
+noticePopup.style.display = 'none';
+deliBtn.addEventListener('click',()=>{
+    noticePopup.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+})
+
+closeBtn.addEventListener('click',()=>{
+    noticePopup.style.display = 'none';
+    document.body.style.overflow = 'auto';
+})
+
+//장바구니 팝업창
+// 1. 초기값 : 팝업숨기기
+// 2. 장바구니 버튼 클릭시 
+// 3. 장바구니 팝업창 보이기
+// 4. 팝업 내 'X' 클릭시
+// 5. 팝업 숨기기
+const cartPopup = document.querySelector('.cart_bg');
+const cartBtn = document.querySelector('.cart');
+const cartClose = document.querySelector('#cartclose');
+const shoppingBtn = document.querySelector('.shopping');
+const moveBtn = document.querySelector('.move');
+console.log(cartPopup, cartBtn, cartClose);
+
+cartPopup.style.display = 'none';
+cartBtn.addEventListener('click',()=>{
+    cartPopup.style.display = 'block';
+})
+
+cartClose.addEventListener('click',()=>{
+    cartPopup.style.display = 'none';
+})
+
+shoppingBtn.addEventListener('click',()=>{
+    cartPopup.style.display = 'none';
+})
