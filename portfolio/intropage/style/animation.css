@@ -106,11 +106,11 @@
 }
 @keyframes html {
     0% {stroke-dashoffset: 360;}
-    100% {stroke-dashoffset: 110;}
+    100% {stroke-dashoffset: 115;}
 }
 @keyframes css {
     0% {stroke-dashoffset: 360;}
-    100% {stroke-dashoffset: 110;}
+    100% {stroke-dashoffset: 115;}
 }
 @keyframes javascript {
     0% {stroke-dashoffset: 360;}
