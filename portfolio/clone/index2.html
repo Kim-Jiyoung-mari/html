@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- 파비콘 & 글꼴 -->
     <link rel="shortcut icon" href="./images/favicon.jpg" type="iamge/x-icon">
     <link rel="icon" href="./images/favicon.jpg" type="image/x-icon">
@@ -14,20 +15,450 @@
 
     <!-- 디자인파일 -->
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/common2.css">
+    <link rel="stylesheet" href="./styles/index2.css">
 
     <!-- 스크립트 -->
-    <script src="./script/index.js" defer></script>
+    <script src="./script/index2.js" defer></script>
     <title>지그재그 스토어</title>
 </head>
 <body>
     <div class="main_wrap"><!-- 메인 배경 -->
         <main><!-- 메인 여백 -->
             <div class="top_barbg">
-                
+                <nav class="top">
+                    <div class="h1_logo">
+                        <h1><a href="./index2.html"><img src="./images/icon/logo.png" alt="지그재그홈"></a></h1>
+                    </div>
+                    <div class="right_nav">
+                        <a href="#"><img src="./images/icon/search.png" alt="검색"></a>
+                        <a href="#"><img src="./images/icon/cart.png" alt="장바구니"></a>
+                    </div>
+                </nav>
             </div>
+
+            <!-- 메인 배너 -->
+            <section class="main_bnr">
+                <div class="swiper main_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide_css slide1">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_001.jpg" alt="오디너리먼트 봄 특가">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">오디너리먼트 봄 특가<br>~70% 할인</h2>
+                                    <p class="bnr_text">인기 자켓 • 가디건 • 셔츠 할인</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide2">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_002.jpg" alt="봄 티셔츠·데님">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">봄 티셔츠·데님<br>매니크 최대 70% 특가</h2>
+                                    <p class="bnr_text">전 상품 무료배송 + 100,000원 쿠폰팩</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide3">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_003.jpg" alt="리얼코코X라이브 특집">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">리얼코코X라이브 특집<br>벚꽃룩·하객룩 ~81%</h2>
+                                    <p class="bnr_text">최대 22% 쿠폰팩+전상품 무료배송</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide4">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_004.jpg" alt="사탕보다 달콤한">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">사탕보다 달콤한<br>디어먼트 봄 신상 특가</h2>
+                                    <p class="bnr_text">최대 80%할인+20% 쿠폰팩</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide5">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_005.jpg" alt="휠라 선글라스 ">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">휠라 선글라스<br>1+1 특가</h2>
+                                    <p class="bnr_text">최대 74% 할인 + 15% 쿠폰</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide6">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_006.jpg" alt="">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title"><br></h2>
+                                    <p class="bnr_text"></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide7">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_007.png" alt="이번 주 루키 쇼핑몰">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">이번주 루키 쇼핑몰<br>빈티지룩 ~ 21%</h2>
+                                    <p class="bnr_text">무조건 15% 할인 쿠폰</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide8">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_008.jpg" alt="리트리버클럽">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">리트리버클럽<br>봄 신상 발매 ~45%</h2>
+                                    <p class="bnr_text">단독 45% 할인 + 12% 쿠폰 혜택까지</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide9">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_009.jpg" alt="웬즈데이오아시스">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">웬즈데이오아시스<br>25SS 발매</h2>
+                                    <p class="bnr_text">최대 30% 할인 + 10% 쿠폰 혜택까지</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide10">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_010.jpg" alt="클라비스가 추천하는">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">클라비스가 추천하는<br>봄날의 하객룩</h2>
+                                    <p class="bnr_text">최대 58% 할인 + ~15% 할인쿠폰</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide11">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_011.jpg" alt="페미닌 시크룩">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">페미닌 시크룩<br>라룸 ~50%</h2>
+                                    <p class="bnr_text">봄신상 셔츠·가디건 등,  20% 쿠폰팩</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide12">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_012.jpg" alt="봄옷 쇼핑 지금이 기회">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">봄옷 쇼핑 지금이 기회<br>최대 86% 특가</h2>
+                                    <p class="bnr_text">선착순 30% 쿠폰 받고 쇼핑하기</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide13">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_013.jpg" alt="봄의 첫 만남 ">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">봄의 첫 만남<br>어센티 신규입점</h2>
+                                    <p class="bnr_text">10% 쿠폰 받고 쇼핑하기</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide14">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_014.jpg" alt="설레는 마음을 전해요">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">설레는 마음을 전해요<br>화이트데이 주얼리 ~78%</h2>
+                                    <p class="bnr_text">베스트 상품부터 봄 신상까지, 최대 20% 쿠폰</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide15">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_015.jpg" alt="편애깅스 신디">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">편애깅스 신디<br>25SS로 만나보기</h2>
+                                    <p class="bnr_text">최대 73% 할인 + 20% 쿠폰</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide16">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_016.jpg" alt="24H 혜택 UP">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">24H 혜택 UP<br>네이밍 30% 쿠폰</h2>
+                                    <p class="bnr_text">최대 79% 할인 + 쿠션 초특가</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide17">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_017.jpg" alt="화이트데이 특가">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">화이트데이 특가<br>오프아워 BEST 커플잠옷</h2>
+                                    <p class="bnr_text">~15% 쿠폰 받고 구매하기</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide18">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_018.jpg" alt="오늘 밤 도착하는">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">오늘 밤 도착하는<br>봄 신상 ~85%</h2>
+                                    <p class="bnr_text">봄 신상 가장 빠르게 받아보는 방법</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide19">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_019.jpg" alt="스커트·레이어드템 등">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">스커트·레이어드템 등<br>최대 50% 할인</h2>
+                                    <p class="bnr_text">15% 쿠폰팩 + 전 상품 무료배송</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide20">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_020.jpg" alt="화이트데이 특가 곧 마감">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">화이트데이 특가 곧 마감<br>BEST 이너웨어 ~95%</h2>
+                                    <p class="bnr_text">캘빈클라인 · 게스 ~15% + 10% 중복쿠폰</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide21">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_021.jpg" alt="프렌치오브 봄 빅세일">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">프렌치오브 봄 빅세일<br>봄신상 베스트 단독특가</h2>
+                                    <p class="bnr_text">무료배송 + 최대 80%</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide22">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_022.png" alt="ZIGZAG">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">ZIGZAG<br>3월 할인 이벤트</h2>
+                                    <p class="bnr_text">즉시할인 & 카드사 포인트 사용</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide23">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_023.jpg" alt="로엠">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">로엠<br>LIVE 한정 특가</h2>
+                                    <p class="bnr_text">오늘 밤 8시, 깜짝 20% 쿠폰 + 스페셜 증정품</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide24">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_024.jpg" alt="이번주 Z래플 오픈">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">이번주 Z래플 오픈<br>인터컨티넨탈 애프터눈 티</h2>
+                                    <p class="bnr_text">Z래플 응모하고 행운의 주인공 되기</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide25">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_025.jpg" alt="귀여움 한도 초과">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">귀여움 한도 초과<br>키링 · 인형 ~85%</h2>
+                                    <p class="bnr_text">첫구매 24% 쿠폰 혜택 받기</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide26">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_026.jpg" alt="벚꽃룩은, 고고싱에서!">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">벚꽃룩은, 고고싱에서!<br>봄 셔츠&청바지 코드</h2>
+                                    <p class="bnr_text">최대 20% 쿠폰팩 & 82% 할인</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide27">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_027.jpg" alt="봄격 신상 할인">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">봄격 신상 할인<br>에드모어 ~88% 할인</h2>
+                                    <p class="bnr_text">2025 SS 신상 오픈</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide28">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_028.jpg" alt="10가트 스프링위크">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">10가트 스프링위크<br>최대 80% 할인</h2>
+                                    <p class="bnr_text">10가트, 단독 최대 20% 쿠폰팩</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide_css slide29">
+                            <a href="#" target="_blank">
+                                <img src="./images/bnr_jpg/bnr_029.jpg" alt="특가 혜택 곧 종료">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">특가 혜택 곧 종료<br>베이델리 ~70% 할인</h2>
+                                    <p class="bnr_text">지그재그 단독 선런칭 특가 + 무료배송</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="page_wrap">
+                        <span class="current_page">1</span>
+                        <span></span>
+                        <span class="all_page"><!-- 전체페이지js --></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 카테고리 스크롤 -->
+            <section class="category">
+                <a href="#">
+                    <img src="images/scroll_001.png" alt="직진배송 바로가기">
+                    <span class="category_name">직진배송</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_002.png" alt="뷰티 바로가기">
+                    <span class="category_name">뷰티</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_003.png" alt="상의 바로가기">
+                    <span class="category_name">상의</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_004.png" alt="원피스 바로가기">
+                    <span class="category_name">원피스</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_005.png" alt="바지 바로가기">
+                    <span class="category_name">바지</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_006.png" alt="스커트 바로가기">
+                    <span class="category_name">스커트</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_007.png" alt="아우터 바로가기">
+                    <span class="category_name">아우터</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_008.png" alt="슈즈 바로가기">
+                    <span class="category_name">슈즈</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_009.png" alt="가방 바로가기">
+                    <span class="category_name">가방</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_010.png" alt="이너웨어/파자마 바로가기">
+                    <span class="category_name">이너웨어/파자마</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_011.png" alt="투피스/세트 바로가기">
+                    <span class="category_name">투피스/세트</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_012.png" alt="주얼리 바로가기">
+                    <span class="category_name">주얼리</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_013.png" alt="플러스사이즈 바로가기">
+                    <span class="category_name">플러스사이즈</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_014.png" alt="트레이닝 바로가기">
+                    <span class="category_name">트레이닝</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_015.png" alt="비치웨어 바로가기">
+                    <span class="category_name">비치웨어</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_016.png" alt="푸드 바로가기">
+                    <span class="category_name">푸드</span>
+                </a>
+                <a href="#">
+                    <img src="images/scroll_016.png" alt="라이프 바로가기">
+                    <span class="category_name">라이프</span>
+                </a>
+            </section>
+
+            <!-- 첫구매 한정특가 -->
+            <div class="benefit">
+                <section class="benefit_conteiner">
+                    <div class="benefit_wrap">
+                        <div class="title">
+                            <h3>첫 구매 한정 특가</h3>
+                        </div>
+                        <div class="swiper benefit_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide benefit_contants">
+                                    <div class="item_card">
+                                        <a href="#" class="item_link"></a>
+                                        <div class="item_img">
+                                            <img src="./images/benefit_001.jpeg" alt="">
+                                            <div class="item-emblem">
+                                                <img src="images/icon/direct.png" alt="">
+                                            </div>
+                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
+                                        </div>
+                                        <div class="item_info">
+                                            <div class="store">
+                                                <span>삐아</span>
+                                                <div class="mileage">
+                                                    <img src="./images/icon/mileage.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                            <div class="item_price">
+                                                <p class="percent">98%</p>
+                                                <p class="price">100</p>
+                                            </div>
+                                            <div class="item_badge">
+                                                <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                                <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
         </main>
+
+        <!-- 하단 버튼 -->
+        <div class="btn_bg">
+            <div class="btn_wrap">
+                <a href="./index2.html" class="btm">
+                    <div class="icon_wrap">
+                        <img src="./images/icon/home.png" alt="홈">
+                        <span>홈</span>
+                    </div>
+                </a>
+                <a href="./category2.html" class="btm">
+                    <div class="icon_wrap">
+                        <img src="./images/icon/menu.png" alt="카테고리">
+                        <span>카테고리</span>
+                    </div>
+                </a>
+                <a href="./pick2.html" class="btm">
+                    <div class="icon_wrap">
+                        <img src="./images/icon/favorite.png" alt="찜버튼">
+                        <span>찜</span>
+                    </div>
+                </a>
+                <a href="./pick2.html" class="btm">
+                    <div class="icon_wrap">
+                        <img src="./images/icon/my.png" alt="마이페이지">
+                        <span>마이페이지</span>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
