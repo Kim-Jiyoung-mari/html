@@ -158,8 +158,9 @@
     max-width: 1500px; margin: 100px auto; 
 }
 #main .swiper-wrapper .about .title {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding-bottom: 50px;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
 }
 #main .swiper-wrapper .about .title > h2 {
     margin-bottom: 20px;
@@ -176,7 +177,7 @@
 #main .swiper-wrapper .about .contents > li {
     width: 480px;
     background-color: #FFF;
-    box-shadow: 0 4px 7px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
     text-align: center;
     border-radius: 100px;
     height: 500px;
