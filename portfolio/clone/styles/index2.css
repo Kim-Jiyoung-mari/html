@@ -97,3 +97,116 @@
     text-align: center; overflow: hidden; white-space: nowrap;
     margin-top: 6px;
 }
+/* ★ 첫구매혜택 ★ */
+.main_wrap main .benefit {
+    padding: 12px 0 24px;
+}
+.main_wrap main .benefit .benefit_wrap {}
+.main_wrap main .benefit .benefit_wrap .title {
+    padding: 0 16px;
+}
+.main_wrap main .benefit .benefit_wrap .title >  h3 {
+    font-size: 18px; font-weight: 600; line-height: 22px;
+}
+
+.main_wrap main .benefit .benefit_wrap .benefit_swiper {
+    padding: 16px;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper {
+    display: flex;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants {
+    width: 160px;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card {}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_link {
+    position: absolute; left: 0; top: 0;
+    width: 100%; height: 100%; z-index: 1;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img {
+    position: relative; 
+    margin-bottom: 5px;
+    overflow: hidden; height: 200px;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card  .item_img > img {
+    width: 100%; 
+    display: block;
+    transition: transform 100ms linear;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card  .item_img:hover > img {
+    transform: scale(1.1);
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card  .item_img .thum_icon {
+    width: 100%;
+    position: absolute; bottom: 4px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: flex-end;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img .thum_icon .item_emblem {
+    width: 28px;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img .thum_icon .item_emblem > img {
+    width: 100%;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img .thum_icon .like_button {
+    width: 36px;
+    position: absolute; bottom: 0; right: 0; line-height: 0; cursor: pointer;
+    padding: 4px; z-index: 1;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img .thum_icon .like_button > img {
+    width: 100%;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info {}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .store {
+    display: flex; flex-flow: row nowrap;
+    margin-bottom: 5px;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .store > span {
+    font-size: 12px; font-weight: 600; line-height: 1.4;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .store .mileage {}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .store .mileage > img {
+    display: block; height: 12px;
+    margin: 2px 0 0 2px;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .item_name {
+    margin-bottom: 5px;
+    font-size: 12px; line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* ← 이 줄수에 맞춰 잘라주는 거! */
+    overflow: hidden;
+
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .item_price {}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .item_price > span {}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .item_price .percent {
+    color: #f55dd6; font-size: 15px; font-weight: 600;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .item_price .price {
+    font-size: 15px; font-weight: 600; line-height: 1.6;
+    color: #292b2b;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .item_badge {
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .item_badge > img {
+    display: block;
+    width: 40px;
+}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .item_badge .first_price {margin-right: 2px;}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_info .item_badge .delivary {}
+
+/* 추천 아이템 버튼 */
+.main_wrap main .btn_wrap {
+    border: 1px solid #d0d4d6; border-radius: 100px;
+    margin: 0 16px; padding: 10px 0; cursor: pointer;
+    text-align: center;
+    transition: all 0.1s linear;
+}
+.main_wrap main .btn_wrap:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+.main_wrap main .btn_wrap .recommand_item {
+    font-size: 18px; font-weight: 600; line-height: 1.6;
+    text-align: center;
+} 
