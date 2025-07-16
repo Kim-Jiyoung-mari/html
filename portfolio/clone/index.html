@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- 파비콘 & 글꼴 -->
     <link rel="shortcut icon" href="./images/favicon.jpg" type="iamge/x-icon">
     <link rel="icon" href="./images/favicon.jpg" type="image/x-icon">
@@ -23,429 +24,392 @@
 </head>
 <body>
     <div class="main_wrap"><!-- 메인 배경 -->
-        <main><!-- 메인 여백잡기 -->
+        <main><!-- 메인 여백 -->
             <div class="top_barbg">
-                <div class="top_bar">
-                    <nav class="top">
-                        <div class="left_logo">
-                            <h1><a href="./index.html"><img src="./images/icon/logo.png" alt="지그재그 홈"></a></h1>
-                        </div>
-                        <div class="right_nav">
-                            <a href="#"><img src="./images/icon/search.png" alt="검색"></a>
-                            <a href="#"><img src="./images/icon/cart.png" alt="장바구니"></a>
-                        </div>
-                    </nav>
-                </div>
+                <nav class="top">
+                    <div class="h1_logo">
+                        <h1><a href="./index.html"><img src="./images/icon/logo.png" alt="지그재그홈"></a></h1>
+                    </div>
+                    <div class="right_nav">
+                        <a href="#"><img src="./images/icon/search.png" alt="검색"></a>
+                        <a href="#"><img src="./images/icon/cart.png" alt="장바구니"></a>
+                    </div>
+                </nav>
             </div>
+
+            <!-- 메인 배너 -->
             <section class="main_bnr">
-                <div class="swiper swiper-horizontal">
+                <div class="swiper main_swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1">
+                        <div class="swiper-slide slide_css slide1">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_001.jpg" alt="오디너리먼트 봄 특가">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">오디너리먼트 봄 특가</h2>
-                                    <h3 class="bnrtxt_semibold">~70% 할인</h2>
-                                    <h3 class="bnrtxt_medium">인기 자켓 • 가디건 • 셔츠 할인</h2>
+                                <img src="./images/bnr_jpg/bnr_001.png" alt="퓨어다 여름 베스트 최대 70% 할인">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">퓨어다 여름 베스트<br>최대 70% 할인</h2>
+                                    <p class="bnr_text">20% 쿠폰팩 + 전 상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide2">
+                        <div class="swiper-slide slide_css slide2">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_002.jpg" alt="봄 티셔츠·데님">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">봄 티셔츠·데님</h2>
-                                    <h3 class="bnrtxt_semibold">매니크 최대 70% 특가</h2>
-                                    <h3 class="bnrtxt_medium">전 상품 무료배송 + 100,000원 쿠폰팩</h2>
+                                <img src="./images/bnr_jpg/bnr_002.webp" alt="바캉스 원피스·블라우스 케이클럽 ~96%">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">바캉스 원피스·블라우스<br>케이클럽 ~96%</h2>
+                                    <p class="bnr_text">추가 20% 쿠폰 & 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide3">
+                        <div class="swiper-slide slide_css slide3">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_003.jpg" alt="리얼코코X라이브 특집">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">리얼코코X라이브 특집</h2>
-                                    <h3 class="bnrtxt_semibold">벚꽃룩·하객룩 ~81%</h2>
-                                    <h3 class="bnrtxt_medium">최대 22% 쿠폰팩+전상품 무료배송</h2>
+                                <img src="./images/bnr_jpg/bnr_003.jpg" alt="라룸 50% SALE ~20%쿠폰팩">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">라룸 50% SALE<br>~20%쿠폰팩</h2>
+                                    <p class="bnr_text">지금 가장 시원한 세일</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide4">
+                        <div class="swiper-slide slide_css slide4">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_004.jpg" alt="사탕보다 달콤한">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">사탕보다 달콤한</h2>
-                                    <h3 class="bnrtxt_semibold">디어먼트 봄 신상 특가</h2>
-                                    <h3 class="bnrtxt_medium">최대 80%할인+20% 쿠폰팩</h2>
+                                <img src="./images/bnr_jpg/bnr_004.png" alt="바캉스룩 필수 언더웨어 슬림9 단독 기획전">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">바캉스룩 필수 언더웨어<br>슬림9 단독 기획전</h2>
+                                    <p class="bnr_text">최대 20% 쿠폰 + 전상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide5">
+                        <div class="swiper-slide slide_css slide5">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_005.jpg" alt="휠라 선글라스 ">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">휠라 선글라스 </h2>
-                                    <h3 class="bnrtxt_semibold">1+1 특가</h2>
-                                    <h3 class="bnrtxt_medium">최대 74% 할인 + 15% 쿠폰</h2>
+                                <img src="./images/bnr_jpg/bnr_005.jpg" alt="슬로우앤드 여름 코디 민소매부터 팬츠까지">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">슬로우앤드 여름 코디<br>민소매부터 팬츠까지</h2>
+                                    <p class="bnr_text">최대 80% 할인 + 17% 쿠폰팩까지</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide6">
+                        <div class="swiper-slide slide_css slide6">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_006.jpg" alt="">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold"></h2>
-                                    <h3 class="bnrtxt_semibold"></h2>
-                                    <h3 class="bnrtxt_medium"></h2>
+                                <img src="./images/bnr_jpg/bnr_006.jpg" alt="손선풍기 · 고데기 등 여름 아이템 특가 ~96%">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">손선풍기 · 고데기 등<br>여름 아이템 특가 ~96%</h2>
+                                    <p class="bnr_text">최대 20% 쿠폰 혜택 만나보기</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide7">
+                        <div class="swiper-slide slide_css slide7">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_007.png" alt="이번 주 루키 쇼핑몰">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">이번주 루키 쇼핑몰</h2>
-                                    <h3 class="bnrtxt_semibold">빈티지룩 ~ 21%</h2>
-                                    <h3 class="bnrtxt_medium">무조건 15% 할인 쿠폰</h2>
+                                <img src="./images/bnr_jpg/bnr_007.jpg" alt="워터프루프·선케어·진정 최대 95% 특가">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">워터프루프·선케어·진정<br>최대 95% 특가</h2>
+                                    <p class="bnr_text">여름철 필수 뷰티템 20% 쿠폰까지</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide8">
+                        <div class="swiper-slide slide_css slide8">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_008.jpg" alt="리트리버클럽">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">리트리버클럽</h2>
-                                    <h3 class="bnrtxt_semibold">봄 신상 발매 ~45%</h2>
-                                    <h3 class="bnrtxt_medium">단독 45% 할인 + 12% 쿠폰 혜택까지</h2>
+                                <img src="./images/bnr_jpg/bnr_008.jpg" alt="민소매·린넨셔츠·팬츠 매니크 직진배송 ~80%">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">민소매·린넨셔츠·팬츠<br>매니크 직진배송 ~80%</h2>
+                                    <p class="bnr_text">선착순 20% 쿠폰 & 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide9">
+                        <div class="swiper-slide slide_css slide9">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_009.jpg" alt="웬즈데이오아시스">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">웬즈데이오아시스</h2>
-                                    <h3 class="bnrtxt_semibold">25SS 발매</h2>
-                                    <h3 class="bnrtxt_medium">최대 30% 할인 + 10% 쿠폰 혜택까지</h2>
+                                <img src="./images/bnr_jpg/bnr_009.jpg" alt="썸머 슈즈 위크 최대 83% 특가">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">썸머 슈즈 위크<br>최대 83% 특가</h2>
+                                    <p class="bnr_text">플리플랍·샌들·젤리슈즈 등</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide10">
+                        <div class="swiper-slide slide_css slide10">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_010.jpg" alt="클라비스가 추천하는">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">클라비스가 추천하는</h2>
-                                    <h3 class="bnrtxt_semibold">봄날의 하객룩</h2>
-                                    <h3 class="bnrtxt_medium">최대 58% 할인 + ~15% 할인쿠폰</h2>
+                                <img src="./images/bnr_jpg/bnr_010.png" alt="딜라잇문 23% 쿠폰팩 여름 시즌오프 ~oo%">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">딜라잇문 23% 쿠폰팩<br>여름 시즌오프 ~oo%</h2>
+                                    <p class="bnr_text">내일 배송 받는 오버핏 반팔·가디건/p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide11">
+                        <div class="swiper-slide slide_css slide11">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_011.jpg" alt="페미닌 시크룩">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">페미닌 시크룩</h2>
-                                    <h3 class="bnrtxt_semibold">라룸 ~50%</h2>
-                                    <h3 class="bnrtxt_medium">봄신상 셔츠·가디건 등,  20% 쿠폰팩</h2>
+                                <img src="./images/bnr_jpg/bnr_011.jpg" alt="직잭러가 사랑한 쇼핑몰 확인하고 특가 쇼핑">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">직잭러가 사랑한 쇼핑몰<br>확인하고 특가 쇼핑</h2>
+                                    <p class="bnr_text">최대 70% 할인 + 20% 쿠폰</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide12">
+                        <div class="swiper-slide slide_css slide12">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_012.jpg" alt="봄옷 쇼핑 지금이 기회">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">봄옷 쇼핑 지금이 기회</h2>
-                                    <h3 class="bnrtxt_semibold">최대 86% 특가</h2>
-                                    <h3 class="bnrtxt_medium">선착순 30% 쿠폰 받고 쇼핑하기</h2>
+                                <img src="./images/bnr_jpg/bnr_012.jpg" alt="오늘 밤 8시 LIVE 스파오 단독 상품 특가">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">오늘 밤 8시 LIVE<br>스파오 단독 상품 특가</h2>
+                                    <p class="bnr_text">라이브 한정 30% 쿠폰 + 이벤트</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide13">
+                        <div class="swiper-slide slide_css slide13">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_013.jpg" alt="봄의 첫 만남 ">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">봄의 첫 만남 </h2>
-                                    <h3 class="bnrtxt_semibold">어센티 신규입점</h2>
-                                    <h3 class="bnrtxt_medium">10% 쿠폰 받고 쇼핑하기 </h2>
+                                <img src="./images/bnr_jpg/bnr_013.jpg" alt="여름 하객룩·바캉스룩 데일리 원피스로 완성">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">여름 하객룩·바캉스룩<br>데일리 원피스로 완성</h2>
+                                    <p class="bnr_text">최대 87% 할인 + 22% 쿠폰</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide14">
+                        <div class="swiper-slide slide_css slide14">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_014.jpg" alt="설레는 마음을 전해요">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">설레는 마음을 전해요</h2>
-                                    <h3 class="bnrtxt_semibold">화이트데이 주얼리 ~78%</h2>
-                                    <h3 class="bnrtxt_medium">베스트 상품부터 봄 신상까지, 최대 20% 쿠폰</h2>
+                                <img src="./images/bnr_jpg/bnr_014.png" alt="게스언더웨어 인기 아이템 단독특가">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">게스언더웨어<br>인기 아이템 단독특가</h2>
+                                    <p class="bnr_text">10% 쿠폰 + 첫구매라면 10% 쿠폰 추가 증정</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide15">
+                        <div class="swiper-slide slide_css slide15">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_015.jpg" alt="편애깅스 신디">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">편애깅스 신디</h2>
-                                    <h3 class="bnrtxt_semibold">25SS로 만나보기</h2>
-                                    <h3 class="bnrtxt_medium">최대 73% 할인 + 20% 쿠폰</h2>
+                                <img src="./images/bnr_jpg/bnr_015.jpg" alt="맥우드건 에프터 화요쇼룸 프리미엄 빈티지 데님">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">맥우드건 에프터 화요쇼룸<br>프리미엄 빈티지 데님</h2>
+                                    <p class="bnr_text">최대 20% 할인 + 추가 쿠폰 혜택</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide16">
+                        <div class="swiper-slide slide_css slide16">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_016.jpg" alt="24H 혜택 UP">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">24H 혜택 UP</h2>
-                                    <h3 class="bnrtxt_semibold">네이밍 30% 쿠폰</h2>
-                                    <h3 class="bnrtxt_medium">최대 79% 할인 + 쿠션 초특가</h2>
+                                <img src="./images/bnr_jpg/bnr_016.png" alt="여름 로맨틱 무드 완성 감각적 실루엣 어다울">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">여름 로맨틱 무드 완성<br>감각적 실루엣 어다울</h2>
+                                    <p class="bnr_text">최대 45% 할인 + 15% 쿠폰</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide17">
+                        <div class="swiper-slide slide_css slide17">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_017.jpg" alt="화이트데이 특가">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">화이트데이 특가</h2>
-                                    <h3 class="bnrtxt_semibold">오프아워 BEST 커플잠옷</h2>
-                                    <h3 class="bnrtxt_medium">~15% 쿠폰 받고 구매하기</h2>
+                                <img src="./images/bnr_jpg/bnr_017.png" alt="판도라핏 여름 베스트 30% 쿠폰">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">판도라핏 여름 베스트<br>30% 쿠폰</h2>
+                                    <p class="bnr_text">데님⋅티셔츠 외, 화요쇼룸 혜택</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide18">
+                        <div class="swiper-slide slide_css slide18">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_018.jpg" alt="오늘 밤 도착하는">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">오늘 밤 도착하는</h2>
-                                    <h3 class="bnrtxt_semibold">봄 신상 ~85%</h2>
-                                    <h3 class="bnrtxt_medium">봄 신상 가장 빠르게 받아보는 방법</h2>
+                                <img src="./images/bnr_jpg/bnr_018.jpg" alt="나이니 핫세일 ~80% / 20% 선착순 쿠폰까지">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">나이니 핫세일 ~80%<br>20% 선착순 쿠폰까지</h2>
+                                    <p class="bnr_text">휴가룩·데일리룩 등 전 상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide19">
+                        <div class="swiper-slide slide_css slide19">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_019.jpg" alt="스커트·레이어드템 등">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">스커트·레이어드템 등</h2>
-                                    <h3 class="bnrtxt_semibold">최대 50% 할인</h2>
-                                    <h3 class="bnrtxt_medium">15% 쿠폰팩 + 전 상품 무료배송</h2>
+                                <img src="./images/bnr_jpg/bnr_019.png" alt="마이온샵 단독기획전 전 상품 20% 할인">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">마이온샵 단독기획전<br>전 상품 20% 할인</h2>
+                                    <p class="bnr_text">전 상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide20">
+                        <div class="swiper-slide slide_css slide20">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_020.jpg" alt="화이트데이 특가 곧 마감">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">화이트데이 특가 곧 마감</h2>
-                                    <h3 class="bnrtxt_semibold">BEST 이너웨어 ~95%</h2>
-                                    <h3 class="bnrtxt_medium">캘빈클라인 · 게스 ~15% + 10% 중복쿠폰</h2>
+                                <img src="./images/bnr_jpg/bnr_020.jpg" alt="이버유 단독기획전 전 상품 20% 할인">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">이버유 단독기획전<br>전 상품 20% 할인</h2>
+                                    <p class="bnr_text">전 상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide21">
+                        <div class="swiper-slide slide_css slide21">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_021.jpg" alt="프렌치오브 봄 빅세일">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">프렌치오브 봄 빅세일</h2>
-                                    <h3 class="bnrtxt_semibold">봄신상 베스트 단독특가</h2>
-                                    <h3 class="bnrtxt_medium">무료배송 + 최대 80%</h2>
+                                <img src="./images/bnr_jpg/bnr_021.jpg" alt="효키 단독기획전 전 상품 20% 할인">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">효키 단독기획전<br>전 상품 20% 할인</h2>
+                                    <p class="bnr_text">전 상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide22">
+                        <div class="swiper-slide slide_css slide22">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_022.png" alt="ZIGZAG">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">ZIGZAG</h2>
-                                    <h3 class="bnrtxt_semibold">3월 할인 이벤트</h2>
-                                    <h3 class="bnrtxt_medium">즉시할인 & 카드사 포인트 사용</h2>
+                                <img src="./images/bnr_jpg/bnr_022.jpg" alt="웰컴백 바이너리원 직진배송 오늘 출발">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">웰컴백 바이너리원<br>직진배송 오늘 출발</h2>
+                                    <p class="bnr_text">최대 73% 할인 + 20% 쿠폰</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide23">
+                        <div class="swiper-slide slide_css slide23">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_023.jpg" alt="로엠">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">로엠</h2>
-                                    <h3 class="bnrtxt_semibold">LIVE 한정 특가</h2>
-                                    <h3 class="bnrtxt_medium">오늘 밤 8시, 깜짝 20% 쿠폰 + 스페셜 증정품</h2>
+                                <img src="./images/bnr_jpg/bnr_023.jpg" alt="슈즈데이 단독기획전 전 상품 20% 할인">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">슈즈데이 단독기획전<br>전 상품 20% 할인</h2>
+                                    <p class="bnr_text">전 상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide24">
+                        <div class="swiper-slide slide_css slide24">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_024.jpg" alt="이번주 Z래플 오픈">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">이번주 Z래플 오픈</h2>
-                                    <h3 class="bnrtxt_semibold">인터컨티넨탈 애프터눈 티</h2>
-                                    <h3 class="bnrtxt_medium">Z래플 응모하고 행운의 주인공 되기</h2>
+                                <img src="./images/bnr_jpg/bnr_024.jpg" alt="모디핏 단독기획전 전 상품 15% 할인">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">모디핏 단독기획전<br>전 상품 15% 할인</h2>
+                                    <p class="bnr_text">전 상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide25">
+                        <div class="swiper-slide slide_css slide25">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_025.jpg" alt="귀여움 한도 초과">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">귀여움 한도 초과</h2>
-                                    <h3 class="bnrtxt_semibold">키링 · 인형 ~85%</h2>
-                                    <h3 class="bnrtxt_medium">첫구매 24% 쿠폰 혜택 받기</h2>
+                                <img src="./images/bnr_jpg/bnr_025.png" alt="ZIGZAG 7월 할인 이벤트">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">ZIGZAG<br>7월 할인 이벤트</h2>
+                                    <p class="bnr_text">즉시할인 & 카드사 포인트 사용</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide26">
+                        <div class="swiper-slide slide_css slide26">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_026.jpg" alt="벚꽃룩은, 고고싱에서!">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">벚꽃룩은, 고고싱에서!</h2>
-                                    <h3 class="bnrtxt_semibold">봄 셔츠&청바지 코드</h2>
-                                    <h3 class="bnrtxt_medium">최대 20% 쿠폰팩 & 82% 할인</h2>
+                                <img src="./images/bnr_jpg/bnr_026.jpg" alt="커브미 단독기획전 전 상품 20% 할인">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">커브미 단독기획전<br>전 상품 20% 할인</h2>
+                                    <p class="bnr_text">전 상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide27">
+                        <div class="swiper-slide slide_css slide27">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_027.jpg" alt="봄격 신상 할인">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">봄격 신상 할인</h2>
-                                    <h3 class="bnrtxt_semibold">에드모어 ~88% 할인</h2>
-                                    <h3 class="bnrtxt_medium">2025 SS 신상 오픈</h2>
+                                <img src="./images/bnr_jpg/bnr_027.jpg" alt="니스휴 단독기획전 전 상품 20% 할인">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">니스휴 단독기획전<br>전 상품 20% 할인</h2>
+                                    <p class="bnr_text">전 상품 무료배송</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slide28">
+                        <div class="swiper-slide slide_css slide28">
                             <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_028.jpg" alt="10가트 스프링위크">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">10가트 스프링위크</h2>
-                                    <h3 class="bnrtxt_semibold">최대 80% 할인</h2>
-                                    <h3 class="bnrtxt_medium">10가트, 단독 최대 20% 쿠폰팩</h2>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide slide29">
-                            <a href="#" target="_blank">
-                                <img src="./images/bnr_jpg/bnr_029.jpg" alt="특가 혜택 곧 종료">
-                                <div class="bnr_txt">
-                                    <h2 class="bnrtxt_semibold">특가 혜택 곧 종료</h2>
-                                    <h3 class="bnrtxt_semibold">베이델리 ~70% 할인</h2>
-                                    <h3 class="bnrtxt_medium">지그재그 단독 선런칭 특가 + 무료배송</h2>
+                                <img src="./images/bnr_jpg/bnr_028.jpg" alt="빅사이즈 맛집 식스앤드 첫 단독 세일 ~81%">
+                                <div class="bnr_content">
+                                    <h2 class="bnr_title">빅사이즈 맛집 식스앤드<br>첫 단독 세일 ~81%</h2>
+                                    <p class="bnr_text">2,900원부터 9,900원 특가까지</p>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="pagenum-css">
+                    <div class="page_wrap">
                         <span class="current_page">1</span>
                         <span></span>
-                        <span class="allpage"><!-- 전체페이지js --></span>
+                        <span class="all_page"><!-- 전체페이지js --></span>
                     </div>
                 </div>
             </section>
+
+            <!-- 카테고리 스크롤 -->
             <section class="category">
                 <a href="#">
-                    <img src="./images/scroll_001.png" alt="직진배송">
+                    <img src="images/scroll_001.png" alt="직진배송 바로가기">
                     <span class="category_name">직진배송</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_002.png" alt="직진배송">
+                    <img src="images/scroll_002.png" alt="뷰티 바로가기">
                     <span class="category_name">뷰티</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_003.png" alt="직진배송">
+                    <img src="images/scroll_003.png" alt="상의 바로가기">
                     <span class="category_name">상의</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_004.png" alt="직진배송">
+                    <img src="images/scroll_004.png" alt="원피스 바로가기">
                     <span class="category_name">원피스</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_005.png" alt="직진배송">
+                    <img src="images/scroll_005.png" alt="바지 바로가기">
                     <span class="category_name">바지</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_006.png" alt="직진배송">
+                    <img src="images/scroll_006.png" alt="스커트 바로가기">
                     <span class="category_name">스커트</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_007.png" alt="직진배송">
+                    <img src="images/scroll_007.png" alt="아우터 바로가기">
                     <span class="category_name">아우터</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_008.png" alt="직진배송">
+                    <img src="images/scroll_008.png" alt="슈즈 바로가기">
                     <span class="category_name">슈즈</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_009.png" alt="직진배송">
+                    <img src="images/scroll_009.png" alt="가방 바로가기">
                     <span class="category_name">가방</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_010.png" alt="직진배송">
+                    <img src="images/scroll_010.png" alt="이너웨어/파자마 바로가기">
                     <span class="category_name">이너웨어/파자마</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_011.png" alt="직진배송">
+                    <img src="images/scroll_011.png" alt="투피스/세트 바로가기">
                     <span class="category_name">투피스/세트</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_012.png" alt="직진배송">
+                    <img src="images/scroll_012.png" alt="주얼리 바로가기">
                     <span class="category_name">주얼리</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_013.png" alt="직진배송">
+                    <img src="images/scroll_013.png" alt="플러스사이즈 바로가기">
                     <span class="category_name">플러스사이즈</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_014.png" alt="직진배송">
+                    <img src="images/scroll_014.png" alt="트레이닝 바로가기">
                     <span class="category_name">트레이닝</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_015.png" alt="직진배송">
+                    <img src="images/scroll_015.png" alt="비치웨어 바로가기">
                     <span class="category_name">비치웨어</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_016.png" alt="직진배송">
+                    <img src="images/scroll_016.png" alt="푸드 바로가기">
                     <span class="category_name">푸드</span>
                 </a>
                 <a href="#">
-                    <img src="./images/scroll_005.png" alt="직진배송">
+                    <img src="images/scroll_016.png" alt="라이프 바로가기">
                     <span class="category_name">라이프</span>
                 </a>
             </section>
-            <div class="benefit_line">
-                <section class="first_benefit">
+
+            <!-- 첫구매 한정특가 -->
+            <div class="benefit">
+                <section class="benefit_conteiner">
                     <div class="benefit_wrap">
-                        <div class="benefit_title">
-                            <p class="benefit_semibold">첫 구매 한정 특가</p>
-                            <p class="title_txt"></p>
+                        <div class="title">
+                            <h3>첫 구매 한정 특가</h3>
                         </div>
-                        <div class="swiper benefit_horizontal">
+                        <div class="swiper benefit_swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide benefit_contants">
-                                    <div class="product-card">
-                                        <a href="#" class="product-link"></a>
-                                        <div class="product-wrap">
-                                            <div class="product-thum">
-                                                <div class="thum_absol">
-                                                    <img src="./images/benefit_008.webp" alt="">
-                                                    <div class="product-emblem">
-                                                        <img src="./images/icon/direct.png" alt="직진">
-                                                    </div>
-                                                    <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
+                                    <div class="item_card">
+                                        <a href="#" class="item_link"></a>
+                                        <div class="item_img">
+                                            <div class="item_thum">
+                                                <img src="./images/benefit_008.webp" alt="">
+                                            </div>
+                                            <div class="thum_icon">
+                                                <div class="item_emblem">
+                                                    <img src="images/icon/direct.png" alt="">
                                                 </div>
+                                                <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
                                             </div>
                                         </div>
-                                        <div class="product-txt">
-                                            <div class="product-title">
-                                                <div class="store">
-                                                    <span>삐아</span>
-                                                    <div class="mileage">
-                                                        <img src="images/icon/mileage.png" alt="">
-                                                    </div>
+                                        <div class="item_info">
+                                            <div class="store">
+                                                <span>삐아</span>
+                                                <div class="mileage">
+                                                    <img src="./images/icon/mileage.png" alt="">
                                                 </div>
-                                                <p class="item-name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿 </p>
                                             </div>
-                                            <div class="product-price">
-                                                <div class="percent"><span>98%</span></div>
-                                                <div class="price"><span>100</span></div>
+                                            <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                            <div class="item_price">
+                                                <span class="percent">98%</span>
+                                                <span class="price">100원</span>
                                             </div>
-                                            <div class="product-badge">
+                                            <div class="item_badge">
                                                 <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
                                                 <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
                                             </div>
@@ -453,29 +417,32 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide benefit_contants">
-                                    <div class="product-card">
-                                        <a href="#" class="product-link"></a>
-                                        <div class="product-wrap">
-                                            <div class="product-thum">
-                                                <div class="thum_absol">
-                                                    <img src="./images/benefit_001.jpeg" alt="">
-                                                    <div class="product-emblem"></div>
-                                                    <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
+                                    <div class="item_card">
+                                        <a href="#" class="item_link"></a>
+                                        <div class="item_img">
+                                            <div class="item_thum">
+                                                <img src="./images/benefit_008.webp" alt="">
+                                            </div>
+                                            <div class="thum_icon">
+                                                <div class="item_emblem">
+                                                    <img src="images/icon/direct.png" alt="">
                                                 </div>
+                                                <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
                                             </div>
                                         </div>
-                                        <div class="product-txt">
-                                            <div class="product-title">
-                                                <div class="store">
-                                                    <span>카카오스타일이벤트</span>
+                                        <div class="item_info">
+                                            <div class="store">
+                                                <span>삐아</span>
+                                                <div class="mileage">
+                                                    <img src="./images/icon/mileage.png" alt="">
                                                 </div>
-                                                <p class="item-name">[이마트] 모바일 금액권 5천원</p>
                                             </div>
-                                            <div class="product-price">
-                                                <div class="percent"><span>98%</span></div>
-                                                <div class="price"><span>100</span></div>
+                                            <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                            <div class="item_price">
+                                                <span class="percent">98%</span>
+                                                <span class="price">100원</span>
                                             </div>
-                                            <div class="product-badge">
+                                            <div class="item_badge">
                                                 <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
                                                 <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
                                             </div>
@@ -483,34 +450,32 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide benefit_contants">
-                                    <div class="product-card">
-                                        <a href="#" class="product-link"></a>
-                                        <div class="product-wrap">
-                                            <div class="product-thum">
-                                                <div class="thum_absol">
-                                                    <img src="./images/benefit_009.gif" alt="">
-                                                    <div class="product-emblem">
-                                                        <img src="./images/icon/direct.png" alt="직진">
-                                                    </div>
-                                                    <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
+                                    <div class="item_card">
+                                        <a href="#" class="item_link"></a>
+                                        <div class="item_img">
+                                            <div class="item_thum">
+                                                <img src="./images/benefit_008.webp" alt="">
+                                            </div>
+                                            <div class="thum_icon">
+                                                <div class="item_emblem">
+                                                    <img src="images/icon/direct.png" alt="">
                                                 </div>
+                                                <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
                                             </div>
                                         </div>
-                                        <div class="product-txt">
-                                            <div class="product-title">
-                                                <div class="store">
-                                                    <span>삐아</span>
-                                                    <div class="mileage">
-                                                        <img src="images/icon/mileage.png" alt="">
-                                                    </div>
+                                        <div class="item_info">
+                                            <div class="store">
+                                                <span>삐아</span>
+                                                <div class="mileage">
+                                                    <img src="./images/icon/mileage.png" alt="">
                                                 </div>
-                                                <p class="item-name">레디 투 웨어 다우니 치크 (12colors) 🚀직진배송🚀</p>
                                             </div>
-                                            <div class="product-price">
-                                                <div class="percent"><span>98%</span></div>
-                                                <div class="price"><span>100</span></div>
+                                            <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                            <div class="item_price">
+                                                <span class="percent">98%</span>
+                                                <span class="price">100원</span>
                                             </div>
-                                            <div class="product-badge">
+                                            <div class="item_badge">
                                                 <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
                                                 <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
                                             </div>
@@ -518,29 +483,32 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide benefit_contants">
-                                    <div class="product-card">
-                                        <a href="#" class="product-link"></a>
-                                        <div class="product-wrap">
-                                            <div class="product-thum">
-                                                <div class="thum_absol">
-                                                    <img src="./images/benefit_002.jpeg" alt="">
-                                                    <div class="product-emblem"></div>
-                                                    <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
+                                    <div class="item_card">
+                                        <a href="#" class="item_link"></a>
+                                        <div class="item_img">
+                                            <div class="item_thum">
+                                                <img src="./images/benefit_008.webp" alt="">
+                                            </div>
+                                            <div class="thum_icon">
+                                                <div class="item_emblem">
+                                                    <img src="images/icon/direct.png" alt="">
                                                 </div>
+                                                <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
                                             </div>
                                         </div>
-                                        <div class="product-txt">
-                                            <div class="product-title">
-                                                <div class="store">
-                                                    <span>카카오스타일이벤트</span>
+                                        <div class="item_info">
+                                            <div class="store">
+                                                <span>삐아</span>
+                                                <div class="mileage">
+                                                    <img src="./images/icon/mileage.png" alt="">
                                                 </div>
-                                                <p class="item-name">[메가MGC커피] 디지털 상품권 5천원</p>
                                             </div>
-                                            <div class="product-price">
-                                                <div class="percent"><span>98%</span></div>
-                                                <div class="price"><span>100</span></div>
+                                            <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                            <div class="item_price">
+                                                <span class="percent">98%</span>
+                                                <span class="price">100원</span>
                                             </div>
-                                            <div class="product-badge">
+                                            <div class="item_badge">
                                                 <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
                                                 <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
                                             </div>
@@ -548,32 +516,32 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide benefit_contants">
-                                    <div class="product-card">
-                                        <a href="#" class="product-link"></a>
-                                        <div class="product-wrap">
-                                            <div class="product-thum">
-                                                <div class="thum_absol">
-                                                    <img src="./images/benefit_003.gif" alt="">
-                                                    <div class="product-emblem"></div>
-                                                    <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
+                                    <div class="item_card">
+                                        <a href="#" class="item_link"></a>
+                                        <div class="item_img">
+                                            <div class="item_thum">
+                                                <img src="./images/benefit_008.webp" alt="">
+                                            </div>
+                                            <div class="thum_icon">
+                                                <div class="item_emblem">
+                                                    <img src="images/icon/direct.png" alt="">
                                                 </div>
+                                                <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
                                             </div>
                                         </div>
-                                        <div class="product-txt">
-                                            <div class="product-title">
-                                                <div class="store">
-                                                    <span>프롬산타</span>
-                                                    <div class="mileage">
-                                                        <img src="images/icon/mileage.png" alt="">
-                                                    </div>
+                                        <div class="item_info">
+                                            <div class="store">
+                                                <span>삐아</span>
+                                                <div class="mileage">
+                                                    <img src="./images/icon/mileage.png" alt="">
                                                 </div>
-                                                <p class="item-name">🚚당일발송 🧦자체제작 발목압박 적은 양말 무압박중목 프리미엄 국산 양말세트 임산부추천/여성용/남성용/흰/화이트/아이보리/검정/블랙/봄/여름/가을/겨울/개강룩/하객룩/연말룩</p>
                                             </div>
-                                            <div class="product-price">
-                                                <div class="percent"><span>98%</span></div>
-                                                <div class="price"><span>100</span></div>
+                                            <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                            <div class="item_price">
+                                                <span class="percent">98%</span>
+                                                <span class="price">100원</span>
                                             </div>
-                                            <div class="product-badge">
+                                            <div class="item_badge">
                                                 <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
                                                 <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
                                             </div>
@@ -581,129 +549,32 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide benefit_contants">
-                                    <div class="product-card">
-                                        <a href="#" class="product-link"></a>
-                                        <div class="product-wrap">
-                                            <div class="product-thum">
-                                                <div class="thum_absol">
-                                                    <img src="./images/benefit_004.jpeg" alt="">
-                                                    <div class="product-emblem"></div>
-                                                    <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
+                                    <div class="item_card">
+                                        <a href="#" class="item_link"></a>
+                                        <div class="item_img">
+                                            <div class="item_thum">
+                                                <img src="./images/benefit_008.webp" alt="">
+                                            </div>
+                                            <div class="thum_icon">
+                                                <div class="item_emblem">
+                                                    <img src="images/icon/direct.png" alt="">
                                                 </div>
+                                                <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
                                             </div>
                                         </div>
-                                        <div class="product-txt">
-                                            <div class="product-title">
-                                                <div class="store">
-                                                    <span>카카오스타일이벤트</span>
-                                                </div>
-                                                <p class="item-name">[맘스터치] 모바일 금액권 5천원</p>
-                                            </div>
-                                            <div class="product-price">
-                                                <div class="percent"><span>98%</span></div>
-                                                <div class="price"><span>100</span></div>
-                                            </div>
-                                            <div class="product-badge">
-                                                <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide benefit_contants">
-                                    <div class="product-card">
-                                        <a href="#" class="product-link"></a>
-                                        <div class="product-wrap">
-                                            <div class="product-thum">
-                                                <div class="thum_absol">
-                                                    <img src="./images/benefit_005.jpeg" alt="">
-                                                    <div class="product-emblem"></div>
-                                                    <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
+                                        <div class="item_info">
+                                            <div class="store">
+                                                <span>삐아</span>
+                                                <div class="mileage">
+                                                    <img src="./images/icon/mileage.png" alt="">
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="product-txt">
-                                            <div class="product-title">
-                                                <div class="store">
-                                                    <span>카카오스타일이벤트</span>
-                                                </div>
-                                                <p class="item-name">[카카오톡 선물하기] 모바일 상품권 5천원</p>
+                                            <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                            <div class="item_price">
+                                                <span class="percent">98%</span>
+                                                <span class="price">100원</span>
                                             </div>
-                                            <div class="product-price">
-                                                <div class="percent"><span>98%</span></div>
-                                                <div class="price"><span>100</span></div>
-                                            </div>
-                                            <div class="product-badge">
-                                                <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide benefit_contants">
-                                    <div class="product-card">
-                                        <a href="#" class="product-link"></a>
-                                        <div class="product-wrap">
-                                            <div class="product-thum">
-                                                <div class="thum_absol">
-                                                    <img src="./images/benefit_006.gif" alt="">
-                                                    <div class="product-emblem">
-                                                        <img src="./images/icon/direct.png" alt="직진">
-                                                    </div>
-                                                    <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-txt">
-                                            <div class="product-title">
-                                                <div class="store">
-                                                    <span>삐아</span>
-                                                    <div class="mileage">
-                                                        <img src="images/icon/mileage.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <p class="item-name">라스트 오토 젤 아이라이너 슬림 🚀직진배송🚀 [비건]</p>
-                                            </div>
-                                            <div class="product-price">
-                                                <div class="percent"><span>98%</span></div>
-                                                <div class="price"><span>100</span></div>
-                                            </div>
-                                            <div class="product-badge">
-                                                <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide benefit_contants">
-                                    <div class="product-card">
-                                        <a href="#" class="product-link"></a>
-                                        <div class="product-wrap">
-                                            <div class="product-thum">
-                                                <div class="thum_absol">
-                                                    <img src="./images/benefit_007.gif" alt="">
-                                                    <div class="product-emblem">
-                                                        <img src="./images/icon/direct.png" alt="직진">
-                                                    </div>
-                                                    <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-txt">
-                                            <div class="product-title">
-                                                <div class="store">
-                                                    <span>마이온샵</span>
-                                                    <div class="mileage">
-                                                        <img src="images/icon/mileage.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <p class="item-name">[4천장돌파🥇/활용도200%] 덴즈 레이어드 골지니트 튜브탑 (44~55) (레이어드튜브탑-골지튜브탑-베이직튜브탑-체형커버-레이어드탱크탑-니트탑-슬림핏-봄코디-봄니트)</p>
-                                            </div>
-                                            <div class="product-price">
-                                                <div class="percent"><span>98%</span></div>
-                                                <div class="price"><span>100</span></div>
-                                            </div>
-                                            <div class="product-badge">
+                                            <div class="item_badge">
                                                 <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
                                                 <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
                                             </div>
@@ -714,473 +585,542 @@
                         </div>
                     </div>
                 </section>
-                <a href="#" class="banefit_all">첫구매 혜택 전체보기</a>       
             </div>
-            <p class="benefit_semibold">당신을 위한 추천 아이템</p>
-            <section class="recommand_wrap">
-                <div class="recommand-basic">
-                    <div class="scroller">
-                        <div class="view-window">
-                            <div class="item-list">
-                                <div class="item-wrap">
-                                    <div class="item-contents">
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_001.webp" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>데일리쥬</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[단독][10만장판매/MADE] 데모스 워싱 데님 롱 스커트 (데님/면)(봄신상)</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>49%</span></div>
-                                                        <div class="price"><span>31,840</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_002.webp" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>리얼코코</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[단독] [봄🌸/라운드넥&유넥/건조기가능/누적15만장/made] 코튼 스판 베이직 긴팔티셔츠 - 6 Color (이너티/기본티/무지/레이어드)</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>34%</span></div>
-                                                        <div class="price"><span>19,880</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_003.webp" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>크림치즈마켓</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[후기극찬~바지안감!/5천장돌파🏆] 모어 플리츠 치마바지, 미니스커트 - sk</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>29%</span></div>
-                                                        <div class="price"><span>27,410</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+
+            <!-- 첫구매 버튼 -->
+            <div class="btn_wrap">
+                <a class="benefit_btn">첫구매 혜택 전체보기</a>
+            </div>
+
+            <!-- 추천아이템 -->
+            <section class="recom">
+                <div class="title">
+                    <h3>당신을 위한 추천 아이템</h3>
+                </div>
+                <ul>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
                                     </div>
-                                    <div class="item-contents">
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_004.webp" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>리얼코코</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[단독] [봄신상🌸/오버핏/made] 메이킹 스트라이프 셔츠 - 7 Color (하객룩/레이어드/빅사이즈/출근룩/롱슬리브/봄옷/오피스룩/상의/남방)</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>48%</span></div>
-                                                        <div class="price"><span>28,720</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_005.webp" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>퍼빗</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[⚜🌸~70%세일시작🌸⚜] [랩티1등🏆/누적5만장🩰/모델전색소장💗/평점4.8극찬💭/기모ver.] 단독제작) 로잔나 여리핏 랩 실루엣 워머탑 티 - 10color</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>40%</span></div>
-                                                        <div class="price"><span>25,840</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_006.webp" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>리얼코코</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[단독] [봄신상🌸/브이넥&라운드넥/made] 시오 니트 - 20 Color (하객룩/레이어드/출근룩/롱슬리브/봄옷/오피스룩/상의)</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>56%</span></div>
-                                                        <div class="price"><span>22,650</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
                                     </div>
-                                    <div class="item-contents">
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_007.webp" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>고고싱</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[52만장돌파👏🏻독보적판매량/11컬러🌷봄슬랙스] 핀턱 스트레이트 일자슬랙스 (하객룩,구김적은촤르르핏,와이드슬랙스,핀턱슬랙스,사계절)</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>31%</span></div>
-                                                        <div class="price"><span>23,840</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_008.webp" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>고고싱</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[역대급53만장🏆11컬러/부츠컷슬랙스🌷봄팬츠] 반하이 모찌슬랙스 #세미부츠컷 (하객룩,허리속밴딩,스판,하이웨스트,밴딩슬랙스)</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>98%</span></div>
-                                                        <div class="price"><span>100</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_009.jpg" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>니어웨어</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[단독] [봄베스트🌷] 언유즈얼리 에브리 세미 부츠컷 데님 (7color) SHORT/NORMAL/LONG/스판/연청/생지/블랙/니어웨어/봄팬츠</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>22%</span></div>
-                                                        <div class="price"><span>27,120</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-contents">
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_010.gif" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>어베인</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">✨v넥추가 9만장돌파💕URBANE MADE💕 스무드 라운드 브이넥 캐시미어 니트 가디건 (11c)</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>45%</span></div>
-                                                        <div class="price"><span>32,970</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_011.gif" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>니썸</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[여유핏/기본/XS사이즈추가][원조핏🔥][부츠컷데님1위🏆누적40만장][made]세인트부츠컷데님 - 9color (숏,미들,롱/xs-l)</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>31%</span></div>
-                                                        <div class="price"><span>25,360</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="product-card">
-                                                <a href="#" class="product-link"></a>
-                                                <div class="product-wrap">
-                                                    <div class="product-thum">
-                                                        <div class="thum_absol">
-                                                            <img src="./images/item_012.gif" alt="">
-                                                            <div class="product-emblem">
-                                                                <img src="./images/icon/direct_delivary.png" alt="직진배송">
-                                                            </div>
-                                                            <span class="like-button"><img src="./images/icon/like.png" alt=""></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-txt">
-                                                    <div class="product-title">
-                                                        <div class="store">
-                                                            <span>퍼빗</span>
-                                                            <div class="mileage">
-                                                                <img src="images/icon/mileage.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <p class="item-name">[🌸~70%세일시작🌸]⚜국민인생스커트⚜[10만장돌파🏆](+뉴컬러🩰/롱💗)[승마살삭제핏/인생치마🩰/후기1만개🕊] 단독제작) 원조핏"1위" 쉐딩 스커트 - 14color</p>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="percent"><span>56%</span></div>
-                                                        <div class="price"><span>28,680</span></div>
-                                                    </div>
-                                                    <div class="product-badge">
-                                                        <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
-                                                        <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_card">
+                            <a href="#" class="item_link"></a>
+                            <div class="item_img">
+                                <div class="item_thum">
+                                    <img src="./images/benefit_008.webp" alt="">
+                                </div>
+                                <div class="thum_icon">
+                                    <div class="item_emblem">
+                                        <img src="images/icon/direct.png" alt="">
+                                    </div>
+                                    <span class="like_button"><img src="./images/icon/like.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="store">
+                                    <span>삐아</span>
+                                    <div class="mileage">
+                                        <img src="./images/icon/mileage.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="item_name">라스트 오토 젤 아이라이너 (23colors) 🚀직진배송🚀 🌿비건🌿</p>
+                                <div class="item_price">
+                                    <span class="percent">98%</span>
+                                    <span class="price">100원</span>
+                                </div>
+                                <div class="item_badge">
+                                    <img src="./images/icon/first_price.png" alt="첫구매가" class="first_price">
+                                    <img src="./images/icon/delivary.png" alt="무료배송" class="delivary">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </section>
         </main>
+
+        <!-- 하단 버튼 -->
         <div class="btn_bg">
-            <div class="main_btn">
-                <a href="./index.html" class="home">
+            <div class="btn_wrap">
+                <a href="./index.html" class="btm">
                     <div class="icon_wrap">
-                        <img src="./images/icon/home.png" alt="">
+                        <img src="./images/icon/home.png" alt="홈">
                         <span>홈</span>
                     </div>
                 </a>
-                <a href="./category.html" class="home">
+                <a href="./category2.html" class="btm">
                     <div class="icon_wrap">
-                        <img src="./images/icon/menu.png" alt="">
+                        <img src="./images/icon/menu.png" alt="카테고리">
                         <span>카테고리</span>
                     </div>
                 </a>
-                <a href="./pick.html" class="home">
+                <a href="./pick2.html" class="btm">
                     <div class="icon_wrap">
-                        <img src="./images/icon/favorite.png" alt="">
+                        <img src="./images/icon/favorite.png" alt="찜버튼">
                         <span>찜</span>
                     </div>
                 </a>
-                <a href="./pick.html" class="home">
+                <a href="./pick2.html" class="btm">
                     <div class="icon_wrap">
-                        <img src="./images/icon/my.png" alt="">
+                        <img src="./images/icon/my.png" alt="마이페이지">
                         <span>마이페이지</span>
                     </div>
                 </a>

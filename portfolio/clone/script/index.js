@@ -1,12 +1,11 @@
 //메인배너
-const pageAll = document.querySelector('.allpage')
+const pageAll = document.querySelector('.all_page')
 const pageCurrent = document.querySelector('.current_page');
-const pageSlide = document.querySelectorAll('.swiper-horizontal .swiper-slide');
-console.log(pageAll,pageCurrent,pageSlide)
+const pageSlide = document.querySelectorAll('.main_swiper .slide_css');
 
 pageAll.textContent = pageSlide.length;
-const mainBnr = new Swiper('.swiper-horizontal',{
-    autoplay:{delay:3000,},
+const mainBnr = new Swiper('.main_swiper',{
+    autoplay:{delay:3700,},
     loop:true,
     on:{
         slideChange:function(){
@@ -16,7 +15,7 @@ const mainBnr = new Swiper('.swiper-horizontal',{
 })
 
 // 첫구매 혜택 슬라이드
-const beneFit = new Swiper('.benefit_horizontal',{
-    slidesPerView:3,
+const beneFit = new Swiper('.benefit_swiper',{
+    slidesPerView:'auto',
     spaceBetween:3,
 })
