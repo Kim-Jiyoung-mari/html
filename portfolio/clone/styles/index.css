@@ -131,9 +131,7 @@
     position: absolute; bottom: -3px;
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: flex-end;
 }
-.main_wrap main > * .item_card .item_img .thum_icon .item_emblem {
-    width: 28px;
-}
+.main_wrap main > * .item_card .item_img .thum_icon .item_emblem {}
 .main_wrap main > * .item_card .item_img .thum_icon .item_emblem > img {
     width: 100%;
 }
@@ -206,7 +204,7 @@
 .main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card  .item_img .item_thum > img {}
 .main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card:hover .item_img .item_thum > img {}
 .main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card  .item_img .thum_icon {}
-.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img .thum_icon .item_emblem {}
+.main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img .thum_icon .item_emblem {width: 28px;}
 .main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img .thum_icon .item_emblem > img {}
 .main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img .thum_icon .like_button {}
 .main_wrap main .benefit .benefit_wrap .benefit_swiper .swiper-wrapper .benefit_contants .item_card .item_img .thum_icon .like_button > img {}
@@ -260,7 +258,7 @@
 .main_wrap main .recom ul li .item_card .item_img .item_thum {height: 230px;}
 .main_wrap main .recom ul li .item_card .item_img .item_thum > img {}
 .main_wrap main .recom ul li .item_card .item_img .thum_icon {}
-.main_wrap main .recom ul li .item_card .item_img .thum_icon .item_emblem {}
+.main_wrap main .recom ul li .item_card .item_img .thum_icon .item_emblem {width: 50px;}
 .main_wrap main .recom ul li .item_card .item_img .thum_icon .item_emblem > img {}
 .main_wrap main .recom ul li .item_card .item_img .thum_icon .like_button {}
 .main_wrap main .recom ul li .item_card .item_img .thum_icon .like_button > img {}
