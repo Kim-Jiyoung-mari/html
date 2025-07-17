@@ -28,6 +28,7 @@ tabBtn.forEach((target,index)=>{
 
         tabClass();
         tabBtn[index].classList.add('css_bg');
+        moveHighlight(index);
 
         // 스크롤 애니메이션 끝날 시간 이후에 클릭 상태 해제
         setTimeout(() => {
@@ -56,9 +57,10 @@ window.addEventListener('scroll', function () {
     const docHeight = document.body.scrollHeight;
 
     tabCon.forEach(function(t, i) {
-        if (y >= t.offsetTop - 200) {
+        if (y >= t.offsetTop - 30) {
             tabClass();
             tabBtn[i].classList.add('css_bg');
+            moveHighlight(i)
         };
     });
 
@@ -66,5 +68,23 @@ window.addEventListener('scroll', function () {
     if (scrollBottom >= docHeight - 10) { // 약간의 여유 줘서 안정성 높이기
         tabClass();
         tabBtn[tabBtn.length - 1].classList.add('css_bg');
+        moveHighlight(tabBtn.length - 1);
     }
 });
+
+const highlightBar = document.querySelector('.highlightBar');
+
+function moveHighlight(index) {
+    const highlightBar = document.querySelector('.highlightBar');
+    if (!highlightBar) return;
+
+    const btn = tabBtn[index];
+    const btnRect = btn.getBoundingClientRect();
+    const parentRect = btn.parentElement.getBoundingClientRect();
+
+    const left = btnRect.left - parentRect.left;
+    const width = btnRect.width;
+
+    highlightBar.style.width = `${width}px`;
+    highlightBar.style.transform = `translateX(${left}px)`;
+}
