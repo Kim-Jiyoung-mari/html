@@ -48,7 +48,8 @@ tabBtn.forEach((target,index)=>{
 // 3~8. 스크롤 위치에 따라 메뉴 동작하게 하기 
 tabBtn[0].classList.add('css_bg');  //1. 의류 (초기값 클래스 미리 설정)
 const scrollY = () => window.pageYOffset || document.documentElement.scrollTop;
-// // 대신 window.pageY0Offset 또는 document.documentElement.scrollTop을 써야 정확해
+
+// 대신 window.pageY0Offset 또는 document.documentElement.scrollTop을 써야 정확해
 window.addEventListener('scroll', function () {
     if (isClicking) return; // 클릭 중일 땐 무시!
 
@@ -60,7 +61,6 @@ window.addEventListener('scroll', function () {
         if (y >= t.offsetTop - 30) {
             tabClass();
             tabBtn[i].classList.add('css_bg');
-            moveHighlight(i)
         };
     });
 
@@ -71,20 +71,3 @@ window.addEventListener('scroll', function () {
         moveHighlight(tabBtn.length - 1);
     }
 });
-
-const highlightBar = document.querySelector('.highlightBar');
-
-function moveHighlight(index) {
-    const highlightBar = document.querySelector('.highlightBar');
-    if (!highlightBar) return;
-
-    const btn = tabBtn[index];
-    const btnRect = btn.getBoundingClientRect();
-    const parentRect = btn.parentElement.getBoundingClientRect();
-
-    const left = btnRect.left - parentRect.left;
-    const width = btnRect.width;
-
-    highlightBar.style.width = `${width}px`;
-    highlightBar.style.transform = `translateX(${left}px)`;
-}

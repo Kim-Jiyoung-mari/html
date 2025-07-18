@@ -10,7 +10,7 @@ const main = new Swiper('#main',{
             nav[this.activeIndex].classList.add('nav_active')
             setTimeout(()=>{
                 ScrollTrigger.refresh();
-            },0)
+            },0);
         },
     },
 });

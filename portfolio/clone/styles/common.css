@@ -2,6 +2,7 @@
 .main_wrap main {
     width: 600px; margin: 0 auto; height: 100%;
     background-color: #FFF;
+    min-width: 420px;
 }
 
 /* ★ 메인 상단 네비 ★ */
