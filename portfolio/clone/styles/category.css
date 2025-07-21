@@ -16,21 +16,12 @@
     background: transparent;
     transition: background 0.3s ease;
 }
-.main_wrap main .tab_wrap .left_category > ul .highlightBar {
-    /* width: 114px; height: 56px; */
-    position: absolute; 
-    background-color: red; color: #292b2b;
-    transform: translate3d(0px, 168px, 0px);
-    transition: transform 0.15s ease-out;
-}
-
 .main_wrap main .tab_wrap .left_category > ul .category_list .css_bg {
     width: 114px; height: 56px;
     position: absolute; background-color: #fff; color: #292b2b;
     will-change: transform, width;
     pointer-events: none;
     z-index: 0; /* 버튼보다 뒤로! */
-    transition: all 0.3s ease;
 }
 .main_wrap main .tab_wrap .left_category > ul .category_list .list_btn {
     padding: 20px; 
