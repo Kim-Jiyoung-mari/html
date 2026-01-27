@@ -3,7 +3,7 @@
     overflow: hidden; 
     border-radius: 20px;
 }
-.book tr{background-color: #F2F2F2; }
+.book tr{background-color: #F2F2F2;}
 .book tr:nth-child(3), tr:nth-child(5) {background-color: #E8E8E8;}
 .book tr:nth-child(3) {
     border: 2px solid #FF0066;
