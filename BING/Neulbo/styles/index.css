@@ -1,0 +1,171 @@
+main {
+    width: 1500px; margin: 0 auto;
+}
+
+/* 헤더 */
+main header {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    padding-top: 20px;
+}
+main header h1 {}
+main header h1 > a {}
+main header h1 > a img {}
+main header .nav_r {}
+main header .nav_r > a {}
+main header .nav_r > a img {}
+
+/* 인풋 입력창 */
+main .input {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    margin: 40px 0;
+}
+main .input .input_txt {}
+main .input .input_txt .user_txt {
+    width: 1395px; padding: 20px 30px; border-radius: 10px;
+    background-color: #EEEEEE; color: #A2AF9B;
+}
+main .input .input_txt .user_txt::placeholder {color: #A2AF9B;}
+
+main .input .input_btn {}
+main .input .input_btn .btn {
+    background-color: #A2AF9B; color: #FFF;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+/* 메인 캘린더 */
+main .main {
+    display: flex; flex-flow: row nowrap; justify-content:space-between
+}
+
+/* 메인 | (좌)캘린더 */
+main .main .left_cal {
+    width: 630px;
+}
+main .main .left_cal .month_drop {
+    display: flex; flex-flow: row nowrap;
+    padding-bottom: 40px;
+}
+main .main .left_cal .month_drop h2 {
+    font-size: 1.88rem; font-weight: 600;
+    padding-right: 15px;
+}
+main .main .left_cal .month_drop > a {}
+main .main .left_cal .month_drop > a img {}
+
+main .main .left_cal .calender {}
+/* 요일 */
+main .main .left_cal .calender .day_week {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    text-align: center;
+}
+main .main .left_cal .calender .day_week > li {
+    width: calc((100% - (10px * 6)) / 7);
+    padding: 20px 25px;
+    font-size: 1.25rem; font-weight: 500;
+}
+main .main .left_cal .calender .day_week > li:first-child {color: rgba(255, 0, 0, 1);}
+main .main .left_cal .calender .day_week > li:last-child {color: rgba(0, 0, 255, 1);}
+/* 날짜 */
+main .main .left_cal .calender .day_num {
+    display: flex; flex-flow: row wrap; justify-content: space-between
+}
+main .main .left_cal .calender .day_num > .day {
+    width: calc((100% - (10px * 6)) / 7); height: 100px;
+    background-color: #FAF9EE; border-radius: 10px; 
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    display: flex; flex-flow: column wrap; justify-content: space-between;
+    text-align: center;
+    font-size: 1.25rem; font-weight: 500;
+}
+
+main .main .left_cal .calender .day_num > .day span {}
+main .main .left_cal .calender .day_num > .day span > img {}
+
+
+/* 메인 | (우)카드 */
+main .main .right_card {
+    width: calc(100% - 747px);
+}
+main .main .right_card h2 {
+    color: #A2AF9B;
+    font-size: 1.56rem; font-weight: 500;
+}
+
+/* 공통 선택자 */
+main .main .right_card .card {
+    border: 2px solid #DCCFC0; border-radius: 25px;
+    padding: 25px 30px;
+}
+main .main .right_card .card .card_title {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+main .main .right_card .card .card_title h3 {
+    font-size: 1.25rem; font-weight: 500;
+}
+main .main .right_card .card .card_title > p {}
+main .main .right_card .card .card_title > p .add {
+    background-color: #A2AF9B; color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+main .main .right_card .card .contents {
+    margin: 27px 0;
+}
+main .main .right_card .card .contents > p {}
+main .main .right_card .card .contents > p .time {
+    font-size: 1.13rem; color: #555;
+}
+main .main .right_card .card .contents > p .card_name {font-size: 1.25rem; font-weight: 500;}
+main .main .right_card .card .card_info {}
+main .main .right_card .card .card_info * {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    color: #555;
+}
+main .main .right_card .card .card_info > * span:last-child {padding-left: 17px;}
+main .main .right_card .card .card_info > * span em {padding-right: 17px;}
+main .main .right_card .card .card_info .place,
+main .main .right_card .card .card_info .deadline {padding-bottom: 10px;}
+
+/* 개별 선택자 */
+main .main .right_card .card1 {margin: 30px 0;}
+main .main .right_card .card1 .card_title {}
+main .main .right_card .card1 .card_title h3 {}
+main .main .right_card .card1 .card_title > p {}
+main .main .right_card .card1 .card_title > p .add {}
+main .main .right_card .card1 .contents {}
+main .main .right_card .card1 .contents > p {color: #A2AF9B;}
+main .main .right_card .card1 .contents > .time {color: #555;}
+main .main .right_card .card1 .contents > .card_name {}
+main .main .right_card .card1 .card_info {}
+main .main .right_card .card1 .card_info .place {}
+main .main .right_card .card1 .card_info .place > span {}
+main .main .right_card .card1 .card_info .place > span img {}
+main .main .right_card .card1 .card_info .alarm {}
+main .main .right_card .card1 .card_info .alarm > span {}
+main .main .right_card .card1 .card_info .alarm > span img {}
+
+
+main .main .right_card .card2 {}
+main .main .right_card .card2 .card_title {}
+main .main .right_card .card2 .card_title h3 {}
+main .main .right_card .card2 .card_title > p {}
+main .main .right_card .card2 .card_title > p .add {}
+main .main .right_card .card2 .contents {}
+main .main .right_card .card2 .contents .card_name {
+    display: flex; flex-flow: row nowrap; align-content: center;
+    color: #A2AF9B;
+    font-size: 1.25rem;
+}
+main .main .right_card .card2 .contents .card_name > span {padding-right: 10px;}
+main .main .right_card .card2 .contents .card_name > span img {}
+main .main .right_card .card2 .card_info {}
+main .main .right_card .card2 .card_info .deadline {}
+main .main .right_card .card2 .card_info .deadline > span {}
+main .main .right_card .card2 .card_info .deadline > span em {}
+main .main .right_card .card2 .card_info .deadline > span img {}
+main .main .right_card .card2 .card_info .memo {}
+main .main .right_card .card2 .card_info .memo > span {}
+main .main .right_card .card2 .card_info .memo > span em {}
+main .main .right_card .card2 .card_info .memo > span img {}
