@@ -2,21 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 파비콘&글꼴 -->
     <link rel="shortcut icon" href="./images/fabicon.png" type="iamge/x-icon">
     <link rel="icon" href="./images/fabicon.png" type="image/x-icon">
     <href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"></href>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 디자인파일 -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <!-- 스크립트 -->
+    <script src="./script/index.js" defer></script>
     <title>Planer | 늘보</title>
 </head>
 <body>
     <main>
         <header>
-            <h1><a href="#"><img src="./images/logo.png" alt="늘보"></a></h1>
+            <h1><a href="./intdex.html"><img src="./images/logo.png" alt="늘보"></a></h1>
             <nav class="nav_r">
                 <a href="#"><img src="./images/setting_btn.png" alt="설정"></a>
-                <a href="#"><img src="./images/profile.png" alt="프로필설정"></a>
+                <a href="#" class="profile"><img src="./images/profile.png" alt="프로필설정"></a>
+                <!-- 프로필설정 드롭다운 -->
+                <div class="profile_drop">
+                    <a href="#"><span>UserName</span></a>
+                    <a href="#"><span>프로필 설정</span></a>
+                    <a href="./login.html"><span>로그인</span></a>
+                </div>
             </nav>
         </header>
 
@@ -31,8 +45,130 @@
             <div class="left_cal">
                 <div class="month_drop">
                     <h2>2026.02</h2>
-                    <a href="#"><img src="./images/calender_down.png" alt=""></a>
+                    <a href="#" class="month_down"><img src="./images/calender_down.png" alt=""></a>
+                    <!-- left 캘린더 드롭다운js -->
+                    <div class="minical_bg">
+                        <div class="left_minical">
+                            <div class="calender_header">
+                                <div class="cal_left">
+                                    <span class="year_month">2026년 <em>2</em>월</span>
+                                    <span><img src="./images/celender_down.png" alt="캘린더 화살표"></span>
+                                </div>
+                                <div class="cal_right">
+                                    <button><img src="./images/cel_left.png" alt="전월 이동"></button>
+                                    <button><img src="./images/cel_right.png" alt="익월 이동"></button>
+                                </div>
+                            </div>
+                            <div class="calender_wrap">
+                                <ul class="week">
+                                    <li class="sun">일</li>
+                                    <li>월</li>
+                                    <li>화</li>
+                                    <li>수</li>
+                                    <li>목</li>
+                                    <li>금</li>
+                                    <li class="sat">토</li>
+                                </ul>
+                                <ul class="day">
+                                    <a href="#" class="mini_day">
+                                        <li>1</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>2</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>3</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>4</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>5</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>6</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>7</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>8</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>9</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>10</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>11</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>12</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>13</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>14</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>15</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>16</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>17</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>18</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>19</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>20</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>21</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>22</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>23</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>24</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>25</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>26</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>27</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>28</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>29</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>30</li>
+                                    </a>
+                                    <a href="#" class="mini_day">
+                                        <li>31</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- 왼쪽 큰 캘린더 -->
                 <div class="calender">
                     <ul class="day_week">
                         <li>일</li>
@@ -44,130 +180,192 @@
                         <li>토</li>
                     </ul>
                     <ul class="day_num">
-                        <li class="day">
-                            <span>1</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>2</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>3</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>4</span>
-                            <span><img src="./images/active_on.png" alt=""></p>
-                        </li>
-                        <li class="day">
-                            <span>5</span>
-                            <span><img src="./images/active_on.png" alt=""></p>
-                        </li>
-                        <li class="day">
-                            <span>6</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>7</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>8</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>9</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>10</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>11</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>12</span>
-                            <span><img src="./images/active_on.png" alt=""></p>
-                        </li>
-                        <li class="day">
-                            <span>13</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>14</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>15</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>16</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>17</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>18</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>19</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>20</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>21</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>22</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>23</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>24</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>25</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>26</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>27</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>28</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>29</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>30</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
-                        <li class="day">
-                            <span>31</span>
-                            <span><!-- <img src="./images/active_on.png" alt=""> --></p>
-                        </li>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>1</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>2</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>3</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap active">
+                            <li class="day">
+                                <span>4</span>
+                                <span><img src="./images/active_on.png" alt=""></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>5</span>
+                                <span><img src="./images/active_on.png" alt=""></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>6</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>7</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>8</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>9</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>10</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>11</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>12</span>
+                                <span><img src="./images/active_on.png" alt=""></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>13</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>14</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>15</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>16</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>17</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>18</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>19</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>20</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>21</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>22</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>23</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>24</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>25</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>26</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>27</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>28</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>29</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>30</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
+                        <a href="#" class="day_wrap">
+                            <li class="day">
+                                <span>31</span>
+                                <span><!-- <img src="./images/active_on.png" alt=""> --></p>
+                            </li>
+                        </a>
                     </ul>
                 </div>
             </div>
@@ -176,7 +374,7 @@
                 <div class="card card1">
                     <div class="card_title">
                         <h3>일정</h3>
-                        <p><button type="button" class="add">추가</button></p>
+                        <p><button type="button" class="add js_add1">추가</button></p>
                     </div>
                     <div class="contents">
                         <p class="time">14:00 - 15:00</p>
@@ -196,7 +394,7 @@
                 <div class="card card2">
                     <div class="card_title">
                         <h3>할 일</h3>
-                        <p><button type="button" class="add">추가</button></p>
+                        <p><button type="button" class="add js_add2">추가</button></p>
                     </div>
                     <div class="contents">
                         <p class="card_name">
@@ -213,6 +411,487 @@
                             <span><img src="./images/memo.png" alt=""></span>
                             <span><em>메모:</em>시장조사 포함</span>
                         </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 일정카드 '추가' 버튼 클릭하면 실행되는 팝업 -->
+            <div class="add_bg"> <!-- 투명배경 fixed -->
+                <div class="add_wrap "> <!-- 일정배경 -->
+                    <a href="#" class="plan_close"><img src="./images/close.png" alt="창 닫기 "></a>
+                    <p>일정 | 신규</p>
+                    <div class="plan_title">
+                        <p class="input_txt"><input type="text" name="user_txt" class="user_txt" placeholder="일정을 추가하세요."></p>
+                        <p class="input_btn"><button type="button" class="btn">추가</button></p>
+                    </div>
+                    <div class="plan_contents">
+                        <div class="day_state">
+                            <p>하루종일</p>
+                            <input type="checkbox" name="day_on" id="day_on">
+                            <label for="day_on">
+                                <span class="switch"></span>
+                                <span class="switch_state"></span>
+                            </label>
+                        </div>
+                        <div class="start">
+                            <p>시작</p>
+                            <div class="start_date">
+                                <a href="#" class=""><span class="date tab_date1 tab_active">2026. 2. 4</span></a>
+                                <a href="#" class=""><span class="tab_time1 time"><em>오전</em> 11:00</span></a>
+                            </div>
+                        </div>
+                        <!-- '시작' 날짜 클릭 시, 출력되는 달력  -->
+                        <div class="calender_bg start_cal">
+                            <div class="plan_cal">
+                                <div class="calender_header">
+                                    <div class="cal_left">
+                                        <span class="year_month">2026년 <em>2</em>월</span>
+                                        <span><img src="./images/celender_down.png" alt="캘린더 화살표"></span>
+                                    </div>
+                                    <div class="cal_right">
+                                        <button><img src="./images/cel_left.png" alt="전월 이동"></button>
+                                        <button><img src="./images/cel_right.png" alt="익월 이동"></button>
+                                    </div>
+                                </div>
+                                <div class="calender2">
+                                    <ul class="week">
+                                        <li class="sun">일</li>
+                                        <li>월</li>
+                                        <li>화</li>
+                                        <li>수</li>
+                                        <li>목</li>
+                                        <li>금</li>
+                                        <li class="sat">토</li>
+                                    </ul>
+                                    <ul class="day">
+                                        <a href="#" class="mini_day">
+                                            <li>1</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>2</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>3</li>
+                                        </a>
+                                        <a href="#" class="mini_day selected">
+                                            <li>4</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>5</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>6</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>7</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>8</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>9</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>10</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>11</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>12</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>13</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>14</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>15</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>16</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>17</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>18</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>19</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>20</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>21</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>22</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>23</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>24</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>25</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>26</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>27</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>28</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>29</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>30</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>31</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- '시작' 시간 클릭 시, 출력되는 타임피커 -->
+                        <div class="picker_bg start_time">
+                            <div class="time_picker">
+                                <div class="time_wheel">
+                                    <!-- 윗줄 -->
+                                    <div class="row dim">
+                                        <span class="ampm">AM</span>
+                                        <span>05</span>
+                                        <span>55</span>
+                                    </div>
+
+                                    <!-- 선택 줄 -->
+                                    <div class="row select_time">
+                                        PM
+                                        <span>06</span>
+                                        <span>00</span>
+                                    </div>
+
+                                    <!-- 아랫줄 -->
+                                    <div class="row dim">
+                                        AM
+                                        <span>07</span>
+                                        <span>05</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="end">
+                            <p>종료</p>
+                            <div class="start_date">
+                                <a href="#"><span class="date tab_date2 tab_active">2026. 2. 5</span></a>
+                                <a href="#"><span class="time tab_time2"><em>오후</em> 12:00</span></a>
+                            </div>
+                        </div>
+                        <!-- '종료' 날짜 클릭 시, 출력되는 달력  -->
+                        <div class="calender_bg end_cal">
+                            <div class="plan_cal">
+                                <div class="calender_header">
+                                    <div class="cal_left">
+                                        <span class="year_month">2026년 <em>2</em>월</span>
+                                        <span><img src="./images/celender_down.png" alt="캘린더 화살표"></span>
+                                    </div>
+                                    <div class="cal_right">
+                                        <button><img src="./images/cel_left.png" alt="전월 이동"></button>
+                                        <button><img src="./images/cel_right.png" alt="익월 이동"></button>
+                                    </div>
+                                </div>
+                                <div class="calender2">
+                                    <ul class="week">
+                                        <li class="sun">일</li>
+                                        <li>월</li>
+                                        <li>화</li>
+                                        <li>수</li>
+                                        <li>목</li>
+                                        <li>금</li>
+                                        <li class="sat">토</li>
+                                    </ul>
+                                    <ul class="day">
+                                        <a href="#" class="mini_day">
+                                            <li>1</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>2</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>3</li>
+                                        </a>
+                                        <a href="#" class="mini_day selected">
+                                            <li>4</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>5</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>6</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>7</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>8</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>9</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>10</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>11</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>12</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>13</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>14</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>15</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>16</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>17</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>18</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>19</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>20</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>21</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>22</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>23</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>24</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>25</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>26</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>27</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>28</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>29</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>30</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>31</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picker_bg end_time">
+                            <div class="time_picker">
+                                <div class="time_wheel">
+                                    <!-- 윗줄 -->
+                                    <div class="row dim">
+                                        <span class="ampm">AM</span>
+                                        <span>05</span>
+                                        <span>55</span>
+                                    </div>
+
+                                    <!-- 선택 줄 -->
+                                    <div class="row select_time">
+                                        PM
+                                        <span>06</span>
+                                        <span>00</span>
+                                    </div>
+
+                                    <!-- 아랫줄 -->
+                                    <div class="row dim">
+                                        AM
+                                        <span>07</span>
+                                        <span>05</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="repeat">
+                            <p>반복</p>
+                            <a href="#" class="repeat_drop"><span>안 함</span><img src="./images/repea_circle.png" alt="반복 드롭다운 버튼"></a>
+                            <div class="drop_wrap">
+                                <a href="#"><span>안함</span></a>
+                                <a href="#"><span>매주</span></a>
+                                <a href="#"><span>매월</span></a>
+                                <a href="#"><span>매년</span></a>
+                                <a href="#"><span>매일</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 드롭다운 js -->
+            </div>
+            <!-- 할 일 카드 '추가' 버튼 클릭하면 실행되는 팝업 -->
+            <div class="todo_bg"> <!-- 투명배경 fixed -->
+                <div class="todo_wrap"> <!-- 일정배경 -->
+                    <a href="#" class="todo_close"><img src="./images/close.png" alt="창 닫기 "></a>
+                    <p>할 일 | 신규</p>
+                    <div class="todo_title">
+                        <p class="input_txt"><input type="text" name="user_txt" class="user_txt" placeholder="일정을 추가하세요."></p>
+                        <p class="input_btn"><button type="button" class="btn">추가</button></p>
+                    </div>
+                    <div class="todo_contents">
+                        <div class="start">
+                            <p>날짜</p>
+                            <div class="start_date">
+                                <a href="#"><span class="date tab_plan tab_active">2026. 2. 5</span></a>
+                            </div>
+                        </div>
+                        <div class="calender_bg date_cal">
+                            <div class="plan_cal">
+                                <div class="calender_header">
+                                    <div class="cal_left">
+                                        <span class="year_month">2026년 <em>2</em>월</span>
+                                        <span><img src="./images/celender_down.png" alt="캘린더 화살표"></span>
+                                    </div>
+                                    <div class="cal_right">
+                                        <button><img src="./images/cel_left.png" alt="전월 이동"></button>
+                                        <button><img src="./images/cel_right.png" alt="익월 이동"></button>
+                                    </div>
+                                </div>
+                                <div class="calender2">
+                                    <ul class="week">
+                                        <li class="sun">일</li>
+                                        <li>월</li>
+                                        <li>화</li>
+                                        <li>수</li>
+                                        <li>목</li>
+                                        <li>금</li>
+                                        <li class="sat">토</li>
+                                    </ul>
+                                    <ul class="day">
+                                        <a href="#" class="mini_day">
+                                            <li>1</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>2</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>3</li>
+                                        </a>
+                                        <a href="#" class="mini_day selected">
+                                            <li>4</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>5</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>6</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>7</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>8</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>9</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>10</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>11</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>12</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>13</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>14</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>15</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>16</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>17</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>18</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>19</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>20</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>21</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>22</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>23</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>24</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>25</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>26</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>27</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>28</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>29</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>30</li>
+                                        </a>
+                                        <a href="#" class="mini_day">
+                                            <li>31</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

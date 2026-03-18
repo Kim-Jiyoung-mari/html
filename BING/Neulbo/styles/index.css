@@ -1,5 +1,5 @@
 main {
-    width: 1500px; margin: 0 auto;
+    max-width: 1400px; margin: 0 auto;
 }
 
 /* 헤더 */
@@ -10,57 +10,136 @@ main header {
 main header h1 {}
 main header h1 > a {}
 main header h1 > a img {}
-main header .nav_r {}
+main header .nav_r {position: relative;}
 main header .nav_r > a {}
 main header .nav_r > a img {}
-
-/* 인풋 입력창 */
-main .input {
-    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
-    margin: 40px 0;
+main header .nav_r .profile_drop {
+    background-color: #FFF; color: #A2AF9B;
+    width: 140px;
+    position: absolute; top: calc(100% + 8px); right: 0; z-index: 999;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-main .input .input_txt {}
-main .input .input_txt .user_txt {
-    width: 1395px; padding: 20px 30px; border-radius: 10px;
+main header .nav_r .profile_drop > a {
+    display: block;
+    text-align: left;
+    padding: 14px 20px;
+    transition: all 0.3s;
+}
+main header .nav_r .profile_drop > a:hover {
+    display: block;
+    background-color: #EEEEEE;
+}
+main header .nav_r .profile_drop > a:first-child {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+main header .nav_r .profile_drop > a > span {color: #A2AF9B;}
+
+/* 인풋 입력창 - 공통 선택자 */
+main .main .add_bg .add_wrap .plan_title .input_txt {}
+main > * .input_txt {
+    padding: 20px 30px; border-radius: 10px;
     background-color: #EEEEEE; color: #A2AF9B;
 }
-main .input .input_txt .user_txt::placeholder {color: #A2AF9B;}
-
-main .input .input_btn {}
-main .input .input_btn .btn {
+main > * .input_txt .user_txt {
+    width: 100%; background-color: #EEEEEE;
+}
+main > * .input_txt .user_txt::placeholder {color: #A2AF9B;}
+main > * .input_btn {}
+main > * .input_btn .btn {
     background-color: #A2AF9B; color: #FFF;
     padding: 20px 25px;
     border-radius: 10px;
 }
 
-/* 메인 캘린더 */
-main .main {
-    display: flex; flex-flow: row nowrap; justify-content:space-between
+/* 인풋 입력창 */
+main .input {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    gap: 10px;
+    margin: 30px 0;
 }
+main .input .input_txt {
+    width: 1300px; flex: 1;
+}
+main .input .input_txt .user_txt {}
+main .input .input_txt .user_txt::placeholder {}
+
+main .input .input_btn {}
+main .input .input_btn .btn {}
+
 
 /* 메인 | (좌)캘린더 */
 main .main .left_cal {
-    width: 630px;
+    max-width: 600px; flex: 1;
+    
+}
+main .main {
+    display: flex; flex-flow: row nowrap; justify-content:space-between;
 }
 main .main .left_cal .month_drop {
     display: flex; flex-flow: row nowrap;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 main .main .left_cal .month_drop h2 {
-    font-size: 1.88rem; font-weight: 600;
+    font-size: 1.30rem; font-weight: 600;
     padding-right: 15px;
 }
-main .main .left_cal .month_drop > a {}
-main .main .left_cal .month_drop > a img {}
+main .main .left_cal .month_drop > a {width: 20px;}
+main .main .left_cal .month_drop > a img {width: 100%;}
+/* =====★'(좌)' 캘린더 드롭다운 클릭 시, 출력되는 달력 ★ */
+main .main .left_cal .month_drop .minical_bg {position: relative;}
+main .main .left_cal .month_drop .minical_bg .left_minical {
+    position: absolute; top: calc(100% - 8px); left: -20px;
+    z-index: 50;
+    background-color: #DCCFC0; border-radius: 10px;
+    width: 375px; margin: 10px 0; padding: 10px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.5)
+}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_header {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    padding: 6px 16px; margin-bottom: 10px;
+}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_header .cal_left {
+    align-items: center;
+    display: flex; align-items: center; gap: 6px;
+}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_header .cal_left > span {}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_header .cal_left .year_month {}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_header .cal_left .year_month > em {}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_header .cal_left > span > img {}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_header .cal_right {}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_header .cal_right button {margin-left: 10px;}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_header .cal_right button > img {}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_wrap {}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_wrap > ul {}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_wrap > ul > li {}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_wrap .week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    text-align: center;
+}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_wrap .week .sun {color:  rgba(255, 0, 0, 1) ;}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_wrap .week .sat {color: rgba(0, 0, 255, 1);}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_wrap .day {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_wrap .day .mini_day {padding: 15px 0;}
+main .main .left_cal .month_drop .minical_bg .left_minical .calender_wrap .day .mini_day > li {}
 
-main .main .left_cal .calender {}
+
 /* 요일 */
+main .main .left_cal .calender {}
 main .main .left_cal .calender .day_week {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    display: flex; flex-flow: row wrap; gap: 10px;
     text-align: center;
 }
 main .main .left_cal .calender .day_week > li {
-    width: calc((100% - (10px * 6)) / 7);
+    width: calc((100% - 60px) / 7);
     padding: 20px 25px;
     font-size: 1.25rem; font-weight: 500;
 }
@@ -68,41 +147,48 @@ main .main .left_cal .calender .day_week > li:first-child {color: rgba(255, 0, 0
 main .main .left_cal .calender .day_week > li:last-child {color: rgba(0, 0, 255, 1);}
 /* 날짜 */
 main .main .left_cal .calender .day_num {
-    display: flex; flex-flow: row wrap; justify-content: space-between
+    display: flex; flex-flow: row wrap; gap: 10px;
 }
-main .main .left_cal .calender .day_num > .day {
-    width: calc((100% - (10px * 6)) / 7); height: 100px;
+main .main .left_cal .calender .day_num > .day_wrap {
+    width: calc((100% - 60px) / 7); height: 100px;
     background-color: #FAF9EE; border-radius: 10px; 
-    padding: 20px 25px;
-    margin-bottom: 20px;
-    display: flex; flex-flow: column wrap; justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 5px;
     text-align: center;
-    font-size: 1.25rem; font-weight: 500;
+}
+main .main .left_cal .calender .day_num > .active {
+    border: 2px solid #A2AF9B;
+}
+main .main .left_cal .calender .day_num > .day_wrap .day {
+    height: 100%;
+    display: flex; flex-flow: column wrap; justify-content: space-between;
 }
 
-main .main .left_cal .calender .day_num > .day span {}
+main .main .left_cal .calender .day_num > .day_wrap .day span {
+    font-weight: 500; font-size: 1.13rem;
+}
 main .main .left_cal .calender .day_num > .day span > img {}
 
 
 /* 메인 | (우)카드 */
 main .main .right_card {
-    width: calc(100% - 747px);
+    max-width: 650px; width: 100%; flex-shrink: 0; 
 }
 main .main .right_card h2 {
     color: #A2AF9B;
-    font-size: 1.56rem; font-weight: 500;
+    font-size: 1.30rem; font-weight: 500;
 }
 
-/* 공통 선택자 */
+/* (우) 카드 공통 선택자 */
 main .main .right_card .card {
     border: 2px solid #DCCFC0; border-radius: 25px;
-    padding: 25px 30px;
+    padding: 20px 25px;
 }
 main .main .right_card .card .card_title {
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
 }
 main .main .right_card .card .card_title h3 {
-    font-size: 1.25rem; font-weight: 500;
+    font-size: 1.13rem; font-weight: 500;
 }
 main .main .right_card .card .card_title > p {}
 main .main .right_card .card .card_title > p .add {
@@ -128,7 +214,7 @@ main .main .right_card .card .card_info > * span em {padding-right: 17px;}
 main .main .right_card .card .card_info .place,
 main .main .right_card .card .card_info .deadline {padding-bottom: 10px;}
 
-/* 개별 선택자 */
+/* (우) 카드 개별 선택자 */
 main .main .right_card .card1 {margin: 30px 0;}
 main .main .right_card .card1 .card_title {}
 main .main .right_card .card1 .card_title h3 {}
@@ -136,8 +222,11 @@ main .main .right_card .card1 .card_title > p {}
 main .main .right_card .card1 .card_title > p .add {}
 main .main .right_card .card1 .contents {}
 main .main .right_card .card1 .contents > p {color: #A2AF9B;}
-main .main .right_card .card1 .contents > .time {color: #555;}
-main .main .right_card .card1 .contents > .card_name {}
+main .main .right_card .card1 .contents > .time {color: #555; font-size: 1.06rem;}
+main .main .right_card .card1 .contents > .card_name {
+    font-size: 1.06rem; font-weight: 600;
+    padding-top: 7px;
+}
 main .main .right_card .card1 .card_info {}
 main .main .right_card .card1 .card_info .place {}
 main .main .right_card .card1 .card_info .place > span {}
@@ -156,10 +245,12 @@ main .main .right_card .card2 .contents {}
 main .main .right_card .card2 .contents .card_name {
     display: flex; flex-flow: row nowrap; align-content: center;
     color: #A2AF9B;
-    font-size: 1.25rem;
+    font-size: 1.06rem;
 }
-main .main .right_card .card2 .contents .card_name > span {padding-right: 10px;}
-main .main .right_card .card2 .contents .card_name > span img {}
+main .main .right_card .card2 .contents .card_name > span {
+    padding-right: 10px; width: 30px;
+}
+main .main .right_card .card2 .contents .card_name > span img {width: 100%;}
 main .main .right_card .card2 .card_info {}
 main .main .right_card .card2 .card_info .deadline {}
 main .main .right_card .card2 .card_info .deadline > span {}
@@ -169,3 +260,341 @@ main .main .right_card .card2 .card_info .memo {}
 main .main .right_card .card2 .card_info .memo > span {}
 main .main .right_card .card2 .card_info .memo > span em {}
 main .main .right_card .card2 .card_info .memo > span img {}
+
+
+/* =====★ 일정 | 신규 팝업창 ★*/
+/* 인풋(공통) */
+main .main .add_bg .add_wrap > * p {
+    color: #A2AF9B; font-size: 1.13rem;
+}
+main .main .add_bg .add_wrap .plan_contents .day_state,
+main .main .add_bg .add_wrap .plan_contents .start,
+main .main .add_bg .add_wrap .plan_contents .end,
+main .main .add_bg .add_wrap .plan_contents .repeat {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    border-bottom: #d9d9d9 1px solid;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+main .main .add_bg .add_wrap .plan_contents > * .date {
+    background-color: #EEEEEE; color: #A2AF9B;
+    padding: 10px 15px; border-radius: 100px; margin-right: 10px;
+    letter-spacing: -0.02px;
+}
+main .main .add_bg .add_wrap .plan_contents > * .time {
+    background-color: #EEEEEE; color: #A2AF9B;
+    padding: 10px 15px; border-radius: 100px;
+    letter-spacing: -0.02px;
+}
+main .main .add_bg .add_wrap .plan_contents .start .start_date .tab_active,
+main .main .add_bg .add_wrap .plan_contents .end .start_date .tab_active {
+    background-color: #A2AF9B; color: #EEEEEE;
+}
+/* 일정 */
+main .main .add_bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; height: 100vh;
+    position: fixed; left: 0; top: 0;
+}
+main .main .add_bg .add_wrap {
+    background-color: #FAF9EE;
+    max-width: 645px; margin: 125px auto 0;
+    padding: 30px 25px;
+    border-radius: 25px;
+}
+main .main .add_bg .add_wrap > a {float: right;}
+main .main .add_bg .add_wrap > a > img {}
+main .main .add_bg .add_wrap > p {
+    color: #888; font-size: 1.25rem;
+    font-weight: 400; line-height: 1.6;
+}
+/* 일정 | 인풋 */
+main .main .add_bg .add_wrap .plan_title {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    margin: 25px 0; gap: 10px;
+}
+main .main .add_bg .add_wrap .plan_title .input_txt {width: 500px; flex: 1;}
+main .main .add_bg .add_wrap .plan_title .input_txt .user_txt {}
+main .main .add_bg .add_wrap .plan_title .input_btn {}
+main .main .add_bg .add_wrap .plan_title .input_btn .btn {}
+
+main .main .add_bg .add_wrap .plan_contents {}
+/* 하루종일 */
+main .main .add_bg .add_wrap .plan_contents .day_state {}
+main .main .add_bg .add_wrap .plan_contents .day_state > p {}
+/* -------체크된 상태------- */
+main .main .add_bg .add_wrap .plan_contents .day_state #day_on {}
+main .main .add_bg .add_wrap .plan_contents .day_state #day_on:checked+label {
+    background-color: #A2AF9B;
+}
+main .main .add_bg .add_wrap .plan_contents .day_state #day_on:checked+label .switch {
+    left: 5px; right: auto;
+    transform: translateX(2px);
+}
+main .main .add_bg .add_wrap .plan_contents .day_state #day_on:checked+label .switch_state {
+    left: auto; right: 4px;
+}
+/* -------기본 상태------- */
+main .main .add_bg .add_wrap .plan_contents .day_state label {
+    width: 80px; height: 30px;
+    background-color: #d9d9d9; border-radius: 100px;
+    position: relative;
+    transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+}
+main .main .add_bg .add_wrap .plan_contents .day_state label .switch {
+    width: 40px; height: 20px;
+    background-color: #FFF; display: block; border-radius: 100px;
+    position: absolute; right: 5px; top: 5px;
+    transition: all 0.3s ease;
+}
+main .main .add_bg .add_wrap .plan_contents .day_state label .switch_state {}
+
+/* 시작 */
+main .main .add_bg .add_wrap .plan_contents .start {padding: 15px;}
+main .main .add_bg .add_wrap .plan_contents .start > p {}
+main .main .add_bg .add_wrap .plan_contents .start .start_date {}
+main .main .add_bg .add_wrap .plan_contents .start .start_date .date {}
+main .main .add_bg .add_wrap .plan_contents .start .start_date .time {}
+main .main .add_bg .add_wrap .plan_contents .start .start_date .time em {}
+
+/* =====★ '시작/종료' 날짜 클릭 시, 출력되는 달력 ★*/
+main .main .add_bg .add_wrap .plan_contents .calender_bg {
+    display: flex; flex-flow: row nowrap; justify-content: flex-end; align-items: center;
+    width: 100%;
+}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal {
+    background-color: rgba(238, 238, 238, 0.5); border-radius: 10px;
+    width: 375px; margin: 10px 0; padding: 10px;
+}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender_header {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    padding: 6px 16px; margin-bottom: 10px;
+}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender_header .cal_left {
+    align-items: center;
+    display: flex; align-items: center; gap: 6px;
+}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender_header .cal_left .year_month {}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender_header .cal_left .year_month > em {}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender_header .cal_left > span {}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender_header .cal_left > span > img {}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender_header .cal_right {}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender_header .cal_right button {margin-left: 10px;}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender_header .cal_right button > img {}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender2 {}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender2 .week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    text-align: center;
+}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender2 .week > li {}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender2 .week .sun {color:  rgba(255, 0, 0, 1) ;}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender2 .week .sat {color: rgba(0, 0, 255, 1);}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender2 .day {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender2 .day > .mini_day {
+    padding: 15px 0;
+}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender2 .day > .selected {
+    background-color: #DCCFC0; color: #FAF9EE;
+    border-radius: 100px;
+}
+main .main .add_bg .add_wrap .plan_contents .calender_bg .plan_cal .calender2 .day > .mini_day > li {}
+
+/* =====★ '시작/종료' 날짜 클릭 시, 출력되는 타임피커 ★ */
+main .main .add_bg .add_wrap .plan_contents .picker_bg {
+    display: flex; flex-flow: row nowrap; justify-content: flex-end; align-items: center;
+    width: 100%;
+}
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker {
+    background-color: rgba(238, 238, 238, 0.5);; border-radius: 10px;
+    width: 375px; margin: 10px 0; padding: 30px;
+    position: relative;
+}
+/* 선택라인 */
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker::before,
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker::after {
+    content: ""; position: absolute; height: 1.5px;
+    width: 265px;
+    left: 50px;
+    background: #8B8B8B;
+}
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker::before {
+    top: 50%;
+    transform: translateY(-25px);
+}
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker::after {
+    top: 50%;
+    transform: translateY(25px);
+}
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker .time_wheel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker .time_wheel .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+/* 위아래 흐림 */
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker .time_wheel .dim {opacity: 0.3;}
+/* 선택된 줄 */
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker .time_wheel .select_time {
+    font-weight: 600; color: #222;
+}
+/* 숫자 고정폭 */
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker .time_wheel .row span {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+main .main .add_bg .add_wrap .plan_contents .picker_bg .time_picker .time_wheel .row .ampm{
+    visibility: hidden
+}
+
+/* 종료 */
+main .main .add_bg .add_wrap .plan_contents .end {padding: 15px;}
+main .main .add_bg .add_wrap .plan_contents .end {}
+main .main .add_bg .add_wrap .plan_contents .end > p {}
+main .main .add_bg .add_wrap .plan_contents .end .start_date {}
+main .main .add_bg .add_wrap .plan_contents .end .start_date .date {}
+main .main .add_bg .add_wrap .plan_contents .end .start_date .time {}
+main .main .add_bg .add_wrap .plan_contents .end .start_date .time em {}
+/* 반복 */
+main .main .add_bg .add_wrap .plan_contents .repeat {
+    position: relative;
+}
+main .main .add_bg .add_wrap .plan_contents .repeat > p {}
+main .main .add_bg .add_wrap .plan_contents .repeat > a {}
+main .main .add_bg .add_wrap .plan_contents .repeat > a > span {
+    padding-right: 10px;
+    letter-spacing: -0.02px; padding-right: 10px;
+}
+main .main .add_bg .add_wrap .plan_contents .repeat > a > img {}
+main .main .add_bg .add_wrap .plan_contents .repeat .repeat_drop > a {}
+main .main .add_bg .add_wrap .plan_contents .repeat .repeat_drop > a > img {}
+/* =====★ 반복 드롭다운 ★ */
+main .main .add_bg .drop_wrap {
+    background-color: #FFF;
+    width: 100px;
+    position: absolute; top: 100%; right: 0; z-index: 1;
+    padding: 15px 0;
+    border-radius: 10px;
+    box-shadow: 2px -2px 2px rgba(136, 136, 136, 0.5);
+}
+main .main .add_bg .drop_wrap > a {
+    display: block;
+    text-align: center;
+    padding: 15px 25px;
+    transition: all 0.3s;
+}
+main .main .add_bg .drop_wrap > a:hover{
+    background-color: #EEEEEE; color: #A2AF9B;
+}
+main .main .add_bg .drop_wrap > a > span {}
+
+
+/* =====★ 할 일 | 신규 팝업창 ★ */
+main .main .todo_bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; height: 100vh;
+    position: fixed; left: 0; top: 0;
+}
+main .main .todo_wrap {
+    background-color: #FAF9EE;
+    max-width: 645px; margin: 125px auto 0;
+    padding: 30px 25px;
+    border-radius: 25px;
+}
+main .main .todo_wrap > .todo_close {float: right;}
+main .main .todo_wrap > .todo_close > img {}
+main .main .todo_wrap > p {
+    color: #888; font-size: 1.25rem;
+    font-weight: 400; line-height: 1.6;
+}
+main .main .todo_wrap .todo_title {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    margin: 25px 0; gap: 10px;
+}
+main .main .todo_wrap .todo_title .input_txt {width: 500px; flex: 1;}
+main .main .todo_wrap .todo_title .input_txt .user_txt {}
+main .main .todo_wrap .todo_title .input_btn {}
+main .main .todo_wrap .todo_title .input_btn .btn {}
+/* 날짜 */
+main .main .todo_wrap .todo_contents {}
+main .main .todo_wrap .todo_contents .start {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    border-bottom: #d9d9d9 1px solid;
+    padding: 15px 0 15px 10px;
+}
+main .main .todo_wrap .todo_contents .start > p {
+    color: #A2AF9B; font-size: 1.13rem;
+}
+main .main .todo_wrap .todo_contents .start .start_date {}
+main .main .todo_wrap .todo_contents .start .start_date .date {
+    background-color: #EEEEEE; color: #A2AF9B;
+    padding: 10px 15px; border-radius: 100px;
+    letter-spacing: -0.02px;
+}
+main .main .todo_wrap .todo_contents .start .start_date .tab_active {
+    background-color: #A2AF9B; color: #EEEEEE;
+}
+/* =====★'할 일' 날짜 클릭 시, 출력되는 달력  */
+main .main .todo_wrap .todo_contents .calender_bg {
+    display: flex; flex-flow: row nowrap; justify-content: flex-end; align-items: center;
+    width: 100%;
+}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal {
+    background-color: rgba(238, 238, 238, 0.5); border-radius: 10px;
+    width: 375px; margin: 10px 0; padding: 10px;
+}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender_header {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    padding: 6px 16px; margin-bottom: 10px;
+}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender_header .cal_left {
+    align-items: center;
+    display: flex; align-items: center; gap: 6px;
+}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender_header .cal_left .year_month {}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender_header .cal_left .year_month > em {}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender_header .cal_left > span {}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender_header .cal_left > span > img {}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender_header .cal_right {}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender_header .cal_right button {margin-left: 10px;}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender_header .cal_right button > img {}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender2 {}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender2 .week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    text-align: center;
+}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender2 .week > li {}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender2 .week .sun {color:  rgba(255, 0, 0, 1) ;}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender2 .week .sat {color: rgba(0, 0, 255, 1);}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender2 .day {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender2 .day > .mini_day {
+    padding: 15px 0;
+}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender2 .day > .selected {
+    background-color: #DCCFC0; color: #FAF9EE;
+    border-radius: 100px;
+}
+main .main .todo_wrap .todo_contents .calender_bg .plan_cal .calender2 .day > .mini_day > li {}

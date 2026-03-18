@@ -1,0 +1,78 @@
+body {background-color: #FAF9EE;}
+main {
+    width: 410px; margin: 165px auto;
+}
+
+/* 로고 */
+main h1 {
+    text-align: center; padding-bottom: 50px;
+}
+main h1 > a {}
+main h1 > a > img {}
+
+/* 로그인 랩 | 공통&그룹 */
+main .login_wrap .login_title,
+main .login_wrap .login_container form .login_box,
+main .login_wrap .login_container form .search_join {
+    padding-bottom: 80px;
+}
+
+/* 로그인 랩 */
+main .login_wrap {
+    background-color: #FFFFFF;
+    padding: 50px 15px; border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+main .login_wrap .login_title {}
+main .login_wrap .login_title > p {
+    font-size: 1.56rem; font-weight: 600;
+}
+main .login_wrap .login_container {}
+main .login_wrap .login_container form {}
+main .login_wrap .login_container form .login_box {}
+main .login_wrap .login_container form .login_box dl {}
+main .login_wrap .login_container form .login_box dl:last-child {padding-top: 15px;}
+main .login_wrap .login_container form .login_box dl dt {
+    padding-bottom: 10px;
+    letter-spacing: -0.02rem;
+}
+main .login_wrap .login_container form .login_box dl dd {}
+main .login_wrap .login_container form .login_box dl dd input {
+    width: 100%; padding: 15px 20px;
+    border: 1px solid #E0E0E0; border-radius: 10px;
+}
+main .login_wrap .login_container form .login_box dl dd input::placeholder {
+    color: #E0E0E0; letter-spacing: -0.02rem;
+    font-size: 0.94rem;
+}
+main .login_wrap .login_container form .login_box dl dd #use_id {}
+main .login_wrap .login_container form .login_box dl dd #use_pw {}
+main .login_wrap .login_container form .login_btn {}
+main .login_wrap .login_container form .login_btn button {
+    background-color: #A2AF9B; color: #FFFFFF;
+    width: 100%; text-align: center;
+    padding: 15px 0; border-radius: 10px;
+    margin-bottom: 15px;
+    letter-spacing: -0.02rem; font-size: 0.94rem;
+}
+main .login_wrap .login_container form .login_btn #login_btn {}
+main .login_wrap .login_container form .search_join {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .login_wrap .login_container form .search_join > a {
+    color: #AAAAAA;
+    letter-spacing: -0.02rem;
+    font-size: 0.94rem;
+}
+
+main .login_wrap .login_container .login_sns {
+    text-align: center;
+}
+main .login_wrap .login_container .login_sns > p {
+    padding-bottom: 20px;
+    color: #D9D9D9; letter-spacing: -0.02rem;
+}
+main .login_wrap .login_container .login_sns .sns_wrap {}
+main .login_wrap .login_container .login_sns .sns_wrap > a {}
+main .login_wrap .login_container .login_sns .sns_wrap > a:nth-child(2) {padding: 0 20px;}
+main .login_wrap .login_container .login_sns .sns_wrap > a > img {}

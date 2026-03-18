@@ -1,0 +1,50 @@
+/* 모바일 반응형 */
+@media screen and (max-width:600px) {
+    main {margin: 80px auto;}
+    main header {padding: 0 15px;}
+    main .input {padding: 0 15px;}
+    main .input .input_txt {padding: 15px 10px;}
+    main .input .input_txt .user_txt::placeholder {font-size: 0.88rem;}
+    main .input .input_btn .btn {
+        padding: 15px 10px;
+        font-size: 0.88rem;
+    }
+
+    /* 메인 캘린더 */
+    main .main {
+        flex-flow: column wrap;
+    }
+    /* 메인 | (좌)캘린더 */
+    main .main .left_cal {
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+    main .main .left_cal .calender .day_week > li {padding: 10px; font-size: 1rem;}
+    main .main .left_cal .calender .day_num > .day {height: 80px; padding: 10px; font-size: 1rem;}
+
+    /* 메인 | (우)카드 */
+    main .main .right_card {
+        padding: 0 15px;
+    }
+
+    /* ===== 신규 팝업창 */
+    /* 인풋(공통) */
+    main .main .add_bg .add_wrap,
+    main .main .todo_wrap  {margin: 50px 15px;}
+
+    main .main .add_bg .add_wrap .plan_title .input_txt,
+    main .main .todo_wrap .todo_title .input_txt  {padding: 15px 10px;}
+    
+    main .main .add_bg .add_wrap .plan_title .input_txt .user_txt::placeholder,
+    main .main .todo_wrap .todo_title .input_txt .user_txt::placeholder {font-size: 0.88rem;}
+
+    main .main .add_bg .add_wrap .plan_title .input_btn .btn,
+    main .main .todo_wrap .todo_title .input_btn .btn  {padding: 15px 10px;}
+
+    main .main .add_bg .add_wrap > * p,
+    main .main .todo_wrap .todo_contents .start > p {font-size: 1rem;}
+
+    main .main .add_bg .add_wrap .plan_contents > * .date,
+    main .main .add_bg .add_wrap .plan_contents > * .time,
+    main .main .todo_wrap .todo_contents .start {font-size: 0.88rem;}
+}
