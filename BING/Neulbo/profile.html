@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 파비콘&글꼴 -->
+    <link rel="shortcut icon" href="./images/fabicon.png" type="iamge/x-icon">
+    <link rel="icon" href="./images/fabicon.png" type="image/x-icon">
+    <href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"></href>
+
+    <!-- 디자인파일 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <!-- 스크립트 -->
+    <title>Planer | 늘보</title>
+</head>
+<body>
+    <main>
+        <div class="setting_top">
+            <h1><a href="./index.html"><img src="./images/logo.png" alt="늘보"></a></h1>
+        </div>
+        <div class="setting_wrap">
+            <div class="setting_title"><p>Profile Settings</p></div>
+            <div class="setting_img">
+                <div class="profile_img">
+                    <p><img src="./images/profile_setting.png" alt="프로필 사진"></p>
+                    <button class="library"><img src="./images/photo_camera.png" alt="프로필 사진 세팅 버튼"></button>
+                </div>
+                <button>사진 삭제</button>
+            </div>
+            <div class="setting_container">
+                <form action="#" method="post">
+                    <dl class="email_check">
+                        <dt>이메일</dt>
+                        <dd>
+                            <input type="text" name="user_email" id="user_email" placeholder="이메일을 입력해주세요.">
+                        </dd>
+                    </dl>
+                    <dl class="name_check">
+                        <dt>이름</dt>
+                        <dd><input type="text" name="user_name" id="user_name" placeholder="이름을 입력해주세요."></dd>
+                    </dl>
+                    <dl class="pw_check">
+                        <dt>비밀번호</dt>
+                        <dd><input type="password" name="user_pw" id="user_pw" placeholder="새 비밀번호를 입력하세요."></dd>
+                        <dd><input type="password" name="user_pwpw" id="user_pwpw" placeholder="새 비밀번호를 다시 입력하세요."></dd>
+                    </dl>
+                    <div class="setting_btn">
+                        <button type="button" id="cancle_btn">취소</button>
+                        <button type="button" id="save_btn">저장하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
